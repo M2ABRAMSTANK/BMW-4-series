@@ -2240,11 +2240,11 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4200"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_4200_INTAKE_AIR_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 160, "mul": 0.75, "add": -48, "unit": "degreesCelsius" }, "name": "Intake air temperature"}
+    {"id": "4SERIES_4200_INTAKE_AIR_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 160, "mul": 0.75, "add": -48, "unit": "celsius" }, "name": "Intake air temperature"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4202"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_4202_MANIFOLD_ABSOLUTE_PRESSURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.08291753, "unit": "hectopascals" }, "name": "Manifold Absolute Pressure"}
+    {"id": "4SERIES_4202_MANIFOLD_ABSOLUTE_PRESSURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.08291753, "unit": "kilopascal" }, "name": "Manifold Absolute Pressure"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4203"}, "freq": 30,
   "signals": [
@@ -2252,11 +2252,11 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4204"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_4204_AMBIENT_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "degreesCelsius" }, "name": "Ambient temperature"}
+    {"id": "4SERIES_4204_AMBIENT_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "celsius" }, "name": "Ambient temperature"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4301"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_4301_COOLING_SOURCE_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "degreesCelsius" }, "name": "Cooling source temperature"}
+    {"id": "4SERIES_4301_COOLING_SOURCE_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "celsius" }, "name": "Cooling source temperature"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4302"}, "freq": 30,
   "signals": [
@@ -2264,7 +2264,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4303"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_4303_WATER_PUMP_ELECTRONIC_TEMPERAT", "path": "Engine", "fmt": { "len": 8, "max": 0, "add": -50, "unit": "degreesCelsius" }, "name": "Water Pump Electronic temperature"}
+    {"id": "4SERIES_4303_WATER_PUMP_ELECTRONIC_TEMPERAT", "path": "Engine", "fmt": { "len": 8, "max": 0, "add": -50, "unit": "celsius" }, "name": "Water Pump Electronic temperature"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4304"}, "freq": 30,
   "signals": [
@@ -2524,7 +2524,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4720"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_4720_TEMPERATURE_DESULATIZATION", "path": "Engine", "fmt": { "len": 8, "max": 0, "unit": "degreesCelsius" }, "name": "temperature desulatization"}
+    {"id": "4SERIES_4720_TEMPERATURE_DESULATIZATION", "path": "Engine", "fmt": { "len": 8, "max": 0, "unit": "celsius" }, "name": "temperature desulatization"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4722"}, "freq": 30,
   "signals": [
@@ -2552,7 +2552,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4806"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_4806_CONTROL_INTERIOR_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "degreesCelsius" }, "name": "Control interior temperature"}
+    {"id": "4SERIES_4806_CONTROL_INTERIOR_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "celsius" }, "name": "Control interior temperature"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4809"}, "freq": 30,
   "signals": [
@@ -2564,11 +2564,11 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "481A"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_481A_RAIL_PRESSURE_BANK_1", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 5.30672169, "unit": "hectopascals" }, "name": "Rail pressure Bank 1"}
+    {"id": "4SERIES_481A_RAIL_PRESSURE_BANK_1", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 5.30672169, "unit": "kilopascal" }, "name": "Rail pressure Bank 1"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "481B"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_481B_RAIL_PRESSURE_BANK_2", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 5.30672169, "unit": "hectopascals" }, "name": "Rail pressure Bank 2"}
+    {"id": "4SERIES_481B_RAIL_PRESSURE_BANK_2", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 5.30672169, "unit": "kilopascal" }, "name": "Rail pressure Bank 2"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4828"}, "freq": 30,
   "signals": [
@@ -2588,7 +2588,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5801"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5801_AMBIENT_PRESSURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "unit": "hectopascals" }, "name": "ambient pressure"}
+    {"id": "4SERIES_5801_AMBIENT_PRESSURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "unit": "kilopascal" }, "name": "ambient pressure"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5802"}, "freq": 30,
   "signals": [
@@ -2648,15 +2648,15 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "581F"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_581F_MOTOR_TEMPERATURE_LINEARIZED_A", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "degreesCelsius" }, "name": "Motor temperature, linearized and converted"}
+    {"id": "4SERIES_581F_MOTOR_TEMPERATURE_LINEARIZED_A", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "celsius" }, "name": "Motor temperature, linearized and converted"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5820"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5820_COOLANT_TEMPERATURE_COOLING_UN", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "degreesCelsius" }, "name": "Coolant temperature cooling unit output"}
+    {"id": "4SERIES_5820_COOLANT_TEMPERATURE_COOLING_UN", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "celsius" }, "name": "Coolant temperature cooling unit output"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5824"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5824_AMBIENT_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "degreesCelsius" }, "name": "Ambient temperature"}
+    {"id": "4SERIES_5824_AMBIENT_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "celsius" }, "name": "Ambient temperature"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5825"}, "freq": 30,
   "signals": [
@@ -2672,7 +2672,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "582A"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_582A_LAMBDA_PROBE_HEATING_BEHIND_CA", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.390625, "unit": "degreesCelsius" }, "name": "Lambda probe heating behind catalytic converter bank 2"}
+    {"id": "4SERIES_582A_LAMBDA_PROBE_HEATING_BEHIND_CA", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.390625, "unit": "celsius" }, "name": "Lambda probe heating behind catalytic converter bank 2"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "582D"}, "freq": 30,
   "signals": [
@@ -2692,11 +2692,11 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5833"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5833_ENVIRONMENTAL_TEMPERATUER_WHIL", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "degreesCelsius" }, "name": "Environmental temperatuer While you Start"}
+    {"id": "4SERIES_5833_ENVIRONMENTAL_TEMPERATUER_WHIL", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "celsius" }, "name": "Environmental temperatuer While you Start"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5835"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5835_GENERATOR_MANUFACTURER_CODE", "path": "Engine", "fmt": { "len": 8, "max": 0, "unit": "degreesCelsius" }, "name": "Generator manufacturer code"}
+    {"id": "4SERIES_5835_GENERATOR_MANUFACTURER_CODE", "path": "Engine", "fmt": { "len": 8, "max": 0, "unit": "celsius" }, "name": "Generator manufacturer code"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5836"}, "freq": 30,
   "signals": [
@@ -2716,7 +2716,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "583E"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_583E_ENGINE_SPEED_ON_RESET", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 256, "unit": "revolutionsPerMinute" }, "name": "Engine speed on reset"}
+    {"id": "4SERIES_583E_ENGINE_SPEED_ON_RESET", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 256, "unit": "rpm" }, "name": "Engine speed on reset"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5843"}, "freq": 30,
   "signals": [
@@ -2796,7 +2796,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5862"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5862_OIL_PRESSURE_SETPOINT", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 32, "unit": "hectopascals" }, "name": "Oil pressure - setpoint"}
+    {"id": "4SERIES_5862_OIL_PRESSURE_SETPOINT", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 32, "unit": "kilopascal" }, "name": "Oil pressure - setpoint"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5863"}, "freq": 30,
   "signals": [
@@ -2860,7 +2860,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "587F"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_587F_E_FAN_SAMPLING", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.390625, "unit": "degreesCelsius" }, "name": "E-fan Sampling"}
+    {"id": "4SERIES_587F_E_FAN_SAMPLING", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.390625, "unit": "celsius" }, "name": "E-fan Sampling"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5880"}, "freq": 30,
   "signals": [
@@ -2884,7 +2884,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "588F"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_588F_CERAMIC_TEMPERATURE_LAMBDA_SEN", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 16, "unit": "degreesCelsius" }, "name": "Ceramic temperature Lambda sensor Vk 2"}
+    {"id": "4SERIES_588F_CERAMIC_TEMPERATURE_LAMBDA_SEN", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 16, "unit": "celsius" }, "name": "Ceramic temperature Lambda sensor Vk 2"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5893"}, "freq": 30,
   "signals": [
@@ -2900,7 +2900,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5897"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5897_THE_EXHAUST_GAS_TEMPERATURE_BE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 16, "unit": "degreesCelsius" }, "name": "The exhaust gas temperature behind catalytic converter b2"}
+    {"id": "4SERIES_5897_THE_EXHAUST_GAS_TEMPERATURE_BE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 16, "unit": "celsius" }, "name": "The exhaust gas temperature behind catalytic converter b2"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5899"}, "freq": 30,
   "signals": [
@@ -2988,7 +2988,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58C0"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_58C0_VVT_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 32, "unit": "degreesCelsius" }, "name": "VVT temperature"}
+    {"id": "4SERIES_58C0_VVT_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 32, "unit": "celsius" }, "name": "VVT temperature"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58C1"}, "freq": 30,
   "signals": [
@@ -2996,11 +2996,11 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58C5"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_58C5_FUEL_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "degreesCelsius" }, "name": "Fuel temperature"}
+    {"id": "4SERIES_58C5_FUEL_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "celsius" }, "name": "Fuel temperature"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58C7"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_58C7_IDLE_SET_ROTARY_DIFF_MONITORIN", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 32, "unit": "revolutionsPerMinute" }, "name": "Idle - Set rotary Diff. monitoring"}
+    {"id": "4SERIES_58C7_IDLE_SET_ROTARY_DIFF_MONITORIN", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 32, "unit": "rpm" }, "name": "Idle - Set rotary Diff. monitoring"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58C8"}, "freq": 30,
   "signals": [
@@ -3036,7 +3036,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58D5"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_58D5_PHYSICAL_TEMPERATURWERT", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "degreesCelsius" }, "name": "physical -Temperaturwert"}
+    {"id": "4SERIES_58D5_PHYSICAL_TEMPERATURWERT", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "celsius" }, "name": "physical -Temperaturwert"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58D6"}, "freq": 30,
   "signals": [
@@ -3084,7 +3084,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58EC"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_58EC_WATER_PUMP_ELECTRONIC_TEMPERAT", "path": "Engine", "fmt": { "len": 8, "max": 0, "add": -50, "unit": "degreesCelsius" }, "name": "Water Pump Electronic temperature"}
+    {"id": "4SERIES_58EC_WATER_PUMP_ELECTRONIC_TEMPERAT", "path": "Engine", "fmt": { "len": 8, "max": 0, "add": -50, "unit": "celsius" }, "name": "Water Pump Electronic temperature"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58ED"}, "freq": 30,
   "signals": [
@@ -3140,7 +3140,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A04"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5A04_PEDAL_VALUE_SENSOR_1_VOLTAGE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.0048828125, "unit": "degreesCelsius" }, "name": "Pedal value sensor 1 voltage"}
+    {"id": "4SERIES_5A04_PEDAL_VALUE_SENSOR_1_VOLTAGE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.0048828125, "unit": "celsius" }, "name": "Pedal value sensor 1 voltage"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A05"}, "freq": 30,
   "signals": [
@@ -3184,7 +3184,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A0F"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5A0F_VOLTAGE_TERMINAL_15", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.0280601159, "unit": "degreesCelsius" }, "name": "Voltage terminal 15"}
+    {"id": "4SERIES_5A0F_VOLTAGE_TERMINAL_15", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.0280601159, "unit": "celsius" }, "name": "Voltage terminal 15"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A10"}, "freq": 30,
   "signals": [
@@ -3212,7 +3212,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A1F"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5A1F_EXHAUST_GAS_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.015625, "unit": "degreesCelsius" }, "name": "exhaust gas temperature"}
+    {"id": "4SERIES_5A1F_EXHAUST_GAS_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.015625, "unit": "celsius" }, "name": "exhaust gas temperature"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A20"}, "freq": 30,
   "signals": [
@@ -3220,15 +3220,15 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A21"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5A21_COOLANT", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "degreesCelsius" }, "name": "coolant"}
+    {"id": "4SERIES_5A21_COOLANT", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "celsius" }, "name": "coolant"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A22"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5A22_CONTROL_MODULE_INTERNAL_TEMPER", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "degreesCelsius" }, "name": "Control module internal temperature"}
+    {"id": "4SERIES_5A22_CONTROL_MODULE_INTERNAL_TEMPER", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "celsius" }, "name": "Control module internal temperature"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A23"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5A23_SETPOINT_OIL_PRESSURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "unit": "hectopascals" }, "name": "Setpoint oil pressure"}
+    {"id": "4SERIES_5A23_SETPOINT_OIL_PRESSURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "unit": "kilopascal" }, "name": "Setpoint oil pressure"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A24"}, "freq": 30,
   "signals": [
@@ -3236,11 +3236,11 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A25"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5A25_ACTUAL_OIL_PRESSURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "unit": "hectopascals" }, "name": "Actual oil pressure"}
+    {"id": "4SERIES_5A25_ACTUAL_OIL_PRESSURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "unit": "kilopascal" }, "name": "Actual oil pressure"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A26"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5A26_AMBIENT_PRESSURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.08291753, "unit": "hectopascals" }, "name": "Ambient pressure"}
+    {"id": "4SERIES_5A26_AMBIENT_PRESSURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.08291753, "unit": "kilopascal" }, "name": "Ambient pressure"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A27"}, "freq": 30,
   "signals": [
@@ -3260,15 +3260,15 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A2B"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5A2B_INTAKE_AIR_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 160, "mul": 0.1, "unit": "degreesCelsius" }, "name": "Intake air temperature"}
+    {"id": "4SERIES_5A2B_INTAKE_AIR_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 160, "mul": 0.1, "unit": "celsius" }, "name": "Intake air temperature"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A2D"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5A2D_PRESSURE_TO_THROTTLE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.0390625, "unit": "hectopascals" }, "name": "Pressure to throttle"}
+    {"id": "4SERIES_5A2D_PRESSURE_TO_THROTTLE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.0390625, "unit": "kilopascal" }, "name": "Pressure to throttle"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A2F"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5A2F_BOOST_PRESSURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 5.30672169, "unit": "hectopascals" }, "name": "boost pressure"}
+    {"id": "4SERIES_5A2F_BOOST_PRESSURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 5.30672169, "unit": "kilopascal" }, "name": "boost pressure"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A30"}, "freq": 30,
   "signals": [
@@ -3668,7 +3668,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5AB0"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5AB0_BOOST_PRESSURE_SETPOINT", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 125, "unit": "hectopascals" }, "name": "Boost pressure setpoint"}
+    {"id": "4SERIES_5AB0_BOOST_PRESSURE_SETPOINT", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 125, "unit": "kilopascal" }, "name": "Boost pressure setpoint"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5AB1"}, "freq": 30,
   "signals": [
@@ -3692,11 +3692,11 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5AB6"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5AB6_TEMPERATURE_OF_THE_INLET_AIR", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "degreesCelsius" }, "name": "Temperature of the inlet air"}
+    {"id": "4SERIES_5AB6_TEMPERATURE_OF_THE_INLET_AIR", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "celsius" }, "name": "Temperature of the inlet air"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5AB7"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5AB7_MOTOR_TEMPERATURE_LINEARIZED_A", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "degreesCelsius" }, "name": "Motor temperature, linearized and converted"}
+    {"id": "4SERIES_5AB7_MOTOR_TEMPERATURE_LINEARIZED_A", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "celsius" }, "name": "Motor temperature, linearized and converted"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5AB8"}, "freq": 30,
   "signals": [
@@ -3748,11 +3748,11 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5AD4"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5AD4_FUEL_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "degreesCelsius" }, "name": "Fuel temperature"}
+    {"id": "4SERIES_5AD4_FUEL_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "celsius" }, "name": "Fuel temperature"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5AD5"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5AD5_FUEL_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "degreesCelsius" }, "name": "Fuel temperature"}
+    {"id": "4SERIES_5AD5_FUEL_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "celsius" }, "name": "Fuel temperature"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5AD8"}, "freq": 30,
   "signals": [
@@ -3872,7 +3872,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5B31"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5B31_INJEKTOR_2_V", "path": "Engine", "fmt": { "len": 8, "max": 0, "unit": "degreesCelsius" }, "name": "Injektor 2 - V"}
+    {"id": "4SERIES_5B31_INJEKTOR_2_V", "path": "Engine", "fmt": { "len": 8, "max": 0, "unit": "celsius" }, "name": "Injektor 2 - V"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5B32"}, "freq": 30,
   "signals": [
@@ -3888,7 +3888,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5B35"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5B35_INJECTOR_6_V", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.0030517578, "unit": "degreesCelsius" }, "name": "Injector 6 - V"}
+    {"id": "4SERIES_5B35_INJECTOR_6_V", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.0030517578, "unit": "celsius" }, "name": "Injector 6 - V"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5BF8"}, "freq": 30,
   "signals": [
@@ -3976,7 +3976,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5FC2"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5FC2_PEDAL_VALUE_SENSOR_1_VOLTAGE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.0048828125, "unit": "degreesCelsius" }, "name": "Pedal value sensor 1 voltage"}
+    {"id": "4SERIES_5FC2_PEDAL_VALUE_SENSOR_1_VOLTAGE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.0048828125, "unit": "celsius" }, "name": "Pedal value sensor 1 voltage"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5FC3"}, "freq": 30,
   "signals": [
@@ -4021,10 +4021,6 @@
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5FE0"}, "freq": 30,
   "signals": [
     {"id": "4SERIES_5FE0_THROTTLE_VALVE_POTENTIOMETER_1", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.0048828125, "unit": "scalar" }, "name": "Throttle valve potentiometer 1 voltage"}
-  ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "0221C1"}, "freq": 30,
-  "signals": [
-    {"id": "4SERIES_0221C1_PID_0221C1", "path": "Engine", "fmt": { "len": 8, "max": 0, "unit": "percent" }, "name": "PID 0221C1"}
   ]}
 
 ]}
