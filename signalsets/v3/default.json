@@ -1113,10 +1113,6 @@
       "signals": [
         {"id": "4SERIES_59FD", "path": "Engine", "fmt": {"len": 8, "max": 127, "mul": 191.25, "div": 255, "sign": true, "unit": "scalar"}, "name": "Target ignition angle from torque intervention"}
       ]},
-    { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "0221C1"}, "freq": 30,
-      "signals": [
-        {"id": "4SERIES_0221C1_PID_0221C1", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "percent"}, "name": "PID 0221C1"}
-      ]},
     { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "0322400D"}, "freq": 30,
       "signals": [
         {"id": "4SERIES_0322400D_PID_0322400D", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar", "mul": 0.0015259}, "name": "PID 0322400D"}
