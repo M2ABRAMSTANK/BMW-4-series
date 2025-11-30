@@ -233,13 +233,9 @@
   "signals": [
     {"id": "4SERIES_4654", "path": "Engine", "fmt": { "len": 16, "max": 32767, "mul": 64, "div": 65536, "sign": true, "unit": "scalar" }, "name": "Raw value position sensor electrical wastegate"}
   ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4683"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "cmd": {"22": "4683"}, "freq": 30, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "4SERIES_4683", "path": "Engine", "fmt": { "len": 16, "max": 65535, "mul": 0.1453421, "unit": "scalar" }, "name": "Speed gear input"}
-  ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4712"}, "freq": 30,
-  "signals": [
-    {"id": "4SERIES_4712", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Number of dense EVAP systems recognized by diagnosis"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4807"}, "freq": 30,
   "signals": [
@@ -459,7 +455,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5738"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5738", "path": "Engine", "fmt": { "len": 16, "max": 65535, "mul": 10, "div": 256, "unit": "scalar" }, "name": "Saugrohrdruckdifferenz"}
+    {"id": "4SERIES_5738", "path": "Engine", "fmt": { "len": 16, "max": 65535, "mul": 10, "div": 256, "unit": "scalar" }, "name": "Differential pressure across the intake manifold."}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "573A"}, "freq": 30,
   "signals": [
@@ -560,10 +556,6 @@
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "57F0"}, "freq": 30,
   "signals": [
     {"id": "4SERIES_57F0", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Operating status of the electrical wastegate"}
-  ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5805"}, "freq": 30,
-  "signals": [
-    {"id": "4SERIES_5805", "path": "Engine", "fmt": { "len": 8, "max": 255, "mul": 0.75, "add": -48, "unit": "scalar" }, "name": "Motor temperature, linearized and converted"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5807"}, "freq": 30,
   "signals": [
@@ -777,10 +769,6 @@
   "signals": [
     {"id": "4SERIES_587D", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Status zero gear detection"}
   ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "587E"}, "freq": 30,
-  "signals": [
-    {"id": "4SERIES_587E", "path": "Engine", "fmt": { "len": 8, "max": 255, "mul": 0.75, "add": -48, "unit": "scalar" }, "name": "Motor temperature reference value from model"}
-  ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5881"}, "freq": 30,
   "signals": [
     {"id": "4SERIES_5881", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Actual gear"}
@@ -832,10 +820,6 @@
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5892"}, "freq": 30,
   "signals": [
     {"id": "4SERIES_5892", "path": "Engine", "fmt": { "len": 16, "max": 32767, "mul": 10, "div": 256, "sign": true, "unit": "scalar" }, "name": "Difference between ambient pressure and brake booster pressure from pressure sensor (raw value)"}
-  ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5896"}, "freq": 30,
-  "signals": [
-    {"id": "4SERIES_5896", "path": "Engine", "fmt": { "len": 16, "max": 65535, "mul": 0.0234375, "add": -273.15, "unit": "scalar" }, "name": "Exhaust gas temperature behind main catalyst from model"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5898"}, "freq": 30,
   "signals": [
@@ -1174,10 +1158,6 @@
   "signals": [
     {"id": "4SERIES_4512_ACTUAL_EXHAUST_SPREAD_BANK_2", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": -375, "add": -39.9999962, "unit": "scalar" }, "name": "Actual exhaust spread Bank 2"}
   ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4513"}, "freq": 30,
-  "signals": [
-    {"id": "4SERIES_4513_NOMINAL_VALUE_FOR_INPUT_EXPANS", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.1, "unit": "scalar" }, "name": "Nominal value for input expansion"}
-  ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4514"}, "freq": 30,
   "signals": [
     {"id": "4SERIES_4514_NOMINAL_VALUE_FOR_INPUT_EXPANS", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.1, "unit": "scalar" }, "name": "Nominal value for input expansion"}
@@ -1221,10 +1201,6 @@
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4602"}, "freq": 30,
   "signals": [
     {"id": "4SERIES_4602_RATED_GENERATOR_VOLTAGE_OVER_B", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.1, "add": 10.6, "unit": "volts" }, "name": "Rated generator voltage over Bsd"}
-  ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4607"}, "freq": 30,
-  "signals": [
-    {"id": "4SERIES_4607_GENERATOR_MANUFACTURER_CODE", "path": "Engine", "fmt": { "len": 8, "max": 0, "unit": "scalar" }, "name": "Generator manufacturer code"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4609"}, "freq": 30,
   "signals": [
@@ -1354,10 +1330,6 @@
   "signals": [
     {"id": "4SERIES_5819_ENGINE_SPEED", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 64, "unit": "scalar" }, "name": "Engine speed"}
   ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "581F"}, "freq": 30,
-  "signals": [
-    {"id": "4SERIES_581F_MOTOR_TEMPERATURE_LINEARIZED_A", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "celsius" }, "name": "Motor temperature, linearized and converted"}
-  ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5824"}, "freq": 30,
   "signals": [
     {"id": "4SERIES_5824_AMBIENT_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "celsius" }, "name": "Ambient temperature"}
@@ -1373,10 +1345,6 @@
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5833"}, "freq": 30,
   "signals": [
     {"id": "4SERIES_5833_ENVIRONMENTAL_TEMPERATUER_WHIL", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "celsius" }, "name": "Environmental temperatuer While you Start"}
-  ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5835"}, "freq": 30,
-  "signals": [
-    {"id": "4SERIES_5835_GENERATOR_MANUFACTURER_CODE", "path": "Engine", "fmt": { "len": 8, "max": 0, "unit": "celsius" }, "name": "Generator manufacturer code"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5836"}, "freq": 30,
   "signals": [
@@ -1492,7 +1460,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58B4"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_58B4_FUNKENBRENNDAUER6_CYLINDER", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 1024, "unit": "scalar" }, "name": "Funkenbrenndauer6 cylinder"}
+    {"id": "4SERIES_58B4_FUNKENBRENNDAUER6_CYLINDER", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 1024, "unit": "scalar" }, "name": "Spark duration cylinder 6"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58B5"}, "freq": 30,
   "signals": [
@@ -1521,10 +1489,6 @@
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58C1"}, "freq": 30,
   "signals": [
     {"id": "4SERIES_58C1_ROUGH_IDEAL_TIME", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 256, "unit": "scalar" }, "name": "Rough Ideal time"}
-  ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58C5"}, "freq": 30,
-  "signals": [
-    {"id": "4SERIES_58C5_FUEL_TEMPERATURE", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "celsius" }, "name": "Fuel temperature"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58C7"}, "freq": 30,
   "signals": [
@@ -1680,7 +1644,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A17"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_5A17_SPANNUNGSSTROMMESSUNGDMTL", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.0048828125, "unit": "volts" }, "name": "Spannungsstrommessungdmtl"}
+    {"id": "4SERIES_5A17_SPANNUNGSSTROMMESSUNGDMTL", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.0048828125, "unit": "volts" }, "name": "Voltage/Current Measurement, DMTL (Tank Leak Diagnostic Module)"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5773"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
@@ -4021,6 +3985,42 @@
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5FE0"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
     {"id": "4SERIES_5FE0_THROTTLE_VALVE_POTENTIOMETER_1", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.0048828125, "unit": "scalar"}, "name": "Throttle valve potentiometer 1 voltage", "description": "[DISABLED - Non-working PID] Throttle valve potentiometer 1 voltage"}
+  ]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4712"}, "freq": 30, "filter": {"years": [9999]},
+  "signals": [
+    {"id": "4SERIES_4712", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "Number of dense EVAP systems recognized by diagnosis", "description": "[DISABLED - returned max value on 2019] Number of dense EVAP systems recognized by diagnosis"}
+  ]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4513"}, "freq": 30, "filter": {"years": [9999]},
+  "signals": [
+    {"id": "4SERIES_4513_NOMINAL_VALUE_FOR_INPUT_EXPANS", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.1, "unit": "scalar"}, "name": "Nominal value for input expansion", "description": "[DISABLED - duplicate of 4514] Nominal value for input expansion"}
+  ]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5805"}, "freq": 30, "filter": {"years": [9999]},
+  "signals": [
+    {"id": "4SERIES_5805", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "scalar"}, "name": "Motor temperature, linearized and converted", "description": "[DISABLED - clearly not working/doing what they claim to do] Motor temperature, linearized and converted"}
+  ]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "581F"}, "freq": 30, "filter": {"years": [9999]},
+  "signals": [
+    {"id": "4SERIES_581F_MOTOR_TEMPERATURE_LINEARIZED_A", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "celsius"}, "name": "Motor temperature, linearized and converted", "description": "[DISABLED - clearly not working/doing what they claim to do] Motor temperature, linearized and converted"}
+  ]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "587E"}, "freq": 30, "filter": {"years": [9999]},
+  "signals": [
+    {"id": "4SERIES_587E", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "scalar"}, "name": "Motor temperature reference value from model", "description": "[DISABLED - clearly not working/doing what they claim to do] Motor temperature reference value from model"}
+  ]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4607"}, "freq": 30, "filter": {"years": [9999]},
+  "signals": [
+    {"id": "4SERIES_4607_GENERATOR_MANUFACTURER_CODE", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "Generator manufacturer code", "description": "[DISABLED - unknown use/meaning] Generator manufacturer code"}
+  ]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5835"}, "freq": 30, "filter": {"years": [9999]},
+  "signals": [
+    {"id": "4SERIES_5835_GENERATOR_MANUFACTURER_CODE", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "celsius"}, "name": "Generator manufacturer code", "description": "[DISABLED - unknown use/meaning] Generator manufacturer code"}
+  ]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58C5"}, "freq": 30, "filter": {"years": [9999]},
+  "signals": [
+    {"id": "4SERIES_58C5_FUEL_TEMPERATURE", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.75, "add": -48, "unit": "celsius"}, "name": "Fuel temperature", "description": "[DISABLED - doesnt seem to be what it says it is] Fuel temperature"}
+  ]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5896"}, "freq": 30, "filter": {"years": [9999]},
+  "signals": [
+    {"id": "4SERIES_5896", "path": "Engine", "fmt": {"len": 16, "max": 0, "mul": 0.0234375, "add": -273.15, "unit": "scalar"}, "name": "Exhaust gas temperature behind main catalyst from model", "description": "[DISABLED - unsupported on 2019] Exhaust gas temperature behind main catalyst from model"}
   ]}
 
 ]}
