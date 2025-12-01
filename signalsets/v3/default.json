@@ -1544,7 +1544,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58F5"}, "freq": 30,
   "signals": [
-    {"id": "4SERIES_58F5_EINGANGSSIGNALR_CKSTEUERUNG1", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.0048827846, "add": -0.0000036078, "unit": "volts" }, "name": "Eingangssignalrücksteuerung1"}
+    {"id": "4SERIES_58F5_INPUT_SIGNAL_FEEDBACK_CONTROL_1", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.0048827846, "add": -0.0000036078, "unit": "volts" }, "name": "Input signal feedback control 1"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58F8"}, "freq": 30,
   "signals": [
@@ -1856,11 +1856,11 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "02DA"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_02DA_PID_02DA", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.1, "unit": "scalar"}, "name": "Kraftstoffvorf\u00f6rderdruck sensor value", "description": "[DISABLED - Non-working PID] Kraftstoffvorf\u00f6rderdruck sensor value"}
+    {"id": "4SERIES_02DA_FUEL_PRE_FEED_PRESSURE", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.1, "unit": "scalar"}, "name": "Fuel pre-feed pressure sensor value", "description": "[DISABLED - Non-working PID] Fuel pre-feed pressure sensor value"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "02DC"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_02DC_PID_02DC", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "Filtered Kraftstoffvorf\u00f6rderdruck", "description": "[DISABLED - Non-working PID] Filtered Kraftstoffvorf\u00f6rderdruck"}
+    {"id": "4SERIES_02DC_FILTERED_FUEL_PRE_FEED_PRESSURE", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "Filtered fuel pre-feed pressure", "description": "[DISABLED - Non-working PID] Filtered fuel pre-feed pressure"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "0320"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
@@ -1868,7 +1868,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "0321"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_0321_PID_0321", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.003891, "unit": "scalar"}, "name": "Vorf\u00f6rdermenge", "description": "[DISABLED - Non-working PID] Vorf\u00f6rdermenge"}
+    {"id": "4SERIES_0321_PRE_FEED_AMOUNT", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.003891, "unit": "scalar"}, "name": "Pre-feed amount", "description": "[DISABLED - Non-working PID] Pre-feed amount"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "0384"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
@@ -2364,7 +2364,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "0AF0"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_0AF0_PID_0AF0", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "Betriebsstundenz\u00e4hler", "description": "[DISABLED - Non-working PID] Betriebsstundenz\u00e4hler"}
+    {"id": "4SERIES_0AF0_OPERATING_HOURS_COUNTER", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "Operating hours counter", "description": "[DISABLED - Non-working PID] Operating hours counter"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "0AF1"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
@@ -2816,7 +2816,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4406"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_4406_LSENSORQUALIT_TROHWERT", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "\u00d6lsensorqualit\u00e4trohwert", "description": "[DISABLED - Non-working PID] \u00d6lsensorqualit\u00e4trohwert"}
+    {"id": "4SERIES_4406_OIL_SENSOR_QUALITY_RAW_VALUE", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "Oil sensor quality raw value", "description": "[DISABLED - Non-working PID] Oil sensor quality raw value"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4407"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
@@ -3648,7 +3648,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5AB4"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_5AB4_BETRIEBSSTUNDENZ_HLER", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 2.77778e-05, "unit": "scalar"}, "name": "Betriebsstundenz\u00e4hler", "description": "[DISABLED - Non-working PID] Betriebsstundenz\u00e4hler"}
+    {"id": "4SERIES_5AB4_OPERATING_HOURS_COUNTER", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 2.77778e-05, "unit": "scalar"}, "name": "Operating hours counter", "description": "[DISABLED - Non-working PID] Operating hours counter"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5AB5"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
