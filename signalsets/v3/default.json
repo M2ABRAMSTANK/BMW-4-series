@@ -925,7 +925,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5875"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_5875_INDEXED_DESIRED_ENGINE_TORQUE_", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.0015258789, "unit": "percent"}, "name": "[TG4] Indexed desired engine torque MSR"}
+    {"id": "4SERIES_5875_INDEXED_DESIRED_ENGINE_TORQUE", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.0015258789, "unit": "percent"}, "name": "[TG4] Indexed desired engine torque MSR"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58BF"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
@@ -1053,11 +1053,11 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58F8"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_58F8_SEGMENT_ADAPTATION_NON_SMOOTH_", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.06103531, "add": 1.92096e-05, "unit": "scalar"}, "name": "[TG5] Segment adaptation Non Smooth cyl. 5"}
+    {"id": "4SERIES_58F8_SEGMENT_ADAPTATION_NON_SMOOTH", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.06103531, "add": 1.92096e-05, "unit": "scalar"}, "name": "[TG5] Segment adaptation Non Smooth cyl. 5"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58F9"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_58F9_SEGMENT_ADAPTATION_NON_SMOOTH_", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.06103531, "add": 1.92096e-05, "unit": "scalar"}, "name": "[TG5] Segment adaptation Non Smooth cyl. 3"}
+    {"id": "4SERIES_58F9_SEGMENT_ADAPTATION_NON_SMOOTH", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.06103531, "add": 1.92096e-05, "unit": "scalar"}, "name": "[TG5] Segment adaptation Non Smooth cyl. 3"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "480B"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
@@ -2915,7 +2915,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "460F"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_460F_DF_MONITOR_FOR_BATTERY_CHARGE_", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.390625, "unit": "percent"}, "name": "DF-monitor for battery charge level", "description": "[DISABLED - Non-working PID] DF-monitor for battery charge level"}
+    {"id": "4SERIES_460F_DF_MONITOR_FOR_BATTERY_CHARGE", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.390625, "unit": "percent"}, "name": "DF-monitor for battery charge level", "description": "[DISABLED - Non-working PID] DF-monitor for battery charge level"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4611"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
@@ -2967,7 +2967,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5809"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_5809_LAMBDA_ADAPTATION_SUM_MUL_ADD_", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.78125, "add": -100, "unit": "percent"}, "name": "Lambda adaptation sum Mul . & Add. group 2", "description": "[DISABLED - Non-working PID] Lambda adaptation sum Mul . & Add. group 2"}
+    {"id": "4SERIES_5809_LAMBDA_ADAPTATION_SUM_MUL_ADD", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.78125, "add": -100, "unit": "percent"}, "name": "Lambda adaptation sum Mul . & Add. group 2", "description": "[DISABLED - Non-working PID] Lambda adaptation sum Mul . & Add. group 2"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5820"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
@@ -2979,7 +2979,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5828"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_5828_LAMBDA_PROBE_HEATING_IN_FRONT_", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.390625, "unit": "scalar"}, "name": "Lambda probe heating in front of catalytic converter bank 2", "description": "[DISABLED - Non-working PID] Lambda probe heating in front of catalytic converter bank 2"}
+    {"id": "4SERIES_5828_LAMBDA_PROBE_HEATING_IN_FRONT", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.390625, "unit": "scalar"}, "name": "Lambda probe heating in front of catalytic converter bank 2", "description": "[DISABLED - Non-working PID] Lambda probe heating in front of catalytic converter bank 2"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "582A"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
@@ -2987,11 +2987,11 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "582D"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_582D_NOT_VALID_THE_NUMBER_OF_WRITE_", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "Not Valid The number of write cycles , the lambda probe before catalytic converter bank 2", "description": "[DISABLED - Non-working PID] Not Valid The number of write cycles , the lambda probe before catalytic converter bank 2"}
+    {"id": "4SERIES_582D_NOT_VALID_THE_NUMBER_OF_WRITE", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "Not Valid The number of write cycles , the lambda probe before catalytic converter bank 2", "description": "[DISABLED - Non-working PID] Not Valid The number of write cycles , the lambda probe before catalytic converter bank 2"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "582E"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_582E_ADAPTATION_FACTOR_SENSOR_TIME_", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.25, "unit": "scalar"}, "name": "Adaptation factor sensor time constant Prior Cat Bank 1", "description": "[DISABLED - Non-working PID] Adaptation factor sensor time constant Prior Cat Bank 1"}
+    {"id": "4SERIES_582E_ADAPTATION_FACTOR_SENSOR_TIME", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.25, "unit": "scalar"}, "name": "Adaptation factor sensor time constant Prior Cat Bank 1", "description": "[DISABLED - Non-working PID] Adaptation factor sensor time constant Prior Cat Bank 1"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5831"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
@@ -2999,7 +2999,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5837"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_5837_TARGET_PRESSURE_HIGH_PRESSURE_", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "Target pressure high pressure system", "description": "[DISABLED - Non-working PID] Target pressure high pressure system"}
+    {"id": "4SERIES_5837_TARGET_PRESSURE_HIGH_PRESSURE", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "Target pressure high pressure system", "description": "[DISABLED - Non-working PID] Target pressure high pressure system"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5848"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
@@ -3007,7 +3007,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "584B"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_584B_VOLTAGE_LAMBDA_PROBE_BACK_CAT_", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.01953125, "unit": "volts"}, "name": "Voltage Lambda probe Back Cat 2", "description": "[DISABLED - Non-working PID] Voltage Lambda probe Back Cat 2"}
+    {"id": "4SERIES_584B_VOLTAGE_LAMBDA_PROBE_BACK_CAT", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.01953125, "unit": "volts"}, "name": "Voltage Lambda probe Back Cat 2", "description": "[DISABLED - Non-working PID] Voltage Lambda probe Back Cat 2"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5856"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
@@ -3087,7 +3087,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5876"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_5876_MEAN_DIAGNOSTIC_VALUE_MINIMUM_", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "Mean Diagnostic value Minimum air masses", "description": "[DISABLED - Non-working PID] Mean Diagnostic value Minimum air masses"}
+    {"id": "4SERIES_5876_MEAN_DIAGNOSTIC_VALUE_MINIMUM", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "Mean Diagnostic value Minimum air masses", "description": "[DISABLED - Non-working PID] Mean Diagnostic value Minimum air masses"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5879"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
@@ -3123,7 +3123,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5893"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_5893_INDEXED_DESIRED_ENGINE_TORQUE_", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 8, "unit": "percent"}, "name": "Indexed desired engine torque GS for rapid intervention", "description": "[DISABLED - Non-working PID] Indexed desired engine torque GS for rapid intervention"}
+    {"id": "4SERIES_5893_INDEXED_DESIRED_ENGINE_TORQUE", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 8, "unit": "percent"}, "name": "Indexed desired engine torque GS for rapid intervention", "description": "[DISABLED - Non-working PID] Indexed desired engine torque GS for rapid intervention"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5897"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
@@ -3295,7 +3295,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A37"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_5A37_VOLTAGE_KNOCKS_VALVE_CYLINDER_", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 7.62939e-05, "unit": "volts"}, "name": "Voltage Knocks valve cylinder 1", "description": "[DISABLED - Non-working PID] Voltage Knocks valve cylinder 1"}
+    {"id": "4SERIES_5A37_VOLTAGE_KNOCKS_VALVE_CYLINDER", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 7.62939e-05, "unit": "volts"}, "name": "Voltage Knocks valve cylinder 1", "description": "[DISABLED - Non-working PID] Voltage Knocks valve cylinder 1"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A38"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
@@ -3303,11 +3303,11 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A39"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_5A39_VOLTAGE_KNOCKS_VALVE_CYLINDER_", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 7.62939e-05, "unit": "volts"}, "name": "Voltage Knocks valve cylinder 3", "description": "[DISABLED - Non-working PID] Voltage Knocks valve cylinder 3"}
+    {"id": "4SERIES_5A39_VOLTAGE_KNOCKS_VALVE_CYLINDER", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 7.62939e-05, "unit": "volts"}, "name": "Voltage Knocks valve cylinder 3", "description": "[DISABLED - Non-working PID] Voltage Knocks valve cylinder 3"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A3A"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_5A3A_VOLTAGE_KNOCKS_VALVE_CYLINDER_", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 7.62939e-05, "unit": "volts"}, "name": "Voltage Knocks valve cylinder 4", "description": "[DISABLED - Non-working PID] Voltage Knocks valve cylinder 4"}
+    {"id": "4SERIES_5A3A_VOLTAGE_KNOCKS_VALVE_CYLINDER", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 7.62939e-05, "unit": "volts"}, "name": "Voltage Knocks valve cylinder 4", "description": "[DISABLED - Non-working PID] Voltage Knocks valve cylinder 4"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A3B"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
@@ -3539,11 +3539,11 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A83"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_5A83_ADJUSTMENT_OFFSET_LAMBDA_BANK_", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.02119478, "unit": "scalar"}, "name": "Adjustment offset Lambda Bank 1", "description": "[DISABLED - Non-working PID] Adjustment offset Lambda Bank 1"}
+    {"id": "4SERIES_5A83_ADJUSTMENT_OFFSET_LAMBDA_BANK", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.02119478, "unit": "scalar"}, "name": "Adjustment offset Lambda Bank 1", "description": "[DISABLED - Non-working PID] Adjustment offset Lambda Bank 1"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A84"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_5A84_ADJUSTMENT_OFFSET_LAMBDA_BANK_", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.02119478, "unit": "scalar"}, "name": "Adjustment offset Lambda Bank 2", "description": "[DISABLED - Non-working PID] Adjustment offset Lambda Bank 2"}
+    {"id": "4SERIES_5A84_ADJUSTMENT_OFFSET_LAMBDA_BANK", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.02119478, "unit": "scalar"}, "name": "Adjustment offset Lambda Bank 2", "description": "[DISABLED - Non-working PID] Adjustment offset Lambda Bank 2"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A85"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
@@ -3639,7 +3639,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5AA5"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_5AA5_STATUS_DIAGNOSIS_OF_SECONDARY_", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "Status diagnosis of secondary air", "description": "[DISABLED - Non-working PID] Status diagnosis of secondary air"}
+    {"id": "4SERIES_5AA5_STATUS_DIAGNOSIS_OF_SECONDARY", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "Status diagnosis of secondary air", "description": "[DISABLED - Non-working PID] Status diagnosis of secondary air"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5AA6"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
@@ -3735,7 +3735,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5AC4"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_5AC4_TARGET_PRESSURE_HIGH_PRESSURE_", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.0005, "unit": "scalar"}, "name": "Target pressure high pressure system", "description": "[DISABLED - Non-working PID] Target pressure high pressure system"}
+    {"id": "4SERIES_5AC4_TARGET_PRESSURE_HIGH_PRESSURE", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.0005, "unit": "scalar"}, "name": "Target pressure high pressure system", "description": "[DISABLED - Non-working PID] Target pressure high pressure system"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5AC5"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
@@ -3951,7 +3951,7 @@
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5C6B"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
-    {"id": "4SERIES_5C6B_MEASURED_BATTERY_VOLTAGE_FROM_", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.00025, "add": 6, "unit": "scalar"}, "name": "Measured Battery Voltage From lbs", "description": "[DISABLED - Non-working PID] Measured Battery Voltage From lbs"}
+    {"id": "4SERIES_5C6B_MEASURED_BATTERY_VOLTAGE_FROM", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.00025, "add": 6, "unit": "scalar"}, "name": "Measured Battery Voltage From lbs", "description": "[DISABLED - Non-working PID] Measured Battery Voltage From lbs"}
   ]},
 { "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5C7B"}, "freq": 30, "filter": {"years": [9999]},
   "signals": [
@@ -4021,5 +4021,4 @@
   "signals": [
     {"id": "4SERIES_4712", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "Number of dense EVAP systems recognized by diagnosis", "description": "[DISABLED - returned max value on 2019] Number of dense EVAP systems recognized by diagnosis"}
   ]}
-
 ]}
