@@ -627,403 +627,403 @@
         "signals": [
           {"id": "4SERIES_4506", "path": "Engine", "fmt": {"len": 16, "max": 65535, "div": 10, "unit": "scalar"}, "name": "[TG2] Angle of the inlet NW flanks relative to the crankshaft"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4507"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4507"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_4507", "path": "Engine", "fmt": {"len": 16, "max": 65535, "div": 10, "unit": "scalar"}, "name": "[TG3] Angle of the outlet NW flanks relative to the crankshaft"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "452A"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "452A"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_452A", "path": "Engine", "fmt": {"len": 16, "max": 32767, "div": 10, "sign": true, "unit": "scalar"}, "name": "[TG3] Setpoint outlet spread variable NWS"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "452B"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "452B"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_452B", "path": "Engine", "fmt": {"len": 16, "max": 32767, "div": 10, "sign": true, "unit": "scalar"}, "name": "[TG3] Setpoint inlet spread variable NWS"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "452C"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "452C"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_452C", "path": "Engine", "fmt": {"len": 16, "max": 32767, "div": 10, "sign": true, "unit": "scalar"}, "name": "[TG3] Actual value of the outlet spread"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "452E"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "452E"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_452E", "path": "Engine", "fmt": {"len": 16, "max": 32767, "div": 10, "sign": true, "unit": "scalar"}, "name": "[TG3] Actual value inlet spread"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A94"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A94"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_4A94", "path": "Engine", "fmt": {"len": 16, "max": 32767, "div": 128, "sign": true, "unit": "scalar"}, "name": "[TG3] Saved camshaft target angle exhaust"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "57C3"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "57C3"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_57C3", "path": "Engine", "fmt": {"len": 16, "max": 65535, "div": 10, "unit": "scalar"}, "name": "[TG3] Inlet spread"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "581B"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "581B"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_581B", "path": "Engine", "fmt": {"len": 16, "max": 32767, "div": 128, "sign": true, "unit": "scalar"}, "name": "[TG3] Target angle camshaft inlet opens"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "581D"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "581D"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_581D", "path": "Engine", "fmt": {"len": 16, "max": 32767, "div": 128, "sign": true, "unit": "scalar"}, "name": "[TG3] Target angle camshaft exhaust closes"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "59BD"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "59BD"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_59BD", "path": "Engine", "fmt": {"len": 32, "max": 2147483647, "div": 45.511111, "sign": true, "unit": "scalar"}, "name": "[TG3] Inlet NW: Angular offset fine adaptation"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "59BE"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "59BE"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_59BE", "path": "Engine", "fmt": {"len": 32, "max": 2147483647, "div": 45.511111, "sign": true, "unit": "scalar"}, "name": "[TG3] Outlet NW: angular offset fine adaptation"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "59BF"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "59BF"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_59BF", "path": "Engine", "fmt": {"len": 16, "max": 32767, "mul": 0.02197266, "sign": true, "unit": "scalar"}, "name": "[TG3] Inlet NW: Angular offset reference adaptation"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "59C0"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "59C0"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_59C0", "path": "Engine", "fmt": {"len": 16, "max": 32767, "mul": 0.02197266, "sign": true, "unit": "scalar"}, "name": "[TG3] Outlet NW: Angular offset reference adaptation"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4510"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4510"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_4510_ACTUAL_INTAKE_SPREAD_BANK_1", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.1, "unit": "scalar"}, "name": "[TG3] Actual intake spread Bank 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4511"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4511"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_4511_ACTUAL_INTAKE_SPREAD_BANK_2", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.1, "unit": "scalar"}, "name": "[TG3] Actual intake spread Bank 2"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4512"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4512"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_4512_ACTUAL_EXHAUST_SPREAD_BANK_2", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": -375, "add": -39.9999962, "unit": "scalar"}, "name": "[TG3] Actual exhaust spread Bank 2"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4515"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4515"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_4515_CAMSHAFT_OUTLET_NOMINAL_VALUE", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.1, "unit": "scalar"}, "name": "[TG3] Camshaft outlet nominal value"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4517"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4517"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_4517_ADAPTATION_VALUE_CAMSHAFT_OUTL", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.1, "unit": "scalar"}, "name": "[TG3] Adaptation value camshaft outlet Bank 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4518"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4518"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_4518_ADAPTATION_VALUE_CAMSHAFT_OUTL", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.1, "unit": "scalar"}, "name": "[TG3] Adaptation value camshaft outlet Bank 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4519"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4519"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_4519_ADAPTATION_VALUE_CAMSHAFT_OUTL", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.1, "unit": "scalar"}, "name": "[TG3] Adaptation value camshaft outlet Bank 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "451A"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "451A"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_451A_ADAPTATION_VALUE_CAMSHAFT_OUTL", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.1, "unit": "scalar"}, "name": "[TG3] Adaptation value camshaft outlet Bank 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "451B"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "451B"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_451B_ADAPTATION_VALUE_CAMSHAFT_OUTL", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 375, "add": -96, "unit": "scalar"}, "name": "[TG3] Adaptation value camshaft outlet Bank 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "451C"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "451C"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_451C_ADAPTATION_VALUE_CAMSHAFT_OUTL", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 375, "add": -96, "unit": "scalar"}, "name": "[TG3] Adaptation value camshaft outlet Bank 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4526"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4526"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_4526_ADAPTATION_VALUE_CAMSHAFT_INTA", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.0219726563, "unit": "scalar"}, "name": "[TG3] Adaptation value camshaft intake bank 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4527"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4527"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_4527_ADAPTATION_VALUE_CAMSHAFT_INTA", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.0219726563, "unit": "scalar"}, "name": "[TG3] Adaptation value camshaft intake bank 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4206"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4206"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_4206", "path": "Engine", "fmt": {"len": 16, "max": 65535, "div": 32, "unit": "scalar"}, "name": "[TG3] Mass flow through throttle valve bank 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4600"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4600"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_4600", "path": "Engine", "fmt": {"len": 16, "max": 32767, "mul": 1600, "div": 65536, "sign": true, "unit": "scalar"}, "name": "[TG3] Throttle valve angle related to the lower stop"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4601"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4601"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_4601", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 100, "div": 65536, "unit": "scalar"}, "name": "[TG3] Target value for throttle valve angle, based on (lower) stop"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "573C"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "573C"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_573C", "path": "Engine", "fmt": {"len": 16, "max": 32767, "mul": 5, "div": 64, "sign": true, "unit": "scalar"}, "name": "[TG3] Differential pressure in front of the throttle valve between the start and the end of the dynamic test SSP"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5826"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5826"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5826", "path": "Engine", "fmt": {"len": 8, "max": 255, "mul": 100, "div": 255, "unit": "scalar"}, "name": "[TG3] Throttle valve angle from potentiometer 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "583F"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "583F"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_583F", "path": "Engine", "fmt": {"len": 8, "max": 255, "mul": 100, "div": 255, "unit": "scalar"}, "name": "[TG3] Target value for throttle valve angle, based on lower stop"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5840"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5840"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5840", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 100, "div": 65535, "unit": "scalar"}, "name": "[TG3] Throttle angle of the emergency air position"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "584C"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "584C"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_584C", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 80, "div": 65536, "unit": "scalar"}, "name": "[TG3] Voltage throttle valve potentiometer 2"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "584E"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "584E"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_584E", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 80, "div": 65536, "unit": "scalar"}, "name": "[TG3] Voltage throttle valve potentiometer 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58D9"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58D9"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_58D9", "path": "Engine", "fmt": {"len": 8, "max": 255, "unit": "scalar"}, "name": "[TG3] Pedometer throttle return spring test"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58DE"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58DE"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_58DE", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 5, "div": 1024, "unit": "scalar"}, "name": "[TG3] Voltage pressure sensor in front of throttle valve"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "59D4"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "59D4"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_59D4", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 0.0234375, "add": -273.15, "unit": "scalar"}, "name": "[TG3] Intake air temperature before throttle valve, measured"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5839"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5839"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5839_STATUS_THROTTLE_FLAP_EMERGENCY", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "[TG3] Status throttle flap emergency program"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5858"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5858"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5858_CURRENT_THROTTLE_ANGLE", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 1.86730146, "unit": "scalar"}, "name": "[TG3] Current throttle angle"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58D8"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58D8"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_58D8_DIFFERENCE_DK_ANGLE_SETPOINT_A", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.0244140625, "unit": "scalar"}, "name": "[TG3] Difference-DK-angle setpoint - actual value"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A06"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A06"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5A06_VOLTAGE_THROTTLE_VALVE_POTENTI", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.004882813, "unit": "volts"}, "name": "[TG3] Voltage throttle valve potentiometer 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A07"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A07"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5A07_VOLTAGE_THROTTLE_VALVE_POTENTI", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.004882813, "unit": "volts"}, "name": "[TG3] Voltage throttle valve potentiometer 2"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4807"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4807"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_4807", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 0.25, "unit": "scalar"}, "name": "[TG3] Engine speed"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4808"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4808"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_4808", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 0.25, "unit": "scalar"}, "name": "[TG3] Target idle speed"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5788"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5788"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5788", "path": "Engine", "fmt": {"len": 8, "max": 255, "mul": 100, "div": 256, "unit": "scalar"}, "name": "[TG3] E-fan target speed from WMK"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "57AE"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "57AE"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_57AE", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 100, "div": 65536, "unit": "scalar"}, "name": "[TG3] Setpoint speed E-fan default WM"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "57B5"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "57B5"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_57B5", "path": "Engine", "fmt": {"len": 16, "max": 65535, "unit": "scalar"}, "name": "[TG3] Generator speed"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "592A"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "592A"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_592A", "path": "Engine", "fmt": {"len": 16, "max": 32767, "div": 2, "sign": true, "unit": "scalar"}, "name": "[TG3] Motor speed, high resolution"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "59D1"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "59D1"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_59D1", "path": "Engine", "fmt": {"len": 16, "max": 65535, "unit": "scalar"}, "name": "[TG3] Maximum speed clutch"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "59EB"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "59EB"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_59EB", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 512, "div": 65536, "unit": "scalar"}, "name": "[TG3] Vehicle speed on the front or rear axle or in the vehicle's center of gravity"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "580C"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "580C"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_580C_ENGINE_SPEED", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 64, "unit": "scalar"}, "name": "[TG4] Engine speed"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "580D"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "580D"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_580D_VEHICLE_SPEED", "path": "Engine", "fmt": {"len": 8, "max": 240, "unit": "kilometersPerHour"}, "name": "[TG4] Vehicle speed"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5819"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5819"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_5819_ENGINE_SPEED", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 64, "unit": "scalar"}, "name": "[TG4] Engine speed"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5836"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5836"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_5836_SPEED_GRADIENT", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 32, "unit": "scalar"}, "name": "[TG4] speed gradient"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "583E"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "583E"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_583E_ENGINE_SPEED_ON_RESET", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 256, "unit": "rpm"}, "name": "[TG4] Engine speed on reset, (constant ECU configuration value)"}
         ]},
-{ "hdr": "6F1", "rax": "618", "eax": "18", "fcm1": true, "dbg": true, "cmd": {"22": "DA2E"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "618", "eax": "18", "fcm1": true, "dbg": true, "cmd": {"22": "DA2E"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_GEAR", "path": "Engine", "fmt": {"len": 8, "max": 255, "unit": "scalar"}, "name": "[TG4] Gear"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5717"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5717"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_5717", "path": "Engine", "fmt": {"len": 16, "max": 32767, "div": 10, "sign": true, "unit": "scalar"}, "name": "[TG4] Actual transmission input of the VM"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "587D"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "587D"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_587D", "path": "Engine", "fmt": {"len": 8, "max": 255, "unit": "scalar"}, "name": "[TG4] Status zero gear detection"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5881"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5881"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_5881", "path": "Engine", "fmt": {"len": 8, "max": 255, "unit": "scalar"}, "name": "[TG4] Actual gear"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5891"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5891"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_5891", "path": "Engine", "fmt": {"len": 16, "max": 32767, "mul": 0.5, "sign": true, "unit": "scalar"}, "name": "[TG4] Clutch motor torque actual value"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "589A"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "589A"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_589A", "path": "Engine", "fmt": {"len": 16, "max": 65535, "div": 100, "unit": "scalar"}, "name": "[TG4] Duty cycle zero gear sensor"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "593B"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "593B"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_593B", "path": "Engine", "fmt": {"len": 8, "max": 255, "unit": "scalar"}, "name": "[TG4] Gear sensor error message"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5940"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5940"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_5940", "path": "Engine", "fmt": {"len": 8, "max": 255, "unit": "scalar"}, "name": "[TG4] Actual gear information from the gear sensor"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5941"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5941"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_5941", "path": "Engine", "fmt": {"len": 32, "max": 4294967295, "div": 20, "unit": "scalar"}, "name": "[TG4] Gear sensor position in X (Beta) direction"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5942"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5942"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_5942", "path": "Engine", "fmt": {"len": 32, "max": 4294967295, "div": 20, "unit": "scalar"}, "name": "[TG4] Gear sensor position in Y (Beta) direction"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4800"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4800"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4800_CLUTCH_STATUS", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "[TG4] Clutch status"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4801"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4801"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4801_CLUTCH_SWITCH_FOUND", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "[TG4] Clutch switch Found"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58D6"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58D6"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_58D6_DEVIATION_MINIMUM_TORQUE_CLUTC", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 8, "unit": "newtonMeters"}, "name": "[TG4] Deviation minimum torque clutch For Contolling"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4617"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4617"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4617", "path": "Engine", "fmt": {"len": 16, "max": 32767, "div": 10, "sign": true, "unit": "scalar"}, "name": "[TG4] Decreased moment of the electric machine"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "57A0"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "57A0"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_57A0", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 100, "div": 65536, "unit": "scalar"}, "name": "[TG4] Reference torque for misfire detection"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "582B"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "582B"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_582B", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 100, "div": 65536, "unit": "scalar"}, "name": "[TG4] Torque consumption of the converter via CAN"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58DA"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58DA"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_58DA", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 100, "div": 65536, "unit": "scalar"}, "name": "[TG4] Coordinated moment for filling"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "59FD"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "59FD"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_59FD", "path": "Engine", "fmt": {"len": 8, "max": 127, "mul": 191.25, "div": 255, "sign": true, "unit": "scalar"}, "name": "[TG4] Target ignition angle from torque intervention"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5838"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5838"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_5838_RELATIVE_MOMENT_FOR_MISFIRE_DE", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "percent"}, "name": "[TG4] Relative moment for misfire detection"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5875"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5875"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_5875_INDEXED_DESIRED_ENGINE_TORQUE", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.0015258789, "unit": "percent"}, "name": "[TG4] Indexed desired engine torque MSR"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58BF"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58BF"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_58BF_RELATIVE_TORQUE_DEMAND_FROM_MS", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.390625, "unit": "percent"}, "name": "[TG4] Relative torque demand from Msr About Can"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58C8"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58C8"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_58C8_TORQUE_CHANGE", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 8, "unit": "percent"}, "name": "[TG4] torque change"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58CA"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58CA"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_58CA_MD_CHANGE", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 8, "unit": "percent"}, "name": "[TG4] MD change"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A30"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A30"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4A30", "path": "Engine", "fmt": {"len": 16, "max": 32767, "mul": 0.00710545, "sign": true, "unit": "scalar"}, "name": "[TG4] Uneven running of cylinder 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A31"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A31"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4A31", "path": "Engine", "fmt": {"len": 16, "max": 32767, "mul": 0.00710545, "sign": true, "unit": "scalar"}, "name": "[TG4] Uneven running cylinder 2"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A32"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A32"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4A32", "path": "Engine", "fmt": {"len": 16, "max": 32767, "mul": 0.00710545, "sign": true, "unit": "scalar"}, "name": "[TG4] Uneven running cylinder 3"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A33"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A33"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4A33", "path": "Engine", "fmt": {"len": 16, "max": 32767, "mul": 0.00710545, "sign": true, "unit": "scalar"}, "name": "[TG4] Uneven running cylinder 4"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A37"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A37"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4A37", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 5, "div": 1024, "unit": "scalar"}, "name": "[TG4] Normalized reference level knock control cylinder 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A38"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A38"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4A38", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 5, "div": 1024, "unit": "scalar"}, "name": "[TG4] Normalized reference level knock control cylinder 2"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A39"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A39"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4A39", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 5, "div": 1024, "unit": "scalar"}, "name": "[TG4] Normalized reference level knock control cylinder 3"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A3A"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A3A"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4A3A", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 5, "div": 1024, "unit": "scalar"}, "name": "[TG4] Normalized reference level knock control cylinder 4"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A49"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A49"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4A49", "path": "Engine", "fmt": {"len": 16, "max": 32767, "div": 10, "sign": true, "unit": "scalar"}, "name": "[TG4] Firing angle cylinder 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A4A"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A4A"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4A4A", "path": "Engine", "fmt": {"len": 16, "max": 32767, "div": 10, "sign": true, "unit": "scalar"}, "name": "[TG4] Firing angle cylinder 2"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A4C"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A4C"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4A4C", "path": "Engine", "fmt": {"len": 16, "max": 32767, "div": 10, "sign": true, "unit": "scalar"}, "name": "[TG4] Firing angle cylinder 3"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A4D"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A4D"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4A4D", "path": "Engine", "fmt": {"len": 16, "max": 32767, "div": 10, "sign": true, "unit": "scalar"}, "name": "[TG4] Firing angle cylinder 4"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4B23"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4B23"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4B23", "path": "Engine", "fmt": {"len": 16, "max": 65535, "unit": "scalar"}, "name": "[TG4] Misfire detection counter cylinder 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4B24"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4B24"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4B24", "path": "Engine", "fmt": {"len": 16, "max": 65535, "unit": "scalar"}, "name": "[TG4] Misfire detection counter cylinder 2"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4B25"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4B25"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4B25", "path": "Engine", "fmt": {"len": 16, "max": 65535, "unit": "scalar"}, "name": "[TG4] Misfire detection counter cylinder 3"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4B30"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4B30"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4B30", "path": "Engine", "fmt": {"len": 16, "max": 65535, "unit": "scalar"}, "name": "[TG4] Misfire detection counter cylinder 4"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58E5"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58E5"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_58E5", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 0.001, "unit": "scalar"}, "name": "[TG4] Filtered spark burning time cylinder 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58E6"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58E6"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_58E6", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 0.001, "unit": "scalar"}, "name": "[TG4] Filtered spark burning time cylinder 2"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58E7"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58E7"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_58E7", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 0.001, "unit": "scalar"}, "name": "[TG4] Filtered spark burning time cylinder 3"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58E8"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58E8"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_58E8", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 0.001, "unit": "scalar"}, "name": "[TG4] Filtered spark burning time cylinder 4"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "59FA"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "59FA"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_59FA", "path": "Engine", "fmt": {"len": 8, "max": 127, "mul": 191.25, "div": 255, "sign": true, "unit": "scalar"}, "name": "[TG4] Actual ignition angle"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "580E"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "580E"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_580E_FIRING_ANGLE_CYLINDER_1", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.5, "add": -64, "unit": "scalar"}, "name": "[TG4] Firing angle cylinder 1"}
         ]},
