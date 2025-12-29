@@ -1027,405 +1027,405 @@
         "signals": [
           {"id": "4SERIES_580E_FIRING_ANGLE_CYLINDER_1", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.5, "add": -64, "unit": "scalar"}, "name": "[TG4] Firing angle cylinder 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58B1"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58B1"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_58B1_SPARK_DURATION_CYLINDER_1", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 1024, "unit": "scalar"}, "name": "[TG5] Spark duration cylinder 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58B2"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58B2"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_58B2_SPARK_DURATION_CYLINDER_5", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 1024, "unit": "scalar"}, "name": "[TG5] Spark duration cylinder 5"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58B3"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58B3"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_58B3_SPARK_DURATION_CYLINDER_3", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 1024, "unit": "scalar"}, "name": "[TG5] Spark duration cylinder 3"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58B4"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58B4"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_58B4_FUNKENBRENNDAUER6_CYLINDER", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 1024, "unit": "scalar"}, "name": "[TG5] Spark duration cylinder 6"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58B5"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58B5"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_58B5_SPARK_DURATION_CYLINDER_2", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 1024, "unit": "scalar"}, "name": "[TG5] Spark duration cylinder 2"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58B6"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58B6"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_58B6_SPARK_DURATION_CYLINDERS_4", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 1024, "unit": "scalar"}, "name": "[TG5] Spark duration cylinders 4"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58F8"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58F8"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_58F8_SEGMENT_ADAPTATION_NON_SMOOTH", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.06103531, "add": 1.92096e-05, "unit": "scalar"}, "name": "[TG5] Segment adaptation Non Smooth cyl. 5"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58F9"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58F9"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_58F9_SEGMENT_ADAPTATION_NON_SMOOTH", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.06103531, "add": 1.92096e-05, "unit": "scalar"}, "name": "[TG5] Segment adaptation Non Smooth cyl. 3"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "480B"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "480B"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_480B", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 100, "div": 65535, "unit": "scalar"}, "name": "[TG5] Normalized accelerator pedal angle"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5814"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5814"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5814_NORMALIZED_GAS_PEDAL_ANGLE", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.390625, "unit": "scalar"}, "name": "[TG5] Normalized gas pedal angle"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58B9"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58B9"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_58B9_PEDAL_MONITORING", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.390625, "unit": "percent"}, "name": "[TG5] Pedal monitoring"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4606"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4606"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_4606", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 0.08, "add": -200, "unit": "scalar"}, "name": "[TG5] Current battery current"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "583C"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "583C"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_583C", "path": "Engine", "fmt": {"len": 8, "max": 255, "mul": 0.0942, "unit": "scalar"}, "name": "[TG5] Battery voltage value recorded by the AD converter"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "584A"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "584A"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_584A", "path": "Engine", "fmt": {"len": 16, "max": 65535, "unit": "scalar"}, "name": "[TG5] Current status of electric machine"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5852"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5852"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5852", "path": "Engine", "fmt": {"len": 16, "max": 65535, "div": 50, "add": -200, "unit": "scalar"}, "name": "[TG5] IBS battery power"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5853"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5853"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5853", "path": "Engine", "fmt": {"len": 16, "max": 65535, "div": 1000, "unit": "scalar"}, "name": "[TG5] IBS battery voltage"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "586A"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "586A"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_586A", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 0.00025, "add": 6, "unit": "scalar"}, "name": "[TG5] Current battery voltage"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "586B"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "586B"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_586B", "path": "Engine", "fmt": {"len": 8, "max": 255, "mul": 224, "div": 15, "unit": "scalar"}, "name": "[TG5] Time in which the quiescent current is 80-200 mA"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "586C"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "586C"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_586C", "path": "Engine", "fmt": {"len": 8, "max": 255, "mul": 224, "div": 15, "unit": "scalar"}, "name": "[TG5] Time in which quiescent current is 200-1000 mA"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "586D"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "586D"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_586D", "path": "Engine", "fmt": {"len": 8, "max": 255, "mul": 0.1, "unit": "scalar"}, "name": "[TG5] Maximum frozen supply voltage"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "586E"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "586E"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_586E", "path": "Engine", "fmt": {"len": 8, "max": 255, "mul": 224, "div": 15, "unit": "scalar"}, "name": "[TG5] Time in which the quiescent current is greater than 1000 mA"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "587B"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "587B"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_587B", "path": "Engine", "fmt": {"len": 16, "max": 32767, "mul": 400, "div": 65536, "sign": true, "unit": "scalar"}, "name": "[TG5] VVT motor current to be set by the position controller"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5883"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5883"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5883", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 5, "div": 65536, "unit": "scalar"}, "name": "[TG5] Voltage knock values cylinder 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5885"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5885"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5885", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 5, "div": 65536, "unit": "scalar"}, "name": "[TG5] Voltage knock values cylinder 2"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5886"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5886"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5886", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 5, "div": 65536, "unit": "scalar"}, "name": "[TG5] Voltage knock values cylinder 3"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5888"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5888"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5888", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 5, "div": 65536, "unit": "scalar"}, "name": "[TG5] Voltage knock values cylinder 4"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5898"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5898"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5898", "path": "Engine", "fmt": {"len": 16, "max": 65535, "div": 1000, "unit": "scalar"}, "name": "[TG5] Default machine target voltage"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58A0"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58A0"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_58A0", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 65536, "div": 3600000, "unit": "scalar"}, "name": "[TG5] Discharge during quiescent current violation"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58AC"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58AC"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_58AC", "path": "Engine", "fmt": {"len": 16, "max": 65535, "div": 100, "unit": "scalar"}, "name": "[TG5] Terminal voltage of the electric machine"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58F6"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58F6"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_58F6", "path": "Engine", "fmt": {"len": 16, "max": 32767, "mul": 51.2, "div": 65536, "sign": true, "unit": "scalar"}, "name": "[TG5] Setpoint voltage of the VVT position controller"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5909"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5909"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5909", "path": "Engine", "fmt": {"len": 8, "max": 255, "mul": 0.1, "unit": "scalar"}, "name": "[TG5] Minimum frozen supply voltage"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5916"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5916"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5916", "path": "Engine", "fmt": {"len": 8, "max": 255, "mul": 0.5, "unit": "scalar"}, "name": "[TG5] Relative state of charge NV battery"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "597F"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "597F"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_597F", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 0.08, "add": -200, "unit": "scalar"}, "name": "[TG5] Battery power"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5981"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5981"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5981", "path": "Engine", "fmt": {"len": 8, "max": 255, "unit": "scalar"}, "name": "[TG5] Current DC-DC converter"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4508"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4508"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_4508_CURRENT_VALUE_FOR_INPUT_EXPANS", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.1, "unit": "scalar"}, "name": "[TG5] Current value for input expansion"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4602"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4602"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_4602_RATED_GENERATOR_VOLTAGE_OVER_B", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.1, "add": 10.6, "unit": "volts"}, "name": "[TG5] Rated generator voltage over Bsd"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4609"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4609"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_4609_BATTERY_VOLTAGE", "path": "Engine", "fmt": {"len": 8, "max": 16, "mul": 0.101562493, "unit": "volts"}, "name": "[TG5] Battery voltage"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "460B"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "460B"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_460B_BATTERIESPANNUNG_VON_IBS_GEMES", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.00025, "add": 6, "unit": "volts"}, "name": "[TG5] Batteriespannung von IBS gemessen"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "460C"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "460C"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_460C_BATTERY_VOLTAGE_FROM_AD_CONVER", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.0280601159, "unit": "scalar"}, "name": "[TG5] Battery voltage from AD converter - DME"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4612"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4612"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_4612_ENNERGISING_POWER_GENERATOR_1", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 125, "unit": "scalar"}, "name": "[TG5] Ennergising power generator 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5815"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5815"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5815_BATTERY_VOLTAGE", "path": "Engine", "fmt": {"len": 8, "max": 16, "mul": 256, "unit": "volts"}, "name": "[TG5] Battery voltage"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5846"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5846"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5846_VOLTAGE_PEDAL_SENSOR_1", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.01953125, "unit": "volts"}, "name": "[TG5] Voltage pedal sensor 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5847"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5847"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5847_VOLTAGE_PEDAL_SENSOR_2", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.01953125, "unit": "volts"}, "name": "[TG5] Voltage pedal sensor 2"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5857"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5857"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5857_ENNERGISING_POWER_GENERATOR_1", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 125, "unit": "scalar"}, "name": "[TG5] Ennergising power generator 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5884"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5884"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5884_VOLTAGE_VALUES_KNOCKING_CYLIND", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.01953125, "unit": "volts"}, "name": "[TG5] Voltage values knocking cylinder 5"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "589B"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "589B"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_589B_VOLTAGE_OFFSET_SIGNAL_PATH_1_C", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.0048827846, "add": -3.6078e-06, "unit": "volts"}, "name": "[TG5] Voltage offset signal path 1 Cj120"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "589C"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "589C"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_589C_VOLTAGE_OFFSET_SIGNAL_PATH_2_C", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.0048827846, "add": -3.6078e-06, "unit": "volts"}, "name": "[TG5] Voltage offset signal path 2 Cj120"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58DF"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58DF"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_58DF_SPORTS_VOLTAGE_SWITCH", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.01953125, "unit": "volts"}, "name": "[TG5] Sports voltage switch"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A04"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A04"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5A04_PEDAL_VALUE_SENSOR_1_VOLTAGE", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.0048828125, "unit": "celsius"}, "name": "[TG5] Pedal value sensor 1 voltage"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A05"}, "freq": 30,
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A05"}, "freq": 30, "filter": {"years": [9999]},
         "signals": [
           {"id": "4SERIES_5A05_PEDAL_VALUE_SENSOR_2_VOLTAGE", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.0048828125, "unit": "scalar"}, "name": "[TG5] Pedal value sensor 2 voltage"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A0C"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A0C"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_5A0C_VOLTAGE_AIR_MASSES", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.0196, "unit": "volts"}, "name": "[TG6] Voltage air masses"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A0D"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A0D"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_5A0D_VOLTAGE_SECONDARY_AIR", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.0196, "unit": "volts"}, "name": "[TG6] Voltage secondary air"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A0F"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A0F"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_5A0F_VOLTAGE_TERMINAL_15", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.0280601159, "unit": "celsius"}, "name": "[TG6] Voltage terminal 15"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A10"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A10"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_5A10_VOLTAGE_TERMINAL_15", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.0280601159, "unit": "volts"}, "name": "[TG6] Voltage terminal 15"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A17"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5A17"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_5A17_SPANNUNGSSTROMMESSUNGDMTL", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.0048828125, "unit": "volts"}, "name": "[TG6] Voltage/Current Measurement, DMTL (Tank Leak Diagnostic Module)"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4607"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4607"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4607_GENERATOR_MANUFACTURER_CODE", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "[TG6] Generator manufacturer code | [Formerly disabled - unknown use/meaning] Generator manufacturer code", "description": "[Formerly disabled - unknown use/meaning] Generator manufacturer code"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5835"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5835"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_5835_GENERATOR_MANUFACTURER_CODE", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "celsius"}, "name": "[TG6] Generator manufacturer code | [Formerly disabled - unknown use/meaning] Generator manufacturer code", "description": "[Formerly disabled - unknown use/meaning] Generator manufacturer code"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4501"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4501"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4501", "path": "Engine", "fmt": {"len": 16, "max": 32767, "mul": 0.001, "sign": true, "unit": "scalar"}, "name": "[TG6] Integrated offset stroke adaptation"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4516"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4516"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4516", "path": "Engine", "fmt": {"len": 8, "max": 255, "unit": "scalar"}, "name": "[TG6] Status VVT stop learning (internal)"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "460D"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "460D"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_460D", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 0.004, "add": -100, "unit": "scalar"}, "name": "[TG6] Correction value shutdown"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A9D"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A9D"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4A9D", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 2, "div": 65536, "unit": "scalar"}, "name": "[TG6] Multiplicative mixture correction of the mixture adaptation"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58FB"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58FB"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_58FB", "path": "Engine", "fmt": {"len": 16, "max": 32767, "mul": 2, "div": 65536, "sign": true, "unit": "scalar"}, "name": "[TG6] Delta probe offset master control"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "592D"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "592D"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_592D", "path": "Engine", "fmt": {"len": 16, "max": 32767, "div": 45.51111111, "sign": true, "unit": "scalar"}, "name": "[TG6] KW angular offset when starting the engine"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4502"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4502"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4502_SETTING_MECHANICAL_VVT_FROM_LE", "path": "Engine", "fmt": {"len": 8, "max": 0, "mul": 0.0219731927, "unit": "scalar"}, "name": "[TG6] Setting Mechanical Vvt From learning routine"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58B0"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58B0"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_58B0_DK_ADAPTATION_STEP", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "[TG6] Dk - adaptation step"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4002"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4002"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4002", "path": "Engine", "fmt": {"len": 8, "max": 255, "unit": "scalar"}, "name": "[TG6] Status switching states 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4AD2"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4AD2"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4AD2", "path": "Engine", "fmt": {"len": 8, "max": 255, "unit": "scalar"}, "name": "[TG6] Air flap - upper air flap status"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4AD3"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4AD3"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4AD3", "path": "Engine", "fmt": {"len": 8, "max": 255, "unit": "scalar"}, "name": "[TG6] Air flap - lower air flap status"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5868"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5868"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_5868", "path": "Engine", "fmt": {"len": 8, "max": 255, "unit": "scalar"}, "name": "[TG6] Status Stand Consumer Registered Part 1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5869"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5869"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_5869", "path": "Engine", "fmt": {"len": 8, "max": 255, "unit": "scalar"}, "name": "[TG6] Status Stand consumer registered part 2"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58BD"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58BD"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_58BD", "path": "Engine", "fmt": {"len": 8, "max": 255, "unit": "scalar"}, "name": "[TG6] Status error overload VVT1"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58E4"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58E4"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_58E4", "path": "Engine", "fmt": {"len": 8, "max": 255, "unit": "scalar"}, "name": "[TG6] Actual operating mode"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "590F"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "590F"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_590F", "path": "Engine", "fmt": {"len": 8, "max": 255, "unit": "scalar"}, "name": "[TG6] Status of fault memory entry without critical DMF fault"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5917"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5917"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_5917", "path": "Engine", "fmt": {"len": 8, "max": 255, "unit": "scalar"}, "name": "[TG6] DC-DC converter status"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4803"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4803"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4803_STATUS_AIR_CONDITIONING_ON", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "[TG6] Status air conditioning on"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4809"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4809"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4809_STATUS_LL", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "[TG6] Status Ll"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5832"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5832"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_5832_MOTOR_STATUS", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "[TG6] Motor Status"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58CE"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "58CE"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_58CE_CARRIER_BYTE_SWITCHING_STATES", "path": "Engine", "fmt": {"len": 8, "max": 0, "unit": "scalar"}, "name": "[TG6] Carrier -byte switching states"}
         ]},
-{ "hdr": "6F1", "rax": "618", "eax": "18", "fcm1": true, "dbg": true, "cmd": {"22": "DA37"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "618", "eax": "18", "fcm1": true, "dbg": true, "cmd": {"22": "DA37"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_TIME_D", "path": "Engine", "fmt": {"len": 8, "max": 255, "unit": "scalar"}, "name": "[TG6] Time in D"},
           {"id": "4SERIES_TIME_S", "path": "Engine", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar"}, "name": "[TG6] Time in D"},
           {"id": "4SERIES_TIME_M", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "scalar"}, "name": "[TG6] Time in D"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4520"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4520"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4520", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 1000, "div": 65536, "unit": "scalar"}, "name": "[TG6] Effective engine power"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4603"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4603"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4603", "path": "Engine", "fmt": {"len": 16, "max": 65535, "div": 1000, "unit": "scalar"}, "name": "[TG6] Inlet valve lift setpoint filtered"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "460E"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "460E"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_460E", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 0.004, "add": -100, "unit": "scalar"}, "name": "[TG6] Distance to starting ability"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "480C"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "480C"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_480C", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 0.75, "div": 32, "unit": "scalar"}, "name": "[TG6] Target filling"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "480D"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "480D"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_480D", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 0.05, "add": -64, "unit": "scalar"}, "name": "[TG6] Is the longitudinal slope of the roadway"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4810"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4810"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4810", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 0.05, "add": -64, "unit": "scalar"}, "name": "[TG6] Is banked road surface"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4811"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4811"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4811", "path": "Engine", "fmt": {"len": 8, "max": 127, "mul": 0.217, "sign": true, "unit": "scalar"}, "name": "[TG6] Vehicle longitudinal acceleration"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4812"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4812"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4812", "path": "Engine", "fmt": {"len": 16, "max": 32767, "div": 640, "sign": true, "unit": "scalar"}, "name": "[TG6] Vehicle lateral acceleration (positive and negative)"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A00"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A00"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4A00", "path": "Engine", "fmt": {"len": 16, "max": 65535, "unit": "scalar"}, "name": "[TG6] Average distance between critical DMF faults"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A01"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A01"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4A01", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 10, "unit": "scalar"}, "name": "[TG6] Average value of the time interval between critical ZMS faults"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A77"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4A77"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4A77", "path": "Engine", "fmt": {"len": 16, "max": 65535, "mul": 100, "div": 65536, "unit": "scalar"}, "name": "[TG6] Output duty cycle for tank vent valve"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4ACC"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4ACC"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4ACC", "path": "Engine", "fmt": {"len": 16, "max": 65535, "unit": "scalar"}, "name": "[TG6] Air damper - target position in steps"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4ACD"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4ACD"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4ACD", "path": "Engine", "fmt": {"len": 16, "max": 65535, "unit": "scalar"}, "name": "[TG6] Air damper - actual position in steps"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4ACE"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4ACE"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4ACE", "path": "Engine", "fmt": {"len": 8, "max": 255, "mul": 128, "div": 255, "unit": "scalar"}, "name": "[TG6] Air damper - target position in degrees"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4ACF"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4ACF"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_4ACF", "path": "Engine", "fmt": {"len": 8, "max": 255, "mul": 128, "div": 255, "unit": "scalar"}, "name": "[TG6] Air damper - actual position in degrees"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "575F"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "575F"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_575F", "path": "Engine", "fmt": {"len": 16, "max": 32767, "mul": 0.0001, "sign": true, "unit": "scalar"}, "name": "[TG6] Relative SOC"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "57A3"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "57A3"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_57A3", "path": "Engine", "fmt": {"len": 32, "max": 4294967295, "unit": "scalar"}, "name": "[TG6] Total reflex start number at the last starter exchange"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "57A4"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "57A4"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_57A4", "path": "Engine", "fmt": {"len": 32, "max": 4294967295, "unit": "scalar"}, "name": "[TG6] Total number of starts at the last starter exchange"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5813"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5813"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_5813", "path": "Engine", "fmt": {"len": 8, "max": 255, "mul": 0.75, "unit": "scalar"}, "name": "[TG6] Relative air filling"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "581A"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "581A"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_581A", "path": "Engine", "fmt": {"len": 16, "max": 32767, "div": 128, "sign": true, "unit": "scalar"}, "name": "[TG6] Angle inlet valve opens based on LWOT"}
         ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5823"}, "freq": 30, "filter": {"years": [9999]},
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "5823"}, "freq": 30,
         "signals": [
           {"id": "4SERIES_5823", "path": "Engine", "fmt": {"len": 16, "max": 65535, "unit": "scalar"}, "name": "[TG6] Shutdown time"}
         ]},
