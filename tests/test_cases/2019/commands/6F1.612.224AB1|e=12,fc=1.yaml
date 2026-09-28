@@ -3,3 +3,9 @@ test_cases:
 - expected_values:
     4SERIES_VSS2: 0
   response: 612F105624AB10000
+- expected_values:
+    4SERIES_VSS2: 10.23
+  response: 612F105624AB103FF
+- expected_values:
+    4SERIES_VSS2: 173.19
+  response: 612F105624AB143A7
