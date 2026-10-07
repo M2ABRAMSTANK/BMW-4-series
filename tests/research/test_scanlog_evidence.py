@@ -201,3 +201,28 @@ def test_background_testing_reservation_matches_current_definitions(research_com
         if debug:
             background += 60 / definition['freq']
     assert background == pytest.approx(STAGING['background_testing_requests_per_minute'])
+
+
+def test_polling_tier_labels_match_command_intervals(research_commands):
+    tiers = {
+        'Operational': 0.25,
+        'Engine control': 1,
+        'Short-term trends': 5,
+        'Thermal condition': 15,
+        'Health and environment': 60,
+        'Cumulative history': 300,
+    }
+    for entry in AUDIT['entries']:
+        definition = research_commands[entry['key']]
+        if entry['decoding_status'] in ('regular_2019', 'existing_regular_2019'):
+            descriptions = [s['description'] for s in definition['signals']]
+            prefixes = [f'[Polling: {tier}] ' for tier, interval in tiers.items()
+                        if interval == definition['freq']]
+            assert len(prefixes) == 1
+            assert all(d.startswith(prefixes[0]) for d in descriptions)
+        else:
+            assert all(s['description'].startswith('[Polling: Unclassified; research override] ')
+                       for s in definition['signals'])
+    for member in STAGED:
+        assert all(s['description'].startswith('[Polling: Unclassified; research override] ')
+                   for s in member['decoding_hypotheses'])

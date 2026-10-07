@@ -2,6 +2,40 @@
 
 This repository contains signal set configurations for the BMW 4 Series, organized by model year and version. The files are structured to allow for easy differentiation between model generations and other vehicle parameters, ensuring accurate signal mapping for each version of the BMW 4 Series.
 
+## Polling convention
+
+Signal descriptions begin with `[Polling: <tier>]`. This is a local documentation
+convention, not an OBDb schema extension. The supported command-level `freq`
+field sets the requested interval in seconds; the prefix explains its purpose.
+
+| Tier | Interval | Purpose | Example commands |
+| --- | ---: | --- | --- |
+| Operational | 0.25 s | Responsive driving measurements | RPM 4807, speed 4AB1, wheel speeds DBE4 |
+| Engine control | 1 s | Engine response under changing load | Boost 4205/4AB0, fuel rail pressure 56D7, lambda 5889 |
+| Short-term trends | 5 s | Electrical and intake trends | IBS voltage 5853, intake temperature 580F |
+| Thermal condition | 15 s | Warm-up and sustained temperatures | Coolant 4300/5805, oil 4408/5822, transmission DA12 |
+| Health and environment | 60 s | Periodic condition and environmental readings | TPMS DC98–DC9B, barometric pressure 4201 |
+| Cumulative history | 300 s | Accumulated totals | Odometers D10D, Drive time DA37 |
+
+All signals returned by one command share that command's interval and prefix,
+including hidden fields. Classify by the measurement's use, not only its module.
+These are ordinary-use defaults, not guarantees of achieved cadence or sensor
+update rate. Existing duplicate sources retain the tier for their measurement;
+selecting a preferred source can be a separate client/profile optimization.
+
+Unverified commands and archived decoding hypotheses use
+`[Polling: Unclassified; research override]`. This marks an exception, not a
+seventh ordinary tier or an assertion that the candidate's identity is known.
+Their existing research intervals, availability, and testing groups remain in
+place. The **200 requests/minute testing budget** still includes the active wave
+and other enabled experimental commands, and excludes regular polling. A regular
+command's debug coverage on other years retains its ordinary tier interval;
+this research budget is calculated for the observed 2019 vehicle.
+
+When editing a polling tier, update both `freq` and every signal description in
+that command. The tests check that tier labels match the configured interval.
+No new signal-set fields are introduced.
+
 ## Scanlog validation
 
 The October 2026 audit covers all 1,011 configured commands, including every
