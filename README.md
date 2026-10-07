@@ -78,6 +78,33 @@ unexplained low-temperature outlier; DA2E has an unidentified state code.
 Supported-year transmission filters follow existing response fixtures, whose
 other-year conversions remain experimental.
 
+### Unavailable and invalid readings
+
+[The invalid-value catalog](tests/research/invalid-values/index.json) records every
+configured null bound, its confidence, and links to lossless scanlog evidence.
+OBDb's `fmt.nullmin` and `fmt.nullmax` are **inclusive bounds on decoded values**,
+not exact raw-code lists. Preserve the raw response and return a missing value;
+do not replace an unavailable reading with numeric zero.
+
+| Signal | Observed marker | Handling and evidence |
+| --- | --- | --- |
+| TPMS pressure / temperature, DC98–DC9B | LE pressure bytes `9C18` = 6.300 bar (about 91.37 psi), paired with `7F` = 127 C | Existing upper null bounds retained. 37 unavailable pairs among 127 positive responses in 11 recent sessions. Target pressures remain numeric. |
+| Lambda 2, 582C | `0000` | Added `nullmin: 0`; unsigned scaling makes this exactly raw zero. Five readings in four sessions, initially paired with catalyst marker `08B7`; two sessions subsequently recover near lambda 1. |
+| Candidate catalyst temperature, 582F | `08B7` = -50.05 C | Already covered by `nullmin: -50`. Startup correlation supports an unavailable marker; physical identity and calibration remain provisional. |
+| Lambda upper range, 582C / 5889 | Existing threshold 15.99, raw `FFD8`–`FFFF` | Inherited rule retained but not independently confirmed by this review. Do not broaden it: high lambda may be lean/saturated rather than unavailable. Observed `FF00` remains numeric. |
+
+The TPMS review includes both unavailable-to-ordinary and ordinary-to-unavailable
+transitions. The logs support missing readings, not a specific warming, RF, or
+ECU-initialization cause. The DME review covers 90 bounded VIN-matched sessions;
+transmission evidence includes older startup sequences. These are scoped reviews,
+not proof that every unavailable code in the export has been identified.
+
+UDS negative responses, `NO DATA`, malformed replies, and ISO-TP padding are
+separate from numeric sentinels. Zero speed is valid; DA25 raw `30` and DA2E state
+`0A` remain unresolved and are not nulled. Unknown research bytes retain their
+full range. Add a new null bound only with supported interpretation and captured
+regression cases, including valid neighboring or recovered readings.
+
 ### Staged research polling
 
 The 380 unresolved positive-response commands are split into **57 waves of at

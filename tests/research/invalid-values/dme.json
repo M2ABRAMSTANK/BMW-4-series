@@ -1,0 +1,779 @@
+{
+  "scope": {
+    "vehicle": "BMW 4 Series 2019; VIN matched internally to session 5397 and omitted from artifact",
+    "session_count": 90,
+    "sessions": [
+      5397,
+      5395,
+      5394,
+      5393,
+      5391,
+      5388,
+      5386,
+      5384,
+      5383,
+      5382,
+      5374,
+      5370,
+      5369,
+      5365,
+      5364,
+      5363,
+      5362,
+      5361,
+      5360,
+      5359,
+      5358,
+      5357,
+      5356,
+      5355,
+      5351,
+      5350,
+      5349,
+      5348,
+      5347,
+      5346,
+      5345,
+      5344,
+      5343,
+      5338,
+      5337,
+      5336,
+      5335,
+      5334,
+      5331,
+      5330,
+      5329,
+      5328,
+      5322,
+      5321,
+      5320,
+      5319,
+      5318,
+      5317,
+      5315,
+      5314,
+      3667,
+      3666,
+      3665,
+      3664,
+      3659,
+      3658,
+      3657,
+      3654,
+      3653,
+      3652,
+      3651,
+      3650,
+      3649,
+      3648,
+      3647,
+      3328,
+      3327,
+      3326,
+      3325,
+      3324,
+      3021,
+      3020,
+      3019,
+      3017,
+      3016,
+      3015,
+      3014,
+      3013,
+      3012,
+      3010,
+      3009,
+      3008,
+      3007,
+      3006,
+      3003,
+      3001,
+      3000,
+      2999,
+      2998,
+      2997
+    ],
+    "route_required": {
+      "ATSH": "6F1",
+      "ATCEA": "12",
+      "ATCRA": "612",
+      "response_CAN_ID": "612",
+      "response_extended_address": "F1"
+    },
+    "selection": "50 latest matching sessions anchored at 5397, 20 at 3667, 20 at 3021; deduplicated; ZCOMMANDRESPONSE queried with indexed ZSESSION predicate",
+    "parsed_positive_counts": {
+      "22442C": 1281,
+      "224205": 950,
+      "224408": 1279,
+      "224A4C": 948,
+      "224AB0": 945,
+      "225889": 1140,
+      "224A2D": 948,
+      "22582F": 1136,
+      "22558F": 600,
+      "224A2E": 43,
+      "22558E": 540,
+      "2256D7": 737,
+      "22580F": 1274,
+      "224AB1": 48745,
+      "2259FA": 950,
+      "22480C": 962,
+      "224A49": 950,
+      "2258BA": 947,
+      "224A4B": 739,
+      "224A4D": 949,
+      "224201": 948,
+      "22582C": 1135,
+      "224A4A": 948,
+      "225813": 964,
+      "224609": 375,
+      "22586A": 377,
+      "225853": 372,
+      "22460B": 370,
+      "225815": 375,
+      "224807": 438,
+      "224300": 538,
+      "224402": 538,
+      "224204": 544,
+      "224310": 539,
+      "224409": 540,
+      "22586F": 544,
+      "224200": 545,
+      "224425": 543,
+      "225822": 543,
+      "224421": 544,
+      "224422": 542,
+      "224423": 539,
+      "224683": 8
+    }
+  },
+  "solid_proposals": [
+    {
+      "finding": "Solid 2019 DME lambda-2 unavailable value at startup",
+      "did": "582C",
+      "signal": "4SERIES_LAMBDA_2",
+      "proposal": {
+        "fmt_add": {
+          "nullmin": 0
+        },
+        "effect": "Null decoded 0.0; with unsigned 16-bit /4096, this selects exactly raw 0000."
+      },
+      "observations": {
+        "positive_count_in_sample": 1135,
+        "zero_count": 5,
+        "zero_sessions": [
+          3325,
+          5335,
+          5356,
+          5362
+        ],
+        "zero_is_first_positive_in_each_session": true,
+        "nonzero_count": 1130
+      },
+      "interpretation": "Raw 0000 is synchronized with the existing catalyst unavailable raw 08B7 and with lambda-1 raw 1000 (1.0) in four independent sessions. In two sessions, the next lambda-2 reading after roughly 26-37 seconds is near 1.0. Repeated zero readings in one short session persist; the exact sensor readiness or engine-state cause is not established. This supports startup/unavailable state, not ordinary zero lambda.",
+      "evidence": {
+        "zero_records": [
+          {
+            "session": 5362,
+            "record": 52631753,
+            "command_id": 271,
+            "timestamp": "2026-10-04T19:23:37.699579+00:00",
+            "command": "22582C",
+            "raw_hex": "36313246313035363235383243303030300D",
+            "raw_text": "612F10562582C0000\r",
+            "payload": "0000",
+            "route": {
+              "ATH": "1",
+              "ATSP": "6",
+              "ATCEA": "12",
+              "ATFCSD": "12300000",
+              "ATSH": "6F1",
+              "ATFCSH": "6F1",
+              "ATCRA": "612",
+              "ATFCSM": "1"
+            }
+          },
+          {
+            "session": 5356,
+            "record": 52605859,
+            "command_id": 165,
+            "timestamp": "2026-10-02T21:16:53.663138+00:00",
+            "command": "22582C",
+            "raw_hex": "36313246313035363235383243303030300D",
+            "raw_text": "612F10562582C0000\r",
+            "payload": "0000",
+            "route": {
+              "ATH": "1",
+              "ATSP": "6",
+              "ATCEA": "12",
+              "ATFCSD": "12300000",
+              "ATSH": "6F1",
+              "ATFCSH": "6F1",
+              "ATCRA": "612",
+              "ATFCSM": "1"
+            }
+          },
+          {
+            "session": 5335,
+            "record": 52497049,
+            "command_id": 276,
+            "timestamp": "2026-09-30T02:42:02.741440+00:00",
+            "command": "22582C",
+            "raw_hex": "36313246313035363235383243303030300D",
+            "raw_text": "612F10562582C0000\r",
+            "payload": "0000",
+            "route": {
+              "ATH": "1",
+              "ATSP": "6",
+              "ATCEA": "12",
+              "ATFCSD": "12300000",
+              "ATSH": "6F1",
+              "ATFCSH": "6F1",
+              "ATCRA": "612",
+              "ATFCSM": "1"
+            }
+          },
+          {
+            "session": 5335,
+            "record": 52497312,
+            "command_id": 411,
+            "timestamp": "2026-09-30T02:42:33.223325+00:00",
+            "command": "22582C",
+            "raw_hex": "36313246313035363235383243303030300D",
+            "raw_text": "612F10562582C0000\r",
+            "payload": "0000",
+            "route": {
+              "ATH": "1",
+              "ATSP": "6",
+              "ATCEA": "12",
+              "ATFCSD": "12300000",
+              "ATSH": "6F1",
+              "ATFCSH": "6F1",
+              "ATCRA": "612",
+              "ATFCSM": "1"
+            }
+          },
+          {
+            "session": 3325,
+            "record": 35407454,
+            "command_id": 119,
+            "timestamp": "2025-12-22T03:43:49.156691+00:00",
+            "command": "22582C",
+            "raw_hex": "36313246313035363235383243303030300D",
+            "raw_text": "612F10562582C0000\r",
+            "payload": "0000",
+            "route": {
+              "ATH": "1",
+              "ATSP": "6",
+              "ATSH": "6F1",
+              "ATCEA": "12",
+              "ATFCSD": "12300000",
+              "ATFCSH": "6F1",
+              "ATCRA": "612",
+              "ATFCSM": "1"
+            }
+          }
+        ],
+        "later_plausible": [
+          {
+            "session": 5356,
+            "record": 52605910,
+            "command_id": 266,
+            "timestamp": "2026-10-02T21:17:19.745780+00:00",
+            "command": "22582C",
+            "raw_hex": "36313246313035363235383243304644410D",
+            "raw_text": "612F10562582C0FDA\r",
+            "payload": "0FDA",
+            "route": {
+              "ATH": "1",
+              "ATSP": "6",
+              "ATCEA": "12",
+              "ATFCSD": "12300000",
+              "ATSH": "6F1",
+              "ATFCSH": "6F1",
+              "ATCRA": "612",
+              "ATFCSM": "1"
+            }
+          },
+          {
+            "session": 5362,
+            "record": 52631501,
+            "command_id": 606,
+            "timestamp": "2026-10-04T19:24:14.391287+00:00",
+            "command": "22582C",
+            "raw_hex": "36313246313035363235383243304643360D",
+            "raw_text": "612F10562582C0FC6\r",
+            "payload": "0FC6",
+            "route": {
+              "ATH": "1",
+              "ATSP": "6",
+              "ATCEA": "12",
+              "ATFCSD": "12300000",
+              "ATSH": "6F1",
+              "ATFCSH": "6F1",
+              "ATCRA": "612",
+              "ATFCSM": "1"
+            }
+          }
+        ],
+        "paired_catalyst": [
+          {
+            "session": 5362,
+            "record": 52631843,
+            "command_id": 278,
+            "timestamp": "2026-10-04T19:23:38.958161+00:00",
+            "command": "22582F",
+            "raw_hex": "36313246313035363235383246303842370D",
+            "raw_text": "612F10562582F08B7\r",
+            "payload": "08B7",
+            "route": {
+              "ATH": "1",
+              "ATSP": "6",
+              "ATCEA": "12",
+              "ATFCSD": "12300000",
+              "ATSH": "6F1",
+              "ATFCSH": "6F1",
+              "ATCRA": "612",
+              "ATFCSM": "1"
+            }
+          },
+          {
+            "session": 5356,
+            "record": 52605998,
+            "command_id": 163,
+            "timestamp": "2026-10-02T21:16:53.361693+00:00",
+            "command": "22582F",
+            "raw_hex": "36313246313035363235383246303842370D",
+            "raw_text": "612F10562582F08B7\r",
+            "payload": "08B7",
+            "route": {
+              "ATH": "1",
+              "ATSP": "6",
+              "ATCEA": "12",
+              "ATFCSD": "12300000",
+              "ATSH": "6F1",
+              "ATFCSH": "6F1",
+              "ATCRA": "612",
+              "ATFCSM": "1"
+            }
+          },
+          {
+            "session": 5335,
+            "record": 52497353,
+            "command_id": 279,
+            "timestamp": "2026-09-30T02:42:03.161220+00:00",
+            "command": "22582F",
+            "raw_hex": "36313246313035363235383246303842370D",
+            "raw_text": "612F10562582F08B7\r",
+            "payload": "08B7",
+            "route": {
+              "ATH": "1",
+              "ATSP": "6",
+              "ATCEA": "12",
+              "ATFCSD": "12300000",
+              "ATSH": "6F1",
+              "ATFCSH": "6F1",
+              "ATCRA": "612",
+              "ATFCSM": "1"
+            }
+          },
+          {
+            "session": 5335,
+            "record": 52497456,
+            "command_id": 414,
+            "timestamp": "2026-09-30T02:42:33.778414+00:00",
+            "command": "22582F",
+            "raw_hex": "36313246313035363235383246303842370D",
+            "raw_text": "612F10562582F08B7\r",
+            "payload": "08B7",
+            "route": {
+              "ATH": "1",
+              "ATSP": "6",
+              "ATCEA": "12",
+              "ATFCSD": "12300000",
+              "ATSH": "6F1",
+              "ATFCSH": "6F1",
+              "ATCRA": "612",
+              "ATFCSM": "1"
+            }
+          },
+          {
+            "session": 3325,
+            "record": 35407314,
+            "command_id": 93,
+            "timestamp": "2025-12-22T03:43:45.060983+00:00",
+            "command": "22582F",
+            "raw_hex": "36313246313035363235383246303842370D",
+            "raw_text": "612F10562582F08B7\r",
+            "payload": "08B7",
+            "route": {
+              "ATH": "1",
+              "ATSP": "6",
+              "ATSH": "6F1",
+              "ATCEA": "12",
+              "ATFCSD": "12300000",
+              "ATFCSH": "6F1",
+              "ATCRA": "612",
+              "ATFCSM": "1"
+            }
+          }
+        ],
+        "paired_lambda1_first": [
+          {
+            "session": 3325,
+            "record": 35407340,
+            "command_id": 90,
+            "timestamp": "2025-12-22T03:43:44.506352+00:00",
+            "command": "225889",
+            "raw_hex": "36313246313035363235383839313030300D",
+            "raw_text": "612F1056258891000\r",
+            "payload": "1000",
+            "route": {
+              "ATH": "1",
+              "ATSP": "6",
+              "ATSH": "6F1",
+              "ATCEA": "12",
+              "ATFCSD": "12300000",
+              "ATFCSH": "6F1",
+              "ATCRA": "612",
+              "ATFCSM": "1"
+            }
+          },
+          {
+            "session": 5335,
+            "record": 52497342,
+            "command_id": 162,
+            "timestamp": "2026-09-30T02:41:36.596702+00:00",
+            "command": "225889",
+            "raw_hex": "36313246313035363235383839313030300D",
+            "raw_text": "612F1056258891000\r",
+            "payload": "1000",
+            "route": {
+              "ATH": "1",
+              "ATSP": "6",
+              "ATCEA": "12",
+              "ATFCSD": "12300000",
+              "ATSH": "6F1",
+              "ATFCSH": "6F1",
+              "ATCRA": "612",
+              "ATFCSM": "1"
+            }
+          },
+          {
+            "session": 5356,
+            "record": 52606028,
+            "command_id": 161,
+            "timestamp": "2026-10-02T21:16:53.063838+00:00",
+            "command": "225889",
+            "raw_hex": "36313246313035363235383839313030300D",
+            "raw_text": "612F1056258891000\r",
+            "payload": "1000",
+            "route": {
+              "ATH": "1",
+              "ATSP": "6",
+              "ATCEA": "12",
+              "ATFCSD": "12300000",
+              "ATSH": "6F1",
+              "ATFCSH": "6F1",
+              "ATCRA": "612",
+              "ATFCSM": "1"
+            }
+          },
+          {
+            "session": 5362,
+            "record": 52631487,
+            "command_id": 268,
+            "timestamp": "2026-10-04T19:23:37.052783+00:00",
+            "command": "225889",
+            "raw_hex": "36313246313035363235383839313030300D",
+            "raw_text": "612F1056258891000\r",
+            "payload": "1000",
+            "route": {
+              "ATH": "1",
+              "ATSP": "6",
+              "ATCEA": "12",
+              "ATFCSD": "12300000",
+              "ATSH": "6F1",
+              "ATFCSH": "6F1",
+              "ATCRA": "612",
+              "ATFCSM": "1"
+            }
+          }
+        ]
+      },
+      "source": "read-only session-scoped SQLite queries per skills/pelican-scanlogs/SKILL.md and references/schema.md; CANFrameScanner on exact ASCII adapter frames",
+      "implementation_status": "Applied nullmin: 0 on 4SERIES_LAMBDA_2; evidence supports an unavailable value on this 2019 ECU, not a universal startup cause."
+    }
+  ],
+  "already_covered": [
+    {
+      "did": "582F",
+      "signal": "4SERIES_CAT_T",
+      "raw_unavailable": "08B7",
+      "decoded_celsius": -50.05,
+      "current_fmt": {
+        "len": 16,
+        "max": 6280,
+        "min": -273.15,
+        "div": 10,
+        "add": -273.15,
+        "nullmin": -50,
+        "unit": "celsius"
+      },
+      "count_in_sample": 5,
+      "sessions": [
+        3325,
+        5335,
+        5356,
+        5362
+      ],
+      "evidence": [
+        {
+          "session": 5362,
+          "record": 52631843,
+          "command_id": 278,
+          "timestamp": "2026-10-04T19:23:38.958161+00:00",
+          "command": "22582F",
+          "raw_hex": "36313246313035363235383246303842370D",
+          "raw_text": "612F10562582F08B7\r",
+          "payload": "08B7",
+          "route": {
+            "ATH": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          }
+        },
+        {
+          "session": 5356,
+          "record": 52605998,
+          "command_id": 163,
+          "timestamp": "2026-10-02T21:16:53.361693+00:00",
+          "command": "22582F",
+          "raw_hex": "36313246313035363235383246303842370D",
+          "raw_text": "612F10562582F08B7\r",
+          "payload": "08B7",
+          "route": {
+            "ATH": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          }
+        },
+        {
+          "session": 5335,
+          "record": 52497353,
+          "command_id": 279,
+          "timestamp": "2026-09-30T02:42:03.161220+00:00",
+          "command": "22582F",
+          "raw_hex": "36313246313035363235383246303842370D",
+          "raw_text": "612F10562582F08B7\r",
+          "payload": "08B7",
+          "route": {
+            "ATH": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          }
+        },
+        {
+          "session": 5335,
+          "record": 52497456,
+          "command_id": 414,
+          "timestamp": "2026-09-30T02:42:33.778414+00:00",
+          "command": "22582F",
+          "raw_hex": "36313246313035363235383246303842370D",
+          "raw_text": "612F10562582F08B7\r",
+          "payload": "08B7",
+          "route": {
+            "ATH": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          }
+        },
+        {
+          "session": 3325,
+          "record": 35407314,
+          "command_id": 93,
+          "timestamp": "2025-12-22T03:43:45.060983+00:00",
+          "command": "22582F",
+          "raw_hex": "36313246313035363235383246303842370D",
+          "raw_text": "612F10562582F08B7\r",
+          "payload": "08B7",
+          "route": {
+            "ATH": "1",
+            "ATSP": "6",
+            "ATSH": "6F1",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          }
+        }
+      ],
+      "conclusion": "Existing nullmin -50 censors 08B7. No change proposed. Its threshold is broad (all values <= -50), but in this bounded sample 08B7 is the minimum and only value under that threshold."
+    }
+  ],
+  "unknown_or_no_change": [
+    {
+      "did": "5889",
+      "signal": "4SERIES_LAMBDA",
+      "pattern": "FF00 occurred three times in one session; FFFF once in another. FF00 also occurred for 582C twice at nearly the same timestamps. Potential saturated lean/fuel-cut or ECU limit; cannot classify as unavailable from these sessions. Current nullmax 15.99 already catches FFFF but not FF00 (15.9375).",
+      "evidence": [
+        {
+          "session": 5370,
+          "record": 52688288,
+          "command_id": 7630,
+          "timestamp": "2026-10-05T18:11:31.793598+00:00",
+          "command": "2258891",
+          "raw_hex": "36313246313035363235383839464630300D",
+          "raw_text": "612F105625889FF00\r",
+          "payload": "FF00",
+          "route": {
+            "ATH": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          }
+        },
+        {
+          "session": 5370,
+          "record": 52709527,
+          "command_id": 28788,
+          "timestamp": "2026-10-05T18:25:41.150129+00:00",
+          "command": "2258891",
+          "raw_hex": "36313246313035363235383839464630300D",
+          "raw_text": "612F105625889FF00\r",
+          "payload": "FF00",
+          "route": {
+            "ATH": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          }
+        },
+        {
+          "session": 5370,
+          "record": 52726034,
+          "command_id": 45306,
+          "timestamp": "2026-10-05T18:36:48.706249+00:00",
+          "command": "2258891",
+          "raw_hex": "36313246313035363235383839464630300D",
+          "raw_text": "612F105625889FF00\r",
+          "payload": "FF00",
+          "route": {
+            "ATH": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          }
+        },
+        {
+          "session": 3324,
+          "record": 35407137,
+          "command_id": 17219,
+          "timestamp": "2025-12-22T03:41:55.005102+00:00",
+          "command": "225889",
+          "raw_hex": "36313246313035363235383839464646460D",
+          "raw_text": "612F105625889FFFF\r",
+          "payload": "FFFF",
+          "route": {
+            "ATH": "1",
+            "ATSP": "6",
+            "ATSH": "6F1",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          }
+        }
+      ],
+      "next_step": "Correlate repeated FF00 with engine speed, throttle, fuel-cut state and sensor status on additional driving sessions before changing bounds."
+    },
+    {
+      "did": "582C",
+      "signal": "4SERIES_LAMBDA_2",
+      "pattern": "FF00 occurred twice only in one driving session; distinct from the confirmed startup 0000.",
+      "evidence": [
+        {
+          "session": 5370,
+          "record": 52709533,
+          "command_id": 28779,
+          "timestamp": "2026-10-05T18:25:40.565136+00:00",
+          "command": "22582C1",
+          "raw_hex": "36313246313035363235383243464630300D",
+          "raw_text": "612F10562582CFF00\r",
+          "payload": "FF00",
+          "route": {
+            "ATH": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          }
+        },
+        {
+          "session": 5370,
+          "record": 52725881,
+          "command_id": 45297,
+          "timestamp": "2026-10-05T18:36:48.105979+00:00",
+          "command": "22582C1",
+          "raw_hex": "36313246313035363235383243464630300D",
+          "raw_text": "612F10562582CFF00\r",
+          "payload": "FF00",
+          "route": {
+            "ATH": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          }
+        }
+      ],
+      "next_step": "Same fuel-cut/status correlation; keep current nullmax 15.99."
+    },
+    {
+      "scope": "other active named DME temperature, pressure, voltage, oil, load, timing and speed fields",
+      "pattern": "No recurring exact startup/unavailable raw value independently supported in this bounded sample. Zero load/torque/speed and FF-like signed timing values coincide with operational states and remain valid.",
+      "next_step": "If new anomalies are reported, capture route context and first-to-later values over multiple key cycles for that exact DID."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "purpose": "BMW 4 Series transmission and movement invalid-value audit; proposals for root integration, no repository edits",
+  "source": "sidecar.scanlogs/db.sqlite, SQLite mode=ro and query_only=ON, selected BMW sessions only",
+  "scope": {
+    "session_500": "VIN matched BMW anchor in scanlog metadata; startup-to-later route comparison",
+    "session_3000": "VIN matched BMW anchor; 28 polls each of DA12/DA25/DA2E/DA37",
+    "sessions_450_to_550": "81 VIN-matching sessions inspected for positive DA12/DA25/DA2E/DA37 responses; not a claim of complete export coverage",
+    "sessions_5395_and_5397": "latest BMW anchor; 5397 also has matching Mode 09 VIN response; no VIN reproduced here",
+    "fixture_scope": "BMW-4-series/tests/test_cases vehicle-year command fixtures"
+  },
+  "schema_convention": "The locally downloaded upstream signalset schema defines fmt.nullmin and fmt.nullmax as inclusive bounds on scaled values (<= and >= respectively). An isolated raw sentinel would need a safe scaled threshold; no numeric threshold is established here.",
+  "current_config": {
+    "transmission": {
+      "DA12": "6F1.618.22DA12|e=18,fc=1; 4SERIES_ATF_TEMP, second payload byte, raw - 48 Celsius; no null bound",
+      "DA25": "6F1.618.22DA25|e=18,fc=1; 4SERIES_EOT, second payload byte, raw - 60 Celsius; no null bound",
+      "DA2E": "6F1.618.22DA2E|e=18,fc=1; 4SERIES_GEAR, second payload byte; no null bound",
+      "DA37": "6F1.618.22DA37|e=18,fc=1; 4SERIES_TIME_D/S/M, three 32-bit fields; no null bounds"
+    },
+    "movement": {
+      "4AB1": "6F1.612.224AB1|e=12,fc=1; 4SERIES_VSS2",
+      "D240": "6F1.60D.22D240|e=0D,fc=1; 4SERIES_VSS_INSTR",
+      "D107": "6F1.660.22D107|e=60,fc=1; 4SERIES_VSS",
+      "DBE4": "6F1.629.22DBE4|e=29,fc=1; four signed wheel speeds",
+      "D10D": "6F1.660.22D10D|e=60,fc=1; two 32-bit odometer fields",
+      "558E": "6F1.612.22558E|e=12,fc=1; 32-bit distance counter"
+    }
+  },
+  "proposals": [
+    {
+      "target": "DA12, DA25, DA2E, DA37",
+      "classification": "confirmed transport unavailability, no numeric sentinel confirmed",
+      "action": "Do not add fmt.nullmin/nullmax from these samples. Retain valid positive responses; a NO DATA adapter response already contains no decoded signal. Document operational startup gaps separately if desired.",
+      "evidence": {
+        "route": ["ATCEA18", "ATSH6F1", "ATCRA618", "ATFCSM1", "ATFCSD18300000"],
+        "session_500_counts": "Each DID had four requests: first three NO DATA and last one positive, on the same route. A 612 response to 224AB1 was available earlier in the session, so this is specifically the 618 path, not proof of total adapter failure.",
+        "records": [
+          {"session": 500, "pk": 6054217, "utc": "2025-02-22T16:50:01.092Z", "command": "22DA25", "response": "NO DATA", "raw_hex": "4E4F20444154410D"},
+          {"session": 500, "pk": 6055018, "utc": "2025-02-22T16:50:48.195Z", "command": "22DA25", "response": "618F10562DA25003A", "raw_hex": "36313846313035363244413235303033410D"},
+          {"session": 500, "pk": 6054274, "utc": "2025-02-22T16:50:01.330Z", "command": "22DA2E", "response": "NO DATA", "raw_hex": "4E4F20444154410D"},
+          {"session": 500, "pk": 6054907, "utc": "2025-02-22T16:50:47.471Z", "command": "22DA2E", "response": "618F10562DA2E0001", "raw_hex": "36313846313035363244413245303030310D"},
+          {"session": 500, "pk": 6054281, "utc": "2025-02-22T16:50:00.824Z", "command": "22DA12", "response": "NO DATA", "raw_hex": "4E4F20444154410D"},
+          {"session": 500, "pk": 6054955, "utc": "2025-02-22T16:50:47.951Z", "command": "22DA12", "response": "618F10562DA120035", "raw_hex": "36313846313035363244413132303033350D"},
+          {"session": 500, "pk": 6054209, "utc": "2025-02-22T16:50:01.558Z", "command": "22DA37", "response": "NO DATA", "raw_hex": "4E4F20444154410D"},
+          {"session": 500, "pk": 6054937, "utc": "2025-02-22T16:50:47.712Z", "command": "22DA37", "response": "618F1100F62DA37006A|618F121843200009854|618F12200002A84FFFF", "raw_hex": "363138463131303046363244413337303036410D363138463132313834333230303030393835340D363138463132323030303032413834464646460D"}
+        ],
+        "other_session": "Session 3000: first three valid responses for each DID, then 25 NO DATA responses each; supports transport loss, not a numeric code. Route remained 6F1/618/e18."
+      }
+    },
+    {
+      "target": "4SERIES_VSS2, 4SERIES_VSS_INSTR, 4SERIES_VSS, wheel speeds",
+      "classification": "zero speed is valid",
+      "action": "Do not set nullmin=0 or reject raw zero. Keep speed zero decodable.",
+      "evidence": {
+        "session_5397_4AB1": "272 of 276 224AB1 records were positive raw 0000; four later records were NO DATA. Route ATCEA12, ATSH6F1, ATCRA612, ATFCSM1.",
+        "session_5395_4AB1": "122 raw 0000 among 293 records; other responses were nonzero, including first record raw 0525. Same 612 route.",
+        "records": [
+          {"session": 5397, "pk": 52784525, "utc": "2026-10-07T17:10:45.913Z", "command": "224AB1", "response": "612F105624AB10000", "raw_hex": "36313246313035363234414231303030300D"},
+          {"session": 5395, "pk": 52778427, "utc": "2026-10-07T17:03:18.080Z", "command": "224AB1", "response": "612F105624AB10525", "raw_hex": "36313246313035363234414231303532350D"},
+          {"session": 5395, "pk": 52784435, "utc": "2026-10-07T17:10:13.482Z", "command": "224AB11", "response": "612F105624AB10000", "raw_hex": "36313246313035363234414231303030300D"},
+          {"session": 500, "pk": 6054918, "utc": "2025-02-22T16:50:39.806Z", "command": "22D240", "response": "60DF10562D2400000", "raw_hex": "36304446313035363244323430303030300D", "route": ["ATCEA0D", "ATSH6F1", "ATCRA60D", "ATFCSM1"]}
+        ]
+      }
+    }
+  ],
+  "unresolved_rejected_numeric_hypotheses": [
+    {
+      "hypothesis": "DA25 raw 0x30 (scaled -12 C) is a confirmed unavailable sentinel",
+      "decision": "unresolved; do not filter",
+      "reason": "In 81 VIN-matching sessions 450-550, 107 positive DA25 replies included seven 0x30 records in six sessions; a low EOT after warmer readings is suspicious but does not establish a documented invalid code. In session 526, two 0x7B responses precede 0x30 eight minutes later; the latter is a positive 618 reply near a valid gear 0006 and DA37 reply. No independent reference proves the oil temperature invalid then. A nullmin at -12 C would also remove potentially real cold temperatures.",
+      "records": [
+        {"session": 482, "pk": 5529407, "utc": "2025-02-16T12:51:01.300Z", "response": "618F10562DA250030", "raw_hex": "36313846313035363244413235303033300D", "route": "6F1/618/e18, flow control 1"},
+        {"session": 482, "pk": 5529597, "utc": "2025-02-16T12:51:31.098Z", "response": "618F10562DA250075", "raw_hex": "36313846313035363244413235303037350D", "route": "6F1/618/e18, flow control 1"},
+        {"session": 526, "pk": 6227022, "utc": "2025-02-24T09:17:40.703Z", "response": "618F10562DA25007B", "raw_hex": "36313846313035363244413235303037420D", "route": "6F1/618/e18, flow control 1"},
+        {"session": 526, "pk": 6236874, "utc": "2025-02-24T09:25:24.822Z", "response": "618F10562DA250030", "raw_hex": "36313846313035363244413235303033300D", "route": "6F1/618/e18, flow control 1"}
+      ]
+    },
+    {
+      "hypothesis": "DA2E gear raw 0x0A is unavailable",
+      "decision": "unresolved; do not filter",
+      "reason": "Six positive 000A records occurred across five VIN-matching sessions 450-550. In session 513, 000A accompanied positive DA25/DA12/DA37 data and 612 speed zero. It could be an undocumented gear/status value; no availability proof or enum definition was found. The 2018 fixture also includes 000A as a supported response.",
+      "records": [
+        {"session": 513, "pk": 6120503, "utc": "2025-02-23T17:47:05.676Z", "response": "618F10562DA2E000A", "raw_hex": "36313846313035363244413245303030410D", "route": "6F1/618/e18, flow control 1"},
+        {"session": 526, "pk": 6227013, "utc": "2025-02-24T09:17:40.976Z", "response": "618F10562DA2E000A", "raw_hex": "36313846313035363244413245303030410D", "route": "6F1/618/e18, flow control 1"}
+      ]
+    },
+    {
+      "hypothesis": "DA2E 00FF or first response 0000, D107 00FF, or any speed raw 0000 is automatically invalid",
+      "decision": "rejected from current evidence",
+      "reason": "Positive fixtures show 00FF and 0000 in context, but no documented gear/status semantics; D107 00FF is 25.5 km/h by configured scaling and has adjacent nonzero speed fixtures. Zero physical speed is routine. No broad lower/upper null threshold is safe."
+    },
+    {
+      "hypothesis": "DA37 trailing FFFF represents an invalid counter",
+      "decision": "rejected",
+      "reason": "DA37 first ISO-TP frame advertises a 0x000F-byte UDS payload: 62 DA37 plus three 32-bit counters. Trailing FFFF bytes after those 15 bytes are frame padding, not any signal value."
+    },
+    {
+      "hypothesis": "Odometer D10D/558E or wheel DBE4 has a proven numeric sentinel",
+      "decision": "unresolved; do not fabricate",
+      "reason": "Existing fixtures for D10D and DBE4 are no-data placeholders; 558E has no positive fixture. No positive outlier pattern here justifies a null bound. 558E scanlog responses can contain payload followed by FFFFFFFF padding, which must be parsed by ISO-TP length before interpreting a 32-bit field."
+    }
+  ],
+  "test_suggestions": [
+    "If the root adds an invalid-values catalog, assert NO DATA on the 618 route yields no DA12/25/2E/37 signals, then a later positive response in the same session decodes normally.",
+    "Assert positive raw 0000 movement responses remain numeric zero for 4AB1, D240 and D107; do not add nullmin=0.",
+    "Assert DA25 raw 0x30 remains represented as -12 C pending independent sentinel proof; gear DA2E raw 0x0A remains numeric/unknown rather than null.",
+    "Assert DA37 FFFF trailing ISO-TP padding is excluded from all three counter fields."
+  ]
+}

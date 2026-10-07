@@ -1,0 +1,146 @@
+{
+  "scope": "Observed 2019 BMW; rules must not be generalized to other ECUs without evidence.",
+  "convention": "OBDb fmt.nullmin and fmt.nullmax apply inclusive bounds to decoded values, not exact raw equality. No unsupported sentinel fields are added to the signal set.",
+  "review_policy": "Retain raw captures and record missing-data values separately from numeric zero. Confirm before adding a filter; log ambiguous candidates without nulling them. Existing lambda/catalyst rules are recorded with their uncertainty, not newly certified.",
+  "new_null_filters_added": 1,
+  "rules": [
+    {
+      "command_key": "6F1|12|22582C",
+      "signal_id": "4SERIES_LAMBDA_2",
+      "configured_bounds": {
+        "nullmax": 15.99
+      },
+      "unit": "scalar",
+      "evidence_status": "existing_rule_requires_independent_confirmation",
+      "observed_raw_code": null,
+      "review_note": "Configured lambda nullmax 15.99 covers raw 0xFFD8 through 0xFFFF; this may include lean/saturated readings, so startup unavailability is not confirmed."
+    },
+    {
+      "command_key": "6F1|12|22582F",
+      "signal_id": "4SERIES_CAT_T",
+      "configured_bounds": {
+        "nullmin": -50
+      },
+      "unit": "celsius",
+      "evidence_status": "existing_rule_requires_independent_confirmation",
+      "observed_raw_code": null,
+      "review_note": "Configured nullmin -50 C covers raw 0x0000 through 0x08B7 (0x08B7 decodes to -50.05 C). Candidate temperature identity and sentinel interpretation require independent confirmation."
+    },
+    {
+      "command_key": "6F1|12|225889",
+      "signal_id": "4SERIES_LAMBDA",
+      "configured_bounds": {
+        "nullmax": 15.99
+      },
+      "unit": "scalar",
+      "evidence_status": "existing_rule_requires_independent_confirmation",
+      "observed_raw_code": null,
+      "review_note": "Configured lambda nullmax 15.99 covers raw 0xFFD8 through 0xFFFF; this may include lean/saturated readings, so startup unavailability is not confirmed."
+    },
+    {
+      "command_key": "6F1|29|22DC98",
+      "signal_id": "4SERIES_TP_FL",
+      "configured_bounds": {
+        "nullmax": 6.3
+      },
+      "unit": "bars",
+      "evidence_status": "confirmed_observed_unavailable_pair",
+      "observed_raw_code": "9C18 (little-endian)",
+      "review_note": "Pressure 6.300 bar (~91.37 psi) and temperature 127 C co-occur in unavailable readings. The specific startup, RF, or sensor cause is not established."
+    },
+    {
+      "command_key": "6F1|29|22DC98",
+      "signal_id": "4SERIES_TT_FL",
+      "configured_bounds": {
+        "nullmax": 127
+      },
+      "unit": "celsius",
+      "evidence_status": "confirmed_observed_unavailable_pair",
+      "observed_raw_code": "7F",
+      "review_note": "Pressure 6.300 bar (~91.37 psi) and temperature 127 C co-occur in unavailable readings. The specific startup, RF, or sensor cause is not established."
+    },
+    {
+      "command_key": "6F1|29|22DC99",
+      "signal_id": "4SERIES_TP_FR",
+      "configured_bounds": {
+        "nullmax": 6.3
+      },
+      "unit": "bars",
+      "evidence_status": "confirmed_observed_unavailable_pair",
+      "observed_raw_code": "9C18 (little-endian)",
+      "review_note": "Pressure 6.300 bar (~91.37 psi) and temperature 127 C co-occur in unavailable readings. The specific startup, RF, or sensor cause is not established."
+    },
+    {
+      "command_key": "6F1|29|22DC99",
+      "signal_id": "4SERIES_TT_FR",
+      "configured_bounds": {
+        "nullmax": 127
+      },
+      "unit": "celsius",
+      "evidence_status": "confirmed_observed_unavailable_pair",
+      "observed_raw_code": "7F",
+      "review_note": "Pressure 6.300 bar (~91.37 psi) and temperature 127 C co-occur in unavailable readings. The specific startup, RF, or sensor cause is not established."
+    },
+    {
+      "command_key": "6F1|29|22DC9A",
+      "signal_id": "4SERIES_TP_RL",
+      "configured_bounds": {
+        "nullmax": 6.3
+      },
+      "unit": "bars",
+      "evidence_status": "confirmed_observed_unavailable_pair",
+      "observed_raw_code": "9C18 (little-endian)",
+      "review_note": "Pressure 6.300 bar (~91.37 psi) and temperature 127 C co-occur in unavailable readings. The specific startup, RF, or sensor cause is not established."
+    },
+    {
+      "command_key": "6F1|29|22DC9A",
+      "signal_id": "4SERIES_TT_RL",
+      "configured_bounds": {
+        "nullmax": 127
+      },
+      "unit": "celsius",
+      "evidence_status": "confirmed_observed_unavailable_pair",
+      "observed_raw_code": "7F",
+      "review_note": "Pressure 6.300 bar (~91.37 psi) and temperature 127 C co-occur in unavailable readings. The specific startup, RF, or sensor cause is not established."
+    },
+    {
+      "command_key": "6F1|29|22DC9B",
+      "signal_id": "4SERIES_TP_RR",
+      "configured_bounds": {
+        "nullmax": 6.3
+      },
+      "unit": "bars",
+      "evidence_status": "confirmed_observed_unavailable_pair",
+      "observed_raw_code": "9C18 (little-endian)",
+      "review_note": "Pressure 6.300 bar (~91.37 psi) and temperature 127 C co-occur in unavailable readings. The specific startup, RF, or sensor cause is not established."
+    },
+    {
+      "command_key": "6F1|29|22DC9B",
+      "signal_id": "4SERIES_TT_RR",
+      "configured_bounds": {
+        "nullmax": 127
+      },
+      "unit": "celsius",
+      "evidence_status": "confirmed_observed_unavailable_pair",
+      "observed_raw_code": "7F",
+      "review_note": "Pressure 6.300 bar (~91.37 psi) and temperature 127 C co-occur in unavailable readings. The specific startup, RF, or sensor cause is not established."
+    },
+    {
+      "command_key": "6F1|12|22582C",
+      "signal_id": "4SERIES_LAMBDA_2",
+      "configured_bounds": {
+        "nullmin": 0
+      },
+      "unit": "scalar",
+      "evidence_status": "empirically_supported_unavailable_value",
+      "observed_raw_code": "0000",
+      "review_note": "5 zero readings in 4 independent sessions among 1135 positives; first positive in each, paired with catalyst 08B7; two sessions recover near lambda 1. Unsigned /4096 means this lower bound excludes exactly zero. Sensor position and underlying readiness cause remain unverified."
+    }
+  ],
+  "evidence_files": [
+    "tpms.json",
+    "dme.json",
+    "transmission.json"
+  ],
+  "response_status_note": "UDS negative responses (e.g. 7F2221 busyRepeatRequest, 7F2231 requestOutOfRange), NO DATA, and malformed/truncated responses are not numeric signal sentinels."
+}

@@ -226,3 +226,97 @@ def test_polling_tier_labels_match_command_intervals(research_commands):
     for member in STAGED:
         assert all(s['description'].startswith('[Polling: Unclassified; research override] ')
                    for s in member['decoding_hypotheses'])
+
+
+TPMS_INVALID = json.loads((TESTS / 'research/invalid-values/tpms.json').read_text())
+
+
+@pytest.mark.parametrize('capture', TPMS_INVALID['samples'], ids=lambda c: str(c['record_pk']))
+def test_tpms_unavailable_values_preserve_other_fields(capture, research_commands):
+    key = '|'.join((capture['route']['hdr'], capture['route']['eax'], capture['command']))
+    definition = research_commands[key]
+    packet = packets({'response_hex': capture['raw_response_hex']})[0]
+    assert packet.data.hex().upper() == capture['packet_hex']
+    assert packet.can_identifier == capture['route']['rax']
+    registry = CommandRegistry([Command.from_json(definition)])
+    values = {}
+    for response in registry.identify_commands(packet):
+        values.update(response.values)
+    wheel = capture['wheel']
+    if capture['classification'] == 'unavailable_pair':
+        assert values[f'4SERIES_TP_{wheel}'] is None
+        assert values[f'4SERIES_TT_{wheel}'] is None
+    else:
+        assert values[f'4SERIES_TP_{wheel}'] == pytest.approx(capture['pressure_bar'])
+        assert values[f'4SERIES_TT_{wheel}'] == capture['temperature_celsius']
+    assert values[f'4SERIES_TP_SET_{wheel}'] == pytest.approx(capture['setpoint_bar'])
+    assert values[f'4SERIES_TPMS_POS_{wheel}'] == capture['position_raw']
+
+
+@pytest.mark.parametrize('did', ['DC98', 'DC99', 'DC9A', 'DC9B'])
+def test_tpms_null_bounds_are_inclusive_and_do_not_mask_neighbors(did, research_commands):
+    from can.signals import Scaling
+    definition = research_commands[f'6F1|29|22{did}']
+    pressure = Scaling.from_json(next(s['fmt'] for s in definition['signals'] if s['id'].startswith('4SERIES_TP_') and not s['id'].startswith('4SERIES_TP_SET_')))
+    temperature = Scaling.from_json(next(s['fmt'] for s in definition['signals'] if s['id'].startswith('4SERIES_TT_')))
+    # Synthetic boundary cases verify the configured inclusive range; they are
+    # not claims that these adjacent values were observed on the vehicle.
+    for raw, expected in [(0, 0), (6299, 6.299), (6300, None), (6301, None)]:
+        payload = bytearray(8)
+        payload[5:7] = raw.to_bytes(2, 'little')
+        value = pressure.decode_value(payload)
+        assert value is None if expected is None else value == pytest.approx(expected)
+    for raw, expected in [(0, 0), (126, 126), (127, None)]:
+        payload = bytearray(8)
+        payload[7] = raw
+        value = temperature.decode_value(payload)
+        assert value is None if expected is None else value == expected
+
+
+DME_INVALID = json.loads((TESTS / 'research/invalid-values/dme.json').read_text())
+LAMBDA_STARTUP = DME_INVALID['solid_proposals'][0]['evidence']
+DME_STARTUP_CASES = [
+    (capture, expected)
+    for category, expected in [('zero_records', None), ('paired_catalyst', None),
+                               ('later_plausible', 'numeric'), ('paired_lambda1_first', 'numeric')]
+    for capture in LAMBDA_STARTUP[category]
+]
+
+
+@pytest.mark.parametrize('capture,expected', DME_STARTUP_CASES, ids=[str(c['record']) for c, _ in DME_STARTUP_CASES])
+def test_recorded_dme_startup_values(capture, expected, research_commands):
+    route = capture['route']
+    key = '|'.join((route['ATSH'], route['ATCEA'], capture['command']))
+    definition = research_commands[key]
+    packet = packets({'response_hex': capture['raw_hex']})[0]
+    assert packet.can_identifier == route['ATCRA']
+    assert packet.data[3:].hex().upper() == capture['payload']
+    registry = CommandRegistry([Command.from_json(definition)])
+    values = {}
+    for response in registry.identify_commands(packet):
+        values.update(response.values)
+    value = values[definition['signals'][0]['id']]
+    if expected is None:
+        assert value is None
+    else:
+        assert value == pytest.approx(int(capture['payload'], 16) / 4096)
+
+
+def test_lambda_zero_filter_preserves_small_positive_and_lean_values(research_commands):
+    from can.signals import Scaling
+    scaling = Scaling.from_json(research_commands['6F1|12|22582C']['signals'][0]['fmt'])
+    assert scaling.decode_value(bytes.fromhex('0000')) is None
+    assert scaling.decode_value(bytes.fromhex('0001')) == pytest.approx(1 / 4096)
+    assert scaling.decode_value(bytes.fromhex('1000')) == 1
+    assert scaling.decode_value(bytes.fromhex('FF00')) == 15.9375
+
+
+def test_invalid_value_catalog_tracks_all_configured_null_bounds(research_commands):
+    catalog = json.loads((TESTS / 'research/invalid-values/index.json').read_text())
+    documented = {}
+    for rule in catalog['rules']:
+        documented.setdefault(rule['signal_id'], {}).update(rule['configured_bounds'])
+    actual = {s['id']: {k: v for k, v in s['fmt'].items() if k in ('nullmin', 'nullmax')}
+              for c in research_commands.values() for s in c['signals']
+              if any(k in s.get('fmt', {}) for k in ('nullmin', 'nullmax'))}
+    assert documented == actual

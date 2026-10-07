@@ -138,5 +138,23 @@ supported interpretations, preserving research status where evidence is weak.
 Keep the existing `[Polling: ...]` description prefixes and tier conventions when
 editing descriptions. Validate any implementation with the schema formatter and
 `bash scripts/test-repo.sh BMW-4-series`; the last validated configuration had
-**1,613 passing tests**. The pre-existing local `.gitignore` change excluding
+**1,645 passing tests**. The pre-existing local `.gitignore` change excluding
 `CLAUDE.md` is unrelated and was intentionally not committed.
+
+## Invalid-value review completed before handoff
+
+The catalog at `tests/research/invalid-values/index.json` now enumerates all null
+bounds and points to TPMS, DME, and transmission evidence files. One new filter
+was added: **lambda 2 (582C) raw 0000 becomes null**, based on initial-session
+occurrences in four independent sessions and later recovery in two. TPMS's
+6.300-bar/127-C pair and the catalyst low marker were already filtered. Tire
+pressure targets remain usable when sensor pressure/temperature are unavailable.
+
+For new recordings, log raw sentinel, affected signal, first occurrence relative
+to session start, transitions back to usable readings, independent reference,
+route, and lossless frame provenance. A scan session may start with the engine
+already warm; session-start correlation alone does not identify the cause.
+Prioritize confirming or revising the inherited lambda upper null bounds and
+resolving DA25 raw 30 / DA2E state 0A. Do not declare high lambda, zero speed,
+transport errors, or padding to be invalid sensor values without evidence.
+The latest review changed neither polling tiers nor the 400/min testing budget.

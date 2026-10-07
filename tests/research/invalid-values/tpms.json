@@ -1,0 +1,330 @@
+{
+  "scope": "BMW 4 Series 2019 configured 6F1/629 ext 29 TPMS DIDs DC98-DC9B; bounded session PK 5370-5397 matching non-null VIN of session 5397 by equality without exposing VIN",
+  "session_pks": [
+    5370,
+    5374,
+    5382,
+    5383,
+    5386,
+    5388,
+    5391,
+    5393,
+    5394,
+    5395,
+    5397
+  ],
+  "response_counts": {
+    "FL": {
+      "unavailable_pair": 9,
+      "ordinary": 23,
+      "nrc_21": 1
+    },
+    "FR": {
+      "unavailable_pair": 10,
+      "ordinary": 22,
+      "nrc_21": 1
+    },
+    "RL": {
+      "unavailable_pair": 9,
+      "ordinary": 23,
+      "nrc_21": 1
+    },
+    "RR": {
+      "unavailable_pair": 9,
+      "ordinary": 22,
+      "nrc_21": 1,
+      "no_data": 1
+    }
+  },
+  "existing_filters": {
+    "pressure": {
+      "nullmax_bar": 6.3,
+      "observed_raw_little_endian": "9C18"
+    },
+    "temperature": {
+      "nullmax_celsius": 127,
+      "observed_raw": "7F"
+    }
+  },
+  "proposal": {
+    "new_invalid_codes": [],
+    "retain_existing": [
+      "pressure 6.300 bar / raw 0x189C",
+      "temperature 127 C / raw 0x7F"
+    ],
+    "setpoint": "No invalid code observed. Every parsed setpoint remains valid and constant per wheel, including when paired pressure and temperature are unavailable."
+  },
+  "interpretation": "Unavailable pair is a positive UDS response carrying 6.300 bar and 127 C; the 0x21 negative responses and NO DATA records are distinct response statuses. Data establish an unavailable reading, not a confirmed startup, warming, or RF cause. nullmax represents an inclusive range in tooling, not an exact raw-code match.",
+  "samples": [
+    {
+      "session_pk": 5370,
+      "record_pk": 52680798,
+      "command_id": 92,
+      "timestamp_utc": "2026-10-05T18:04:48.502217+00:00",
+      "command": "22DC99",
+      "wheel": "FR",
+      "sequence_for_wheel_in_session": 1,
+      "classification": "unavailable_pair",
+      "route": {
+        "hdr": "6F1",
+        "rax": "629",
+        "eax": "29",
+        "flow_control_mode": 1
+      },
+      "raw_response_text": "629F1102062DC993A1E\r629F1216B35019C187F\r629F122FC08FFFF7E00\r629F123001700030000\r629F124FFFF1A03FFFF\r629F125FF0000FFFFFF\r",
+      "raw_response_hex": "363239463131303230363244433939334131450d363239463132313642333530313943313837460d363239463132324643303846464646374530300d363239463132333030313730303033303030300d363239463132344646464631413033464646460d363239463132354646303030304646464646460d",
+      "packet_hex": "62DC993A1E6B35019C187FFC08FFFF7E00001700030000FFFF1A03FFFFFF0000",
+      "position_raw": 1,
+      "pressure_raw_hex": "9C18",
+      "pressure_raw_signed_millibar": 6300,
+      "pressure_bar": 6.3,
+      "temperature_raw_hex": "7F",
+      "temperature_celsius": 127,
+      "setpoint_raw_hex": "FC08",
+      "setpoint_bar": 2.3
+    },
+    {
+      "session_pk": 5370,
+      "record_pk": 52680839,
+      "command_id": 93,
+      "timestamp_utc": "2026-10-05T18:04:48.650963+00:00",
+      "command": "22DC98",
+      "wheel": "FL",
+      "sequence_for_wheel_in_session": 1,
+      "classification": "unavailable_pair",
+      "route": {
+        "hdr": "6F1",
+        "rax": "629",
+        "eax": "29",
+        "flow_control_mode": 1
+      },
+      "raw_response_text": "629F1102062DC98151F\r629F1216B35009C187F\r629F122E30853FF4B00\r629F123001800030000\r629F124FFFF1A03FFFF\r629F125FF0000FFFFFF\r",
+      "raw_response_hex": "363239463131303230363244433938313531460d363239463132313642333530303943313837460d363239463132324533303835334646344230300d363239463132333030313830303033303030300d363239463132344646464631413033464646460d363239463132354646303030304646464646460d",
+      "packet_hex": "62DC98151F6B35009C187FE30853FF4B00001800030000FFFF1A03FFFFFF0000",
+      "position_raw": 0,
+      "pressure_raw_hex": "9C18",
+      "pressure_raw_signed_millibar": 6300,
+      "pressure_bar": 6.3,
+      "temperature_raw_hex": "7F",
+      "temperature_celsius": 127,
+      "setpoint_raw_hex": "E308",
+      "setpoint_bar": 2.275
+    },
+    {
+      "session_pk": 5370,
+      "record_pk": 52680840,
+      "command_id": 94,
+      "timestamp_utc": "2026-10-05T18:04:48.804134+00:00",
+      "command": "22DC9A",
+      "wheel": "RL",
+      "sequence_for_wheel_in_session": 1,
+      "classification": "unavailable_pair",
+      "route": {
+        "hdr": "6F1",
+        "rax": "629",
+        "eax": "29",
+        "flow_control_mode": 1
+      },
+      "raw_response_text": "629F1102062DC9A851E\r629F1216B35029C187F\r629F122730AFFFF0600\r629F123001700030000\r629F124FFFF1A03FFFF\r629F125FF0000FFFFFF\r",
+      "raw_response_hex": "363239463131303230363244433941383531450d363239463132313642333530323943313837460d363239463132323733304146464646303630300d363239463132333030313730303033303030300d363239463132344646464631413033464646460d363239463132354646303030304646464646460d",
+      "packet_hex": "62DC9A851E6B35029C187F730AFFFF0600001700030000FFFF1A03FFFFFF0000",
+      "position_raw": 2,
+      "pressure_raw_hex": "9C18",
+      "pressure_raw_signed_millibar": 6300,
+      "pressure_bar": 6.3,
+      "temperature_raw_hex": "7F",
+      "temperature_celsius": 127,
+      "setpoint_raw_hex": "730A",
+      "setpoint_bar": 2.675
+    },
+    {
+      "session_pk": 5370,
+      "record_pk": 52680776,
+      "command_id": 95,
+      "timestamp_utc": "2026-10-05T18:04:48.950951+00:00",
+      "command": "22DC9B",
+      "wheel": "RR",
+      "sequence_for_wheel_in_session": 1,
+      "classification": "unavailable_pair",
+      "route": {
+        "hdr": "6F1",
+        "rax": "629",
+        "eax": "29",
+        "flow_control_mode": 1
+      },
+      "raw_response_text": "629F1102062DC9B6C1E\r629F1216B35039C187F\r629F122730AFFFF7400\r629F123001700030000\r629F124FFFF1A03FFFF\r629F125FF0000FFFFFF\r",
+      "raw_response_hex": "363239463131303230363244433942364331450d363239463132313642333530333943313837460d363239463132323733304146464646373430300d363239463132333030313730303033303030300d363239463132344646464631413033464646460d363239463132354646303030304646464646460d",
+      "packet_hex": "62DC9B6C1E6B35039C187F730AFFFF7400001700030000FFFF1A03FFFFFF0000",
+      "position_raw": 3,
+      "pressure_raw_hex": "9C18",
+      "pressure_raw_signed_millibar": 6300,
+      "pressure_bar": 6.3,
+      "temperature_raw_hex": "7F",
+      "temperature_celsius": 127,
+      "setpoint_raw_hex": "730A",
+      "setpoint_bar": 2.675
+    },
+    {
+      "session_pk": 5370,
+      "record_pk": 52681889,
+      "command_id": 1246,
+      "timestamp_utc": "2026-10-05T18:06:14.620012+00:00",
+      "command": "22DC99",
+      "wheel": "FR",
+      "sequence_for_wheel_in_session": 2,
+      "classification": "ordinary",
+      "route": {
+        "hdr": "6F1",
+        "rax": "629",
+        "eax": "29",
+        "flow_control_mode": 1
+      },
+      "raw_response_text": "629F1102062DC993A1E\r629F1216B3501FC0824\r629F122FC08FFFF0000\r629F123001700000000\r629F124FFFF1A0300FF\r629F125FF0000FFFFFF\r",
+      "raw_response_hex": "363239463131303230363244433939334131450d363239463132313642333530314643303832340d363239463132324643303846464646303030300d363239463132333030313730303030303030300d363239463132344646464631413033303046460d363239463132354646303030304646464646460d",
+      "packet_hex": "62DC993A1E6B3501FC0824FC08FFFF0000001700000000FFFF1A0300FFFF0000",
+      "position_raw": 1,
+      "pressure_raw_hex": "FC08",
+      "pressure_raw_signed_millibar": 2300,
+      "pressure_bar": 2.3,
+      "temperature_raw_hex": "24",
+      "temperature_celsius": 36,
+      "setpoint_raw_hex": "FC08",
+      "setpoint_bar": 2.3
+    },
+    {
+      "session_pk": 5370,
+      "record_pk": 52681925,
+      "command_id": 1247,
+      "timestamp_utc": "2026-10-05T18:06:14.829853+00:00",
+      "command": "22DC9B",
+      "wheel": "RR",
+      "sequence_for_wheel_in_session": 2,
+      "classification": "ordinary",
+      "route": {
+        "hdr": "6F1",
+        "rax": "629",
+        "eax": "29",
+        "flow_control_mode": 1
+      },
+      "raw_response_text": "629F1102062DC9B6C1E\r629F1216B3503A50A1F\r629F122730AFFFF0000\r629F123001700000000\r629F124FFFF1A0300FF\r629F125FF0000FFFFFF\r",
+      "raw_response_hex": "363239463131303230363244433942364331450d363239463132313642333530334135304131460d363239463132323733304146464646303030300d363239463132333030313730303030303030300d363239463132344646464631413033303046460d363239463132354646303030304646464646460d",
+      "packet_hex": "62DC9B6C1E6B3503A50A1F730AFFFF0000001700000000FFFF1A0300FFFF0000",
+      "position_raw": 3,
+      "pressure_raw_hex": "A50A",
+      "pressure_raw_signed_millibar": 2725,
+      "pressure_bar": 2.725,
+      "temperature_raw_hex": "1F",
+      "temperature_celsius": 31,
+      "setpoint_raw_hex": "730A",
+      "setpoint_bar": 2.675
+    },
+    {
+      "session_pk": 5370,
+      "record_pk": 52681913,
+      "command_id": 1248,
+      "timestamp_utc": "2026-10-05T18:06:14.994756+00:00",
+      "command": "22DC9A",
+      "wheel": "RL",
+      "sequence_for_wheel_in_session": 2,
+      "classification": "ordinary",
+      "route": {
+        "hdr": "6F1",
+        "rax": "629",
+        "eax": "29",
+        "flow_control_mode": 1
+      },
+      "raw_response_text": "629F1102062DC9A851E\r629F1216B35028C0A1E\r629F122730AFFFF0000\r629F123001700000000\r629F124FFFF1A0300FF\r629F125FF0000FFFFFF\r",
+      "raw_response_hex": "363239463131303230363244433941383531450d363239463132313642333530323843304131450d363239463132323733304146464646303030300d363239463132333030313730303030303030300d363239463132344646464631413033303046460d363239463132354646303030304646464646460d",
+      "packet_hex": "62DC9A851E6B35028C0A1E730AFFFF0000001700000000FFFF1A0300FFFF0000",
+      "position_raw": 2,
+      "pressure_raw_hex": "8C0A",
+      "pressure_raw_signed_millibar": 2700,
+      "pressure_bar": 2.7,
+      "temperature_raw_hex": "1E",
+      "temperature_celsius": 30,
+      "setpoint_raw_hex": "730A",
+      "setpoint_bar": 2.675
+    },
+    {
+      "session_pk": 5370,
+      "record_pk": 52681859,
+      "command_id": 1249,
+      "timestamp_utc": "2026-10-05T18:06:15.158752+00:00",
+      "command": "22DC98",
+      "wheel": "FL",
+      "sequence_for_wheel_in_session": 2,
+      "classification": "ordinary",
+      "route": {
+        "hdr": "6F1",
+        "rax": "629",
+        "eax": "29",
+        "flow_control_mode": 1
+      },
+      "raw_response_text": "629F1102062DC98151F\r629F1216B3500150924\r629F122E30853FF4700\r629F123001800000000\r629F124FFFF1A0300FF\r629F125FF0000FFFFFF\r",
+      "raw_response_hex": "363239463131303230363244433938313531460d363239463132313642333530303135303932340d363239463132324533303835334646343730300d363239463132333030313830303030303030300d363239463132344646464631413033303046460d363239463132354646303030304646464646460d",
+      "packet_hex": "62DC98151F6B3500150924E30853FF4700001800000000FFFF1A0300FFFF0000",
+      "position_raw": 0,
+      "pressure_raw_hex": "1509",
+      "pressure_raw_signed_millibar": 2325,
+      "pressure_bar": 2.325,
+      "temperature_raw_hex": "24",
+      "temperature_celsius": 36,
+      "setpoint_raw_hex": "E308",
+      "setpoint_bar": 2.275
+    },
+    {
+      "session_pk": 5397,
+      "record_pk": 52784524,
+      "command_id": 93,
+      "timestamp_utc": "2026-10-07T17:10:47.998289+00:00",
+      "command": "22DC9A",
+      "wheel": "RL",
+      "sequence_for_wheel_in_session": 1,
+      "classification": "ordinary",
+      "route": {
+        "hdr": "6F1",
+        "rax": "629",
+        "eax": "29",
+        "flow_control_mode": 1
+      },
+      "raw_response_text": "629F1102062DC9A851E\r629F1216B35028C0A1D\r629F122730AFFFF0000\r629F123001700000000\r629F124FFFF1A0300FF\r629F125FF0000FFFFFF\r",
+      "raw_response_hex": "363239463131303230363244433941383531450d363239463132313642333530323843304131440d363239463132323733304146464646303030300d363239463132333030313730303030303030300d363239463132344646464631413033303046460d363239463132354646303030304646464646460d",
+      "packet_hex": "62DC9A851E6B35028C0A1D730AFFFF0000001700000000FFFF1A0300FFFF0000",
+      "position_raw": 2,
+      "pressure_raw_hex": "8C0A",
+      "pressure_raw_signed_millibar": 2700,
+      "pressure_bar": 2.7,
+      "temperature_raw_hex": "1D",
+      "temperature_celsius": 29,
+      "setpoint_raw_hex": "730A",
+      "setpoint_bar": 2.675
+    },
+    {
+      "session_pk": 5397,
+      "record_pk": 52787953,
+      "command_id": 3266,
+      "timestamp_utc": "2026-10-07T17:13:10.228165+00:00",
+      "command": "22DC9A",
+      "wheel": "RL",
+      "sequence_for_wheel_in_session": 3,
+      "classification": "unavailable_pair",
+      "route": {
+        "hdr": "6F1",
+        "rax": "629",
+        "eax": "29",
+        "flow_control_mode": 1
+      },
+      "raw_response_text": "629F1102062DC9A851E\r629F1216B35029C187F\r629F122730AFFFF0000\r629F123001700030000\r629F124FFFF1A03FFFF\r629F125FF0000FFFFFF\r",
+      "raw_response_hex": "363239463131303230363244433941383531450d363239463132313642333530323943313837460d363239463132323733304146464646303030300d363239463132333030313730303033303030300d363239463132344646464631413033464646460d363239463132354646303030304646464646460d",
+      "packet_hex": "62DC9A851E6B35029C187F730AFFFF0000001700030000FFFF1A03FFFFFF0000",
+      "position_raw": 2,
+      "pressure_raw_hex": "9C18",
+      "pressure_raw_signed_millibar": 6300,
+      "pressure_bar": 6.3,
+      "temperature_raw_hex": "7F",
+      "temperature_celsius": 127,
+      "setpoint_raw_hex": "730A",
+      "setpoint_bar": 2.675
+    }
+  ]
+}
