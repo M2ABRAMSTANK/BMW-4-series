@@ -2,6 +2,9 @@
 
 This repository contains signal set configurations for the BMW 4 Series, organized by model year and version. The files are structured to allow for easy differentiation between model generations and other vehicle parameters, ensuring accurate signal mapping for each version of the BMW 4 Series.
 
+The [next-session handoff](HANDOFF.md) records the scanlog cutoff and the plan to
+measure testing headroom. The testing allowance remains **200 requests/minute**.
+
 ## Polling convention
 
 Signal descriptions begin with `[Polling: <tier>]`. This is a local documentation
