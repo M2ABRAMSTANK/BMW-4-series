@@ -1,0 +1,2053 @@
+{
+  "paired_measurements": [
+    {
+      "candidate": {
+        "session_pk": 3652,
+        "record_pk": 36031062,
+        "command_id": 2019,
+        "timestamp_utc": "2025-12-29T17:30:02.050060+00:00",
+        "sent_command": "224807",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "6F1",
+          "ATCEA": "12",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "1"
+        },
+        "response_hex": "36313246313035363234383037303538390d",
+        "expected_values": {
+          "4SERIES_4807": 708.5
+        },
+        "key": "6F1|12|224807"
+      },
+      "reference": {
+        "session_pk": 3652,
+        "record_pk": 36031059,
+        "command_id": 1998,
+        "timestamp_utc": "2025-12-29T17:30:01.031154+00:00",
+        "sent_command": "010C",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "7E1",
+          "ATCEA": "",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "7E9",
+          "ATFCSM": "0"
+        },
+        "response_hex": "374539303434313043304230340d",
+        "reference_value": 705.0,
+        "reference_command": "010C"
+      },
+      "initial_audit_decision": "activate_2019",
+      "current_status": "regular_2019"
+    },
+    {
+      "candidate": {
+        "session_pk": 3652,
+        "record_pk": 36034938,
+        "command_id": 5802,
+        "timestamp_utc": "2025-12-29T17:32:35.681509+00:00",
+        "sent_command": "224807",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "6F1",
+          "ATCEA": "12",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "1"
+        },
+        "response_hex": "36313246313035363234383037303836370d",
+        "expected_values": {
+          "4SERIES_4807": 1075.5
+        },
+        "key": "6F1|12|224807"
+      },
+      "reference": {
+        "session_pk": 3652,
+        "record_pk": 36034951,
+        "command_id": 5791,
+        "timestamp_utc": "2025-12-29T17:32:35.264330+00:00",
+        "sent_command": "010C",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "7E1",
+          "ATCEA": "",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "7E9",
+          "ATFCSM": "0"
+        },
+        "response_hex": "374539303434313043313045300d",
+        "reference_value": 1080.0,
+        "reference_command": "010C"
+      },
+      "initial_audit_decision": "activate_2019",
+      "current_status": "regular_2019"
+    },
+    {
+      "candidate": {
+        "session_pk": 3021,
+        "record_pk": 33889963,
+        "command_id": 790,
+        "timestamp_utc": "2025-12-12T03:48:01.789558+00:00",
+        "sent_command": "224300",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "6F1",
+          "ATCEA": "12",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "1"
+        },
+        "response_hex": "36313246313035363234333030304536420d",
+        "expected_values": {
+          "4SERIES_4300": 95.95
+        },
+        "key": "6F1|12|224300"
+      },
+      "reference": {
+        "session_pk": 3021,
+        "record_pk": 33890063,
+        "command_id": 815,
+        "timestamp_utc": "2025-12-12T03:48:03.111337+00:00",
+        "sent_command": "0105",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "7E1",
+          "ATCEA": "",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "7E9",
+          "ATFCSM": "0"
+        },
+        "response_hex": "37453930333431303538380d",
+        "reference_value": 96.0,
+        "reference_command": "0105"
+      },
+      "initial_audit_decision": "activate_2019",
+      "current_status": "regular_2019"
+    },
+    {
+      "candidate": {
+        "session_pk": 3021,
+        "record_pk": 33891500,
+        "command_id": 2219,
+        "timestamp_utc": "2025-12-12T03:49:03.228899+00:00",
+        "sent_command": "224300",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "6F1",
+          "ATCEA": "12",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "1"
+        },
+        "response_hex": "36313246313035363234333030304543420d",
+        "expected_values": {
+          "4SERIES_4300": 105.55
+        },
+        "key": "6F1|12|224300"
+      },
+      "reference": {
+        "session_pk": 3021,
+        "record_pk": 33891565,
+        "command_id": 2241,
+        "timestamp_utc": "2025-12-12T03:49:04.264923+00:00",
+        "sent_command": "0105",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "7E1",
+          "ATCEA": "",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "7E9",
+          "ATFCSM": "0"
+        },
+        "response_hex": "37453930333431303539320d",
+        "reference_value": 106.0,
+        "reference_command": "0105"
+      },
+      "initial_audit_decision": "activate_2019",
+      "current_status": "regular_2019"
+    },
+    {
+      "candidate": {
+        "session_pk": 3290,
+        "record_pk": 34982446,
+        "command_id": 995,
+        "timestamp_utc": "2025-12-19T03:52:58.206646+00:00",
+        "sent_command": "225805",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "6F1",
+          "ATCEA": "12",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "1"
+        },
+        "response_hex": "36313246313035363235383035304434410d",
+        "expected_values": {
+          "4SERIES_5805": 67.05
+        },
+        "key": "6F1|12|225805"
+      },
+      "reference": {
+        "session_pk": 3290,
+        "record_pk": 34982537,
+        "command_id": 973,
+        "timestamp_utc": "2025-12-19T03:52:57.067561+00:00",
+        "sent_command": "0105",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "7E1",
+          "ATCEA": "",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "7E9",
+          "ATFCSM": "0"
+        },
+        "response_hex": "37453930333431303536410d",
+        "reference_value": 66.0,
+        "reference_command": "0105"
+      },
+      "initial_audit_decision": "activate_2019",
+      "current_status": "regular_2019"
+    },
+    {
+      "candidate": {
+        "session_pk": 3290,
+        "record_pk": 34983853,
+        "command_id": 2568,
+        "timestamp_utc": "2025-12-19T03:53:58.224832+00:00",
+        "sent_command": "225805",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "6F1",
+          "ATCEA": "12",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "1"
+        },
+        "response_hex": "36313246313035363235383035304436450d",
+        "expected_values": {
+          "4SERIES_5805": 70.65
+        },
+        "key": "6F1|12|225805"
+      },
+      "reference": {
+        "session_pk": 3290,
+        "record_pk": 34984042,
+        "command_id": 2556,
+        "timestamp_utc": "2025-12-19T03:53:57.757964+00:00",
+        "sent_command": "0105",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "7E1",
+          "ATCEA": "",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "7E9",
+          "ATFCSM": "0"
+        },
+        "response_hex": "37453930333431303536450d",
+        "reference_value": 70.0,
+        "reference_command": "0105"
+      },
+      "initial_audit_decision": "activate_2019",
+      "current_status": "regular_2019"
+    },
+    {
+      "candidate": {
+        "session_pk": 3021,
+        "record_pk": 33889329,
+        "command_id": 88,
+        "timestamp_utc": "2025-12-12T03:47:14.360687+00:00",
+        "sent_command": "225822",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "6F1",
+          "ATCEA": "12",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "1"
+        },
+        "response_hex": "3631324631303436323538323239300d",
+        "expected_values": {
+          "4SERIES_5822": 84
+        },
+        "key": "6F1|12|225822"
+      },
+      "reference": {
+        "session_pk": 3021,
+        "record_pk": 33889350,
+        "command_id": 102,
+        "timestamp_utc": "2025-12-12T03:47:16.069340+00:00",
+        "sent_command": "224408",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "6F1",
+          "ATCEA": "12",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "1"
+        },
+        "response_hex": "36313246313035363234343038304446410d",
+        "reference_value": 84.65,
+        "reference_command": "224408"
+      },
+      "initial_audit_decision": "activate_2019",
+      "current_status": "regular_2019"
+    },
+    {
+      "candidate": {
+        "session_pk": 3021,
+        "record_pk": 33892833,
+        "command_id": 3601,
+        "timestamp_utc": "2025-12-12T03:50:02.388840+00:00",
+        "sent_command": "225822",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "6F1",
+          "ATCEA": "12",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "1"
+        },
+        "response_hex": "3631324631303436323538323239420d",
+        "expected_values": {
+          "4SERIES_5822": 95
+        },
+        "key": "6F1|12|225822"
+      },
+      "reference": {
+        "session_pk": 3021,
+        "record_pk": 33892830,
+        "command_id": 3609,
+        "timestamp_utc": "2025-12-12T03:50:02.914889+00:00",
+        "sent_command": "224408",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "6F1",
+          "ATCEA": "12",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "1"
+        },
+        "response_hex": "36313246313035363234343038304536320d",
+        "reference_value": 95.05,
+        "reference_command": "224408"
+      },
+      "initial_audit_decision": "activate_2019",
+      "current_status": "regular_2019"
+    },
+    {
+      "candidate": {
+        "session_pk": 3667,
+        "record_pk": 36166255,
+        "command_id": 1866,
+        "timestamp_utc": "2025-12-29T21:32:32.936391+00:00",
+        "sent_command": "225853",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "6F1",
+          "ATCEA": "12",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "1"
+        },
+        "response_hex": "36313246313035363235383533333043370d",
+        "expected_values": {
+          "4SERIES_5853": 12.487
+        },
+        "key": "6F1|12|225853"
+      },
+      "reference": {
+        "session_pk": 3667,
+        "record_pk": 36166285,
+        "command_id": 1879,
+        "timestamp_utc": "2025-12-29T21:32:33.792295+00:00",
+        "sent_command": "0142",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "7DF",
+          "ATCEA": "",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "0"
+        },
+        "response_hex": "374538303434313432333043300d",
+        "reference_value": 12.48,
+        "reference_command": "0142"
+      },
+      "initial_audit_decision": "activate_2019",
+      "current_status": "regular_2019"
+    },
+    {
+      "candidate": {
+        "session_pk": 3667,
+        "record_pk": 36166080,
+        "command_id": 1637,
+        "timestamp_utc": "2025-12-29T21:32:04.540560+00:00",
+        "sent_command": "225853",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "6F1",
+          "ATCEA": "12",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "1"
+        },
+        "response_hex": "36313246313035363235383533333046360d",
+        "expected_values": {
+          "4SERIES_5853": 12.534
+        },
+        "key": "6F1|12|225853"
+      },
+      "reference": {
+        "session_pk": 3667,
+        "record_pk": 36166139,
+        "command_id": 1682,
+        "timestamp_utc": "2025-12-29T21:32:12.385099+00:00",
+        "sent_command": "0142",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "7DF",
+          "ATCEA": "",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "7E8",
+          "ATFCSM": "0"
+        },
+        "response_hex": "374538303434313432333044340d",
+        "reference_value": 12.5,
+        "reference_command": "0142"
+      },
+      "initial_audit_decision": "activate_2019",
+      "current_status": "regular_2019"
+    },
+    {
+      "candidate": {
+        "session_pk": 3021,
+        "record_pk": 33889319,
+        "command_id": 83,
+        "timestamp_utc": "2025-12-12T03:47:13.759474+00:00",
+        "sent_command": "224200",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "6F1",
+          "ATCEA": "12",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "1"
+        },
+        "response_hex": "3631324631303436323432303038390d",
+        "expected_values": {
+          "4SERIES_4200_INTAKE_AIR_TEMPERATURE": 54.75
+        },
+        "key": "6F1|12|224200"
+      },
+      "reference": {
+        "session_pk": 3021,
+        "record_pk": 33889276,
+        "command_id": 67,
+        "timestamp_utc": "2025-12-12T03:47:11.747354+00:00",
+        "sent_command": "22580F",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "6F1",
+          "ATCEA": "12",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "1"
+        },
+        "response_hex": "3631324631303436323538304638390d",
+        "reference_value": 54.75,
+        "reference_command": "22580F"
+      },
+      "initial_audit_decision": "correct_keep_disabled_duplicate",
+      "current_status": "regular_2019"
+    },
+    {
+      "candidate": {
+        "session_pk": 3667,
+        "record_pk": 36166262,
+        "command_id": 1844,
+        "timestamp_utc": "2025-12-29T21:32:31.076900+00:00",
+        "sent_command": "22586A",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "6F1",
+          "ATCEA": "12",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "1"
+        },
+        "response_hex": "36313246313035363235383641303237300d",
+        "expected_values": {
+          "4SERIES_586A": 12.48
+        },
+        "key": "6F1|12|22586A"
+      },
+      "reference": {
+        "session_pk": 3667,
+        "record_pk": 36166285,
+        "command_id": 1879,
+        "timestamp_utc": "2025-12-29T21:32:33.792295+00:00",
+        "sent_command": "0142",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "7DF",
+          "ATCEA": "",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "0"
+        },
+        "response_hex": "374538303434313432333043300d",
+        "reference_value": 12.48,
+        "reference_command": "0142"
+      },
+      "initial_audit_decision": "correct_keep_disabled_duplicate",
+      "current_status": "regular_2019"
+    },
+    {
+      "candidate": {
+        "session_pk": 3667,
+        "record_pk": 36166231,
+        "command_id": 1825,
+        "timestamp_utc": "2025-12-29T21:32:29.427982+00:00",
+        "sent_command": "224609",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "6F1",
+          "ATCEA": "12",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "1"
+        },
+        "response_hex": "36313246313035363234363039303237300d",
+        "expected_values": {
+          "4SERIES_4609_BATTERY_VOLTAGE": 12.48
+        },
+        "key": "6F1|12|224609"
+      },
+      "reference": {
+        "session_pk": 3667,
+        "record_pk": 36166285,
+        "command_id": 1879,
+        "timestamp_utc": "2025-12-29T21:32:33.792295+00:00",
+        "sent_command": "0142",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "7DF",
+          "ATCEA": "",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "0"
+        },
+        "response_hex": "374538303434313432333043300d",
+        "reference_value": 12.48,
+        "reference_command": "0142"
+      },
+      "initial_audit_decision": "correct_keep_disabled_duplicate",
+      "current_status": "regular_2019"
+    },
+    {
+      "candidate": {
+        "session_pk": 3667,
+        "record_pk": 36166237,
+        "command_id": 1864,
+        "timestamp_utc": "2025-12-29T21:32:32.681062+00:00",
+        "sent_command": "225815",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "6F1",
+          "ATCEA": "12",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "1"
+        },
+        "response_hex": "36313246313035363235383135303237300d",
+        "expected_values": {
+          "4SERIES_5815_BATTERY_VOLTAGE": 12.48
+        },
+        "key": "6F1|12|225815"
+      },
+      "reference": {
+        "session_pk": 3667,
+        "record_pk": 36166285,
+        "command_id": 1879,
+        "timestamp_utc": "2025-12-29T21:32:33.792295+00:00",
+        "sent_command": "0142",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "7DF",
+          "ATCEA": "",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "0"
+        },
+        "response_hex": "374538303434313432333043300d",
+        "reference_value": 12.48,
+        "reference_command": "0142"
+      },
+      "initial_audit_decision": "correct_keep_disabled_duplicate",
+      "current_status": "regular_2019"
+    },
+    {
+      "candidate": {
+        "session_pk": 3667,
+        "record_pk": 36166279,
+        "command_id": 1865,
+        "timestamp_utc": "2025-12-29T21:32:32.771793+00:00",
+        "sent_command": "22460B",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "6F1",
+          "ATCEA": "12",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "1"
+        },
+        "response_hex": "36313246313035363234363042363535430d",
+        "expected_values": {
+          "4SERIES_460B_BATTERIESPANNUNG_VON_IBS_GEMES": 12.487
+        },
+        "key": "6F1|12|22460B"
+      },
+      "reference": {
+        "session_pk": 3667,
+        "record_pk": 36166285,
+        "command_id": 1879,
+        "timestamp_utc": "2025-12-29T21:32:33.792295+00:00",
+        "sent_command": "0142",
+        "adapter_setup": {
+          "ATH": "1",
+          "ATSP": "6",
+          "ATSH": "7DF",
+          "ATCEA": "",
+          "ATFCSD": "12300000",
+          "ATFCSH": "6F1",
+          "ATCRA": "612",
+          "ATFCSM": "0"
+        },
+        "response_hex": "374538303434313432333043300d",
+        "reference_value": 12.48,
+        "reference_command": "0142"
+      },
+      "initial_audit_decision": "correct_keep_disabled_duplicate",
+      "current_status": "regular_2019"
+    }
+  ],
+  "additional_fixture_captures": [
+    {
+      "session_pk": 3652,
+      "record_pk": 36031059,
+      "command_id": 1998,
+      "timestamp_utc": "2025-12-29T17:30:01.031154+00:00",
+      "sent_command": "010C",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "7E1",
+        "ATCEA": "",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "7E9",
+        "ATFCSM": "0"
+      },
+      "response_hex": "374539303434313043304230340d"
+    },
+    {
+      "session_pk": 3652,
+      "record_pk": 36031062,
+      "command_id": 2019,
+      "timestamp_utc": "2025-12-29T17:30:02.050060+00:00",
+      "sent_command": "224807",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "12",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313246313035363234383037303538390d"
+    },
+    {
+      "session_pk": 3652,
+      "record_pk": 36034951,
+      "command_id": 5791,
+      "timestamp_utc": "2025-12-29T17:32:35.264330+00:00",
+      "sent_command": "010C",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "7E1",
+        "ATCEA": "",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "7E9",
+        "ATFCSM": "0"
+      },
+      "response_hex": "374539303434313043313045300d"
+    },
+    {
+      "session_pk": 3652,
+      "record_pk": 36034938,
+      "command_id": 5802,
+      "timestamp_utc": "2025-12-29T17:32:35.681509+00:00",
+      "sent_command": "224807",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "12",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313246313035363234383037303836370d"
+    },
+    {
+      "session_pk": 3021,
+      "record_pk": 33889276,
+      "command_id": 67,
+      "timestamp_utc": "2025-12-12T03:47:11.747354+00:00",
+      "sent_command": "22580F",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "12",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "1"
+      },
+      "response_hex": "3631324631303436323538304638390d"
+    },
+    {
+      "session_pk": 3021,
+      "record_pk": 33889328,
+      "command_id": 81,
+      "timestamp_utc": "2025-12-12T03:47:13.520259+00:00",
+      "sent_command": "22586F",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "12",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313246313035363235383646304131360d"
+    },
+    {
+      "session_pk": 3021,
+      "record_pk": 33889319,
+      "command_id": 83,
+      "timestamp_utc": "2025-12-12T03:47:13.759474+00:00",
+      "sent_command": "224200",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "12",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "1"
+      },
+      "response_hex": "3631324631303436323432303038390d"
+    },
+    {
+      "session_pk": 3021,
+      "record_pk": 33889329,
+      "command_id": 88,
+      "timestamp_utc": "2025-12-12T03:47:14.360687+00:00",
+      "sent_command": "225822",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "12",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "1"
+      },
+      "response_hex": "3631324631303436323538323239300d"
+    },
+    {
+      "session_pk": 3021,
+      "record_pk": 33889350,
+      "command_id": 102,
+      "timestamp_utc": "2025-12-12T03:47:16.069340+00:00",
+      "sent_command": "224408",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "12",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313246313035363234343038304446410d"
+    },
+    {
+      "session_pk": 3021,
+      "record_pk": 33889408,
+      "command_id": 106,
+      "timestamp_utc": "2025-12-12T03:47:16.438803+00:00",
+      "sent_command": "22DA12",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "18",
+        "ATFCSD": "18300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "618",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313846313035363244413132303037440d"
+    },
+    {
+      "session_pk": 3021,
+      "record_pk": 33889370,
+      "command_id": 107,
+      "timestamp_utc": "2025-12-12T03:47:16.589312+00:00",
+      "sent_command": "22DA25",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "18",
+        "ATFCSD": "18300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "618",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313846313035363244413235303039300d"
+    },
+    {
+      "session_pk": 3021,
+      "record_pk": 33889963,
+      "command_id": 790,
+      "timestamp_utc": "2025-12-12T03:48:01.789558+00:00",
+      "sent_command": "224300",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "12",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313246313035363234333030304536420d"
+    },
+    {
+      "session_pk": 3021,
+      "record_pk": 33890063,
+      "command_id": 815,
+      "timestamp_utc": "2025-12-12T03:48:03.111337+00:00",
+      "sent_command": "0105",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "7E1",
+        "ATCEA": "",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "7E9",
+        "ATFCSM": "0"
+      },
+      "response_hex": "37453930333431303538380d"
+    },
+    {
+      "session_pk": 3021,
+      "record_pk": 33891365,
+      "command_id": 2184,
+      "timestamp_utc": "2025-12-12T03:49:00.933960+00:00",
+      "sent_command": "22586F",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "12",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313246313035363235383646313334410d"
+    },
+    {
+      "session_pk": 3021,
+      "record_pk": 33891500,
+      "command_id": 2219,
+      "timestamp_utc": "2025-12-12T03:49:03.228899+00:00",
+      "sent_command": "224300",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "12",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313246313035363234333030304543420d"
+    },
+    {
+      "session_pk": 3021,
+      "record_pk": 33891565,
+      "command_id": 2241,
+      "timestamp_utc": "2025-12-12T03:49:04.264923+00:00",
+      "sent_command": "0105",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "7E1",
+        "ATCEA": "",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "7E9",
+        "ATFCSM": "0"
+      },
+      "response_hex": "37453930333431303539320d"
+    },
+    {
+      "session_pk": 3021,
+      "record_pk": 33892833,
+      "command_id": 3601,
+      "timestamp_utc": "2025-12-12T03:50:02.388840+00:00",
+      "sent_command": "225822",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "12",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "1"
+      },
+      "response_hex": "3631324631303436323538323239420d"
+    },
+    {
+      "session_pk": 3021,
+      "record_pk": 33892830,
+      "command_id": 3609,
+      "timestamp_utc": "2025-12-12T03:50:02.914889+00:00",
+      "sent_command": "224408",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "12",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313246313035363234343038304536320d"
+    },
+    {
+      "session_pk": 3290,
+      "record_pk": 34982537,
+      "command_id": 973,
+      "timestamp_utc": "2025-12-19T03:52:57.067561+00:00",
+      "sent_command": "0105",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "7E1",
+        "ATCEA": "",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "7E9",
+        "ATFCSM": "0"
+      },
+      "response_hex": "37453930333431303536410d"
+    },
+    {
+      "session_pk": 3290,
+      "record_pk": 34982446,
+      "command_id": 995,
+      "timestamp_utc": "2025-12-19T03:52:58.206646+00:00",
+      "sent_command": "225805",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "12",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313246313035363235383035304434410d"
+    },
+    {
+      "session_pk": 3290,
+      "record_pk": 34984042,
+      "command_id": 2556,
+      "timestamp_utc": "2025-12-19T03:53:57.757964+00:00",
+      "sent_command": "0105",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "7E1",
+        "ATCEA": "",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "7E9",
+        "ATFCSM": "0"
+      },
+      "response_hex": "37453930333431303536450d"
+    },
+    {
+      "session_pk": 3290,
+      "record_pk": 34983853,
+      "command_id": 2568,
+      "timestamp_utc": "2025-12-19T03:53:58.224832+00:00",
+      "sent_command": "225805",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "12",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313246313035363235383035304436450d"
+    },
+    {
+      "session_pk": 3667,
+      "record_pk": 36166080,
+      "command_id": 1637,
+      "timestamp_utc": "2025-12-29T21:32:04.540560+00:00",
+      "sent_command": "225853",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "12",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313246313035363235383533333046360d"
+    },
+    {
+      "session_pk": 3667,
+      "record_pk": 36166139,
+      "command_id": 1682,
+      "timestamp_utc": "2025-12-29T21:32:12.385099+00:00",
+      "sent_command": "0142",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "7DF",
+        "ATCEA": "",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "7E8",
+        "ATFCSM": "0"
+      },
+      "response_hex": "374538303434313432333044340d"
+    },
+    {
+      "session_pk": 3667,
+      "record_pk": 36166231,
+      "command_id": 1825,
+      "timestamp_utc": "2025-12-29T21:32:29.427982+00:00",
+      "sent_command": "224609",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "12",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313246313035363234363039303237300d"
+    },
+    {
+      "session_pk": 3667,
+      "record_pk": 36166262,
+      "command_id": 1844,
+      "timestamp_utc": "2025-12-29T21:32:31.076900+00:00",
+      "sent_command": "22586A",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "12",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313246313035363235383641303237300d"
+    },
+    {
+      "session_pk": 3667,
+      "record_pk": 36166237,
+      "command_id": 1864,
+      "timestamp_utc": "2025-12-29T21:32:32.681062+00:00",
+      "sent_command": "225815",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "12",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313246313035363235383135303237300d"
+    },
+    {
+      "session_pk": 3667,
+      "record_pk": 36166279,
+      "command_id": 1865,
+      "timestamp_utc": "2025-12-29T21:32:32.771793+00:00",
+      "sent_command": "22460B",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "12",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313246313035363234363042363535430d"
+    },
+    {
+      "session_pk": 3667,
+      "record_pk": 36166255,
+      "command_id": 1866,
+      "timestamp_utc": "2025-12-29T21:32:32.936391+00:00",
+      "sent_command": "225853",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "12",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313246313035363235383533333043370d"
+    },
+    {
+      "session_pk": 3667,
+      "record_pk": 36166285,
+      "command_id": 1879,
+      "timestamp_utc": "2025-12-29T21:32:33.792295+00:00",
+      "sent_command": "0142",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "7DF",
+        "ATCEA": "",
+        "ATFCSD": "12300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "0"
+      },
+      "response_hex": "374538303434313432333043300d"
+    },
+    {
+      "session_pk": 3012,
+      "record_pk": 33662344,
+      "command_id": 775,
+      "timestamp_utc": "2025-12-11T02:10:59.028237+00:00",
+      "sent_command": "22DA2E",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "18",
+        "ATFCSD": "18300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "618",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313846313035363244413245303030380d"
+    },
+    {
+      "session_pk": 3012,
+      "record_pk": 33662319,
+      "command_id": 776,
+      "timestamp_utc": "2025-12-11T02:10:59.162926+00:00",
+      "sent_command": "22DA25",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "18",
+        "ATFCSD": "18300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "618",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313846313035363244413235303038450d"
+    },
+    {
+      "session_pk": 3012,
+      "record_pk": 33662400,
+      "command_id": 777,
+      "timestamp_utc": "2025-12-11T02:10:59.268660+00:00",
+      "sent_command": "22DA12",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "18",
+        "ATFCSD": "18300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "618",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313846313035363244413132303035440d"
+    },
+    {
+      "session_pk": 3012,
+      "record_pk": 33662378,
+      "command_id": 778,
+      "timestamp_utc": "2025-12-11T02:10:59.372478+00:00",
+      "sent_command": "22DA37",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "18",
+        "ATFCSD": "18300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "618",
+        "ATFCSM": "1"
+      },
+      "response_hex": "363138463131303046363244413337303037450d363138463132313337393230303031334443340d363138463132323030303034303539464646460d"
+    },
+    {
+      "session_pk": 3012,
+      "record_pk": 33663245,
+      "command_id": 1685,
+      "timestamp_utc": "2025-12-11T02:12:00.034300+00:00",
+      "sent_command": "22DA37",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "18",
+        "ATFCSD": "18300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "618",
+        "ATFCSM": "1"
+      },
+      "response_hex": "363138463131303046363244413337303037450d363138463132313337434530303031334443340d363138463132323030303034303539464646460d"
+    },
+    {
+      "session_pk": 3012,
+      "record_pk": 33663267,
+      "command_id": 1688,
+      "timestamp_utc": "2025-12-11T02:12:00.185009+00:00",
+      "sent_command": "22DA2E",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATSH": "6F1",
+        "ATCEA": "18",
+        "ATFCSD": "18300000",
+        "ATFCSH": "6F1",
+        "ATCRA": "618",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313846313035363244413245303030320d"
+    },
+    {
+      "session_pk": 5397,
+      "record_pk": 52784527,
+      "command_id": 66,
+      "timestamp_utc": "2026-10-07T17:10:43.964856+00:00",
+      "sent_command": "224408",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATCEA": "12",
+        "ATFCSD": "12300000",
+        "ATSH": "6F1",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313246313035363234343038304539440d"
+    },
+    {
+      "session_pk": 5397,
+      "record_pk": 52784589,
+      "command_id": 80,
+      "timestamp_utc": "2026-10-07T17:10:46.378982+00:00",
+      "sent_command": "224A49",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATCEA": "12",
+        "ATFCSD": "12300000",
+        "ATSH": "6F1",
+        "ATFCSH": "6F1",
+        "ATCRA": "612",
+        "ATFCSM": "1"
+      },
+      "response_hex": "36313246313035363234413439464645410d"
+    },
+    {
+      "session_pk": 5397,
+      "record_pk": 52784594,
+      "command_id": 92,
+      "timestamp_utc": "2026-10-07T17:10:47.848730+00:00",
+      "sent_command": "22DC9B",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATCEA": "29",
+        "ATFCSD": "29300000",
+        "ATSH": "6F1",
+        "ATFCSH": "6F1",
+        "ATCRA": "629",
+        "ATFCSM": "1"
+      },
+      "response_hex": "363239463131303230363244433942364331450d363239463132313642333530334135304131460d363239463132323733304146464646303030300d363239463132333030313730303030303030300d363239463132344646464631413033303046460d363239463132354646303030304646464646460d"
+    },
+    {
+      "session_pk": 5397,
+      "record_pk": 52784524,
+      "command_id": 93,
+      "timestamp_utc": "2026-10-07T17:10:47.998289+00:00",
+      "sent_command": "22DC9A",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATCEA": "29",
+        "ATFCSD": "29300000",
+        "ATSH": "6F1",
+        "ATFCSH": "6F1",
+        "ATCRA": "629",
+        "ATFCSM": "1"
+      },
+      "response_hex": "363239463131303230363244433941383531450d363239463132313642333530323843304131440d363239463132323733304146464646303030300d363239463132333030313730303030303030300d363239463132344646464631413033303046460d363239463132354646303030304646464646460d"
+    },
+    {
+      "session_pk": 5397,
+      "record_pk": 52784591,
+      "command_id": 94,
+      "timestamp_utc": "2026-10-07T17:10:48.149456+00:00",
+      "sent_command": "22DC99",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATCEA": "29",
+        "ATFCSD": "29300000",
+        "ATSH": "6F1",
+        "ATFCSH": "6F1",
+        "ATCRA": "629",
+        "ATFCSM": "1"
+      },
+      "response_hex": "363239463131303230363244433939334131450d363239463132313642333530314643303832320d363239463132324643303846464646303030300d363239463132333030313730303030303030300d363239463132344646464631413033303046460d363239463132354646303030304646464646460d"
+    },
+    {
+      "session_pk": 5397,
+      "record_pk": 52784560,
+      "command_id": 95,
+      "timestamp_utc": "2026-10-07T17:10:48.299463+00:00",
+      "sent_command": "22DC98",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATCEA": "29",
+        "ATFCSD": "29300000",
+        "ATSH": "6F1",
+        "ATFCSH": "6F1",
+        "ATCRA": "629",
+        "ATFCSM": "1"
+      },
+      "response_hex": "363239463131303230363244433938313531460d363239463132313642333530304643303832300d363239463132324533303835374646344430300d363239463132333030313830303030303030300d363239463132344646464631413033303046460d363239463132354646303030304646464646460d"
+    },
+    {
+      "session_pk": 5397,
+      "record_pk": 52787679,
+      "command_id": 3264,
+      "timestamp_utc": "2026-10-07T17:13:09.899212+00:00",
+      "sent_command": "22DC99",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATCEA": "29",
+        "ATFCSD": "29300000",
+        "ATSH": "6F1",
+        "ATFCSH": "6F1",
+        "ATCRA": "629",
+        "ATFCSM": "1"
+      },
+      "response_hex": "363239463131303230363244433939334131450d363239463132313642333530313943313837460d363239463132324643303846464646303030300d363239463132333030313730303033303030300d363239463132344646464631413033464646460d363239463132354646303030304646464646460d"
+    },
+    {
+      "session_pk": 5397,
+      "record_pk": 52787976,
+      "command_id": 3265,
+      "timestamp_utc": "2026-10-07T17:13:10.079212+00:00",
+      "sent_command": "22DC9B",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATCEA": "29",
+        "ATFCSD": "29300000",
+        "ATSH": "6F1",
+        "ATFCSH": "6F1",
+        "ATCRA": "629",
+        "ATFCSM": "1"
+      },
+      "response_hex": "363239463131303230363244433942364331450d363239463132313642333530333943313837460d363239463132323733304146464646303030300d363239463132333030313730303033303030300d363239463132344646464631413033464646460d363239463132354646303030304646464646460d"
+    },
+    {
+      "session_pk": 5397,
+      "record_pk": 52787953,
+      "command_id": 3266,
+      "timestamp_utc": "2026-10-07T17:13:10.228165+00:00",
+      "sent_command": "22DC9A",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATCEA": "29",
+        "ATFCSD": "29300000",
+        "ATSH": "6F1",
+        "ATFCSH": "6F1",
+        "ATCRA": "629",
+        "ATFCSM": "1"
+      },
+      "response_hex": "363239463131303230363244433941383531450d363239463132313642333530323943313837460d363239463132323733304146464646303030300d363239463132333030313730303033303030300d363239463132344646464631413033464646460d363239463132354646303030304646464646460d"
+    },
+    {
+      "session_pk": 5397,
+      "record_pk": 52787912,
+      "command_id": 3267,
+      "timestamp_utc": "2026-10-07T17:13:10.408987+00:00",
+      "sent_command": "22DC98",
+      "adapter_setup": {
+        "ATH": "1",
+        "ATSP": "6",
+        "ATCEA": "29",
+        "ATFCSD": "29300000",
+        "ATSH": "6F1",
+        "ATFCSH": "6F1",
+        "ATCRA": "629",
+        "ATFCSM": "1"
+      },
+      "response_hex": "363239463131303230363244433938313531460d363239463132313642333530303943313837460d363239463132324533303835374646344430300d363239463132333030313830303033303030300d363239463132344646464631413033464646460d363239463132354646303030304646464646460d"
+    }
+  ],
+  "speed_comparison": {
+    "4100": {
+      "22D107": {
+        "pairs": 25,
+        "median_ratio": 97.6509186351706,
+        "mae_100": 1.7040000000000013,
+        "mae_128": 15.812875,
+        "mae_old": 2.7683722854188213,
+        "examples": [
+          [
+            {
+              "t": 792375568.444667,
+              "raw": 7491,
+              "pk": 40437471,
+              "cid": 873,
+              "response": "612F105624AB11D43\r",
+              "timestamp": "2026-02-10T00:19:28.444667+00:00"
+            },
+            {
+              "t": 792375568.90956,
+              "raw": 764,
+              "pk": 40437509,
+              "cid": 881,
+              "response": "660F10562D10702FC\r",
+              "timestamp": "2026-02-10T00:19:28.909560+00:00"
+            },
+            76.4
+          ],
+          [
+            {
+              "t": 792375569.164498,
+              "raw": 7447,
+              "pk": 40437490,
+              "cid": 885,
+              "response": "612F105624AB11D17\r",
+              "timestamp": "2026-02-10T00:19:29.164498+00:00"
+            },
+            {
+              "t": 792375568.90956,
+              "raw": 764,
+              "pk": 40437509,
+              "cid": 881,
+              "response": "660F10562D10702FC\r",
+              "timestamp": "2026-02-10T00:19:28.909560+00:00"
+            },
+            76.4
+          ],
+          [
+            {
+              "t": 792375569.884398,
+              "raw": 7391,
+              "pk": 40437477,
+              "cid": 897,
+              "response": "612F105624AB11CDF\r",
+              "timestamp": "2026-02-10T00:19:29.884398+00:00"
+            },
+            {
+              "t": 792375569.6298,
+              "raw": 760,
+              "pk": 40437452,
+              "cid": 893,
+              "response": "660F10562D10702F8\r",
+              "timestamp": "2026-02-10T00:19:29.629800+00:00"
+            },
+            76.0
+          ],
+          [
+            {
+              "t": 792375570.604433,
+              "raw": 7337,
+              "pk": 40437422,
+              "cid": 909,
+              "response": "612F105624AB11CA9\r",
+              "timestamp": "2026-02-10T00:19:30.604433+00:00"
+            },
+            {
+              "t": 792375570.364303,
+              "raw": 754,
+              "pk": 40437431,
+              "cid": 905,
+              "response": "660F10562D10702F2\r",
+              "timestamp": "2026-02-10T00:19:30.364303+00:00"
+            },
+            75.4
+          ]
+        ]
+      },
+      "22D240": {
+        "pairs": 27,
+        "median_ratio": 98.21052631578948,
+        "mae_100": 1.3096296296296304,
+        "mae_128": 14.76388888888889,
+        "mae_old": 2.339461488375655,
+        "examples": [
+          [
+            {
+              "t": 792375567.139357,
+              "raw": 7600,
+              "pk": 40437482,
+              "cid": 850,
+              "response": "612F105624AB11DB0\r",
+              "timestamp": "2026-02-10T00:19:27.139357+00:00"
+            },
+            {
+              "t": 792375567.455266,
+              "raw": 77,
+              "pk": 40437451,
+              "cid": 854,
+              "response": "60DF10562D240004D\r",
+              "timestamp": "2026-02-10T00:19:27.455266+00:00"
+            },
+            77.0
+          ],
+          [
+            {
+              "t": 792375568.444667,
+              "raw": 7491,
+              "pk": 40437471,
+              "cid": 873,
+              "response": "612F105624AB11D43\r",
+              "timestamp": "2026-02-10T00:19:28.444667+00:00"
+            },
+            {
+              "t": 792375568.654611,
+              "raw": 76,
+              "pk": 40437484,
+              "cid": 877,
+              "response": "60DF10562D240004C\r",
+              "timestamp": "2026-02-10T00:19:28.654611+00:00"
+            },
+            76.0
+          ],
+          [
+            {
+              "t": 792375569.164498,
+              "raw": 7447,
+              "pk": 40437490,
+              "cid": 885,
+              "response": "612F105624AB11D17\r",
+              "timestamp": "2026-02-10T00:19:29.164498+00:00"
+            },
+            {
+              "t": 792375569.375634,
+              "raw": 76,
+              "pk": 40437425,
+              "cid": 889,
+              "response": "60DF10562D240004C\r",
+              "timestamp": "2026-02-10T00:19:29.375634+00:00"
+            },
+            76.0
+          ],
+          [
+            {
+              "t": 792375569.884398,
+              "raw": 7391,
+              "pk": 40437477,
+              "cid": 897,
+              "response": "612F105624AB11CDF\r",
+              "timestamp": "2026-02-10T00:19:29.884398+00:00"
+            },
+            {
+              "t": 792375570.124615,
+              "raw": 75,
+              "pk": 40437473,
+              "cid": 901,
+              "response": "60DF10562D240004B\r",
+              "timestamp": "2026-02-10T00:19:30.124615+00:00"
+            },
+            75.0
+          ]
+        ]
+      }
+    },
+    "2113": {
+      "22D107": {
+        "pairs": 6,
+        "median_ratio": 99.41510128913444,
+        "mae_100": 0.3866666666666667,
+        "mae_128": 3.478645833333333,
+        "mae_old": 0.5269906928645295,
+        "examples": [
+          [
+            {
+              "t": 778628180.645567,
+              "raw": 1175,
+              "pk": 23736653,
+              "cid": 729,
+              "response": "612F105624AB10497\r",
+              "timestamp": "2025-09-03T21:36:20.645567+00:00"
+            },
+            {
+              "t": 778628180.466967,
+              "raw": 107,
+              "pk": 23736694,
+              "cid": 725,
+              "response": "660F10562D107006B\r",
+              "timestamp": "2025-09-03T21:36:20.466967+00:00"
+            },
+            10.7
+          ],
+          [
+            {
+              "t": 778628181.590609,
+              "raw": 1504,
+              "pk": 23736674,
+              "cid": 742,
+              "response": "612F105624AB105E0\r",
+              "timestamp": "2025-09-03T21:36:21.590609+00:00"
+            },
+            {
+              "t": 778628181.439292,
+              "raw": 150,
+              "pk": 23736718,
+              "cid": 738,
+              "response": "660F10562D1070096\r",
+              "timestamp": "2025-09-03T21:36:21.439292+00:00"
+            },
+            15.0
+          ],
+          [
+            {
+              "t": 778628182.314084,
+              "raw": 1698,
+              "pk": 23736813,
+              "cid": 754,
+              "response": "612F105624AB106A2\r",
+              "timestamp": "2025-09-03T21:36:22.314084+00:00"
+            },
+            {
+              "t": 778628182.130747,
+              "raw": 168,
+              "pk": 23736822,
+              "cid": 750,
+              "response": "660F10562D10700A8\r",
+              "timestamp": "2025-09-03T21:36:22.130747+00:00"
+            },
+            16.8
+          ],
+          [
+            {
+              "t": 778628182.970006,
+              "raw": 1731,
+              "pk": 23736738,
+              "cid": 766,
+              "response": "612F105624AB106C3\r",
+              "timestamp": "2025-09-03T21:36:22.970006+00:00"
+            },
+            {
+              "t": 778628182.818857,
+              "raw": 177,
+              "pk": 23736787,
+              "cid": 762,
+              "response": "660F10562D10700B1\r",
+              "timestamp": "2025-09-03T21:36:22.818857+00:00"
+            },
+            17.7
+          ]
+        ]
+      },
+      "22DBE4": {
+        "pairs": 8,
+        "median_ratio": 101.07719610301177,
+        "mae_100": 0.37625,
+        "mae_128": 3.4555078125000005,
+        "mae_old": 0.33563340227507776,
+        "examples": [
+          [
+            {
+              "t": 778628180.645567,
+              "raw": 1175,
+              "pk": 23736653,
+              "cid": 729,
+              "response": "612F105624AB10497\r",
+              "timestamp": "2025-09-03T21:36:20.645567+00:00"
+            },
+            {
+              "t": 778628181.019971,
+              "raw": 1231,
+              "pk": 23736669,
+              "cid": 733,
+              "response": "629F1101662DBE404CF\r629F12104F504D30504\r629F12204B003030303\r629F1230364646464FF\r",
+              "timestamp": "2025-09-03T21:36:21.019971+00:00"
+            },
+            12.31
+          ],
+          [
+            {
+              "t": 778628181.590609,
+              "raw": 1504,
+              "pk": 23736674,
+              "cid": 742,
+              "response": "612F105624AB105E0\r",
+              "timestamp": "2025-09-03T21:36:21.590609+00:00"
+            },
+            {
+              "t": 778628181.963936,
+              "raw": 1511,
+              "pk": 23736644,
+              "cid": 746,
+              "response": "629F1101662DBE405E7\r629F121062D05DF0641\r629F12205DC03030303\r629F1230364646464FF\r",
+              "timestamp": "2025-09-03T21:36:21.963936+00:00"
+            },
+            15.11
+          ],
+          [
+            {
+              "t": 778628182.314084,
+              "raw": 1698,
+              "pk": 23736813,
+              "cid": 754,
+              "response": "612F105624AB106A2\r",
+              "timestamp": "2025-09-03T21:36:22.314084+00:00"
+            },
+            {
+              "t": 778628182.654142,
+              "raw": 1707,
+              "pk": 23736801,
+              "cid": 758,
+              "response": "629F1101662DBE406AB\r629F12106A2069C06B5\r629F12206A403030303\r629F1230364646464FF\r",
+              "timestamp": "2025-09-03T21:36:22.654142+00:00"
+            },
+            17.07
+          ],
+          [
+            {
+              "t": 778628182.970006,
+              "raw": 1731,
+              "pk": 23736738,
+              "cid": 766,
+              "response": "612F105624AB106C3\r",
+              "timestamp": "2025-09-03T21:36:22.970006+00:00"
+            },
+            {
+              "t": 778628182.654142,
+              "raw": 1707,
+              "pk": 23736801,
+              "cid": 758,
+              "response": "629F1101662DBE406AB\r629F12106A2069C06B5\r629F12206A403030303\r629F1230364646464FF\r",
+              "timestamp": "2025-09-03T21:36:22.654142+00:00"
+            },
+            17.07
+          ]
+        ]
+      }
+    }
+  },
+  "dme_scaling_review": {
+    "6F1|12|224201": {
+      "positive_captures": 4425,
+      "payload_lengths": {
+        "2": 4425
+      },
+      "scaling_status": "cross-checked"
+    },
+    "6F1|12|224205": {
+      "positive_captures": 4430,
+      "payload_lengths": {
+        "2": 4430
+      },
+      "scaling_status": "cross-checked"
+    },
+    "6F1|12|224408": {
+      "positive_captures": 4208,
+      "payload_lengths": {
+        "2": 4208
+      },
+      "scaling_status": "cross-checked",
+      "corroboration": "Session 3021: active 4408 0DFA\u219284.65\u00b0C alongside inactive 5822 90\u219284\u00b0C; several warm-up steps match within ~1\u00b0C."
+    },
+    "6F1|12|22442C": {
+      "positive_captures": 4202,
+      "payload_lengths": {
+        "1": 4202
+      },
+      "scaling_status": "plausible; no independent scale corroboration"
+    },
+    "6F1|12|22480C": {
+      "positive_captures": 4026,
+      "payload_lengths": {
+        "2": 4026
+      },
+      "scaling_status": "plausible; no independent scale corroboration"
+    },
+    "6F1|12|224A2D": {
+      "positive_captures": 4433,
+      "payload_lengths": {
+        "2": 4433
+      },
+      "scaling_status": "plausible; no independent scale corroboration"
+    },
+    "6F1|12|224A2E": {
+      "positive_captures": 138,
+      "payload_lengths": {
+        "2": 138
+      },
+      "scaling_status": "plausible; no independent scale corroboration"
+    },
+    "6F1|12|224A49": {
+      "positive_captures": 3868,
+      "payload_lengths": {
+        "2": 3868
+      },
+      "scaling_status": "plausible; no independent scale corroboration"
+    },
+    "6F1|12|224A4A": {
+      "positive_captures": 3862,
+      "payload_lengths": {
+        "2": 3862
+      },
+      "scaling_status": "plausible; no independent scale corroboration"
+    },
+    "6F1|12|224A4B": {
+      "positive_captures": 836,
+      "payload_lengths": {
+        "1": 836
+      },
+      "scaling_status": "cross-checked"
+    },
+    "6F1|12|224A4C": {
+      "positive_captures": 3864,
+      "payload_lengths": {
+        "2": 3864
+      },
+      "scaling_status": "plausible; no independent scale corroboration"
+    },
+    "6F1|12|224A4D": {
+      "positive_captures": 3870,
+      "payload_lengths": {
+        "2": 3870
+      },
+      "scaling_status": "plausible; no independent scale corroboration"
+    },
+    "6F1|12|224AB0": {
+      "positive_captures": 4433,
+      "payload_lengths": {
+        "2": 4433
+      },
+      "scaling_status": "cross-checked"
+    },
+    "6F1|12|22558E": {
+      "positive_captures": 779,
+      "payload_lengths": {
+        "4": 779
+      },
+      "scaling_status": "plausible; no independent scale corroboration"
+    },
+    "6F1|12|22558F": {
+      "positive_captures": 843,
+      "payload_lengths": {
+        "4": 843
+      },
+      "scaling_status": "plausible; no independent scale corroboration"
+    },
+    "6F1|12|2256D7": {
+      "positive_captures": 832,
+      "payload_lengths": {
+        "2": 832
+      },
+      "scaling_status": "plausible; no independent scale corroboration"
+    },
+    "6F1|12|22580F": {
+      "positive_captures": 3881,
+      "payload_lengths": {
+        "1": 3881
+      },
+      "scaling_status": "plausible; no independent scale corroboration"
+    },
+    "6F1|12|225813": {
+      "positive_captures": 3699,
+      "payload_lengths": {
+        "1": 3699
+      },
+      "scaling_status": "cross-checked"
+    },
+    "6F1|12|22582C": {
+      "positive_captures": 4222,
+      "payload_lengths": {
+        "2": 4222
+      },
+      "scaling_status": "plausible; no independent scale corroboration"
+    },
+    "6F1|12|22582F": {
+      "positive_captures": 4223,
+      "payload_lengths": {
+        "2": 4223
+      },
+      "scaling_status": "tenths kelvin plausible; -50.05 C repeated sentinel filtered with nullmin -50; -0.05 C remains unresolved",
+      "observed_unavailable_marker": {
+        "raw": "08B7",
+        "decoded_celsius": -50.05,
+        "count_plain_command": 33,
+        "example": {
+          "session": 2811,
+          "record": 32329019
+        },
+        "near_zero_unresolved": {
+          "raw": "0AAB",
+          "decoded_celsius": -0.05,
+          "count_plain_command": 11
+        }
+      }
+    },
+    "6F1|12|225889": {
+      "positive_captures": 4231,
+      "payload_lengths": {
+        "2": 4231
+      },
+      "scaling_status": "fixed-point denominator /4096 from B48 source and consistency with 582C; scanlog cannot distinguish it from 16/65535 at ordinary precision",
+      "independent_reference": "https://thesecretingredient.neocities.org/bmw/dme/b48/ (researcher B48 table, row 0x5889; 16/65536 = 1/4096; not a BMW factory source; table has contradictory data for 0x582F and 0x4AB1)"
+    },
+    "6F1|12|2258BA": {
+      "positive_captures": 4054,
+      "payload_lengths": {
+        "2": 4054
+      },
+      "scaling_status": "plausible; no independent scale corroboration"
+    },
+    "6F1|12|2259FA": {
+      "positive_captures": 3552,
+      "payload_lengths": {
+        "1": 3552
+      },
+      "scaling_status": "plausible; no independent scale corroboration"
+    }
+  },
+  "notes": [
+    "Paired readings are sequential, not simultaneous. Agreement supports the proposed conversion but does not establish sensor accuracy.",
+    "Transmission/TPMS unavailable markers and state meanings remain experimental; unknown TPMS field labels intentionally make no battery-life claim."
+  ]
+}

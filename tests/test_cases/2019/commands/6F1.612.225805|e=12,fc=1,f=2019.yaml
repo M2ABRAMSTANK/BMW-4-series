@@ -1,0 +1,8 @@
+command_id: 6F1.612.225805|e=12,fc=1,f=2019
+test_cases:
+- response: 612F1056258050D4A
+  expected_values:
+    4SERIES_5805: 67.05
+- response: 612F1056258050D6E
+  expected_values:
+    4SERIES_5805: 70.65

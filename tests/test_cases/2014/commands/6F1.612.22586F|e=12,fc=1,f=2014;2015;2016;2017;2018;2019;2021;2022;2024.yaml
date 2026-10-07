@@ -1,0 +1,5 @@
+command_id: 6F1.612.22586F|e=12,fc=1,f=2014;2015;2016;2017;2018;2019;2021;2022;2024
+test_cases:
+- expected_values:
+    4SERIES_EOP: 1023.0
+  response: 612F10562586F03FF

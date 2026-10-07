@@ -1,0 +1,8 @@
+command_id: 6F1.618.22DA25|e=18,fc=1,f=2014;2015;2016;2017;2018;2019;2021;2022;2024;2026
+test_cases:
+- expected_values:
+    4SERIES_EOT: 12.0
+  response: 618F10562DA250048
+- expected_values:
+    4SERIES_EOT: 105.0
+  response: 618F10562DA2500A5

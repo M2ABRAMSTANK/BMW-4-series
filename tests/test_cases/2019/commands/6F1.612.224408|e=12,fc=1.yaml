@@ -12,3 +12,6 @@ test_cases:
 - expected_values:
     4SERIES_EOT_DME: 85.25
   response: 612F1056244080E00
+- expected_values:
+    4SERIES_EOT_DME: 100.95
+  response: 612F1056244080E9D

@@ -1,0 +1,5 @@
+command_id: 6F1.612.22460B|e=12,fc=1,f=2019
+test_cases:
+- response: 612F10562460B655C
+  expected_values:
+    4SERIES_460B_BATTERIESPANNUNG_VON_IBS_GEMES: 12.487

@@ -1,0 +1,5 @@
+command_id: 6F1.612.224609|e=12,fc=1,f=2019
+test_cases:
+- response: 612F1056246090270
+  expected_values:
+    4SERIES_4609_BATTERY_VOLTAGE: 12.48

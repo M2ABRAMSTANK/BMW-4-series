@@ -1,0 +1,32 @@
+command_id: 6F1.618.22DA25|e=18,fc=1,f=2014;2015;2016;2017;2018;2019;2021;2022;2024;2026
+test_cases:
+- expected_values:
+    4SERIES_EOT: 30.0
+  response: 618F10562DA25005A
+- expected_values:
+    4SERIES_EOT: 47.0
+  response: 618F10562DA25006B
+- expected_values:
+    4SERIES_EOT: 61.0
+  response: 618F10562DA250079
+- expected_values:
+    4SERIES_EOT: 62.0
+  response: 618F10562DA25007A
+- expected_values:
+    4SERIES_EOT: 63.0
+  response: 618F10562DA25007B
+- expected_values:
+    4SERIES_EOT: 64.0
+  response: 618F10562DA25007C
+- expected_values:
+    4SERIES_EOT: 66.0
+  response: 618F10562DA25007E
+- expected_values:
+    4SERIES_EOT: 67.0
+  response: 618F10562DA25007F
+- expected_values:
+    4SERIES_EOT: 70.0
+  response: 618F10562DA250082
+- expected_values:
+    4SERIES_EOT: 72.0
+  response: 618F10562DA250084

@@ -1,0 +1,5 @@
+command_id: 6F1.612.224200|e=12,fc=1,f=2019
+test_cases:
+- response: 612F10462420089
+  expected_values:
+    4SERIES_4200_INTAKE_AIR_TEMPERATURE: 54.75

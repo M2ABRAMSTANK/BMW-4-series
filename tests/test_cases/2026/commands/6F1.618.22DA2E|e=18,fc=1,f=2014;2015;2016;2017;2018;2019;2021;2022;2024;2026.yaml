@@ -1,0 +1,23 @@
+command_id: 6F1.618.22DA2E|e=18,fc=1,f=2014;2015;2016;2017;2018;2019;2021;2022;2024;2026
+test_cases:
+- expected_values:
+    4SERIES_GEAR: 0
+  response: 618F10562DA2E0000
+- expected_values:
+    4SERIES_GEAR: 1.0
+  response: 618F10562DA2E0101
+- expected_values:
+    4SERIES_GEAR: 3.0
+  response: 618F10562DA2E0303
+- expected_values:
+    4SERIES_GEAR: 3.0
+  response: 618F10562DA2E0403
+- expected_values:
+    4SERIES_GEAR: 3.0
+  response: 618F10562DA2E0703
+- expected_values:
+    4SERIES_GEAR: 3.0
+  response: 618F10562DA2E0803
+- expected_values:
+    4SERIES_GEAR: 3.0
+  response: 618F10562DA2E0903

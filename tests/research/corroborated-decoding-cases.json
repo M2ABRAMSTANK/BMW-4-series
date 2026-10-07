@@ -1,0 +1,112 @@
+[
+  {
+    "session_pk": 3021,
+    "record_pk": 33889319,
+    "command_id": 83,
+    "timestamp_utc": "2025-12-12T03:47:13.759474+00:00",
+    "sent_command": "224200",
+    "adapter_setup": {
+      "ATH": "1",
+      "ATSP": "6",
+      "ATSH": "6F1",
+      "ATCEA": "12",
+      "ATFCSD": "12300000",
+      "ATFCSH": "6F1",
+      "ATCRA": "612",
+      "ATFCSM": "1"
+    },
+    "response_hex": "3631324631303436323432303038390d",
+    "expected_values": {
+      "4SERIES_4200_INTAKE_AIR_TEMPERATURE": 54.75
+    },
+    "key": "6F1|12|224200"
+  },
+  {
+    "session_pk": 3667,
+    "record_pk": 36166262,
+    "command_id": 1844,
+    "timestamp_utc": "2025-12-29T21:32:31.076900+00:00",
+    "sent_command": "22586A",
+    "adapter_setup": {
+      "ATH": "1",
+      "ATSP": "6",
+      "ATSH": "6F1",
+      "ATCEA": "12",
+      "ATFCSD": "12300000",
+      "ATFCSH": "6F1",
+      "ATCRA": "612",
+      "ATFCSM": "1"
+    },
+    "response_hex": "36313246313035363235383641303237300d",
+    "expected_values": {
+      "4SERIES_586A": 12.48
+    },
+    "key": "6F1|12|22586A"
+  },
+  {
+    "session_pk": 3667,
+    "record_pk": 36166231,
+    "command_id": 1825,
+    "timestamp_utc": "2025-12-29T21:32:29.427982+00:00",
+    "sent_command": "224609",
+    "adapter_setup": {
+      "ATH": "1",
+      "ATSP": "6",
+      "ATSH": "6F1",
+      "ATCEA": "12",
+      "ATFCSD": "12300000",
+      "ATFCSH": "6F1",
+      "ATCRA": "612",
+      "ATFCSM": "1"
+    },
+    "response_hex": "36313246313035363234363039303237300d",
+    "expected_values": {
+      "4SERIES_4609_BATTERY_VOLTAGE": 12.48
+    },
+    "key": "6F1|12|224609"
+  },
+  {
+    "session_pk": 3667,
+    "record_pk": 36166237,
+    "command_id": 1864,
+    "timestamp_utc": "2025-12-29T21:32:32.681062+00:00",
+    "sent_command": "225815",
+    "adapter_setup": {
+      "ATH": "1",
+      "ATSP": "6",
+      "ATSH": "6F1",
+      "ATCEA": "12",
+      "ATFCSD": "12300000",
+      "ATFCSH": "6F1",
+      "ATCRA": "612",
+      "ATFCSM": "1"
+    },
+    "response_hex": "36313246313035363235383135303237300d",
+    "expected_values": {
+      "4SERIES_5815_BATTERY_VOLTAGE": 12.48
+    },
+    "key": "6F1|12|225815"
+  },
+  {
+    "session_pk": 3667,
+    "record_pk": 36166279,
+    "command_id": 1865,
+    "timestamp_utc": "2025-12-29T21:32:32.771793+00:00",
+    "sent_command": "22460B",
+    "adapter_setup": {
+      "ATH": "1",
+      "ATSP": "6",
+      "ATSH": "6F1",
+      "ATCEA": "12",
+      "ATFCSD": "12300000",
+      "ATFCSH": "6F1",
+      "ATCRA": "612",
+      "ATFCSM": "1"
+    },
+    "response_hex": "36313246313035363234363042363535430d",
+    "expected_values": {
+      "4SERIES_460B_BATTERIESPANNUNG_VON_IBS_GEMES": 12.487
+    },
+    "key": "6F1|12|22460B"
+  }
+]

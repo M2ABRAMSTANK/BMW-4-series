@@ -1,0 +1,14 @@
+command_id: 6F1.612.22586F|e=12,fc=1,f=2014;2015;2016;2017;2018;2019;2021;2022;2024
+test_cases:
+- expected_values:
+    4SERIES_EOP: 971.0
+  response: 612F10562586F03CB
+- expected_values:
+    4SERIES_EOP: 2546.0
+  response: 612F10562586F09F2
+- expected_values:
+    4SERIES_EOP: 3131.0
+  response: 612F10562586F0C3B
+- expected_values:
+    4SERIES_EOP: 3913.0
+  response: 612F10562586F0F49

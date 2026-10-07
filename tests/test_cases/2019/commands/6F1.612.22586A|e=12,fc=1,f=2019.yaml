@@ -1,0 +1,5 @@
+command_id: 6F1.612.22586A|e=12,fc=1,f=2019
+test_cases:
+- response: 612F10562586A0270
+  expected_values:
+    4SERIES_586A: 12.48

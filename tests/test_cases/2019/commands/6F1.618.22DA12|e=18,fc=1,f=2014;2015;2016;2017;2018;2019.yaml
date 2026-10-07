@@ -1,0 +1,14 @@
+command_id: 6F1.618.22DA12|e=18,fc=1,f=2014;2015;2016;2017;2018;2019
+test_cases:
+- expected_values:
+    4SERIES_ATF_TEMP: -3.0
+  response: 618F10562DA12002D
+- expected_values:
+    4SERIES_ATF_TEMP: 87.0
+  response: 618F10562DA120087
+- expected_values:
+    4SERIES_ATF_TEMP: 45
+  response: 618F10562DA12005D
+- expected_values:
+    4SERIES_ATF_TEMP: 77
+  response: 618F10562DA12007D
