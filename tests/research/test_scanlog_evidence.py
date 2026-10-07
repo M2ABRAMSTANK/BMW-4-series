@@ -115,8 +115,8 @@ def test_staging_partition_and_activation(research_commands):
     assert set(keys) == {e['key'] for e in AUDIT['entries'] if e['decoding_status'] == 'unverified_decoding'}
     for group in STAGING['groups']:
         assert 1 <= len(group['commands']) <= 8
-        assert sum(60 / m['interval_seconds'] for m in group['commands']) + STAGING['background_testing_requests_per_minute'] <= 200
-        assert STAGING['testing_budget_requests_per_minute'] == 200
+        assert sum(60 / m['interval_seconds'] for m in group['commands']) + STAGING['background_testing_requests_per_minute'] <= 400
+        assert STAGING['testing_budget_requests_per_minute'] == 400
         for member in group['commands']:
             definition = research_commands[member['key']]
             command = Command.from_json(definition)

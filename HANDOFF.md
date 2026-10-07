@@ -4,18 +4,21 @@ Recorded October 7, 2026, at approximately 22:43 UTC.
 
 ## Decision
 
-Keep the testing allowance at **200 requests/minute**. Do not increase it based
-only on theoretical savings from the new polling tiers. The user wants the next
-session to inspect new scanlogs for measured headroom before proposing a change.
+The user approved doubling the testing allowance from 200 to **400 requests/minute**
+before collecting the next recordings. This supersedes the initial decision to
+hold at 200/minute. The next session should check whether the higher testing load
+leaves adequate headroom and preserves operational polling cadence, rather than
+assuming the theoretical baseline savings translate directly into capacity.
 The allowance includes the active research wave and existing experimental
-commands; regular polling is separate.
+commands; regular polling is separate and unchanged by this budget increase.
 
-The testing configuration remains TG0.1 active for 2019, with 139 available
-waves. Its four staged commands request 120 polls/minute, plus approximately
-24.02/minute for the existing experimental commands. Other waves remain parked;
-rotation is manual. The busiest configured wave plus background testing requests
-approximately 198.02/minute. See `tests/research/staging-groups.json` and
-`scripts/staging.py`.
+The testing configuration is TG0.1 active for 2019, with **57 available waves**.
+Its eight staged commands request **330 polls/minute**, plus approximately
+24.02/minute for the existing experimental commands: **354.02/minute combined**.
+Other waves remain parked; rotation is manual. The busiest configured wave plus
+background testing requests approximately **396.02/minute**. The allowance is a
+ceiling, not a target that every wave must fill. See
+`tests/research/staging-groups.json` and `scripts/staging.py`.
 
 ## Baseline and cutoff
 
@@ -26,7 +29,8 @@ approximately 198.02/minute. See `tests/research/staging-groups.json` and
   October 7, 2026, **17:10:37.668926–17:14:33.389923 UTC**. This predates the tier
   change. Its PK is a local reference, not a stable identifier across exports.
 - Compare later recordings, preferably sessions collected after this handoff
-  with the new configuration confirmed active. Do not mistake the currently
+  with both the polling tiers and the **400/minute testing configuration** confirmed
+  active. The tier commit alone still used the old 200/minute allowance. Do not mistake the currently
   uploaded session for a post-change measurement.
 - Configured demand for all 39 regular commands fell from **2,946 to 2,209.4
   requests/minute** (736.6 fewer, about 25%). This sums `60 / freq` for regular
@@ -60,10 +64,12 @@ approximately 198.02/minute. See `tests/research/staging-groups.json` and
    cadence without increased delays, failures, or timeouts. Lower requested
    demand alone does not prove unused transport capacity: client scheduling,
    selected signals, and ECU response time also affect delivered rates.
-6. Report the evidence and propose a modest testing-budget change only if the
-   measurements support it. Keep **200/minute** until the user agrees to an
-   increase. If approved, update wave packing, the background reservation,
-   documentation, and budget regression tests together.
+6. Report whether the 400/minute allowance is sustainable. If operational
+   cadence deteriorates or failures increase, recommend reducing the testing
+   load; if there is measurable spare capacity, propose a further increase.
+   Keep **400/minute** pending review and user approval of another change.
+   Update wave packing, the background reservation, documentation, and budget
+   regression tests together for any approved change.
 
 The raw-byte fixtures and decoding hypotheses remain available for the separate
 PID-decoding review. Better decoding evidence and polling headroom are related

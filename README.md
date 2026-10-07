@@ -3,7 +3,7 @@
 This repository contains signal set configurations for the BMW 4 Series, organized by model year and version. The files are structured to allow for easy differentiation between model generations and other vehicle parameters, ensuring accurate signal mapping for each version of the BMW 4 Series.
 
 The [next-session handoff](HANDOFF.md) records the scanlog cutoff and the plan to
-measure testing headroom. The testing allowance remains **200 requests/minute**.
+measure testing headroom. The testing allowance is **400 requests/minute**.
 
 ## Polling convention
 
@@ -30,7 +30,7 @@ Unverified commands and archived decoding hypotheses use
 `[Polling: Unclassified; research override]`. This marks an exception, not a
 seventh ordinary tier or an assertion that the candidate's identity is known.
 Their existing research intervals, availability, and testing groups remain in
-place. The **200 requests/minute testing budget** still includes the active wave
+place. The **400 requests/minute testing budget** still includes the active wave
 and other enabled experimental commands, and excludes regular polling. A regular
 command's debug coverage on other years retains its ordinary tier interval;
 this research budget is calculated for the observed 2019 vehicle.
@@ -80,7 +80,7 @@ other-year conversions remain experimental.
 
 ### Staged research polling
 
-The 380 unresolved positive-response commands are split into **139 waves of at
+The 380 unresolved positive-response commands are split into **57 waves of at
 most eight commands**, preserving the old TG0–TG8 families; TG9 holds three
 previously ungrouped candidates. **TG0.1 is active for 2019 in debug mode**.
 All other waves use the existing disabled convention, `filter.years: [9999]`.
@@ -90,17 +90,18 @@ rejected for 2019 keep their separate availability settings.
 Requested polling intervals are 1 second for dynamic values, 2 seconds for
 temperature/voltage/level candidates, and 10 seconds for slower counters and
 adaptations. These are research scheduling choices, not evidence of a sensor's
-update rate. Each wave fits a **200-request/minute testing-only budget**, excluding regular
+update rate. Each wave fits a **400-request/minute testing-only budget**, excluding regular
 polling and reserving approximately **24.02 requests/minute** for the nine
-existing experimental commands. TG0.1 requests **120 polls/minute**, for
-approximately **144.02 testing requests/minute** combined. The busiest wave
-plus existing experimental polling totals approximately 198.02 requests/minute. Achieved cadence depends on
+existing experimental commands. TG0.1 requests **330 polls/minute**, for
+approximately **354.02 testing requests/minute** combined. The busiest wave
+plus existing experimental polling totals approximately 396.02 requests/minute. Achieved cadence depends on
 adapter throughput and other enabled commands and must be checked in the next
 scanlog. Debug collection must be enabled in the client for the active wave.
 
 TG0.1 contains 4204 (ambient temperature candidate), 4310 (coolant target),
-4402 (oil temperature), and 4409 (oil level), all at 2-second intervals. These labels remain
-hypotheses. Remaining TG0 candidates continue in subsequent waves.
+4402 (oil temperature), 4409 (oil level), and 4425 (sump temperature) at
+2-second intervals, plus 4421/4422/4423 (oil-pressure regulator components)
+at 1-second intervals. These labels remain hypotheses. Remaining TG0 candidates continue in subsequent waves.
 The visible research fields expose each returned byte without conversion or
 clamping. Candidate formulas and labels are preserved in
 [the staging manifest](tests/research/staging-groups.json), outside the live
