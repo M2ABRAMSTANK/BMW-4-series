@@ -120,7 +120,8 @@ def test_staging_partition_and_activation(research_commands):
         for member in group['commands']:
             definition = research_commands[member['key']]
             command = Command.from_json(definition)
-            assert command.debug
+            assert command.debug == (group['id'] != STAGING['active_group'])
+            assert 'dbgfilter' not in definition
             assert command.filter.matches(2019) == (group['id'] == STAGING['active_group'])
             assert not command.filter.matches(2018)
             assert not command.filter.matches(2020)
@@ -167,6 +168,11 @@ def test_switching_wave_preserves_other_commands_and_can_park_all(tmp_path):
                    if staging.command_key(c) in managed and Command.from_json(c).filter.matches(2019)}
         expected = {m['key'] for g in STAGING['groups'] if g['id'] == selected for m in g['commands']}
         assert enabled == expected
+        for definition in current['commands']:
+            key = staging.command_key(definition)
+            if key in managed:
+                assert Command.from_json(definition).debug == (key not in expected)
+                assert 'dbgfilter' not in definition
     before = path.read_bytes()
     with pytest.raises(ValueError):
         staging.select_group(tmp_path, 'TG-does-not-exist')

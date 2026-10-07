@@ -1149,7 +1149,7 @@
     {"id": "4SERIES_RESEARCH_12_4203_BYTE1", "path": "OBD.Testing", "fmt": {          "len": 8, "max": 255, "unit": "scalar" }, "name": "[TG2.1] 4203 raw byte 1", "description": "[Polling: Unclassified; research override] Unscaled response payload byte 1 for DID 0x4203. Mass flow from Hfm is a proposed interpretation in TG2.1; its meaning, field boundaries, and physical conversion remain unverified."},
     {"id": "4SERIES_RESEARCH_12_4203_BYTE2", "path": "OBD.Testing", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "[TG2.1] 4203 raw byte 2", "description": "[Polling: Unclassified; research override] Unscaled response payload byte 2 for DID 0x4203. Mass flow from Hfm is a proposed interpretation in TG2.1; its meaning, field boundaries, and physical conversion remain unverified."}
   ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4204"}, "freq": 2, "filter": { "years": [2019] },
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "cmd": {"22": "4204"}, "freq": 2, "filter": { "years": [2019] },
   "signals": [
     {"id": "4SERIES_RESEARCH_12_4204_BYTE1", "path": "OBD.Testing", "fmt": {          "len": 8, "max": 255, "unit": "scalar" }, "name": "[TG0.1] 4204 raw byte 1", "description": "[Polling: Unclassified; research override] Unscaled response payload byte 1 for DID 0x4204. Ambient temperature is a proposed interpretation in TG0.1; its meaning, field boundaries, and physical conversion remain unverified."},
     {"id": "4SERIES_RESEARCH_12_4204_BYTE2", "path": "OBD.Testing", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "[TG0.1] 4204 raw byte 2", "description": "[Polling: Unclassified; research override] Unscaled response payload byte 2 for DID 0x4204. Ambient temperature is a proposed interpretation in TG0.1; its meaning, field boundaries, and physical conversion remain unverified."}
@@ -1191,7 +1191,7 @@
   "signals": [
     {"id": "4SERIES_4306_WATER_PUMP_RATED_SPEED", "path": "Engine", "fmt": { "len": 8, "max": 0, "unit": "scalar" }, "name": "Candidate: Water pump rated speed", "description": "[Polling: Unclassified; research override] Inherited candidate meaning and scaling are unverified. On the audited 2019 vehicle and route, this DID returned UDS negative response 0x31 (request out of range), with no positive response observed. Excluded for 2019; configured for debug discovery on other model years."}
   ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4310"}, "freq": 2, "filter": { "years": [2019] },
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "cmd": {"22": "4310"}, "freq": 2, "filter": { "years": [2019] },
   "signals": [
     {"id": "4SERIES_RESEARCH_12_4310_BYTE1", "path": "OBD.Testing", "fmt": {          "len": 8, "max": 255, "unit": "scalar" }, "name": "[TG0.1] 4310 raw byte 1", "description": "[Polling: Unclassified; research override] Unscaled response payload byte 1 for DID 0x4310. Target temperature coolant is a proposed interpretation in TG0.1; its meaning, field boundaries, and physical conversion remain unverified."},
     {"id": "4SERIES_RESEARCH_12_4310_BYTE2", "path": "OBD.Testing", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "[TG0.1] 4310 raw byte 2", "description": "[Polling: Unclassified; research override] Unscaled response payload byte 2 for DID 0x4310. Target temperature coolant is a proposed interpretation in TG0.1; its meaning, field boundaries, and physical conversion remain unverified."}
@@ -1204,7 +1204,7 @@
   "signals": [
     {"id": "4SERIES_4401_ENGINE_OIL_LEVEL", "path": "Engine", "fmt": { "len": 8, "max": 0, "unit": "scalar" }, "name": "Candidate: Engine oil level", "description": "[Polling: Unclassified; research override] Inherited candidate meaning and scaling are unverified. On the audited 2019 vehicle and route, this DID returned UDS negative response 0x31 (request out of range), with no positive response observed. Excluded for 2019; configured for debug discovery on other model years."}
   ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4402"}, "freq": 2, "filter": { "years": [2019] },
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "cmd": {"22": "4402"}, "freq": 2, "filter": { "years": [2019] },
   "signals": [
     {"id": "4SERIES_RESEARCH_12_4402_BYTE1", "path": "OBD.Testing", "fmt": {          "len": 8, "max": 255, "unit": "scalar" }, "name": "[TG0.1] 4402 raw byte 1", "description": "[Polling: Unclassified; research override] Unscaled response payload byte 1 for DID 0x4402. Oil temperature after filter is a proposed interpretation in TG0.1; its meaning, field boundaries, and physical conversion remain unverified."},
     {"id": "4SERIES_RESEARCH_12_4402_BYTE2", "path": "OBD.Testing", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "[TG0.1] 4402 raw byte 2", "description": "[Polling: Unclassified; research override] Unscaled response payload byte 2 for DID 0x4402. Oil temperature after filter is a proposed interpretation in TG0.1; its meaning, field boundaries, and physical conversion remain unverified."}
@@ -1236,7 +1236,7 @@
   "signals": [
     {"id": "4SERIES_EOT_DME", "path": "Engine", "fmt": { "len": 16, "max": 6280, "min": -273.15, "div": 10, "add": -273.15, "unit": "celsius" }, "name": "Engine oil temperature (DME)", "suggestedMetric": "engineOilTemperature", "description": "[Polling: Thermal condition] Engine control module oil temperature, converted from tenths of kelvin to degrees Celsius."}
   ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4409"}, "freq": 2, "filter": { "years": [2019] },
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "cmd": {"22": "4409"}, "freq": 2, "filter": { "years": [2019] },
   "signals": [
     {"id": "4SERIES_RESEARCH_12_4409_BYTE1", "path": "OBD.Testing", "fmt": {          "len": 8, "max": 255, "unit": "scalar" }, "name": "[TG0.1] 4409 raw byte 1", "description": "[Polling: Unclassified; research override] Unscaled response payload byte 1 for DID 0x4409. Unfiltered oil level is a proposed interpretation in TG0.1; its meaning, field boundaries, and physical conversion remain unverified."},
     {"id": "4SERIES_RESEARCH_12_4409_BYTE2", "path": "OBD.Testing", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "[TG0.1] 4409 raw byte 2", "description": "[Polling: Unclassified; research override] Unscaled response payload byte 2 for DID 0x4409. Unfiltered oil level is a proposed interpretation in TG0.1; its meaning, field boundaries, and physical conversion remain unverified."}
@@ -1290,22 +1290,22 @@
   "signals": [
     {"id": "4SERIES_441D_OIL_LEVEL_DIPSTICK", "path": "Engine", "fmt": { "len": 8, "max": 0, "mul": 0.29296875, "unit": "scalar" }, "name": "Candidate: Oil level dipstick", "description": "[Polling: Unclassified; research override] Inherited candidate meaning and scaling are unverified. On the audited 2019 vehicle and route, this DID returned UDS negative response 0x31 (request out of range), with no positive response observed. Excluded for 2019; configured for debug discovery on other model years."}
   ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4421"}, "freq": 1, "filter": { "years": [2019] },
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "cmd": {"22": "4421"}, "freq": 1, "filter": { "years": [2019] },
   "signals": [
     {"id": "4SERIES_RESEARCH_12_4421_BYTE1", "path": "OBD.Testing", "fmt": {          "len": 8, "max": 255, "unit": "scalar" }, "name": "[TG0.1] 4421 raw byte 1", "description": "[Polling: Unclassified; research override] Unscaled response payload byte 1 for DID 0x4421. Oil pressure regulator P component is a proposed interpretation in TG0.1; its meaning, field boundaries, and physical conversion remain unverified."},
     {"id": "4SERIES_RESEARCH_12_4421_BYTE2", "path": "OBD.Testing", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "[TG0.1] 4421 raw byte 2", "description": "[Polling: Unclassified; research override] Unscaled response payload byte 2 for DID 0x4421. Oil pressure regulator P component is a proposed interpretation in TG0.1; its meaning, field boundaries, and physical conversion remain unverified."}
   ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4422"}, "freq": 1, "filter": { "years": [2019] },
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "cmd": {"22": "4422"}, "freq": 1, "filter": { "years": [2019] },
   "signals": [
     {"id": "4SERIES_RESEARCH_12_4422_BYTE1", "path": "OBD.Testing", "fmt": {          "len": 8, "max": 255, "unit": "scalar" }, "name": "[TG0.1] 4422 raw byte 1", "description": "[Polling: Unclassified; research override] Unscaled response payload byte 1 for DID 0x4422. Oil pressure regulator I component is a proposed interpretation in TG0.1; its meaning, field boundaries, and physical conversion remain unverified."},
     {"id": "4SERIES_RESEARCH_12_4422_BYTE2", "path": "OBD.Testing", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "[TG0.1] 4422 raw byte 2", "description": "[Polling: Unclassified; research override] Unscaled response payload byte 2 for DID 0x4422. Oil pressure regulator I component is a proposed interpretation in TG0.1; its meaning, field boundaries, and physical conversion remain unverified."}
   ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4423"}, "freq": 1, "filter": { "years": [2019] },
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "cmd": {"22": "4423"}, "freq": 1, "filter": { "years": [2019] },
   "signals": [
     {"id": "4SERIES_RESEARCH_12_4423_BYTE1", "path": "OBD.Testing", "fmt": {          "len": 8, "max": 255, "unit": "scalar" }, "name": "[TG0.1] 4423 raw byte 1", "description": "[Polling: Unclassified; research override] Unscaled response payload byte 1 for DID 0x4423. Oil pressure regulator D component is a proposed interpretation in TG0.1; its meaning, field boundaries, and physical conversion remain unverified."},
     {"id": "4SERIES_RESEARCH_12_4423_BYTE2", "path": "OBD.Testing", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "[TG0.1] 4423 raw byte 2", "description": "[Polling: Unclassified; research override] Unscaled response payload byte 2 for DID 0x4423. Oil pressure regulator D component is a proposed interpretation in TG0.1; its meaning, field boundaries, and physical conversion remain unverified."}
   ]},
-{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "dbg": true, "cmd": {"22": "4425"}, "freq": 2, "filter": { "years": [2019] },
+{ "hdr": "6F1", "rax": "612", "eax": "12", "fcm1": true, "cmd": {"22": "4425"}, "freq": 2, "filter": { "years": [2019] },
   "signals": [
     {"id": "4SERIES_RESEARCH_12_4425_BYTE1", "path": "OBD.Testing", "fmt": {          "len": 8, "max": 255, "unit": "scalar" }, "name": "[TG0.1] 4425 raw byte 1", "description": "[Polling: Unclassified; research override] Unscaled response payload byte 1 for DID 0x4425. Oil temperature in the sump is a proposed interpretation in TG0.1; its meaning, field boundaries, and physical conversion remain unverified."},
     {"id": "4SERIES_RESEARCH_12_4425_BYTE2", "path": "OBD.Testing", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "[TG0.1] 4425 raw byte 2", "description": "[Polling: Unclassified; research override] Unscaled response payload byte 2 for DID 0x4425. Oil temperature in the sump is a proposed interpretation in TG0.1; its meaning, field boundaries, and physical conversion remain unverified."}

@@ -52,12 +52,17 @@ def select_group(root, selected):
         for member in group['commands']:
             command = definitions[member['key']]
             command['filter'] = {'years': [manifest['model_year'] if active else 9999]}
-            command['dbg'] = True
+            # Active research uses normal polling so the client can honor freq.
+            # Parked waves remain debug-only and excluded by their year filter.
+            if active:
+                command.pop('dbg', None)
+            else:
+                command['dbg'] = True
             command.pop('dbgfilter', None)
             command['freq'] = member['interval_seconds']
             entry = entries[member['key']]
             entry['command_id'] = Command.from_json(command).id
-            entry['disposition'] = 'active_debug_2019' if active else 'parked_testing_wave'
+            entry['disposition'] = 'active_research_2019' if active else 'parked_testing_wave'
     manifest['active_group'] = None if selected == 'none' else selected
     # Prepare all output before touching any file. Only managed wave definitions change.
     formatted = format_json_data(data)

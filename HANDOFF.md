@@ -1,5 +1,19 @@
 # Next scanlog review: testing headroom
 
+## Configuration change after session 5399 review
+
+Removed `dbg: true` from the eight active TG0.1 commands to test whether normal
+polling honors their configured 1–2-second intervals. The selector now removes
+debug gating from whichever wave is active; parked waves retain debug status and
+their excluding year filter. Research labels, raw-byte decoding, model year 2019,
+the 400/minute budget, and background experimental commands are unchanged.
+The 30-second debug scheduling explanation remains a hypothesis until a new
+capture confirms the cadence. Client loading has not yet been confirmed.
+Reload the published configuration before collecting a
+short cadence check, then assess operational speed/RPM before a longer drive.
+Schema formatting and all **1,645 tests** pass, including wave switching and
+parking checks that verify active research is no longer debug-gated.
+
 Recorded October 7, 2026, at approximately 22:43 UTC.
 
 ## Decision
@@ -158,3 +172,17 @@ Prioritize confirming or revising the inherited lambda upper null bounds and
 resolving DA25 raw 30 / DA2E state 0A. Do not declare high lambda, zero speed,
 transport errors, or padding to be invalid sensor values without evidence.
 The latest review changed neither polling tiers nor the 400/min testing budget.
+
+## Follow-up review: session 5399
+
+Direct content inspection confirms two added same-vehicle sessions (5398/5399),
+with distinct session IDs and new command records; filesystem dates were not used.
+The user confirmed current configuration/debug collection and a full drive for
+5399. Retain **TG0.1** and **400/minute**: all eight candidates returned 18 valid
+samples each, but median spacing was approximately 30 seconds rather than the
+configured 1–2 seconds. The intended research load was not exercised. No candidate
+was graduated. Investigate client debug/selection scheduling with a short capture
+before repeating a long drive, then collect cold-start and comparable warm-drive
+evidence. See `tests/research/session-5399-review.md` and its JSON companion for
+route-specific cadence tables, exact staged frames, reference series, and limits.
+Latest reviewed session is now **5399**, 23:01:08–23:10:16 UTC October 7.
