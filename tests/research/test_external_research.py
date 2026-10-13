@@ -113,7 +113,7 @@ def test_discovery_is_raw_categorized_and_explicitly_unobserved(entry):
     assert len(definition['signals']) == entry['raw_view_bytes'] == member['raw_view_bytes']
     for i, signal in enumerate(definition['signals']):
         assert signal['id'] == entry['raw_signal_ids'][i]
-        assert signal['path'] == "Battery.Testing." + entry['staging_group'].replace(".", "_")
+        assert 'path' not in signal  # Placement comes from the complete native group.
         assert signal['name'].startswith(f"[{entry['staging_group']}]")
         assert 'candidate raw byte' in signal['name']
         assert signal['description'].startswith("[Polling: On demand] ")

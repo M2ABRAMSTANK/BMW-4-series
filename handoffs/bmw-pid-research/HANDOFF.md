@@ -1,12 +1,37 @@
 # Project: BMW PID research
 
 - Project ID: `BMW-4-series/bmw-pid-research`
-- Status: New scanlog review and manual testing groups implemented locally; 1,896 tests pass with one known expected failure. Commit and fork publication authorized in the October 13 full-permissions resume.
-- Owner/session: Codex primary agent, resumed October 13, 2026 for sessions 5421–5444 and manual testing groups; previous implementation sessions complete.
+- Status: Flat testing-picker follow-up complete and validated; delivery target is fork `main` after published baseline `25ee899`.
+- Owner/session: Codex primary agent, resumed October 13, 2026 for the user-requested flat testing picker; prior implementation session complete. Clean dedicated project worktree reused.
 - Repository: `M2ABRAMSTANK/BMW-4-series`; primary `/Users/rowdyer/Coding/OBDb/repos/BMW-4-series`.
 - Branch: `project/bmw-430i-research-integration`.
 - Worktree: `/Users/rowdyer/Coding/OBDb/repos/BMW-4-series--research-integration`.
 - Updated: October 13, 2026.
+
+## Current follow-up: flat testing picker
+
+The user requested removing the nested complete-group folder and placing all
+research and reference readings together at the TG level. All 67 native groups
+now have parent path `Battery.Testing` and names such as `TG0_1`. Removed the
+1,056 candidate signal paths that separately created candidate-only TG folders;
+those signals remain members of the complete native group. The manifest's
+`path` remains the full displayed destination, e.g. `Battery.Testing.TG0_1`.
+Group regex membership, signal IDs, hidden flags, decoders, commands, reference
+membership, and polling settings are unchanged. This layout supersedes the
+candidate-folder description below. Primary checkout and other projects are
+untouched. No other editor was recorded for this project at resume.
+
+Validation: `bash scripts/test-repo.sh BMW-4-series--research-integration
+--maxfail=5` passed **1,896 tests, 1 xfailed** (the existing CAN-padding expected
+failure); log `/private/tmp/bmw-flat-groups-tests.log`. Semantic comparison to
+`25ee899` verifies that only candidate paths and native group path/name changed.
+The existing picker tests verify all 67 full destinations and visible candidate
+memberships, reference inclusion, and request budgets. `git diff --check` passes.
+
+Delivery uses the existing authorized fork workflow: `origin` was verified as
+`https://github.com/M2ABRAMSTANK/BMW-4-series.git`; fetched `main` before committing.
+Keep this worktree available. Next: reload the fork signal set and verify the
+rendered picker; repository tests cannot establish the app's runtime presentation.
 
 ## Current resume: scanlogs and manual testing groups
 

@@ -10,13 +10,15 @@ current evidence and local worktree. The shared scanning budget is approximately
 
 All **67 testing groups / 417 candidate requests** are available together for
 manual selection on the 2019 car. In the signal picker, look under
-**Battery → Testing → TG0_1**, TG0_2, etc. Signal names and group names retain the
-original `[TG0.1]` notation; underscores in folder names prevent the dot from
-creating another folder level. Each native `signalGroups` entry includes its
-candidate signals and relevant reference signals, so adding the group includes
-RPM, speed, engine load, fuel rate, fuel level, coolant/oil temperature, and
-control-module voltage. References can belong to multiple groups without
-creating duplicate signal or command definitions.
+**Battery → Testing → TG0_1**, TG0_2, etc. Signal names retain the
+original `[TG0.1]` notation on individual research signals. Each TG entry is one
+complete native group directly under Battery → Testing, containing its research
+signals and relevant reference readings together. There is no additional
+“testing (requests incl. references)” subgroup or separate candidate-only folder.
+Select the TG entry once to include RPM, speed, engine load, fuel rate, fuel
+level, coolant/oil temperature, control-module voltage, and any group-specific
+references alongside the candidates. References can belong to multiple groups
+without creating duplicate signal or command definitions.
 
 The 64 existing TG0–TG16 groups retain their candidate membership. TG17.1/17.2
 add the nine existing experimental readings; TG18.1 adds the two bitmap-advertised
