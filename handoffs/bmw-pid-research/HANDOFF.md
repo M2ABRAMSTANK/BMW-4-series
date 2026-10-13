@@ -1,12 +1,12 @@
 # Project: BMW PID research
 
 - Project ID: `BMW-4-series/bmw-pid-research`
-- Status: Implementation complete; awaiting user review.
-- Owner/session: Codex, consolidated project session, October 12, 2026.
+- Status: Implementation integrated and validated; fork publication blocked by network access.
+- Owner/session: Codex coordinator, resumed October 13, 2026; Luna debug-policy audit and Sol service 01 implementation.
 - Repository: `M2ABRAMSTANK/BMW-4-series`; primary `/Users/rowdyer/Coding/OBDb/repos/BMW-4-series`.
 - Branch: `project/bmw-430i-research-integration`.
 - Worktree: `/Users/rowdyer/Coding/OBDb/repos/BMW-4-series--research-integration`.
-- Updated: October 12, 2026.
+- Updated: October 13, 2026.
 
 ## Objective and scope
 
@@ -43,10 +43,67 @@ The pre-implementation baseline in this fresh worktree passed **1,645 tests** in
 
 ## Blockers and next actions
 
-1. Review the implementation and its limits in this project worktree before any commit or integration.
+1. Finish service 01 integration, validate the combined implementation, and publish to the authorized fork when network access permits.
 2. Continue controlled collection and interpretation as separate evidence updates. Preserve route hypotheses, the existing 400/minute ceiling, and the full raw-response evidence.
 3. Revisit candidate meaning, target applicability, and polling cadence only when new captures or trusted references add evidence. Preserve the R42 and scanlog review records as supporting history.
 
 ## Preservation and integration
 
-The dedicated project branch/worktree remains uncommitted for review; no commit, push, or primary-checkout integration was performed. The primary checkout had pre-existing changes (`.gitignore`, `HANDOFF.md`, and untracked `tests/research/session-5400-review.json`); its tracked diff still matches the captured pre-work patch byte-for-byte and the untracked artifact hash is unchanged. Baseline comparison confirmed the 1,011 old command objects are unchanged except for the eight intended `dbg: true` settings, and all 57 old staging groups and top-level metadata are unchanged. The testing-headroom review worktree and migrated historical handoff remain untouched. Root archive artifacts are retained in place and linked rather than copied into a second editable project.
+At the October 12 handoff the dedicated project branch/worktree was uncommitted for review. The October 13 resume preserved that implementation in commit `6408ab5`; publication and service 01 integration are tracked below. No primary-checkout integration was performed. The primary checkout had pre-existing changes (`.gitignore`, `HANDOFF.md`, and untracked `tests/research/session-5400-review.json`); its tracked diff still matches the captured pre-work patch byte-for-byte and the untracked artifact hash is unchanged. Baseline comparison confirmed the 1,011 old command objects are unchanged except for the eight intended `dbg: true` settings, and all 57 old staging groups and top-level metadata are unchanged. The testing-headroom review worktree and migrated historical handoff remain untouched. Root archive artifacts are retained in place and linked rather than copied into a second editable project.
+
+## October 13 resume
+
+The user authorized preserving all research requests as debug PIDs, retaining the
+testing group structure, adding supported service 01 PIDs with explicit polling
+intervals, and pushing the completed changes to their fork. Luna verified all
+406 staged commands retain `dbg: true` across 64 groups and the selector preserves
+that policy. Existing operational signals retain their ordinary status.
+
+The prior implementation was preserved as commit `6408ab5`; its baseline passes
+1,751 tests with one documented expected failure. Sol owns the dependent service
+01 project in `/Users/rowdyer/Coding/OBDb/repos/BMW-4-series--service01`, branch
+`project/bmw-service01`. Its changes will be reviewed and integrated here.
+
+A remote fetch currently fails because this execution environment cannot resolve
+`github.com`; an escalation request was rejected by the configured approval policy.
+Local implementation and validation continue. Publication remains pending.
+
+Luna independently compared `bb2381d` to `6408ab5`: all 1,011 prior command
+identities are retained, the only eight prior-command changes set `dbg`, and
+all 57 original group objects/memberships are unchanged. There are exactly 26
+new commands and seven added groups.
+
+## Integrated service 01 result
+
+Sol's commits `64f9c4c` and `b76a754` are integrated on this project branch.
+The [service 01 project handoff](../bmw-service01/HANDOFF.md) and
+[provenance](../../tests/research/service01-2019-provenance.json) record a
+read-only review of 3,267 same-vehicle sessions and 13,492,121 service 01 requests.
+The 7E8 bitmaps advertise 47 data PIDs (45 captured); 7E9 advertises nine data
+PIDs (all captured). All are represented in 65 route-specific definitions
+including nine support-page reads. The 7E8 `0141` and `0183` candidates remain
+parked debug discovery because no positive payload was captured. There are
+63 real response fixtures. All new commands follow the six existing polling
+tiers and matching description prefixes. Requested cadence is not measured
+client cadence.
+
+The full integrated suite passed **1,819 tests with one existing expected
+failure**, via `bash scripts/test-repo.sh BMW-4-series--research-integration
+--maxfail=0` (log `/private/tmp/bmw-service01-integrated.log`). `git diff
+--check` passed. All 1,037 command objects from the research snapshot are
+unchanged by service 01 integration; the total is 1,102 commands and 1,855
+signals. Primary checkout changes and historical worktrees remain untouched.
+
+Publication target is `origin` (`M2ABRAMSTANK/BMW-4-series`) branch `main`,
+using this integration worktree's HEAD. No force push is authorized or needed.
+The environment cannot resolve GitHub and disallows network permission
+escalation. After connectivity is restored, fetch/review any new remote
+commits and push with:
+
+```sh
+git -C /Users/rowdyer/Coding/OBDb/repos/BMW-4-series--research-integration push origin HEAD:main
+```
+
+Leave both project worktrees available for review. Future evidence collection
+should verify client loading, service 01 override scheduling and achieved
+cadence; preserve the 400/min testing ceiling and current debug group structure.
