@@ -6,7 +6,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'tests/schemas/python'))
 from can.can_frame import CANFrameScanner
-from can.command_registry import CommandRegistry
+from can.command_registry import CommandRegistry, get_model_year_command_registry
 from can.signals import Command
 
 COMMANDS = json.loads((ROOT / 'signalsets/v3/default.json').read_text())['commands']
@@ -27,8 +27,9 @@ def test_bitmap_coverage_matches_observed_routes():
 
 
 def test_physical_route_and_polling_override_are_selected():
-    commands = [Command.from_json(c) for c in SERVICE01 if c['cmd']['01'] == '04']
-    registry = CommandRegistry(commands)
+    # The production registry includes the shared SAE commands before the
+    # vehicle's definitions. Check precedence with both sources present.
+    registry = get_model_year_command_registry(2019)
     for route, expected_id, expected_value in [
         ('7E8', '7DF.7E8.0104|f=2019', 28 * 100 / 255),
         ('7E9', '7E1.7E9.0104|f=2019', 23 * 100 / 255),
@@ -38,7 +39,7 @@ def test_physical_route_and_polling_override_are_selected():
         responses = [r for p in packets for r in registry.identify_commands(p)]
         assert len(responses) == 1
         assert responses[0].command.id == expected_id
-        assert responses[0].command.update_frequency == 0.25
+        assert responses[0].command.update_frequency == 1
         assert abs(responses[0].values[('LOAD_PCT' if route == '7E8' else 'LOAD_PCT_7E9')] - expected_value) < 0.0001
 
 
@@ -52,7 +53,38 @@ def test_pid_68_real_multiframe_temperature_payload():
     assert responses[0].values['IAT_11'] == 18
     assert responses[0].values['IAT_12_SUP'] == 1
     assert responses[0].values['IAT_12'] == 5
-    assert command.update_frequency == 2
+    assert command.update_frequency == 5
+
+
+def test_all_service01_descriptions_match_repository_polling_tiers():
+    tiers = {
+        'Operational': 0.25,
+        'Engine control': 1,
+        'Short-term trends': 5,
+        'Thermal condition': 15,
+        'Health and environment': 60,
+        'Cumulative history': 300,
+    }
+    assert len(SERVICE01) == 65
+    for command in SERVICE01:
+        labels = {tier for tier in tiers if all(
+            signal['description'].startswith(f'[Polling: {tier}]')
+            for signal in command['signals']
+        )}
+        assert len(labels) == 1, command['cmd']
+        assert command['freq'] == tiers[labels.pop()]
+    examples = {
+        '0C': 'Operational',
+        '04': 'Engine control',
+        '68': 'Short-term trends',
+        '05': 'Thermal condition',
+        '33': 'Health and environment',
+        'A6': 'Cumulative history',
+        '00': 'Health and environment',
+    }
+    for pid, tier in examples.items():
+        command = next(c for c in SERVICE01 if c['rax'] == '7E8' and c['cmd']['01'] == pid)
+        assert command['freq'] == tiers[tier]
 
 
 def test_uncaptured_pids_are_parked_for_discovery():

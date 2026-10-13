@@ -55,6 +55,24 @@ When editing a polling tier, update both `freq` and every signal description in
 that command. The tests check that tier labels match the configured interval.
 No new signal-set fields are introduced.
 
+### 2019 service 01 coverage
+
+The target car's `7E8` support bitmaps advertise 47 data PIDs; 45 have captured
+positive replies. The `7E9` bitmaps advertise nine data PIDs, all with positive
+replies. The vehicle signal set defines these through the observed functional
+`7DF`/`7E8` and physical `7E1`/`7E9` routes, plus nine support-page reads.
+`7E8` PIDs `0141` and `0183` are bitmap-advertised without a positive payload;
+both remain parked for debug discovery. The 63 positive-response fixtures and
+[source provenance](tests/research/service01-2019-provenance.json) keep this
+distinction visible.
+
+Each service 01 command uses the polling tier in the table above. Examples are
+RPM/speed/throttle at Operational, engine load and fuel rate at Engine control,
+intake temperature and control-module voltage at Short-term trends, coolant and
+oil temperature at Thermal condition, fuel level and support bitmaps at Health
+and environment, and odometer/MIL distance at Cumulative history. These are
+requested intervals; achieved vehicle cadence was not measured.
+
 ## Scanlog validation
 
 The October 2026 audit covers all 1,011 configured commands, including every
@@ -63,9 +81,11 @@ BMW. There are positive replies for 428 commands; the remaining 583 returned
 UDS request-out-of-range responses on this vehicle. All 392 TG0–TG8 commands
 answered, but many still have unverified meanings or scaling.
 
-That audit is the pre-integration baseline. The current configuration has 1,037
-command objects and 1,676 signal objects. It adds 26 read requests and 339 raw
-research signals; these byte views are not 339 physical sensors. D12F alone
+That audit is the pre-integration baseline. The research integration had 1,037
+command objects and 1,676 signal objects; the service 01 coverage brings the
+configuration to 1,102 commands and 1,855 signals. The research integration
+added 26 read requests and 339 raw research signals; these byte views are not
+339 physical sensors. D12F alone
 accounts for 210 byte views for a long-response trip-history hypothesis, whose
 target framing and layout remain unverified.
 

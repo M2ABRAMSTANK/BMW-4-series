@@ -2692,12 +2692,49 @@
     }
   },
   "polling_intervals_seconds": {
-    "dynamic": 0.25,
-    "short": 1,
-    "thermal": 2,
-    "medium_and_status": 10,
-    "slow": 60,
-    "support_pages": 3600
+    "Operational": 0.25,
+    "Engine control": 1,
+    "Short-term trends": 5,
+    "Thermal condition": 15,
+    "Health and environment": 60,
+    "Cumulative history": 300
   },
-  "interpretation_limits": "Supported bitmap is ECU advertisement, not proof of a positive per-PID payload. 7E8 0141 and 0183 lack captured positive payloads and are parked as debug discovery. Configured intervals are requests, not measured achieved vehicle cadence. Local SAEJ1979 decoder meanings are reused without independent calibration of every signal."
+  "interpretation_limits": "Supported bitmap is ECU advertisement, not proof of a positive per-PID payload. 7E8 0141 and 0183 lack captured positive payloads and are parked as debug discovery. Configured intervals are requests, not measured achieved vehicle cadence. Local SAEJ1979 decoder meanings are reused without independent calibration of every signal.",
+  "polling_examples": {
+    "Operational": [
+      "0C",
+      "0D",
+      "11",
+      "45"
+    ],
+    "Engine control": [
+      "04",
+      "06",
+      "23",
+      "9D"
+    ],
+    "Short-term trends": [
+      "0F",
+      "42",
+      "68"
+    ],
+    "Thermal condition": [
+      "05",
+      "3C",
+      "5C"
+    ],
+    "Health and environment": [
+      "00",
+      "13",
+      "2F",
+      "33"
+    ],
+    "Cumulative history": [
+      "1F",
+      "21",
+      "30",
+      "31",
+      "A6"
+    ]
+  }
 }

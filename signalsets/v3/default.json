@@ -4786,45 +4786,45 @@
     {"id": "4SERIES_RESEARCH_78_D96B_BYTE1", "path": "OBD.Testing.Climate", "fmt": {          "len": 8, "max": 255, "unit": "scalar" }, "name": "[TG11.1] D96B outside temperature candidate raw byte 1", "description": "[Polling: Health and environment] Unscaled measurement payload byte 1 after the positive service and echoed DID for D96B. Source receive route is incomplete; 678/F1 is a discovery hypothesis. Source buffer reversal is not applied to raw bytes. This raw view uses the source layout; byte availability, field boundaries and physical conversion on this vehicle remain unverified. Retain the complete response for analysis."},
     {"id": "4SERIES_RESEARCH_78_D96B_BYTE2", "path": "OBD.Testing.Climate", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "[TG11.1] D96B outside temperature candidate raw byte 2", "description": "[Polling: Health and environment] Unscaled measurement payload byte 2 after the positive service and echoed DID for D96B. Source receive route is incomplete; 678/F1 is a discovery hypothesis. Source buffer reversal is not applied to raw bytes. This raw view uses the source layout; byte availability, field boundaries and physical conversion on this vehicle remain unverified. Retain the complete response for analysis."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "00"}, "freq": 3600, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "00"}, "freq": 60, "filter": { "years": [2019] },
   "signals": [
-    {"id": "4SERIES_S01_7E8_00_BITMAP", "path": "OBD.Testing.Support", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "Service 01 7E8 PID 00 support bitmap", "description": "Raw 32-bit SAE service 01 support bitmap. Bit 31 represents the next PID. Discovery metadata, not a sensor."}
+    {"id": "4SERIES_S01_7E8_00_BITMAP", "path": "OBD.Testing.Support", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "Service 01 7E8 PID 00 support bitmap", "description": "[Polling: Health and environment] Raw 32-bit SAE service 01 support bitmap. Bit 31 represents the next PID. Discovery metadata, not a sensor."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "01"}, "freq": 10, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "01"}, "freq": 60, "filter": { "years": [2019] },
   "signals": [
-    {"id": "MIL",      "path": "DTCs.Generic",         "fmt": {           "len": 1, "max": 1,   "unit": "offon"  }, "name": "Malfunction indicator lamp",                   "suggestedMetric": "checkEngineLightOn", "description": "The MIL status is OFF during key-on, engine-off bulb check unless MIL has also been commanded ON for a detected malfunction. The status reflects whether there are confirmed DTC(s) stored that are illuminating the MIL. It should not reflect the status of the MIL, which could be on for a function check, flashing I/M readiness or flashing for misfire."},
-    {"id": "DTC_CNT",  "path": "DTCs.Generic",         "fmt": {"bix": 1,  "len": 7, "max": 127, "unit": "scalar" }, "name": "Number of DTCs stored in this ECU",            "suggestedMetric": "storedDTCCount",     "description": "Number of confirmed emission-related DTCs stored in the ECU available for display using Service $03."},
-    {"id": "CCM_RDY",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 9,  "len": 1, "max": 1,   "unit": "yesno"  }, "name": "Comprehensive component monitoring ready"},
-    {"id": "FUEL_RDY", "path": "DTCs.Generic.Status",  "fmt": {"bix": 10, "len": 1, "max": 1,   "unit": "yesno"  }, "name": "Fuel system monitoring ready"},
-    {"id": "MIS_RDY",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 11, "len": 1, "max": 1,   "unit": "yesno"  }, "name": "Misfire monitoring ready"},
-    {"id": "CCM_SUP",  "path": "DTCs.Generic.Support", "fmt": {"bix": 13, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Comprehensive component monitoring supported"},
-    {"id": "FUEL_SUP", "path": "DTCs.Generic.Support", "fmt": {"bix": 14, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Fuel system monitoring supported"},
-    {"id": "MIS_SUP",  "path": "DTCs.Generic.Support", "fmt": {"bix": 15, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Misfire monitoring supported"},
-    {"id": "EGR_SUP",  "path": "DTCs.Generic.Support", "fmt": {"bix": 16, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "EGR system monitoring supported"},
-    {"id": "HTR_SUP",  "path": "DTCs.Generic.Support", "fmt": {"bix": 17, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Oxygen sensor heater monitoring supported"},
-    {"id": "O2S_SUP",  "path": "DTCs.Generic.Support", "fmt": {"bix": 18, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Oxygen sensor monitoring supported"},
-    {"id": "ACRF_SUP", "path": "DTCs.Generic.Support", "fmt": {"bix": 19, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "A/C system refrigerant monitoring supported"},
-    {"id": "AIR_SUP",  "path": "DTCs.Generic.Support", "fmt": {"bix": 20, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Secondary air system monitoring supported"},
-    {"id": "EVAP_SUP", "path": "DTCs.Generic.Support", "fmt": {"bix": 21, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Evaporative system monitoring supported"},
-    {"id": "HCAT_SUP", "path": "DTCs.Generic.Support", "fmt": {"bix": 22, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Heated catalyst monitoring supported"},
-    {"id": "CAT_SUP",  "path": "DTCs.Generic.Support", "fmt": {"bix": 23, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Catalyst monitoring supported"},
-    {"id": "EGR_RDY",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 24, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "EGR system monitoring ready"},
-    {"id": "HTR_RDY",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 25, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Oxygen sensor heater monitoring ready"},
-    {"id": "O2S_RDY",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 26, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Oxygen sensor monitoring ready"},
-    {"id": "ACRF_RDY", "path": "DTCs.Generic.Status",  "fmt": {"bix": 27, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "A/C system refrigerant monitoring ready"},
-    {"id": "AIR_RDY",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 28, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Secondary air system monitoring ready"},
-    {"id": "EVAP_RDY", "path": "DTCs.Generic.Status",  "fmt": {"bix": 29, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Evaporative system monitoring ready"},
-    {"id": "HCAT_RDY", "path": "DTCs.Generic.Status",  "fmt": {"bix": 30, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Heated catalyst monitoring ready"},
-    {"id": "CAT_RDY",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 31, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Catalyst monitoring ready"},
-    {"id": "CIM_SUP", "path": "DTCs.Generic.Support", "name": "Compression ignition monitoring supported", "description": "Indicates support of spark ignition or compression ignition monitors.", "hidden": true, "fmt": {"bix": 12, "len": 1, "map": {
+    {"id": "MIL",      "path": "DTCs.Generic",         "fmt": {           "len": 1, "max": 1,   "unit": "offon"  }, "name": "Malfunction indicator lamp",                   "suggestedMetric": "checkEngineLightOn",                                                         "description": "[Polling: Health and environment] The MIL status is OFF during key-on, engine-off bulb check unless MIL has also been commanded ON for a detected malfunction. The status reflects whether there are confirmed DTC(s) stored that are illuminating the MIL. It should not reflect the status of the MIL, which could be on for a function check, flashing I/M readiness or flashing for misfire."},
+    {"id": "DTC_CNT",  "path": "DTCs.Generic",         "fmt": {"bix": 1,  "len": 7, "max": 127, "unit": "scalar" }, "name": "Number of DTCs stored in this ECU",            "suggestedMetric": "storedDTCCount",                                                             "description": "[Polling: Health and environment] Number of confirmed emission-related DTCs stored in the ECU available for display using Service $03."},
+    {"id": "CCM_RDY",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 9,  "len": 1, "max": 1,   "unit": "yesno"  }, "name": "Comprehensive component monitoring ready",     "description": "[Polling: Health and environment] SAE service 01 PID 01 response from ECU 7E8."},
+    {"id": "FUEL_RDY", "path": "DTCs.Generic.Status",  "fmt": {"bix": 10, "len": 1, "max": 1,   "unit": "yesno"  }, "name": "Fuel system monitoring ready",                 "description": "[Polling: Health and environment] SAE service 01 PID 01 response from ECU 7E8."},
+    {"id": "MIS_RDY",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 11, "len": 1, "max": 1,   "unit": "yesno"  }, "name": "Misfire monitoring ready",                     "description": "[Polling: Health and environment] SAE service 01 PID 01 response from ECU 7E8."},
+    {"id": "CCM_SUP",  "path": "DTCs.Generic.Support", "fmt": {"bix": 13, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Comprehensive component monitoring supported", "description": "[Polling: Health and environment] SAE service 01 PID 01 response from ECU 7E8."},
+    {"id": "FUEL_SUP", "path": "DTCs.Generic.Support", "fmt": {"bix": 14, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Fuel system monitoring supported",             "description": "[Polling: Health and environment] SAE service 01 PID 01 response from ECU 7E8."},
+    {"id": "MIS_SUP",  "path": "DTCs.Generic.Support", "fmt": {"bix": 15, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Misfire monitoring supported",                 "description": "[Polling: Health and environment] SAE service 01 PID 01 response from ECU 7E8."},
+    {"id": "EGR_SUP",  "path": "DTCs.Generic.Support", "fmt": {"bix": 16, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "EGR system monitoring supported",              "description": "[Polling: Health and environment] SAE service 01 PID 01 response from ECU 7E8."},
+    {"id": "HTR_SUP",  "path": "DTCs.Generic.Support", "fmt": {"bix": 17, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Oxygen sensor heater monitoring supported",    "description": "[Polling: Health and environment] SAE service 01 PID 01 response from ECU 7E8."},
+    {"id": "O2S_SUP",  "path": "DTCs.Generic.Support", "fmt": {"bix": 18, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Oxygen sensor monitoring supported",           "description": "[Polling: Health and environment] SAE service 01 PID 01 response from ECU 7E8."},
+    {"id": "ACRF_SUP", "path": "DTCs.Generic.Support", "fmt": {"bix": 19, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "A/C system refrigerant monitoring supported",  "description": "[Polling: Health and environment] SAE service 01 PID 01 response from ECU 7E8."},
+    {"id": "AIR_SUP",  "path": "DTCs.Generic.Support", "fmt": {"bix": 20, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Secondary air system monitoring supported",    "description": "[Polling: Health and environment] SAE service 01 PID 01 response from ECU 7E8."},
+    {"id": "EVAP_SUP", "path": "DTCs.Generic.Support", "fmt": {"bix": 21, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Evaporative system monitoring supported",      "description": "[Polling: Health and environment] SAE service 01 PID 01 response from ECU 7E8."},
+    {"id": "HCAT_SUP", "path": "DTCs.Generic.Support", "fmt": {"bix": 22, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Heated catalyst monitoring supported",         "description": "[Polling: Health and environment] SAE service 01 PID 01 response from ECU 7E8."},
+    {"id": "CAT_SUP",  "path": "DTCs.Generic.Support", "fmt": {"bix": 23, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Catalyst monitoring supported",                "description": "[Polling: Health and environment] SAE service 01 PID 01 response from ECU 7E8."},
+    {"id": "EGR_RDY",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 24, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "EGR system monitoring ready",                  "description": "[Polling: Health and environment] SAE service 01 PID 01 response from ECU 7E8."},
+    {"id": "HTR_RDY",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 25, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Oxygen sensor heater monitoring ready",        "description": "[Polling: Health and environment] SAE service 01 PID 01 response from ECU 7E8."},
+    {"id": "O2S_RDY",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 26, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Oxygen sensor monitoring ready",               "description": "[Polling: Health and environment] SAE service 01 PID 01 response from ECU 7E8."},
+    {"id": "ACRF_RDY", "path": "DTCs.Generic.Status",  "fmt": {"bix": 27, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "A/C system refrigerant monitoring ready",      "description": "[Polling: Health and environment] SAE service 01 PID 01 response from ECU 7E8."},
+    {"id": "AIR_RDY",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 28, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Secondary air system monitoring ready",        "description": "[Polling: Health and environment] SAE service 01 PID 01 response from ECU 7E8."},
+    {"id": "EVAP_RDY", "path": "DTCs.Generic.Status",  "fmt": {"bix": 29, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Evaporative system monitoring ready",          "description": "[Polling: Health and environment] SAE service 01 PID 01 response from ECU 7E8."},
+    {"id": "HCAT_RDY", "path": "DTCs.Generic.Status",  "fmt": {"bix": 30, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Heated catalyst monitoring ready",             "description": "[Polling: Health and environment] SAE service 01 PID 01 response from ECU 7E8."},
+    {"id": "CAT_RDY",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 31, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Catalyst monitoring ready",                    "description": "[Polling: Health and environment] SAE service 01 PID 01 response from ECU 7E8."},
+    {"id": "CIM_SUP", "path": "DTCs.Generic.Support", "name": "Compression ignition monitoring supported", "description": "[Polling: Health and environment] Indicates support of spark ignition or compression ignition monitors.", "hidden": true, "fmt": {"bix": 12, "len": 1, "map": {
           "0": { "description": "Spark ignition monitors supported",       "value": "SPARK" },
           "1": { "description": "Compression ignition monitors supported", "value": "COMPRESSION" }
         }}
     }
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "03"}, "freq": 1, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "03"}, "freq": 60, "filter": { "years": [2019] },
   "signals": [
-    {"id": "FUELSYS1", "path": "Fuel.Generic", "name": "Fuel system 1 status", "fmt": {"len": 8, "map": {
+    {"id": "FUELSYS1", "path": "Fuel.Generic", "name": "Fuel system 1 status", "description": "[Polling: Health and environment] SAE service 01 PID 03 response from ECU 7E8.", "fmt": {"len": 8, "map": {
           "0":   { "description": "Engine is off",                                                                                                        "value": "OFF" },
           "1":   { "description": "Open loop - has not yet satisfied conditions to go closed loop",                                                       "value": "OL" },
           "2":   { "description": "Closed loop - using oxygen sensor(s) as feedback for fuel control",                                                    "value": "CL" },
@@ -4836,7 +4836,7 @@
           "128": { "description": "Open loop - due to detected system fault (Bank 2)",                                                                    "value": "OL-Fault B2" }
         }}
     },
-    {"id": "FUELSYS2", "path": "Fuel.Generic", "name": "Fuel system 2 status", "fmt": {"bix": 8, "len": 8, "map": {
+    {"id": "FUELSYS2", "path": "Fuel.Generic", "name": "Fuel system 2 status", "description": "[Polling: Health and environment] SAE service 01 PID 03 response from ECU 7E8.", "fmt": {"bix": 8, "len": 8, "map": {
           "0":   { "description": "Engine is off",                                                                                                        "value": "OFF" },
           "1":   { "description": "Open loop - has not yet satisfied conditions to go closed loop",                                                       "value": "OL" },
           "2":   { "description": "Closed loop - using oxygen sensor(s) as feedback for fuel control",                                                    "value": "CL" },
@@ -4849,69 +4849,69 @@
         }}
     }
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "04"}, "freq": 0.25, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "04"}, "freq": 1, "filter": { "years": [2019] },
   "signals": [
-    {"id": "LOAD_PCT", "path": "Engine.Generic", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Calculated engine load", "suggestedMetric": "engineLoad", "description": "Represents the amount of work the engine is doing. Expected to reach 100% at wide open throttle/wide open pedal at any altitude, temperature or rpm for both naturally aspirated and boosted engines. If engine load is limited for powertrain protection e.g. engine/turbocharger protection, this value may not reach 100%. For hybrid vehicles, indicates the torque produced only by the internal combustion engine, not the torque being delivered by the entire powertrain. For electric vehicles, the meaning of this parameter is undefined."}
+    {"id": "LOAD_PCT", "path": "Engine.Generic", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Calculated engine load", "suggestedMetric": "engineLoad", "description": "[Polling: Engine control] Represents the amount of work the engine is doing. Expected to reach 100% at wide open throttle/wide open pedal at any altitude, temperature or rpm for both naturally aspirated and boosted engines. If engine load is limited for powertrain protection e.g. engine/turbocharger protection, this value may not reach 100%. For hybrid vehicles, indicates the torque produced only by the internal combustion engine, not the torque being delivered by the entire powertrain. For electric vehicles, the meaning of this parameter is undefined."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "05"}, "freq": 2, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "05"}, "freq": 15, "filter": { "years": [2019] },
   "signals": [
-    {"id": "ECT", "path": "Engine.Generic", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature", "suggestedMetric": "engineCoolantTemperature", "description": "Your engine temperature must operate within a certain temperature range to operate efficiently and safely. If it runs too hot, then your engine could be permanently damaged. If it runs too cold, then your engine will use more fuel than necessary."}
+    {"id": "ECT", "path": "Engine.Generic", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature", "suggestedMetric": "engineCoolantTemperature", "description": "[Polling: Thermal condition] Your engine temperature must operate within a certain temperature range to operate efficiently and safely. If it runs too hot, then your engine could be permanently damaged. If it runs too cold, then your engine will use more fuel than necessary."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "06"}, "freq": 0.25, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "06"}, "freq": 1, "filter": { "years": [2019] },
   "signals": [
-    {"id": "SHRTFT1", "path": "Engine.Generic", "fmt": { "len": 8, "max": 99.2, "min": -100, "mul": 100, "div": 128, "add": -100, "unit": "percent" }, "name": "Short term fuel trim (bank 1)", "suggestedMetric": "shortTermFuelTrim", "description": "Correction being used by the closed-loop fuel algorithm."}
+    {"id": "SHRTFT1", "path": "Engine.Generic", "fmt": { "len": 8, "max": 99.2, "min": -100, "mul": 100, "div": 128, "add": -100, "unit": "percent" }, "name": "Short term fuel trim (bank 1)", "suggestedMetric": "shortTermFuelTrim", "description": "[Polling: Engine control] Correction being used by the closed-loop fuel algorithm."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "07"}, "freq": 1, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "07"}, "freq": 5, "filter": { "years": [2019] },
   "signals": [
-    {"id": "LONGFT1", "path": "Engine.Generic", "fmt": { "len": 8, "max": 99.2, "min": -100, "mul": 100, "div": 128, "add": -100, "unit": "percent" }, "name": "Long term fuel trim (bank 1)"}
+    {"id": "LONGFT1", "path": "Engine.Generic", "fmt": { "len": 8, "max": 99.2, "min": -100, "mul": 100, "div": 128, "add": -100, "unit": "percent" }, "name": "Long term fuel trim (bank 1)", "description": "[Polling: Short-term trends] SAE service 01 PID 07 response from ECU 7E8."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "0B"}, "freq": 0.25, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "0B"}, "freq": 1, "filter": { "years": [2019] },
   "signals": [
-    {"id": "MAP", "path": "Engine.Generic", "fmt": { "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Intake manifold absolute pressure"}
+    {"id": "MAP", "path": "Engine.Generic", "fmt": { "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Intake manifold absolute pressure", "description": "[Polling: Engine control] SAE service 01 PID 0B response from ECU 7E8."}
   ]},
 { "hdr": "7DF", "rax": "7E8", "cmd": {"01": "0C"}, "freq": 0.25, "filter": { "years": [2019] },
   "signals": [
-    {"id": "RPM", "path": "Engine.Generic", "fmt": { "len": 16, "max": 16383.75, "div": 4, "unit": "rpm" }, "name": "Engine RPM"}
+    {"id": "RPM", "path": "Engine.Generic", "fmt": { "len": 16, "max": 16383.75, "div": 4, "unit": "rpm" }, "name": "Engine RPM", "description": "[Polling: Operational] SAE service 01 PID 0C response from ECU 7E8."}
   ]},
 { "hdr": "7DF", "rax": "7E8", "cmd": {"01": "0D"}, "freq": 0.25, "filter": { "years": [2019] },
   "signals": [
-    {"id": "VSS", "path": "Movement.Generic", "fmt": { "len": 8, "max": 255, "nullmax": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
+    {"id": "VSS", "path": "Movement.Generic", "fmt": { "len": 8, "max": 255, "nullmax": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed", "description": "[Polling: Operational] SAE service 01 PID 0D response from ECU 7E8."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "0E"}, "freq": 0.25, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "0E"}, "freq": 1, "filter": { "years": [2019] },
   "signals": [
-    {"id": "SPARKADV", "path": "Engine.Generic", "fmt": { "len": 8, "max": 63.5, "min": -64, "div": 2, "add": -64, "unit": "degrees" }, "name": "Timing advance", "description": "Ignition timing spark advance for the first cylinder. Measured in degrees before dead center. Minus is degrees before dead center, positive is degrees after."}
+    {"id": "SPARKADV", "path": "Engine.Generic", "fmt": { "len": 8, "max": 63.5, "min": -64, "div": 2, "add": -64, "unit": "degrees" }, "name": "Timing advance", "description": "[Polling: Engine control] Ignition timing spark advance for the first cylinder. Measured in degrees before dead center. Minus is degrees before dead center, positive is degrees after."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "0F"}, "freq": 2, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "0F"}, "freq": 5, "filter": { "years": [2019] },
   "signals": [
-    {"id": "IAT", "path": "Engine.Generic", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Intake air temperature"}
+    {"id": "IAT", "path": "Engine.Generic", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Intake air temperature", "description": "[Polling: Short-term trends] SAE service 01 PID 0F response from ECU 7E8."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "10"}, "freq": 0.25, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "10"}, "freq": 1, "filter": { "years": [2019] },
   "signals": [
-    {"id": "MAF", "path": "Engine.Generic", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "gramsPerSecond" }, "name": "Air flow rate from mass air flow sensor", "suggestedMetric": "massAirFlow"}
+    {"id": "MAF", "path": "Engine.Generic", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "gramsPerSecond" }, "name": "Air flow rate from mass air flow sensor", "suggestedMetric": "massAirFlow", "description": "[Polling: Engine control] SAE service 01 PID 10 response from ECU 7E8."}
   ]},
 { "hdr": "7DF", "rax": "7E8", "cmd": {"01": "11"}, "freq": 0.25, "filter": { "years": [2019] },
   "signals": [
-    {"id": "TP", "path": "Control.Generic", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Absolute throttle position", "suggestedMetric": "throttlePosition", "description": "Throttle position at idle will usually be more than 0%, and throttle position at wide open throttle will usually be less than 100%."}
+    {"id": "TP", "path": "Control.Generic", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Absolute throttle position", "suggestedMetric": "throttlePosition", "description": "[Polling: Operational] Throttle position at idle will usually be more than 0%, and throttle position at wide open throttle will usually be less than 100%."}
   ]},
 { "hdr": "7DF", "rax": "7E8", "cmd": {"01": "13"}, "freq": 60, "filter": { "years": [2019] },
   "signals": [
-    {"id": "O2S24_EXISTS", "path": "Engine.Generic.OxygenSensors", "fmt": {          "len": 1, "max": 1, "unit": "noyes" }, "name": "02S Bank 2, Sensor 4 present"},
-    {"id": "O2S23_EXISTS", "path": "Engine.Generic.OxygenSensors", "fmt": {"bix": 1, "len": 1, "max": 1, "unit": "noyes" }, "name": "02S Bank 2, Sensor 3 present"},
-    {"id": "O2S22_EXISTS", "path": "Engine.Generic.OxygenSensors", "fmt": {"bix": 2, "len": 1, "max": 1, "unit": "noyes" }, "name": "02S Bank 2, Sensor 2 present"},
-    {"id": "O2S21_EXISTS", "path": "Engine.Generic.OxygenSensors", "fmt": {"bix": 3, "len": 1, "max": 1, "unit": "noyes" }, "name": "02S Bank 2, Sensor 1 present"},
-    {"id": "O2S14_EXISTS", "path": "Engine.Generic.OxygenSensors", "fmt": {"bix": 4, "len": 1, "max": 1, "unit": "noyes" }, "name": "02S Bank 1, Sensor 4 present"},
-    {"id": "O2S13_EXISTS", "path": "Engine.Generic.OxygenSensors", "fmt": {"bix": 5, "len": 1, "max": 1, "unit": "noyes" }, "name": "02S Bank 1, Sensor 3 present"},
-    {"id": "O2S12_EXISTS", "path": "Engine.Generic.OxygenSensors", "fmt": {"bix": 6, "len": 1, "max": 1, "unit": "noyes" }, "name": "02S Bank 1, Sensor 2 present"},
-    {"id": "O2S11_EXISTS", "path": "Engine.Generic.OxygenSensors", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "noyes" }, "name": "02S Bank 1, Sensor 1 present"}
+    {"id": "O2S24_EXISTS", "path": "Engine.Generic.OxygenSensors", "fmt": {          "len": 1, "max": 1, "unit": "noyes" }, "name": "02S Bank 2, Sensor 4 present", "description": "[Polling: Health and environment] SAE service 01 PID 13 response from ECU 7E8."},
+    {"id": "O2S23_EXISTS", "path": "Engine.Generic.OxygenSensors", "fmt": {"bix": 1, "len": 1, "max": 1, "unit": "noyes" }, "name": "02S Bank 2, Sensor 3 present", "description": "[Polling: Health and environment] SAE service 01 PID 13 response from ECU 7E8."},
+    {"id": "O2S22_EXISTS", "path": "Engine.Generic.OxygenSensors", "fmt": {"bix": 2, "len": 1, "max": 1, "unit": "noyes" }, "name": "02S Bank 2, Sensor 2 present", "description": "[Polling: Health and environment] SAE service 01 PID 13 response from ECU 7E8."},
+    {"id": "O2S21_EXISTS", "path": "Engine.Generic.OxygenSensors", "fmt": {"bix": 3, "len": 1, "max": 1, "unit": "noyes" }, "name": "02S Bank 2, Sensor 1 present", "description": "[Polling: Health and environment] SAE service 01 PID 13 response from ECU 7E8."},
+    {"id": "O2S14_EXISTS", "path": "Engine.Generic.OxygenSensors", "fmt": {"bix": 4, "len": 1, "max": 1, "unit": "noyes" }, "name": "02S Bank 1, Sensor 4 present", "description": "[Polling: Health and environment] SAE service 01 PID 13 response from ECU 7E8."},
+    {"id": "O2S13_EXISTS", "path": "Engine.Generic.OxygenSensors", "fmt": {"bix": 5, "len": 1, "max": 1, "unit": "noyes" }, "name": "02S Bank 1, Sensor 3 present", "description": "[Polling: Health and environment] SAE service 01 PID 13 response from ECU 7E8."},
+    {"id": "O2S12_EXISTS", "path": "Engine.Generic.OxygenSensors", "fmt": {"bix": 6, "len": 1, "max": 1, "unit": "noyes" }, "name": "02S Bank 1, Sensor 2 present", "description": "[Polling: Health and environment] SAE service 01 PID 13 response from ECU 7E8."},
+    {"id": "O2S11_EXISTS", "path": "Engine.Generic.OxygenSensors", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "noyes" }, "name": "02S Bank 1, Sensor 1 present", "description": "[Polling: Health and environment] SAE service 01 PID 13 response from ECU 7E8."}
   ]},
 { "hdr": "7DF", "rax": "7E8", "cmd": {"01": "15"}, "freq": 1, "filter": { "years": [2019] },
   "signals": [
-    {"id": "O2S12",    "path": "Engine.Generic.OxygenSensors", "fmt": {          "len": 8, "max": 1.275,                          "div": 200,              "unit": "volts"   }, "name": "O2S Output Voltage Bank 1, Sensor 2"},
-    {"id": "SHRTFT11", "path": "Engine.Generic.OxygenSensors", "fmt": {"bix": 8, "len": 8, "max": 99.22, "min": -100, "mul": 100, "div": 128, "add": -128, "unit": "percent" }, "name": "SHRTFT associated with O2S12"}
+    {"id": "O2S12",    "path": "Engine.Generic.OxygenSensors", "fmt": {          "len": 8, "max": 1.275,                          "div": 200,              "unit": "volts"   }, "name": "O2S Output Voltage Bank 1, Sensor 2", "description": "[Polling: Engine control] SAE service 01 PID 15 response from ECU 7E8."},
+    {"id": "SHRTFT11", "path": "Engine.Generic.OxygenSensors", "fmt": {"bix": 8, "len": 8, "max": 99.22, "min": -100, "mul": 100, "div": 128, "add": -128, "unit": "percent" }, "name": "SHRTFT associated with O2S12",        "description": "[Polling: Engine control] SAE service 01 PID 15 response from ECU 7E8."}
   ]},
 { "hdr": "7DF", "rax": "7E8", "cmd": {"01": "1C"}, "freq": 60, "filter": { "years": [2019] },
   "signals": [
-    {"id": "OBDSUP", "path": "OBD.Generic", "name": "OBD requirements to which vehicle is designed", "fmt": {"len": 8, "map": {
+    {"id": "OBDSUP", "path": "OBD.Generic", "name": "OBD requirements to which vehicle is designed", "description": "[Polling: Health and environment] SAE service 01 PID 1C response from ECU 7E8.", "fmt": {"len": 8, "map": {
           "1":  { "description": "OBD II (California ARB)",                             "value": "OBD II" },
           "2":  { "description": "OBD (Federal EPA)",                                   "value": "OBD" },
           "3":  { "description": "OBD & OBD II",                                        "value": "OBD & OBD II" },
@@ -4973,124 +4973,124 @@
         }}
     }
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "1F"}, "freq": 10, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "1F"}, "freq": 300, "filter": { "years": [2019] },
   "signals": [
-    {"id": "RUNTM", "path": "Clocks.Generic", "fmt": { "len": 16, "max": 65535, "unit": "seconds" }, "name": "Time since engine start", "description": "Increments while the engine is running. Freezes if the engine stalls. Resets to zero during every control module power-up and when entering the key-on, engine off position. Limited to 65,535 seconds and will not wrap around to zero."}
+    {"id": "RUNTM", "path": "Clocks.Generic", "fmt": { "len": 16, "max": 65535, "unit": "seconds" }, "name": "Time since engine start", "description": "[Polling: Cumulative history] Increments while the engine is running. Freezes if the engine stalls. Resets to zero during every control module power-up and when entering the key-on, engine off position. Limited to 65,535 seconds and will not wrap around to zero."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "20"}, "freq": 3600, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "20"}, "freq": 60, "filter": { "years": [2019] },
   "signals": [
-    {"id": "4SERIES_S01_7E8_20_BITMAP", "path": "OBD.Testing.Support", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "Service 01 7E8 PID 20 support bitmap", "description": "Raw 32-bit SAE service 01 support bitmap. Bit 31 represents the next PID. Discovery metadata, not a sensor."}
+    {"id": "4SERIES_S01_7E8_20_BITMAP", "path": "OBD.Testing.Support", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "Service 01 7E8 PID 20 support bitmap", "description": "[Polling: Health and environment] Raw 32-bit SAE service 01 support bitmap. Bit 31 represents the next PID. Discovery metadata, not a sensor."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "21"}, "freq": 10, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "21"}, "freq": 300, "filter": { "years": [2019] },
   "signals": [
-    {"id": "MIL_DIST", "path": "DTCs.Generic", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance traveled while MIL was activated", "description": "Resets to zero when MIL changes from deactivated to activated, if diagnostic information is cleared, or if at least 40 warm-up cycles occur without MIL being activated."}
+    {"id": "MIL_DIST", "path": "DTCs.Generic", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance traveled while MIL was activated", "description": "[Polling: Cumulative history] Resets to zero when MIL changes from deactivated to activated, if diagnostic information is cleared, or if at least 40 warm-up cycles occur without MIL being activated."}
   ]},
 { "hdr": "7DF", "rax": "7E8", "cmd": {"01": "23"}, "freq": 1, "filter": { "years": [2019] },
   "signals": [
-    {"id": "FRP", "path": "Engine.Generic", "fmt": { "len": 16, "max": 655350, "mul": 10, "unit": "kilopascal" }, "name": "Fuel rail pressure", "description": "Fuel rail pressure at the engine when the reading is referenced to atmosphere (gage pressure)."}
+    {"id": "FRP", "path": "Engine.Generic", "fmt": { "len": 16, "max": 655350, "mul": 10, "unit": "kilopascal" }, "name": "Fuel rail pressure", "description": "[Polling: Engine control] Fuel rail pressure at the engine when the reading is referenced to atmosphere (gage pressure)."}
   ]},
 { "hdr": "7DF", "rax": "7E8", "cmd": {"01": "2E"}, "freq": 1, "filter": { "years": [2019] },
   "signals": [
-    {"id": "EVAP_PCT", "path": "Engine.Generic", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Commanded evaporative purge"}
+    {"id": "EVAP_PCT", "path": "Engine.Generic", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Commanded evaporative purge", "description": "[Polling: Engine control] SAE service 01 PID 2E response from ECU 7E8."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "2F"}, "freq": 10, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "2F"}, "freq": 60, "filter": { "years": [2019] },
   "signals": [
-    {"id": "FLI", "path": "Fuel.Generic", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "nullmin": 0, "unit": "percent" }, "name": "Fuel tank level", "suggestedMetric": "fuelTankLevel"}
+    {"id": "FLI", "path": "Fuel.Generic", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "nullmin": 0, "unit": "percent" }, "name": "Fuel tank level", "suggestedMetric": "fuelTankLevel", "description": "[Polling: Health and environment] SAE service 01 PID 2F response from ECU 7E8."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "30"}, "freq": 60, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "30"}, "freq": 300, "filter": { "years": [2019] },
   "signals": [
-    {"id": "WARM_UPS", "path": "DTCs.Generic", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Number of warm-ups since diagnostic trouble codes cleared", "description": "Number of OBD warm-up cycles since all DTCs were cleared (via an external test equipment or possibly, a battery disconnect). A warm-up is defined in the OBD regulations to be sufficient vehicle operation such that coolant temperature rises by at least 22°C (40°F) from engine starting and reaches a minimum temperature of 70°C (160°F) (60°C (140°F) for diesels). This PID is not associated with any particular DTC. It is simply an indication for inspection/maintenance, of the last time an external test equipment was used to clear DTCs. If greater than 255 warm-ups have occurred, this parameter will remain at 255 and not wrap to zero."}
+    {"id": "WARM_UPS", "path": "DTCs.Generic", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Number of warm-ups since diagnostic trouble codes cleared", "description": "[Polling: Cumulative history] Number of OBD warm-up cycles since all DTCs were cleared (via an external test equipment or possibly, a battery disconnect). A warm-up is defined in the OBD regulations to be sufficient vehicle operation such that coolant temperature rises by at least 22°C (40°F) from engine starting and reaches a minimum temperature of 70°C (160°F) (60°C (140°F) for diesels). This PID is not associated with any particular DTC. It is simply an indication for inspection/maintenance, of the last time an external test equipment was used to clear DTCs. If greater than 255 warm-ups have occurred, this parameter will remain at 255 and not wrap to zero."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "31"}, "freq": 10, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "31"}, "freq": 300, "filter": { "years": [2019] },
   "signals": [
-    {"id": "CLR_DIST", "path": "DTCs.Generic", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance traveled since diagnostic trouble codes cleared", "suggestedMetric": "distanceSinceDTCsCleared", "description": "Distance accumulated since DTCs were cleared (via an external test equipment or possibly, a battery disconnect). This parameter is not associated with any particular DTC. It is simply an indication for inspection/maintenance, of the last time an external test equipment was used to clear DTCs. If greater than 65,535 km have occurred, will remain at 65,535 km and not wrap to zero."}
+    {"id": "CLR_DIST", "path": "DTCs.Generic", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance traveled since diagnostic trouble codes cleared", "suggestedMetric": "distanceSinceDTCsCleared", "description": "[Polling: Cumulative history] Distance accumulated since DTCs were cleared (via an external test equipment or possibly, a battery disconnect). This parameter is not associated with any particular DTC. It is simply an indication for inspection/maintenance, of the last time an external test equipment was used to clear DTCs. If greater than 65,535 km have occurred, will remain at 65,535 km and not wrap to zero."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "33"}, "freq": 1, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "33"}, "freq": 60, "filter": { "years": [2019] },
   "signals": [
-    {"id": "BARO", "path": "Engine.Generic", "fmt": { "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Barometric pressure", "description": "Normally obtained from one of a dedicated barometric sensor, a MAP sensor at key-on and during certain modes of driving, or inferred from a MAF sensor and other inputs during certain modes of driving. The control module reports BARO from whatever source it is derived from."}
+    {"id": "BARO", "path": "Engine.Generic", "fmt": { "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Barometric pressure", "description": "[Polling: Health and environment] Normally obtained from one of a dedicated barometric sensor, a MAP sensor at key-on and during certain modes of driving, or inferred from a MAF sensor and other inputs during certain modes of driving. The control module reports BARO from whatever source it is derived from."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "34"}, "freq": 0.25, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "34"}, "freq": 1, "filter": { "years": [2019] },
   "signals": [
-    {"id": "LAMBDA11_CURRENT", "path": "Engine.Generic.OxygenSensors", "fmt": {           "len": 16, "max": 1.99,                 "div": 32768,              "unit": "scalar"    }, "name": "Lambda value, Equivalence Ratio Bank 1, Sensor 1",   "suggestedMetric": "o2Lambda"},
-    {"id": "O2S11_CURRENT",    "path": "Engine.Generic.OxygenSensors", "fmt": {"bix": 16, "len": 16, "max": 127.996, "min": -128, "div": 256,   "add": -128, "unit": "milliamps" }, "name": "Wide Range O2S Current, O2 Sensor Bank 1, Sensor 1"}
+    {"id": "LAMBDA11_CURRENT", "path": "Engine.Generic.OxygenSensors", "fmt": {           "len": 16, "max": 1.99,                 "div": 32768,              "unit": "scalar"    }, "name": "Lambda value, Equivalence Ratio Bank 1, Sensor 1",   "suggestedMetric": "o2Lambda",                                                           "description": "[Polling: Engine control] SAE service 01 PID 34 response from ECU 7E8."},
+    {"id": "O2S11_CURRENT",    "path": "Engine.Generic.OxygenSensors", "fmt": {"bix": 16, "len": 16, "max": 127.996, "min": -128, "div": 256,   "add": -128, "unit": "milliamps" }, "name": "Wide Range O2S Current, O2 Sensor Bank 1, Sensor 1", "description": "[Polling: Engine control] SAE service 01 PID 34 response from ECU 7E8."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "3C"}, "freq": 2, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "3C"}, "freq": 15, "filter": { "years": [2019] },
   "signals": [
-    {"id": "CATEMP11", "path": "Engine.Generic", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Catalyst temperature bank 1, sensor 1"}
+    {"id": "CATEMP11", "path": "Engine.Generic", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Catalyst temperature bank 1, sensor 1", "description": "[Polling: Thermal condition] SAE service 01 PID 3C response from ECU 7E8."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "40"}, "freq": 3600, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "40"}, "freq": 60, "filter": { "years": [2019] },
   "signals": [
-    {"id": "4SERIES_S01_7E8_40_BITMAP", "path": "OBD.Testing.Support", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "Service 01 7E8 PID 40 support bitmap", "description": "Raw 32-bit SAE service 01 support bitmap. Bit 31 represents the next PID. Discovery metadata, not a sensor."}
+    {"id": "4SERIES_S01_7E8_40_BITMAP", "path": "OBD.Testing.Support", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "Service 01 7E8 PID 40 support bitmap", "description": "[Polling: Health and environment] Raw 32-bit SAE service 01 support bitmap. Bit 31 represents the next PID. Discovery metadata, not a sensor."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "41"}, "freq": 10, "filter": { "years": [9999] },
+{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "41"}, "freq": 60, "filter": { "years": [9999] },
   "signals": [
-    {"id": "CCM_CMPL",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 9,  "len": 1, "max": 1, "unit": "yesno" }, "name": "Comprehensive component monitoring completed"},
-    {"id": "FUEL_CMPL", "path": "DTCs.Generic.Status",  "fmt": {"bix": 10, "len": 1, "max": 1, "unit": "yesno" }, "name": "Fuel system monitoring completed"},
-    {"id": "MIS_CMPL",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 11, "len": 1, "max": 1, "unit": "yesno" }, "name": "Misfire monitoring completed"},
-    {"id": "CCM_ENA",   "path": "DTCs.Generic.Support", "fmt": {"bix": 13, "len": 1, "max": 1, "unit": "noyes" }, "name": "Comprehensive component monitoring enabled"},
-    {"id": "FUEL_ENA",  "path": "DTCs.Generic.Support", "fmt": {"bix": 14, "len": 1, "max": 1, "unit": "noyes" }, "name": "Fuel system monitoring enabled"},
-    {"id": "MIS_ENA",   "path": "DTCs.Generic.Support", "fmt": {"bix": 15, "len": 1, "max": 1, "unit": "noyes" }, "name": "Misfire monitoring enabled"},
-    {"id": "EGR_ENA",   "path": "DTCs.Generic.Status",  "fmt": {"bix": 16, "len": 1, "max": 1, "unit": "noyes" }, "name": "EGR system monitoring"},
-    {"id": "HTR_ENA",   "path": "DTCs.Generic.Status",  "fmt": {"bix": 17, "len": 1, "max": 1, "unit": "noyes" }, "name": "Oxygen sensor heater monitoring"},
-    {"id": "O2S_ENA",   "path": "DTCs.Generic.Status",  "fmt": {"bix": 18, "len": 1, "max": 1, "unit": "noyes" }, "name": "Oxygen sensor monitoring"},
-    {"id": "ACRF_ENA",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 19, "len": 1, "max": 1, "unit": "noyes" }, "name": "A/C system refrigerant monitoring"},
-    {"id": "AIR_ENA",   "path": "DTCs.Generic.Status",  "fmt": {"bix": 20, "len": 1, "max": 1, "unit": "noyes" }, "name": "Secondary air system monitoring"},
-    {"id": "EVAP_ENA",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 21, "len": 1, "max": 1, "unit": "noyes" }, "name": "Evaporative system monitoring"},
-    {"id": "HCAT_ENA",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 22, "len": 1, "max": 1, "unit": "noyes" }, "name": "Heated catalyst monitoring"},
-    {"id": "CAT_ENA",   "path": "DTCs.Generic.Status",  "fmt": {"bix": 23, "len": 1, "max": 1, "unit": "noyes" }, "name": "Catalyst monitoring"},
-    {"id": "EGR_CMPL",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 24, "len": 1, "max": 1, "unit": "yesno" }, "name": "EGR system monitoring completed"},
-    {"id": "HTR_CMPL",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 25, "len": 1, "max": 1, "unit": "yesno" }, "name": "Oxygen sensor heater monitoring completed"},
-    {"id": "O2S_CMPL",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 26, "len": 1, "max": 1, "unit": "yesno" }, "name": "Oxygen sensor monitoring completed"},
-    {"id": "ACRFCMPL",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 27, "len": 1, "max": 1, "unit": "yesno" }, "name": "A/C system refrigerant monitoring completed"},
-    {"id": "AIR_CMPL",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 28, "len": 1, "max": 1, "unit": "yesno" }, "name": "Secondary air system monitoring completed"},
-    {"id": "EVAPCMPL",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 29, "len": 1, "max": 1, "unit": "yesno" }, "name": "Evaporative system monitoring completed"},
-    {"id": "HCATCMPL",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 30, "len": 1, "max": 1, "unit": "yesno" }, "name": "Heated catalyst monitoring completed"},
-    {"id": "CAT_CMPL",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 31, "len": 1, "max": 1, "unit": "yesno" }, "name": "Catalyst monitoring completed"},
-    {"id": "CIM_SUP_FLAG", "path": "DTCs.Generic.Support", "name": "Compression ignition monitoring supported", "hidden": true, "fmt": {"bix": 12, "len": 1, "map": {
+    {"id": "CCM_CMPL",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 9,  "len": 1, "max": 1, "unit": "yesno" }, "name": "Comprehensive component monitoring completed", "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8."},
+    {"id": "FUEL_CMPL", "path": "DTCs.Generic.Status",  "fmt": {"bix": 10, "len": 1, "max": 1, "unit": "yesno" }, "name": "Fuel system monitoring completed",             "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8."},
+    {"id": "MIS_CMPL",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 11, "len": 1, "max": 1, "unit": "yesno" }, "name": "Misfire monitoring completed",                 "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8."},
+    {"id": "CCM_ENA",   "path": "DTCs.Generic.Support", "fmt": {"bix": 13, "len": 1, "max": 1, "unit": "noyes" }, "name": "Comprehensive component monitoring enabled",   "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8."},
+    {"id": "FUEL_ENA",  "path": "DTCs.Generic.Support", "fmt": {"bix": 14, "len": 1, "max": 1, "unit": "noyes" }, "name": "Fuel system monitoring enabled",               "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8."},
+    {"id": "MIS_ENA",   "path": "DTCs.Generic.Support", "fmt": {"bix": 15, "len": 1, "max": 1, "unit": "noyes" }, "name": "Misfire monitoring enabled",                   "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8."},
+    {"id": "EGR_ENA",   "path": "DTCs.Generic.Status",  "fmt": {"bix": 16, "len": 1, "max": 1, "unit": "noyes" }, "name": "EGR system monitoring",                        "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8."},
+    {"id": "HTR_ENA",   "path": "DTCs.Generic.Status",  "fmt": {"bix": 17, "len": 1, "max": 1, "unit": "noyes" }, "name": "Oxygen sensor heater monitoring",              "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8."},
+    {"id": "O2S_ENA",   "path": "DTCs.Generic.Status",  "fmt": {"bix": 18, "len": 1, "max": 1, "unit": "noyes" }, "name": "Oxygen sensor monitoring",                     "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8."},
+    {"id": "ACRF_ENA",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 19, "len": 1, "max": 1, "unit": "noyes" }, "name": "A/C system refrigerant monitoring",            "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8."},
+    {"id": "AIR_ENA",   "path": "DTCs.Generic.Status",  "fmt": {"bix": 20, "len": 1, "max": 1, "unit": "noyes" }, "name": "Secondary air system monitoring",              "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8."},
+    {"id": "EVAP_ENA",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 21, "len": 1, "max": 1, "unit": "noyes" }, "name": "Evaporative system monitoring",                "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8."},
+    {"id": "HCAT_ENA",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 22, "len": 1, "max": 1, "unit": "noyes" }, "name": "Heated catalyst monitoring",                   "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8."},
+    {"id": "CAT_ENA",   "path": "DTCs.Generic.Status",  "fmt": {"bix": 23, "len": 1, "max": 1, "unit": "noyes" }, "name": "Catalyst monitoring",                          "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8."},
+    {"id": "EGR_CMPL",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 24, "len": 1, "max": 1, "unit": "yesno" }, "name": "EGR system monitoring completed",              "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8."},
+    {"id": "HTR_CMPL",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 25, "len": 1, "max": 1, "unit": "yesno" }, "name": "Oxygen sensor heater monitoring completed",    "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8."},
+    {"id": "O2S_CMPL",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 26, "len": 1, "max": 1, "unit": "yesno" }, "name": "Oxygen sensor monitoring completed",           "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8."},
+    {"id": "ACRFCMPL",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 27, "len": 1, "max": 1, "unit": "yesno" }, "name": "A/C system refrigerant monitoring completed",  "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8."},
+    {"id": "AIR_CMPL",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 28, "len": 1, "max": 1, "unit": "yesno" }, "name": "Secondary air system monitoring completed",    "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8."},
+    {"id": "EVAPCMPL",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 29, "len": 1, "max": 1, "unit": "yesno" }, "name": "Evaporative system monitoring completed",      "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8."},
+    {"id": "HCATCMPL",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 30, "len": 1, "max": 1, "unit": "yesno" }, "name": "Heated catalyst monitoring completed",         "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8."},
+    {"id": "CAT_CMPL",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 31, "len": 1, "max": 1, "unit": "yesno" }, "name": "Catalyst monitoring completed",                "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8."},
+    {"id": "CIM_SUP_FLAG", "path": "DTCs.Generic.Support", "name": "Compression ignition monitoring supported", "description": "[Polling: Health and environment] SAE service 01 PID 41 response from ECU 7E8.", "hidden": true, "fmt": {"bix": 12, "len": 1, "map": {
           "0": { "description": "Spark ignition monitors supported",       "value": "SPARK" },
           "1": { "description": "Compression ignition monitors supported", "value": "COMPRESSION" }
         }}
     }
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "42"}, "freq": 10, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "42"}, "freq": 5, "filter": { "years": [2019] },
   "signals": [
-    {"id": "VPWR", "path": "Battery.Generic", "fmt": { "len": 16, "max": 65535, "div": 1000, "unit": "volts" }, "name": "Control module voltage", "suggestedMetric": "starterBatteryVoltage", "description": "Power input to the OBD control module. VPWR is normally battery voltage, less any voltage drop in the circuit between the battery and the control module."}
+    {"id": "VPWR", "path": "Battery.Generic", "fmt": { "len": 16, "max": 65535, "div": 1000, "unit": "volts" }, "name": "Control module voltage", "suggestedMetric": "starterBatteryVoltage", "description": "[Polling: Short-term trends] Power input to the OBD control module. VPWR is normally battery voltage, less any voltage drop in the circuit between the battery and the control module."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "43"}, "freq": 0.25, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "43"}, "freq": 1, "filter": { "years": [2019] },
   "signals": [
-    {"id": "LOAD_ABS", "path": "Engine.Generic", "fmt": { "len": 16, "max": 25700, "mul": 100, "div": 255, "unit": "percent" }, "name": "Absolute load value"}
+    {"id": "LOAD_ABS", "path": "Engine.Generic", "fmt": { "len": 16, "max": 25700, "mul": 100, "div": 255, "unit": "percent" }, "name": "Absolute load value", "description": "[Polling: Engine control] SAE service 01 PID 43 response from ECU 7E8."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "44"}, "freq": 0.25, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "44"}, "freq": 1, "filter": { "years": [2019] },
   "signals": [
-    {"id": "EQ_RAT", "path": "Engine.Generic", "fmt": { "len": 16, "max": 1.99, "mul": 2, "div": 65535, "unit": "scalar" }, "name": "Commanded equivalence ratio", "suggestedMetric": "commandedLambda", "description": "Fuel systems that utilize conventional oxygen sensor display the inverse of the commanded open loop equivalence ratio (also known as lambda) while the fuel control system is in open loop. Will indicate 1.000 while in closed-loop fuel."}
+    {"id": "EQ_RAT", "path": "Engine.Generic", "fmt": { "len": 16, "max": 1.99, "mul": 2, "div": 65535, "unit": "scalar" }, "name": "Commanded equivalence ratio", "suggestedMetric": "commandedLambda", "description": "[Polling: Engine control] Fuel systems that utilize conventional oxygen sensor display the inverse of the commanded open loop equivalence ratio (also known as lambda) while the fuel control system is in open loop. Will indicate 1.000 while in closed-loop fuel."}
   ]},
 { "hdr": "7DF", "rax": "7E8", "cmd": {"01": "45"}, "freq": 0.25, "filter": { "years": [2019] },
   "signals": [
-    {"id": "TP_R", "path": "Control.Generic", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Relative throttle position", "description": "Relative or 'learned' throttle position."}
+    {"id": "TP_R", "path": "Control.Generic", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Relative throttle position", "description": "[Polling: Operational] Relative or 'learned' throttle position."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "46"}, "freq": 2, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "46"}, "freq": 60, "filter": { "years": [2019] },
   "signals": [
-    {"id": "AAT", "path": "Climate.Generic", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Ambient air temperature"}
+    {"id": "AAT", "path": "Climate.Generic", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Ambient air temperature", "description": "[Polling: Health and environment] SAE service 01 PID 46 response from ECU 7E8."}
   ]},
 { "hdr": "7DF", "rax": "7E8", "cmd": {"01": "47"}, "freq": 0.25, "filter": { "years": [2019] },
   "signals": [
-    {"id": "TP_B", "path": "Control.Generic", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Absolute throttle position B", "suggestedMetric": "throttlePosition"}
+    {"id": "TP_B", "path": "Control.Generic", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Absolute throttle position B", "suggestedMetric": "throttlePosition", "description": "[Polling: Operational] SAE service 01 PID 47 response from ECU 7E8."}
   ]},
 { "hdr": "7DF", "rax": "7E8", "cmd": {"01": "49"}, "freq": 0.25, "filter": { "years": [2019] },
   "signals": [
-    {"id": "APP_D", "path": "Control.Pedals.Generic", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Accelerator pedal position D"}
+    {"id": "APP_D", "path": "Control.Pedals.Generic", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Accelerator pedal position D", "description": "[Polling: Operational] SAE service 01 PID 49 response from ECU 7E8."}
   ]},
 { "hdr": "7DF", "rax": "7E8", "cmd": {"01": "4A"}, "freq": 0.25, "filter": { "years": [2019] },
   "signals": [
-    {"id": "APP_E", "path": "Control.Pedals.Generic", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Accelerator pedal position E"}
+    {"id": "APP_E", "path": "Control.Pedals.Generic", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Accelerator pedal position E", "description": "[Polling: Operational] SAE service 01 PID 4A response from ECU 7E8."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "4C"}, "freq": 0.25, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "4C"}, "freq": 1, "filter": { "years": [2019] },
   "signals": [
-    {"id": "TAC_PCT", "path": "Engine.Generic", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Commanded throttle actuator control"}
+    {"id": "TAC_PCT", "path": "Engine.Generic", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Commanded throttle actuator control", "description": "[Polling: Engine control] SAE service 01 PID 4C response from ECU 7E8."}
   ]},
 { "hdr": "7DF", "rax": "7E8", "cmd": {"01": "51"}, "freq": 60, "filter": { "years": [2019] },
   "signals": [
-    {"id": "FUEL_TYP", "path": "Engine.Generic", "name": "Type of fuel currently being used by the vehicle", "fmt": {"len": 8, "map": {
+    {"id": "FUEL_TYP", "path": "Engine.Generic", "name": "Type of fuel currently being used by the vehicle", "description": "[Polling: Health and environment] SAE service 01 PID 51 response from ECU 7E8.", "fmt": {"len": 8, "map": {
           "1":  { "description": "Gasoline/petrol",                                                    "value": "GAS" },
           "2":  { "description": "Methanol",                                                           "value": "METH" },
           "3":  { "description": "Ethanol",                                                            "value": "ETH" },
@@ -5126,171 +5126,171 @@
         }}
     }
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "56"}, "freq": 10, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "56"}, "freq": 5, "filter": { "years": [2019] },
   "signals": [
-    {"id": "LGSO2FT1", "path": "Engine.Generic", "fmt": { "len": 8, "max": 99.22, "min": -100, "mul": 100, "div": 128, "add": -100, "unit": "percent" }, "name": "Long term secondary O2 sensor fuel trim (bank 1)"}
+    {"id": "LGSO2FT1", "path": "Engine.Generic", "fmt": { "len": 8, "max": 99.22, "min": -100, "mul": 100, "div": 128, "add": -100, "unit": "percent" }, "name": "Long term secondary O2 sensor fuel trim (bank 1)", "description": "[Polling: Short-term trends] SAE service 01 PID 56 response from ECU 7E8."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "5C"}, "freq": 2, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "5C"}, "freq": 15, "filter": { "years": [2019] },
   "signals": [
-    {"id": "EOT", "path": "Engine.Generic", "fmt": { "len": 8, "max": 210, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature", "suggestedMetric": "engineOilTemperature"}
+    {"id": "EOT", "path": "Engine.Generic", "fmt": { "len": 8, "max": 210, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature", "suggestedMetric": "engineOilTemperature", "description": "[Polling: Thermal condition] SAE service 01 PID 5C response from ECU 7E8."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "60"}, "freq": 3600, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "60"}, "freq": 60, "filter": { "years": [2019] },
   "signals": [
-    {"id": "4SERIES_S01_7E8_60_BITMAP", "path": "OBD.Testing.Support", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "Service 01 7E8 PID 60 support bitmap", "description": "Raw 32-bit SAE service 01 support bitmap. Bit 31 represents the next PID. Discovery metadata, not a sensor."}
+    {"id": "4SERIES_S01_7E8_60_BITMAP", "path": "OBD.Testing.Support", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "Service 01 7E8 PID 60 support bitmap", "description": "[Polling: Health and environment] Raw 32-bit SAE service 01 support bitmap. Bit 31 represents the next PID. Discovery metadata, not a sensor."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "62"}, "freq": 0.25, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "62"}, "freq": 1, "filter": { "years": [2019] },
   "signals": [
-    {"id": "TQ_ACT", "path": "Engine.Generic", "fmt": { "len": 8, "max": 130, "min": -125, "add": -125, "unit": "percent" }, "name": "Actual engine torque"}
+    {"id": "TQ_ACT", "path": "Engine.Generic", "fmt": { "len": 8, "max": 130, "min": -125, "add": -125, "unit": "percent" }, "name": "Actual engine torque", "description": "[Polling: Engine control] SAE service 01 PID 62 response from ECU 7E8."}
   ]},
 { "hdr": "7DF", "rax": "7E8", "cmd": {"01": "63"}, "freq": 60, "filter": { "years": [2019] },
   "signals": [
-    {"id": "TQ_REF", "path": "Engine.Generic", "fmt": { "len": 16, "max": 65535, "unit": "newtonMeters" }, "name": "Engine reference torque"}
+    {"id": "TQ_REF", "path": "Engine.Generic", "fmt": { "len": 16, "max": 65535, "unit": "newtonMeters" }, "name": "Engine reference torque", "description": "[Polling: Health and environment] SAE service 01 PID 63 response from ECU 7E8."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "68"}, "freq": 2, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "68"}, "freq": 5, "filter": { "years": [2019] },
   "signals": [
-    {"id": "IAT_23_SUP", "path": "Engine.Generic.Internal", "fmt": {"bix": 2,  "len": 1, "max": 1,                                           "unit": "noyes"   }, "name": "IAT Bank 2, Sensor 3 supported",           "hidden": true},
-    {"id": "IAT_22_SUP", "path": "Engine.Generic.Internal", "fmt": {"bix": 3,  "len": 1, "max": 1,                                           "unit": "noyes"   }, "name": "IAT Bank 2, Sensor 2 supported",           "hidden": true},
-    {"id": "IAT_21_SUP", "path": "Engine.Generic.Internal", "fmt": {"bix": 4,  "len": 1, "max": 1,                                           "unit": "noyes"   }, "name": "IAT Bank 1, Sensor 1 supported",           "hidden": true},
-    {"id": "IAT_13_SUP", "path": "Engine.Generic.Internal", "fmt": {"bix": 5,  "len": 1, "max": 1,                                           "unit": "noyes"   }, "name": "IAT Bank 1, Sensor 3 supported",           "hidden": true},
-    {"id": "IAT_12_SUP", "path": "Engine.Generic.Internal", "fmt": {"bix": 6,  "len": 1, "max": 1,                                           "unit": "noyes"   }, "name": "IAT Bank 1, Sensor 2 supported",           "hidden": true},
-    {"id": "IAT_11_SUP", "path": "Engine.Generic.Internal", "fmt": {"bix": 7,  "len": 1, "max": 1,                                           "unit": "noyes"   }, "name": "IAT Bank 1, Sensor 1 supported",           "hidden": true},
-    {"id": "IAT_11",     "path": "Engine.Generic",          "fmt": {"bix": 8,  "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Intake air temperature, bank 1, sensor 1"},
-    {"id": "IAT_12",     "path": "Engine.Generic",          "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Intake air temperature, bank 1, sensor 2"},
-    {"id": "IAT_13",     "path": "Engine.Generic",          "fmt": {"bix": 24, "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Intake air temperature, bank 1, sensor 3"},
-    {"id": "IAT_21",     "path": "Engine.Generic",          "fmt": {"bix": 32, "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Intake air temperature, bank 2, sensor 1"},
-    {"id": "IAT_22",     "path": "Engine.Generic",          "fmt": {"bix": 40, "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Intake air temperature, bank 2, sensor 2"},
-    {"id": "IAT_23",     "path": "Engine.Generic",          "fmt": {"bix": 48, "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Intake air temperature, bank 2, sensor 3"}
+    {"id": "IAT_23_SUP", "path": "Engine.Generic.Internal", "fmt": {"bix": 2,  "len": 1, "max": 1,                                           "unit": "noyes"   }, "name": "IAT Bank 2, Sensor 3 supported",           "description": "[Polling: Short-term trends] SAE service 01 PID 68 response from ECU 7E8.", "hidden": true},
+    {"id": "IAT_22_SUP", "path": "Engine.Generic.Internal", "fmt": {"bix": 3,  "len": 1, "max": 1,                                           "unit": "noyes"   }, "name": "IAT Bank 2, Sensor 2 supported",           "description": "[Polling: Short-term trends] SAE service 01 PID 68 response from ECU 7E8.", "hidden": true},
+    {"id": "IAT_21_SUP", "path": "Engine.Generic.Internal", "fmt": {"bix": 4,  "len": 1, "max": 1,                                           "unit": "noyes"   }, "name": "IAT Bank 1, Sensor 1 supported",           "description": "[Polling: Short-term trends] SAE service 01 PID 68 response from ECU 7E8.", "hidden": true},
+    {"id": "IAT_13_SUP", "path": "Engine.Generic.Internal", "fmt": {"bix": 5,  "len": 1, "max": 1,                                           "unit": "noyes"   }, "name": "IAT Bank 1, Sensor 3 supported",           "description": "[Polling: Short-term trends] SAE service 01 PID 68 response from ECU 7E8.", "hidden": true},
+    {"id": "IAT_12_SUP", "path": "Engine.Generic.Internal", "fmt": {"bix": 6,  "len": 1, "max": 1,                                           "unit": "noyes"   }, "name": "IAT Bank 1, Sensor 2 supported",           "description": "[Polling: Short-term trends] SAE service 01 PID 68 response from ECU 7E8.", "hidden": true},
+    {"id": "IAT_11_SUP", "path": "Engine.Generic.Internal", "fmt": {"bix": 7,  "len": 1, "max": 1,                                           "unit": "noyes"   }, "name": "IAT Bank 1, Sensor 1 supported",           "description": "[Polling: Short-term trends] SAE service 01 PID 68 response from ECU 7E8.", "hidden": true},
+    {"id": "IAT_11",     "path": "Engine.Generic",          "fmt": {"bix": 8,  "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Intake air temperature, bank 1, sensor 1", "description": "[Polling: Short-term trends] SAE service 01 PID 68 response from ECU 7E8."},
+    {"id": "IAT_12",     "path": "Engine.Generic",          "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Intake air temperature, bank 1, sensor 2", "description": "[Polling: Short-term trends] SAE service 01 PID 68 response from ECU 7E8."},
+    {"id": "IAT_13",     "path": "Engine.Generic",          "fmt": {"bix": 24, "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Intake air temperature, bank 1, sensor 3", "description": "[Polling: Short-term trends] SAE service 01 PID 68 response from ECU 7E8."},
+    {"id": "IAT_21",     "path": "Engine.Generic",          "fmt": {"bix": 32, "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Intake air temperature, bank 2, sensor 1", "description": "[Polling: Short-term trends] SAE service 01 PID 68 response from ECU 7E8."},
+    {"id": "IAT_22",     "path": "Engine.Generic",          "fmt": {"bix": 40, "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Intake air temperature, bank 2, sensor 2", "description": "[Polling: Short-term trends] SAE service 01 PID 68 response from ECU 7E8."},
+    {"id": "IAT_23",     "path": "Engine.Generic",          "fmt": {"bix": 48, "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Intake air temperature, bank 2, sensor 3", "description": "[Polling: Short-term trends] SAE service 01 PID 68 response from ECU 7E8."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "80"}, "freq": 3600, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "80"}, "freq": 60, "filter": { "years": [2019] },
   "signals": [
-    {"id": "4SERIES_S01_7E8_80_BITMAP", "path": "OBD.Testing.Support", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "Service 01 7E8 PID 80 support bitmap", "description": "Raw 32-bit SAE service 01 support bitmap. Bit 31 represents the next PID. Discovery metadata, not a sensor."}
+    {"id": "4SERIES_S01_7E8_80_BITMAP", "path": "OBD.Testing.Support", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "Service 01 7E8 PID 80 support bitmap", "description": "[Polling: Health and environment] Raw 32-bit SAE service 01 support bitmap. Bit 31 represents the next PID. Discovery metadata, not a sensor."}
   ]},
 { "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "83"}, "freq": 60, "filter": { "years": [9999] },
   "signals": [
-    {"id": "4SERIES_S01_7E8_83_BYTE1", "path": "OBD.Testing.Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Service 01 PID 83 tentative raw first byte", "description": "Advertised by the target 0180 bitmap; no positive 4183 payload captured. Byte availability and meaning are unverified. Debug discovery only."}
+    {"id": "4SERIES_S01_7E8_83_BYTE1", "path": "OBD.Testing.Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Service 01 PID 83 tentative raw first byte", "description": "[Polling: Health and environment] Advertised by the target 0180 bitmap; no positive 4183 payload captured. Byte availability and meaning are unverified. Debug discovery only."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "8E"}, "freq": 0.25, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "8E"}, "freq": 1, "filter": { "years": [2019] },
   "signals": [
-    {"id": "TQ_FR", "path": "Engine.Generic", "fmt": { "len": 8, "max": 130, "min": -125, "add": -125, "unit": "percent" }, "name": "Engine Friction - Percent Torque"}
+    {"id": "TQ_FR", "path": "Engine.Generic", "fmt": { "len": 8, "max": 130, "min": -125, "add": -125, "unit": "percent" }, "name": "Engine Friction - Percent Torque", "description": "[Polling: Engine control] SAE service 01 PID 8E response from ECU 7E8."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "9D"}, "freq": 0.25, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "9D"}, "freq": 1, "filter": { "years": [2019] },
   "signals": [
-    {"id": "FUEL_RATE_ALT", "path": "Fuel.Generic", "fmt": {           "len": 16, "max": 1310.7, "div": 50, "unit": "gramsPerSecond" }, "name": "Engine fuel rate (alternate)"},
-    {"id": "VFUEL_RATE",    "path": "Fuel.Generic", "fmt": {"bix": 16, "len": 16, "max": 1310.7, "div": 50, "unit": "gramsPerSecond" }, "name": "Vehicle fuel rate"}
+    {"id": "FUEL_RATE_ALT", "path": "Fuel.Generic", "fmt": {           "len": 16, "max": 1310.7, "div": 50, "unit": "gramsPerSecond" }, "name": "Engine fuel rate (alternate)", "description": "[Polling: Engine control] SAE service 01 PID 9D response from ECU 7E8."},
+    {"id": "VFUEL_RATE",    "path": "Fuel.Generic", "fmt": {"bix": 16, "len": 16, "max": 1310.7, "div": 50, "unit": "gramsPerSecond" }, "name": "Vehicle fuel rate",            "description": "[Polling: Engine control] SAE service 01 PID 9D response from ECU 7E8."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "9E"}, "freq": 0.25, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "9E"}, "freq": 1, "filter": { "years": [2019] },
   "signals": [
-    {"id": "EXH_RATE", "path": "Fuel.Generic", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "kilogramsPerHour" }, "name": "Engine exhaust flow rate"}
+    {"id": "EXH_RATE", "path": "Fuel.Generic", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "kilogramsPerHour" }, "name": "Engine exhaust flow rate", "description": "[Polling: Engine control] SAE service 01 PID 9E response from ECU 7E8."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "A0"}, "freq": 3600, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "A0"}, "freq": 60, "filter": { "years": [2019] },
   "signals": [
-    {"id": "4SERIES_S01_7E8_A0_BITMAP", "path": "OBD.Testing.Support", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "Service 01 7E8 PID A0 support bitmap", "description": "Raw 32-bit SAE service 01 support bitmap. Bit 31 represents the next PID. Discovery metadata, not a sensor."}
+    {"id": "4SERIES_S01_7E8_A0_BITMAP", "path": "OBD.Testing.Support", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "Service 01 7E8 PID A0 support bitmap", "description": "[Polling: Health and environment] Raw 32-bit SAE service 01 support bitmap. Bit 31 represents the next PID. Discovery metadata, not a sensor."}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "A6"}, "freq": 10, "filter": { "years": [2019] },
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "A6"}, "freq": 300, "filter": { "years": [2019] },
   "signals": [
-    {"id": "ODO", "path": "Trips.Generic", "fmt": { "len": 32, "max": 429496729.5, "div": 10, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+    {"id": "ODO", "path": "Trips.Generic", "fmt": { "len": 32, "max": 429496729.5, "div": 10, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer", "description": "[Polling: Cumulative history] SAE service 01 PID A6 response from ECU 7E8."}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "cmd": {"01": "00"}, "freq": 3600, "filter": { "years": [2019] },
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"01": "00"}, "freq": 60, "filter": { "years": [2019] },
   "signals": [
-    {"id": "4SERIES_S01_7E9_00_BITMAP", "path": "OBD.Testing.Support", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "Service 01 7E9 PID 00 support bitmap", "description": "[ECU 7E9] Raw 32-bit SAE service 01 support bitmap. Bit 31 represents the next PID. Discovery metadata, not a sensor."}
+    {"id": "4SERIES_S01_7E9_00_BITMAP", "path": "OBD.Testing.Support", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "Service 01 7E9 PID 00 support bitmap", "description": "[Polling: Health and environment] [ECU 7E9] Raw 32-bit SAE service 01 support bitmap. Bit 31 represents the next PID. Discovery metadata, not a sensor."}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "cmd": {"01": "01"}, "freq": 10, "filter": { "years": [2019] },
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"01": "01"}, "freq": 60, "filter": { "years": [2019] },
   "signals": [
-    {"id": "MIL_7E9",      "path": "DTCs.Generic",         "fmt": {           "len": 1, "max": 1,   "unit": "offon"  }, "name": "Malfunction indicator lamp",                   "suggestedMetric": "checkEngineLightOn", "description": "[ECU 7E9] The MIL status is OFF during key-on, engine-off bulb check unless MIL has also been commanded ON for a detected malfunction. The status reflects whether there are confirmed DTC(s) stored that are illuminating the MIL. It should not reflect the status of the MIL, which could be on for a function check, flashing I/M readiness or flashing for misfire."},
-    {"id": "DTC_CNT_7E9",  "path": "DTCs.Generic",         "fmt": {"bix": 1,  "len": 7, "max": 127, "unit": "scalar" }, "name": "Number of DTCs stored in this ECU",            "suggestedMetric": "storedDTCCount",     "description": "[ECU 7E9] Number of confirmed emission-related DTCs stored in the ECU available for display using Service $03."},
-    {"id": "CCM_RDY_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 9,  "len": 1, "max": 1,   "unit": "yesno"  }, "name": "Comprehensive component monitoring ready",     "description": "[ECU 7E9]"},
-    {"id": "FUEL_RDY_7E9", "path": "DTCs.Generic.Status",  "fmt": {"bix": 10, "len": 1, "max": 1,   "unit": "yesno"  }, "name": "Fuel system monitoring ready",                 "description": "[ECU 7E9]"},
-    {"id": "MIS_RDY_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 11, "len": 1, "max": 1,   "unit": "yesno"  }, "name": "Misfire monitoring ready",                     "description": "[ECU 7E9]"},
-    {"id": "CCM_SUP_7E9",  "path": "DTCs.Generic.Support", "fmt": {"bix": 13, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Comprehensive component monitoring supported", "description": "[ECU 7E9]"},
-    {"id": "FUEL_SUP_7E9", "path": "DTCs.Generic.Support", "fmt": {"bix": 14, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Fuel system monitoring supported",             "description": "[ECU 7E9]"},
-    {"id": "MIS_SUP_7E9",  "path": "DTCs.Generic.Support", "fmt": {"bix": 15, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Misfire monitoring supported",                 "description": "[ECU 7E9]"},
-    {"id": "EGR_SUP_7E9",  "path": "DTCs.Generic.Support", "fmt": {"bix": 16, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "EGR system monitoring supported",              "description": "[ECU 7E9]"},
-    {"id": "HTR_SUP_7E9",  "path": "DTCs.Generic.Support", "fmt": {"bix": 17, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Oxygen sensor heater monitoring supported",    "description": "[ECU 7E9]"},
-    {"id": "O2S_SUP_7E9",  "path": "DTCs.Generic.Support", "fmt": {"bix": 18, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Oxygen sensor monitoring supported",           "description": "[ECU 7E9]"},
-    {"id": "ACRF_SUP_7E9", "path": "DTCs.Generic.Support", "fmt": {"bix": 19, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "A/C system refrigerant monitoring supported",  "description": "[ECU 7E9]"},
-    {"id": "AIR_SUP_7E9",  "path": "DTCs.Generic.Support", "fmt": {"bix": 20, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Secondary air system monitoring supported",    "description": "[ECU 7E9]"},
-    {"id": "EVAP_SUP_7E9", "path": "DTCs.Generic.Support", "fmt": {"bix": 21, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Evaporative system monitoring supported",      "description": "[ECU 7E9]"},
-    {"id": "HCAT_SUP_7E9", "path": "DTCs.Generic.Support", "fmt": {"bix": 22, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Heated catalyst monitoring supported",         "description": "[ECU 7E9]"},
-    {"id": "CAT_SUP_7E9",  "path": "DTCs.Generic.Support", "fmt": {"bix": 23, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Catalyst monitoring supported",                "description": "[ECU 7E9]"},
-    {"id": "EGR_RDY_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 24, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "EGR system monitoring ready",                  "description": "[ECU 7E9]"},
-    {"id": "HTR_RDY_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 25, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Oxygen sensor heater monitoring ready",        "description": "[ECU 7E9]"},
-    {"id": "O2S_RDY_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 26, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Oxygen sensor monitoring ready",               "description": "[ECU 7E9]"},
-    {"id": "ACRF_RDY_7E9", "path": "DTCs.Generic.Status",  "fmt": {"bix": 27, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "A/C system refrigerant monitoring ready",      "description": "[ECU 7E9]"},
-    {"id": "AIR_RDY_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 28, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Secondary air system monitoring ready",        "description": "[ECU 7E9]"},
-    {"id": "EVAP_RDY_7E9", "path": "DTCs.Generic.Status",  "fmt": {"bix": 29, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Evaporative system monitoring ready",          "description": "[ECU 7E9]"},
-    {"id": "HCAT_RDY_7E9", "path": "DTCs.Generic.Status",  "fmt": {"bix": 30, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Heated catalyst monitoring ready",             "description": "[ECU 7E9]"},
-    {"id": "CAT_RDY_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 31, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Catalyst monitoring ready",                    "description": "[ECU 7E9]"},
-    {"id": "CIM_SUP_7E9", "path": "DTCs.Generic.Support", "name": "Compression ignition monitoring supported", "description": "[ECU 7E9] Indicates support of spark ignition or compression ignition monitors.", "hidden": true, "fmt": {"bix": 12, "len": 1, "map": {
+    {"id": "MIL_7E9",      "path": "DTCs.Generic",         "fmt": {           "len": 1, "max": 1,   "unit": "offon"  }, "name": "Malfunction indicator lamp",                   "suggestedMetric": "checkEngineLightOn",                      "description": "[Polling: Health and environment] [ECU 7E9] The MIL status is OFF during key-on, engine-off bulb check unless MIL has also been commanded ON for a detected malfunction. The status reflects whether there are confirmed DTC(s) stored that are illuminating the MIL. It should not reflect the status of the MIL, which could be on for a function check, flashing I/M readiness or flashing for misfire."},
+    {"id": "DTC_CNT_7E9",  "path": "DTCs.Generic",         "fmt": {"bix": 1,  "len": 7, "max": 127, "unit": "scalar" }, "name": "Number of DTCs stored in this ECU",            "suggestedMetric": "storedDTCCount",                          "description": "[Polling: Health and environment] [ECU 7E9] Number of confirmed emission-related DTCs stored in the ECU available for display using Service $03."},
+    {"id": "CCM_RDY_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 9,  "len": 1, "max": 1,   "unit": "yesno"  }, "name": "Comprehensive component monitoring ready",     "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "FUEL_RDY_7E9", "path": "DTCs.Generic.Status",  "fmt": {"bix": 10, "len": 1, "max": 1,   "unit": "yesno"  }, "name": "Fuel system monitoring ready",                 "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "MIS_RDY_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 11, "len": 1, "max": 1,   "unit": "yesno"  }, "name": "Misfire monitoring ready",                     "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "CCM_SUP_7E9",  "path": "DTCs.Generic.Support", "fmt": {"bix": 13, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Comprehensive component monitoring supported", "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "FUEL_SUP_7E9", "path": "DTCs.Generic.Support", "fmt": {"bix": 14, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Fuel system monitoring supported",             "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "MIS_SUP_7E9",  "path": "DTCs.Generic.Support", "fmt": {"bix": 15, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Misfire monitoring supported",                 "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "EGR_SUP_7E9",  "path": "DTCs.Generic.Support", "fmt": {"bix": 16, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "EGR system monitoring supported",              "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "HTR_SUP_7E9",  "path": "DTCs.Generic.Support", "fmt": {"bix": 17, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Oxygen sensor heater monitoring supported",    "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "O2S_SUP_7E9",  "path": "DTCs.Generic.Support", "fmt": {"bix": 18, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Oxygen sensor monitoring supported",           "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "ACRF_SUP_7E9", "path": "DTCs.Generic.Support", "fmt": {"bix": 19, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "A/C system refrigerant monitoring supported",  "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "AIR_SUP_7E9",  "path": "DTCs.Generic.Support", "fmt": {"bix": 20, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Secondary air system monitoring supported",    "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "EVAP_SUP_7E9", "path": "DTCs.Generic.Support", "fmt": {"bix": 21, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Evaporative system monitoring supported",      "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "HCAT_SUP_7E9", "path": "DTCs.Generic.Support", "fmt": {"bix": 22, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Heated catalyst monitoring supported",         "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "CAT_SUP_7E9",  "path": "DTCs.Generic.Support", "fmt": {"bix": 23, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Catalyst monitoring supported",                "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "EGR_RDY_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 24, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "EGR system monitoring ready",                  "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "HTR_RDY_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 25, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Oxygen sensor heater monitoring ready",        "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "O2S_RDY_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 26, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Oxygen sensor monitoring ready",               "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "ACRF_RDY_7E9", "path": "DTCs.Generic.Status",  "fmt": {"bix": 27, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "A/C system refrigerant monitoring ready",      "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "AIR_RDY_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 28, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Secondary air system monitoring ready",        "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "EVAP_RDY_7E9", "path": "DTCs.Generic.Status",  "fmt": {"bix": 29, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Evaporative system monitoring ready",          "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "HCAT_RDY_7E9", "path": "DTCs.Generic.Status",  "fmt": {"bix": 30, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Heated catalyst monitoring ready",             "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "CAT_RDY_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 31, "len": 1, "max": 1,   "unit": "noyes"  }, "name": "Catalyst monitoring ready",                    "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "CIM_SUP_7E9", "path": "DTCs.Generic.Support", "name": "Compression ignition monitoring supported", "description": "[Polling: Health and environment] [ECU 7E9] Indicates support of spark ignition or compression ignition monitors.", "hidden": true, "fmt": {"bix": 12, "len": 1, "map": {
           "0": { "description": "Spark ignition monitors supported",       "value": "SPARK" },
           "1": { "description": "Compression ignition monitors supported", "value": "COMPRESSION" }
         }}
     }
   ]},
-{ "hdr": "7E1", "rax": "7E9", "cmd": {"01": "04"}, "freq": 0.25, "filter": { "years": [2019] },
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"01": "04"}, "freq": 1, "filter": { "years": [2019] },
   "signals": [
-    {"id": "LOAD_PCT_7E9", "path": "Engine.Generic", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Calculated engine load", "suggestedMetric": "engineLoad", "description": "[ECU 7E9] Represents the amount of work the engine is doing. Expected to reach 100% at wide open throttle/wide open pedal at any altitude, temperature or rpm for both naturally aspirated and boosted engines. If engine load is limited for powertrain protection e.g. engine/turbocharger protection, this value may not reach 100%. For hybrid vehicles, indicates the torque produced only by the internal combustion engine, not the torque being delivered by the entire powertrain. For electric vehicles, the meaning of this parameter is undefined."}
+    {"id": "LOAD_PCT_7E9", "path": "Engine.Generic", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Calculated engine load", "suggestedMetric": "engineLoad", "description": "[Polling: Engine control] [ECU 7E9] Represents the amount of work the engine is doing. Expected to reach 100% at wide open throttle/wide open pedal at any altitude, temperature or rpm for both naturally aspirated and boosted engines. If engine load is limited for powertrain protection e.g. engine/turbocharger protection, this value may not reach 100%. For hybrid vehicles, indicates the torque produced only by the internal combustion engine, not the torque being delivered by the entire powertrain. For electric vehicles, the meaning of this parameter is undefined."}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "cmd": {"01": "05"}, "freq": 2, "filter": { "years": [2019] },
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"01": "05"}, "freq": 15, "filter": { "years": [2019] },
   "signals": [
-    {"id": "ECT_7E9", "path": "Engine.Generic", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature", "suggestedMetric": "engineCoolantTemperature", "description": "[ECU 7E9] Your engine temperature must operate within a certain temperature range to operate efficiently and safely. If it runs too hot, then your engine could be permanently damaged. If it runs too cold, then your engine will use more fuel than necessary."}
+    {"id": "ECT_7E9", "path": "Engine.Generic", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature", "suggestedMetric": "engineCoolantTemperature", "description": "[Polling: Thermal condition] [ECU 7E9] Your engine temperature must operate within a certain temperature range to operate efficiently and safely. If it runs too hot, then your engine could be permanently damaged. If it runs too cold, then your engine will use more fuel than necessary."}
   ]},
 { "hdr": "7E1", "rax": "7E9", "cmd": {"01": "0C"}, "freq": 0.25, "filter": { "years": [2019] },
   "signals": [
-    {"id": "RPM_7E9", "path": "Engine.Generic", "fmt": { "len": 16, "max": 16383.75, "div": 4, "unit": "rpm" }, "name": "Engine RPM", "description": "[ECU 7E9]"}
+    {"id": "RPM_7E9", "path": "Engine.Generic", "fmt": { "len": 16, "max": 16383.75, "div": 4, "unit": "rpm" }, "name": "Engine RPM", "description": "[Polling: Operational] [ECU 7E9]"}
   ]},
 { "hdr": "7E1", "rax": "7E9", "cmd": {"01": "0D"}, "freq": 0.25, "filter": { "years": [2019] },
   "signals": [
-    {"id": "VSS_7E9", "path": "Movement.Generic", "fmt": { "len": 8, "max": 255, "nullmax": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed", "description": "[ECU 7E9]"}
+    {"id": "VSS_7E9", "path": "Movement.Generic", "fmt": { "len": 8, "max": 255, "nullmax": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed", "description": "[Polling: Operational] [ECU 7E9]"}
   ]},
 { "hdr": "7E1", "rax": "7E9", "cmd": {"01": "11"}, "freq": 0.25, "filter": { "years": [2019] },
   "signals": [
-    {"id": "TP_7E9", "path": "Control.Generic", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Absolute throttle position", "suggestedMetric": "throttlePosition", "description": "[ECU 7E9] Throttle position at idle will usually be more than 0%, and throttle position at wide open throttle will usually be less than 100%."}
+    {"id": "TP_7E9", "path": "Control.Generic", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Absolute throttle position", "suggestedMetric": "throttlePosition", "description": "[Polling: Operational] [ECU 7E9] Throttle position at idle will usually be more than 0%, and throttle position at wide open throttle will usually be less than 100%."}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "cmd": {"01": "20"}, "freq": 3600, "filter": { "years": [2019] },
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"01": "20"}, "freq": 60, "filter": { "years": [2019] },
   "signals": [
-    {"id": "4SERIES_S01_7E9_20_BITMAP", "path": "OBD.Testing.Support", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "Service 01 7E9 PID 20 support bitmap", "description": "[ECU 7E9] Raw 32-bit SAE service 01 support bitmap. Bit 31 represents the next PID. Discovery metadata, not a sensor."}
+    {"id": "4SERIES_S01_7E9_20_BITMAP", "path": "OBD.Testing.Support", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "Service 01 7E9 PID 20 support bitmap", "description": "[Polling: Health and environment] [ECU 7E9] Raw 32-bit SAE service 01 support bitmap. Bit 31 represents the next PID. Discovery metadata, not a sensor."}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "cmd": {"01": "21"}, "freq": 10, "filter": { "years": [2019] },
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"01": "21"}, "freq": 300, "filter": { "years": [2019] },
   "signals": [
-    {"id": "MIL_DIST_7E9", "path": "DTCs.Generic", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance traveled while MIL was activated", "description": "[ECU 7E9] Resets to zero when MIL changes from deactivated to activated, if diagnostic information is cleared, or if at least 40 warm-up cycles occur without MIL being activated."}
+    {"id": "MIL_DIST_7E9", "path": "DTCs.Generic", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance traveled while MIL was activated", "description": "[Polling: Cumulative history] [ECU 7E9] Resets to zero when MIL changes from deactivated to activated, if diagnostic information is cleared, or if at least 40 warm-up cycles occur without MIL being activated."}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "cmd": {"01": "40"}, "freq": 3600, "filter": { "years": [2019] },
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"01": "40"}, "freq": 60, "filter": { "years": [2019] },
   "signals": [
-    {"id": "4SERIES_S01_7E9_40_BITMAP", "path": "OBD.Testing.Support", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "Service 01 7E9 PID 40 support bitmap", "description": "[ECU 7E9] Raw 32-bit SAE service 01 support bitmap. Bit 31 represents the next PID. Discovery metadata, not a sensor."}
+    {"id": "4SERIES_S01_7E9_40_BITMAP", "path": "OBD.Testing.Support", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "Service 01 7E9 PID 40 support bitmap", "description": "[Polling: Health and environment] [ECU 7E9] Raw 32-bit SAE service 01 support bitmap. Bit 31 represents the next PID. Discovery metadata, not a sensor."}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "cmd": {"01": "41"}, "freq": 10, "filter": { "years": [2019] },
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"01": "41"}, "freq": 60, "filter": { "years": [2019] },
   "signals": [
-    {"id": "CCM_CMPL_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 9,  "len": 1, "max": 1, "unit": "yesno" }, "name": "Comprehensive component monitoring completed", "description": "[ECU 7E9]"},
-    {"id": "FUEL_CMPL_7E9", "path": "DTCs.Generic.Status",  "fmt": {"bix": 10, "len": 1, "max": 1, "unit": "yesno" }, "name": "Fuel system monitoring completed",             "description": "[ECU 7E9]"},
-    {"id": "MIS_CMPL_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 11, "len": 1, "max": 1, "unit": "yesno" }, "name": "Misfire monitoring completed",                 "description": "[ECU 7E9]"},
-    {"id": "CCM_ENA_7E9",   "path": "DTCs.Generic.Support", "fmt": {"bix": 13, "len": 1, "max": 1, "unit": "noyes" }, "name": "Comprehensive component monitoring enabled",   "description": "[ECU 7E9]"},
-    {"id": "FUEL_ENA_7E9",  "path": "DTCs.Generic.Support", "fmt": {"bix": 14, "len": 1, "max": 1, "unit": "noyes" }, "name": "Fuel system monitoring enabled",               "description": "[ECU 7E9]"},
-    {"id": "MIS_ENA_7E9",   "path": "DTCs.Generic.Support", "fmt": {"bix": 15, "len": 1, "max": 1, "unit": "noyes" }, "name": "Misfire monitoring enabled",                   "description": "[ECU 7E9]"},
-    {"id": "EGR_ENA_7E9",   "path": "DTCs.Generic.Status",  "fmt": {"bix": 16, "len": 1, "max": 1, "unit": "noyes" }, "name": "EGR system monitoring",                        "description": "[ECU 7E9]"},
-    {"id": "HTR_ENA_7E9",   "path": "DTCs.Generic.Status",  "fmt": {"bix": 17, "len": 1, "max": 1, "unit": "noyes" }, "name": "Oxygen sensor heater monitoring",              "description": "[ECU 7E9]"},
-    {"id": "O2S_ENA_7E9",   "path": "DTCs.Generic.Status",  "fmt": {"bix": 18, "len": 1, "max": 1, "unit": "noyes" }, "name": "Oxygen sensor monitoring",                     "description": "[ECU 7E9]"},
-    {"id": "ACRF_ENA_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 19, "len": 1, "max": 1, "unit": "noyes" }, "name": "A/C system refrigerant monitoring",            "description": "[ECU 7E9]"},
-    {"id": "AIR_ENA_7E9",   "path": "DTCs.Generic.Status",  "fmt": {"bix": 20, "len": 1, "max": 1, "unit": "noyes" }, "name": "Secondary air system monitoring",              "description": "[ECU 7E9]"},
-    {"id": "EVAP_ENA_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 21, "len": 1, "max": 1, "unit": "noyes" }, "name": "Evaporative system monitoring",                "description": "[ECU 7E9]"},
-    {"id": "HCAT_ENA_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 22, "len": 1, "max": 1, "unit": "noyes" }, "name": "Heated catalyst monitoring",                   "description": "[ECU 7E9]"},
-    {"id": "CAT_ENA_7E9",   "path": "DTCs.Generic.Status",  "fmt": {"bix": 23, "len": 1, "max": 1, "unit": "noyes" }, "name": "Catalyst monitoring",                          "description": "[ECU 7E9]"},
-    {"id": "EGR_CMPL_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 24, "len": 1, "max": 1, "unit": "yesno" }, "name": "EGR system monitoring completed",              "description": "[ECU 7E9]"},
-    {"id": "HTR_CMPL_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 25, "len": 1, "max": 1, "unit": "yesno" }, "name": "Oxygen sensor heater monitoring completed",    "description": "[ECU 7E9]"},
-    {"id": "O2S_CMPL_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 26, "len": 1, "max": 1, "unit": "yesno" }, "name": "Oxygen sensor monitoring completed",           "description": "[ECU 7E9]"},
-    {"id": "ACRFCMPL_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 27, "len": 1, "max": 1, "unit": "yesno" }, "name": "A/C system refrigerant monitoring completed",  "description": "[ECU 7E9]"},
-    {"id": "AIR_CMPL_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 28, "len": 1, "max": 1, "unit": "yesno" }, "name": "Secondary air system monitoring completed",    "description": "[ECU 7E9]"},
-    {"id": "EVAPCMPL_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 29, "len": 1, "max": 1, "unit": "yesno" }, "name": "Evaporative system monitoring completed",      "description": "[ECU 7E9]"},
-    {"id": "HCATCMPL_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 30, "len": 1, "max": 1, "unit": "yesno" }, "name": "Heated catalyst monitoring completed",         "description": "[ECU 7E9]"},
-    {"id": "CAT_CMPL_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 31, "len": 1, "max": 1, "unit": "yesno" }, "name": "Catalyst monitoring completed",                "description": "[ECU 7E9]"},
-    {"id": "CIM_SUP_FLAG_7E9", "path": "DTCs.Generic.Support", "name": "Compression ignition monitoring supported", "description": "[ECU 7E9]", "hidden": true, "fmt": {"bix": 12, "len": 1, "map": {
+    {"id": "CCM_CMPL_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 9,  "len": 1, "max": 1, "unit": "yesno" }, "name": "Comprehensive component monitoring completed", "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "FUEL_CMPL_7E9", "path": "DTCs.Generic.Status",  "fmt": {"bix": 10, "len": 1, "max": 1, "unit": "yesno" }, "name": "Fuel system monitoring completed",             "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "MIS_CMPL_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 11, "len": 1, "max": 1, "unit": "yesno" }, "name": "Misfire monitoring completed",                 "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "CCM_ENA_7E9",   "path": "DTCs.Generic.Support", "fmt": {"bix": 13, "len": 1, "max": 1, "unit": "noyes" }, "name": "Comprehensive component monitoring enabled",   "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "FUEL_ENA_7E9",  "path": "DTCs.Generic.Support", "fmt": {"bix": 14, "len": 1, "max": 1, "unit": "noyes" }, "name": "Fuel system monitoring enabled",               "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "MIS_ENA_7E9",   "path": "DTCs.Generic.Support", "fmt": {"bix": 15, "len": 1, "max": 1, "unit": "noyes" }, "name": "Misfire monitoring enabled",                   "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "EGR_ENA_7E9",   "path": "DTCs.Generic.Status",  "fmt": {"bix": 16, "len": 1, "max": 1, "unit": "noyes" }, "name": "EGR system monitoring",                        "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "HTR_ENA_7E9",   "path": "DTCs.Generic.Status",  "fmt": {"bix": 17, "len": 1, "max": 1, "unit": "noyes" }, "name": "Oxygen sensor heater monitoring",              "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "O2S_ENA_7E9",   "path": "DTCs.Generic.Status",  "fmt": {"bix": 18, "len": 1, "max": 1, "unit": "noyes" }, "name": "Oxygen sensor monitoring",                     "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "ACRF_ENA_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 19, "len": 1, "max": 1, "unit": "noyes" }, "name": "A/C system refrigerant monitoring",            "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "AIR_ENA_7E9",   "path": "DTCs.Generic.Status",  "fmt": {"bix": 20, "len": 1, "max": 1, "unit": "noyes" }, "name": "Secondary air system monitoring",              "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "EVAP_ENA_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 21, "len": 1, "max": 1, "unit": "noyes" }, "name": "Evaporative system monitoring",                "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "HCAT_ENA_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 22, "len": 1, "max": 1, "unit": "noyes" }, "name": "Heated catalyst monitoring",                   "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "CAT_ENA_7E9",   "path": "DTCs.Generic.Status",  "fmt": {"bix": 23, "len": 1, "max": 1, "unit": "noyes" }, "name": "Catalyst monitoring",                          "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "EGR_CMPL_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 24, "len": 1, "max": 1, "unit": "yesno" }, "name": "EGR system monitoring completed",              "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "HTR_CMPL_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 25, "len": 1, "max": 1, "unit": "yesno" }, "name": "Oxygen sensor heater monitoring completed",    "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "O2S_CMPL_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 26, "len": 1, "max": 1, "unit": "yesno" }, "name": "Oxygen sensor monitoring completed",           "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "ACRFCMPL_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 27, "len": 1, "max": 1, "unit": "yesno" }, "name": "A/C system refrigerant monitoring completed",  "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "AIR_CMPL_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 28, "len": 1, "max": 1, "unit": "yesno" }, "name": "Secondary air system monitoring completed",    "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "EVAPCMPL_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 29, "len": 1, "max": 1, "unit": "yesno" }, "name": "Evaporative system monitoring completed",      "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "HCATCMPL_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 30, "len": 1, "max": 1, "unit": "yesno" }, "name": "Heated catalyst monitoring completed",         "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "CAT_CMPL_7E9",  "path": "DTCs.Generic.Status",  "fmt": {"bix": 31, "len": 1, "max": 1, "unit": "yesno" }, "name": "Catalyst monitoring completed",                "description": "[Polling: Health and environment] [ECU 7E9]"},
+    {"id": "CIM_SUP_FLAG_7E9", "path": "DTCs.Generic.Support", "name": "Compression ignition monitoring supported", "description": "[Polling: Health and environment] [ECU 7E9]", "hidden": true, "fmt": {"bix": 12, "len": 1, "map": {
           "0": { "description": "Spark ignition monitors supported",       "value": "SPARK" },
           "1": { "description": "Compression ignition monitors supported", "value": "COMPRESSION" }
         }}
     }
   ]},
-{ "hdr": "7E1", "rax": "7E9", "cmd": {"01": "42"}, "freq": 10, "filter": { "years": [2019] },
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"01": "42"}, "freq": 5, "filter": { "years": [2019] },
   "signals": [
-    {"id": "VPWR_7E9", "path": "Battery.Generic", "fmt": { "len": 16, "max": 65535, "div": 1000, "unit": "volts" }, "name": "Control module voltage", "suggestedMetric": "starterBatteryVoltage", "description": "[ECU 7E9] Power input to the OBD control module. VPWR is normally battery voltage, less any voltage drop in the circuit between the battery and the control module."}
+    {"id": "VPWR_7E9", "path": "Battery.Generic", "fmt": { "len": 16, "max": 65535, "div": 1000, "unit": "volts" }, "name": "Control module voltage", "suggestedMetric": "starterBatteryVoltage", "description": "[Polling: Short-term trends] [ECU 7E9] Power input to the OBD control module. VPWR is normally battery voltage, less any voltage drop in the circuit between the battery and the control module."}
   ]}
 ]
 }
