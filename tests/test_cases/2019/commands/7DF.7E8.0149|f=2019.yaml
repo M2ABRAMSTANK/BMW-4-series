@@ -1,0 +1,5 @@
+command_id: 7DF.7E8.0149|f=2019
+test_cases:
+- response: 7E803414924
+  expected_values:
+    APP_D: 14.117647058823529

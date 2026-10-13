@@ -1,0 +1,5 @@
+command_id: 7E1.7E9.0104|f=2019
+test_cases:
+- response: 7E903410417
+  expected_values:
+    LOAD_PCT_7E9: 9.019607843137255

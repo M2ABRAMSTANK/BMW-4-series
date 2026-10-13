@@ -1,0 +1,5 @@
+command_id: 7E1.7E9.0121|f=2019
+test_cases:
+- response: 7E90441210000
+  expected_values:
+    MIL_DIST_7E9: 0

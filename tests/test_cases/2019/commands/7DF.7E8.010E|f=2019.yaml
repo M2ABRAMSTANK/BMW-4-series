@@ -1,0 +1,5 @@
+command_id: 7DF.7E8.010E|f=2019
+test_cases:
+- response: 7E803410E7D
+  expected_values:
+    SPARKADV: -1.5

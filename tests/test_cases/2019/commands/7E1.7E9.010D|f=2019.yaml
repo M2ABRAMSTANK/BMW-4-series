@@ -1,0 +1,5 @@
+command_id: 7E1.7E9.010D|f=2019
+test_cases:
+- response: 7E903410D00
+  expected_values:
+    VSS_7E9: 0

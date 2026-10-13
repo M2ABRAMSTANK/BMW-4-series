@@ -1,0 +1,5 @@
+command_id: 7DF.7E8.0162|f=2019
+test_cases:
+- response: 7E803416286
+  expected_values:
+    TQ_ACT: 9.0

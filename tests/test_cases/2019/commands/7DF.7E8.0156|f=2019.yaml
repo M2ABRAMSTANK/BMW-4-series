@@ -1,0 +1,5 @@
+command_id: 7DF.7E8.0156|f=2019
+test_cases:
+- response: 7E803415680
+  expected_values:
+    LGSO2FT1: 0.0

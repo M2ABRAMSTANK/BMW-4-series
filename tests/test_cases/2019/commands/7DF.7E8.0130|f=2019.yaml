@@ -1,0 +1,5 @@
+command_id: 7DF.7E8.0130|f=2019
+test_cases:
+- response: 7E8034130E7
+  expected_values:
+    WARM_UPS: 231.0

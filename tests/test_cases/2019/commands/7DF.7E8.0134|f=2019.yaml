@@ -1,0 +1,6 @@
+command_id: 7DF.7E8.0134|f=2019
+test_cases:
+- response: 7E806413481908002
+  expected_values:
+    LAMBDA11_CURRENT: 1.01220703125
+    O2S11_CURRENT: 0.0078125

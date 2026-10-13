@@ -1,0 +1,5 @@
+command_id: 7DF.7E8.0106|f=2019
+test_cases:
+- response: 7E803410686
+  expected_values:
+    SHRTFT1: 4.6875

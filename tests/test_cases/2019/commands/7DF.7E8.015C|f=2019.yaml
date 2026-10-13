@@ -1,0 +1,5 @@
+command_id: 7DF.7E8.015C|f=2019
+test_cases:
+- response: 7E803415C77
+  expected_values:
+    EOT: 79.0

@@ -1,0 +1,5 @@
+command_id: 7DF.7E8.0143|f=2019
+test_cases:
+- response: 7E8044143003F
+  expected_values:
+    LOAD_ABS: 24.705882352941178

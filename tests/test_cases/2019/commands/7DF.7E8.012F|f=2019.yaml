@@ -1,0 +1,5 @@
+command_id: 7DF.7E8.012F|f=2019
+test_cases:
+- response: 7E803412F3F
+  expected_values:
+    FLI: 24.705882352941178

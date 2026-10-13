@@ -1,0 +1,5 @@
+command_id: 7DF.7E8.0104|f=2019
+test_cases:
+- response: 7E80341041C
+  expected_values:
+    LOAD_PCT: 10.980392156862745

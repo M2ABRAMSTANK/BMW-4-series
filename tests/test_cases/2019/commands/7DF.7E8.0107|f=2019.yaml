@@ -1,0 +1,5 @@
+command_id: 7DF.7E8.0107|f=2019
+test_cases:
+- response: 7E80341077F
+  expected_values:
+    LONGFT1: -0.78125

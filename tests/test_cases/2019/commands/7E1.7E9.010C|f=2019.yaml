@@ -1,0 +1,5 @@
+command_id: 7E1.7E9.010C|f=2019
+test_cases:
+- response: 7E904410C0B10
+  expected_values:
+    RPM_7E9: 708.0

@@ -1,0 +1,2703 @@
+{
+  "target": "2019 BMW 430i; same VIN across source sessions, 10th VIN character K; VIN withheld",
+  "source": "scanlogs/originals/sidecar.scanlogs/db.sqlite (read-only)",
+  "adapter": "vLinker MS-IOS; ISO 15765-4 11-bit protocol (ATSP6), headers on (ATH1); functional 7DF and physical 7E0/7E1 with receive filters 7E8/7E9",
+  "support_bitmap_records": {
+    "7E8": {
+      "00": {
+        "source_session_pk": 1,
+        "source_record_pk": 9,
+        "timestamp_utc": "2024-12-12T03:55:47.882239+00:00",
+        "response": "7E8064100BE3FA813",
+        "command": "0100",
+        "source_command_id": 22,
+        "full_response_hex": "37453830363431303042453346413831330D37453930363431303039383138383030310D",
+        "full_response_ascii": "7E8064100BE3FA813\r7E906410098188001\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "20": {
+        "source_session_pk": 1,
+        "source_record_pk": 10,
+        "timestamp_utc": "2024-12-12T03:55:48.136758+00:00",
+        "response": "7E8064120A007B011",
+        "command": "0120",
+        "source_command_id": 23,
+        "full_response_hex": "37453830363431323041303037423031310D37453930363431323038303030303030310D",
+        "full_response_ascii": "7E8064120A007B011\r7E906412080000001\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "40": {
+        "source_session_pk": 1,
+        "source_record_pk": 25,
+        "timestamp_utc": "2024-12-12T03:55:48.241412+00:00",
+        "response": "7E8064140FED08411",
+        "command": "0140",
+        "source_command_id": 24,
+        "full_response_hex": "37453830363431343046454430383431310D37453930363431343043303030303030300D",
+        "full_response_ascii": "7E8064140FED08411\r7E9064140C0000000\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "60": {
+        "source_session_pk": 1,
+        "source_record_pk": 12,
+        "timestamp_utc": "2024-12-12T03:55:48.345650+00:00",
+        "response": "7E806416061000001",
+        "command": "0160",
+        "source_command_id": 25,
+        "full_response_hex": "37453830363431363036313030303030310D",
+        "full_response_ascii": "7E806416061000001\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "80": {
+        "source_session_pk": 1,
+        "source_record_pk": 51,
+        "timestamp_utc": "2024-12-12T03:55:48.450704+00:00",
+        "response": "7E80641802004000D",
+        "command": "0180",
+        "source_command_id": 26,
+        "full_response_hex": "37453830363431383032303034303030440D",
+        "full_response_ascii": "7E80641802004000D\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "A0": {
+        "source_session_pk": 1,
+        "source_record_pk": 2,
+        "timestamp_utc": "2024-12-12T03:55:48.570680+00:00",
+        "response": "7E80641A004000000",
+        "command": "01A0",
+        "source_command_id": 27,
+        "full_response_hex": "37453830363431413030343030303030300D",
+        "full_response_ascii": "7E80641A004000000\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      }
+    },
+    "7E9": {
+      "00": {
+        "source_session_pk": 1,
+        "source_record_pk": 9,
+        "timestamp_utc": "2024-12-12T03:55:47.882239+00:00",
+        "response": "7E906410098188001",
+        "command": "0100",
+        "source_command_id": 22,
+        "full_response_hex": "37453830363431303042453346413831330D37453930363431303039383138383030310D",
+        "full_response_ascii": "7E8064100BE3FA813\r7E906410098188001\r",
+        "response_excerpt_route": "7E9",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "20": {
+        "source_session_pk": 1,
+        "source_record_pk": 10,
+        "timestamp_utc": "2024-12-12T03:55:48.136758+00:00",
+        "response": "7E906412080000001",
+        "command": "0120",
+        "source_command_id": 23,
+        "full_response_hex": "37453830363431323041303037423031310D37453930363431323038303030303030310D",
+        "full_response_ascii": "7E8064120A007B011\r7E906412080000001\r",
+        "response_excerpt_route": "7E9",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "40": {
+        "source_session_pk": 1,
+        "source_record_pk": 25,
+        "timestamp_utc": "2024-12-12T03:55:48.241412+00:00",
+        "response": "7E9064140C0000000",
+        "command": "0140",
+        "source_command_id": 24,
+        "full_response_hex": "37453830363431343046454430383431310D37453930363431343043303030303030300D",
+        "full_response_ascii": "7E8064140FED08411\r7E9064140C0000000\r",
+        "response_excerpt_route": "7E9",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      }
+    }
+  },
+  "advertised_data_pids": {
+    "7E8": [
+      "01",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "0B",
+      "0C",
+      "0D",
+      "0E",
+      "0F",
+      "10",
+      "11",
+      "13",
+      "15",
+      "1C",
+      "1F",
+      "21",
+      "23",
+      "2E",
+      "2F",
+      "30",
+      "31",
+      "33",
+      "34",
+      "3C",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "49",
+      "4A",
+      "4C",
+      "51",
+      "56",
+      "5C",
+      "62",
+      "63",
+      "68",
+      "83",
+      "8E",
+      "9D",
+      "9E",
+      "A6"
+    ],
+    "7E9": [
+      "01",
+      "04",
+      "05",
+      "0C",
+      "0D",
+      "11",
+      "21",
+      "41",
+      "42"
+    ]
+  },
+  "positive_data_pids": {
+    "7E8": [
+      "01",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "0B",
+      "0C",
+      "0D",
+      "0E",
+      "0F",
+      "10",
+      "11",
+      "13",
+      "15",
+      "1C",
+      "1F",
+      "21",
+      "23",
+      "2E",
+      "2F",
+      "30",
+      "31",
+      "33",
+      "34",
+      "3C",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "49",
+      "4A",
+      "4C",
+      "51",
+      "56",
+      "5C",
+      "62",
+      "63",
+      "68",
+      "8E",
+      "9D",
+      "9E",
+      "A6"
+    ],
+    "7E9": [
+      "01",
+      "04",
+      "05",
+      "0C",
+      "0D",
+      "11",
+      "21",
+      "41",
+      "42"
+    ]
+  },
+  "advertised_without_positive_payload": {
+    "7E8": [
+      "41",
+      "83"
+    ],
+    "7E9": []
+  },
+  "positive_records": {
+    "7E8": {
+      "01": {
+        "source_session_pk": 1839,
+        "source_record_pk": 20538203,
+        "timestamp_utc": "2025-08-05T14:43:08.500262+00:00",
+        "response": "7E80641010007E500",
+        "command": "0101",
+        "source_command_id": 1751,
+        "full_response_hex": "37453830363431303130303037453530300D",
+        "full_response_ascii": "7E80641010007E500\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 20536530,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 20536538,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 20538197,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCEA": {
+            "record_pk": 20538116,
+            "command": "ATCEA",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSD": {
+            "record_pk": 20538114,
+            "command": "ATFCSD60300000",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 20538129,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 20538135,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "03": {
+        "source_session_pk": 1,
+        "source_record_pk": 2570,
+        "timestamp_utc": "2024-12-12T03:58:43.549131+00:00",
+        "response": "7E80441030200",
+        "command": "0103",
+        "source_command_id": 2663,
+        "full_response_hex": "374538303434313033303230300D",
+        "full_response_ascii": "7E80441030200\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 2589,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 2646,
+            "command": "ATCRA7E9",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "04": {
+        "source_session_pk": 1,
+        "source_record_pk": 1299,
+        "timestamp_utc": "2024-12-12T03:57:19.925312+00:00",
+        "response": "7E80341041C",
+        "command": "0104",
+        "source_command_id": 1295,
+        "full_response_hex": "37453830333431303431430D",
+        "full_response_ascii": "7E80341041C\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1316,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 1280,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "05": {
+        "source_session_pk": 1,
+        "source_record_pk": 1302,
+        "timestamp_utc": "2024-12-12T03:57:19.263278+00:00",
+        "response": "7E803410575",
+        "command": "0105",
+        "source_command_id": 1290,
+        "full_response_hex": "37453830333431303537350D",
+        "full_response_ascii": "7E803410575\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1308,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 1280,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "06": {
+        "source_session_pk": 1,
+        "source_record_pk": 2263,
+        "timestamp_utc": "2024-12-12T03:58:23.496007+00:00",
+        "response": "7E803410686",
+        "command": "0106",
+        "source_command_id": 2289,
+        "full_response_hex": "37453830333431303638360D",
+        "full_response_ascii": "7E803410686\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 2289,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 2268,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "07": {
+        "source_session_pk": 1,
+        "source_record_pk": 2116,
+        "timestamp_utc": "2024-12-12T03:58:16.505587+00:00",
+        "response": "7E80341077F",
+        "command": "0107",
+        "source_command_id": 2135,
+        "full_response_hex": "37453830333431303737460D",
+        "full_response_ascii": "7E80341077F\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 2095,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 2128,
+            "command": "ATCRA7E9",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "0B": {
+        "source_session_pk": 1,
+        "source_record_pk": 2011,
+        "timestamp_utc": "2024-12-12T03:58:13.130829+00:00",
+        "response": "7E803410B4C",
+        "command": "010B",
+        "source_command_id": 2070,
+        "full_response_hex": "37453830333431304234430D",
+        "full_response_ascii": "7E803410B4C\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1984,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 2047,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "0C": {
+        "source_session_pk": 34,
+        "source_record_pk": 141405,
+        "timestamp_utc": "2024-12-13T16:41:46.721641+00:00",
+        "response": "7E804410C0AF0",
+        "command": "010C",
+        "source_command_id": 9128,
+        "full_response_hex": "374538303434313043304146300D",
+        "full_response_ascii": "7E804410C0AF0\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 132292,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 132283,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 141478,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 141369,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 141071,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "0D": {
+        "source_session_pk": 2,
+        "source_record_pk": 13411,
+        "timestamp_utc": "2024-12-13T01:29:05.441983+00:00",
+        "response": "7E803410D00",
+        "command": "010D",
+        "source_command_id": 7700,
+        "full_response_hex": "37453830333431304430300D",
+        "full_response_ascii": "7E803410D00\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 5772,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 5778,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 13414,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 13433,
+            "command": "ATCRA7E9",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 13402,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "0E": {
+        "source_session_pk": 1,
+        "source_record_pk": 2319,
+        "timestamp_utc": "2024-12-12T03:58:26.991493+00:00",
+        "response": "7E803410E7D",
+        "command": "010E",
+        "source_command_id": 2352,
+        "full_response_hex": "37453830333431304537440D",
+        "full_response_ascii": "7E803410E7D\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 2380,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 2361,
+            "command": "ATCRA7E9",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "0F": {
+        "source_session_pk": 1,
+        "source_record_pk": 1960,
+        "timestamp_utc": "2024-12-12T03:58:08.584147+00:00",
+        "response": "7E803410F4E",
+        "command": "010F",
+        "source_command_id": 1974,
+        "full_response_hex": "37453830333431304634450D",
+        "full_response_ascii": "7E803410F4E\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1889,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 1934,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "10": {
+        "source_session_pk": 1,
+        "source_record_pk": 1363,
+        "timestamp_utc": "2024-12-12T03:57:24.182944+00:00",
+        "response": "7E80441100142",
+        "command": "0110",
+        "source_command_id": 1332,
+        "full_response_hex": "374538303434313130303134320D",
+        "full_response_ascii": "7E80441100142\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1356,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 1280,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "11": {
+        "source_session_pk": 34,
+        "source_record_pk": 141287,
+        "timestamp_utc": "2024-12-13T16:41:33.198459+00:00",
+        "response": "7E803411122",
+        "command": "0111",
+        "source_command_id": 9010,
+        "full_response_hex": "37453830333431313132320D",
+        "full_response_ascii": "7E803411122\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 132292,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 132283,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 141281,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 141271,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 141071,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "13": {
+        "source_session_pk": 1,
+        "source_record_pk": 1347,
+        "timestamp_utc": "2024-12-12T03:57:25.344429+00:00",
+        "response": "7E803411303",
+        "command": "0113",
+        "source_command_id": 1348,
+        "full_response_hex": "37453830333431313330330D",
+        "full_response_ascii": "7E803411303\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1338,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 1362,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "15": {
+        "source_session_pk": 1,
+        "source_record_pk": 1334,
+        "timestamp_utc": "2024-12-12T03:57:26.629852+00:00",
+        "response": "7E80441159FFF",
+        "command": "0115",
+        "source_command_id": 1363,
+        "full_response_hex": "374538303434313135394646460D",
+        "full_response_ascii": "7E80441159FFF\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1342,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 1337,
+            "command": "ATCRA7E9",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "1C": {
+        "source_session_pk": 1,
+        "source_record_pk": 3059,
+        "timestamp_utc": "2024-12-12T03:59:00.918125+00:00",
+        "response": "7E803411C01",
+        "command": "011C",
+        "source_command_id": 3074,
+        "full_response_hex": "37453830333431314330310D",
+        "full_response_ascii": "7E803411C01\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 3095,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 3075,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "1F": {
+        "source_session_pk": 1,
+        "source_record_pk": 361,
+        "timestamp_utc": "2024-12-12T03:56:19.367222+00:00",
+        "response": "7E804411F0087",
+        "command": "011F",
+        "source_command_id": 358,
+        "full_response_hex": "374538303434313146303038370D",
+        "full_response_ascii": "7E804411F0087\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 342,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 347,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "20": {
+        "source_session_pk": 1,
+        "source_record_pk": 10,
+        "timestamp_utc": "2024-12-12T03:55:48.136758+00:00",
+        "response": "7E8064120A007B011",
+        "command": "0120",
+        "source_command_id": 23,
+        "full_response_hex": "37453830363431323041303037423031310D37453930363431323038303030303030310D",
+        "full_response_ascii": "7E8064120A007B011\r7E906412080000001\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "21": {
+        "source_session_pk": 1839,
+        "source_record_pk": 20538153,
+        "timestamp_utc": "2025-08-05T14:43:07.600235+00:00",
+        "response": "7E80441210000",
+        "command": "0121",
+        "source_command_id": 1743,
+        "full_response_hex": "374538303434313231303030300D",
+        "full_response_ascii": "7E80441210000\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 20536530,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 20536538,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 20538146,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCEA": {
+            "record_pk": 20538116,
+            "command": "ATCEA",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSD": {
+            "record_pk": 20538114,
+            "command": "ATFCSD60300000",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 20538129,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 20538135,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "23": {
+        "source_session_pk": 1,
+        "source_record_pk": 1892,
+        "timestamp_utc": "2024-12-12T03:58:08.852731+00:00",
+        "response": "7E804412303F2",
+        "command": "0123",
+        "source_command_id": 1980,
+        "full_response_hex": "374538303434313233303346320D",
+        "full_response_ascii": "7E804412303F2\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1889,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 1934,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "2E": {
+        "source_session_pk": 1,
+        "source_record_pk": 1292,
+        "timestamp_utc": "2024-12-12T03:57:22.953066+00:00",
+        "response": "7E803412E00",
+        "command": "012E",
+        "source_command_id": 1320,
+        "full_response_hex": "37453830333431324530300D",
+        "full_response_ascii": "7E803412E00\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1309,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 1280,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "2F": {
+        "source_session_pk": 1,
+        "source_record_pk": 5,
+        "timestamp_utc": "2024-12-12T03:55:50.730597+00:00",
+        "response": "7E803412F3F",
+        "command": "012F",
+        "source_command_id": 45,
+        "full_response_hex": "37453830333431324633460D",
+        "full_response_ascii": "7E803412F3F\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 45,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 43,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "30": {
+        "source_session_pk": 1,
+        "source_record_pk": 960,
+        "timestamp_utc": "2024-12-12T03:56:50.149338+00:00",
+        "response": "7E8034130E7",
+        "command": "0130",
+        "source_command_id": 982,
+        "full_response_hex": "37453830333431333045370D",
+        "full_response_ascii": "7E8034130E7\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 981,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 965,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "31": {
+        "source_session_pk": 1,
+        "source_record_pk": 976,
+        "timestamp_utc": "2024-12-12T03:56:49.623112+00:00",
+        "response": "7E80441312BFA",
+        "command": "0131",
+        "source_command_id": 975,
+        "full_response_hex": "374538303434313331324246410D",
+        "full_response_ascii": "7E80441312BFA\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 955,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 965,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "33": {
+        "source_session_pk": 1,
+        "source_record_pk": 1310,
+        "timestamp_utc": "2024-12-12T03:57:18.423562+00:00",
+        "response": "7E803413353",
+        "command": "0133",
+        "source_command_id": 1282,
+        "full_response_hex": "37453830333431333335330D",
+        "full_response_ascii": "7E803413353\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1282,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 1280,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "34": {
+        "source_session_pk": 2744,
+        "source_record_pk": 31997767,
+        "timestamp_utc": "2025-11-16T00:12:20.869147+00:00",
+        "response": "7E806413481908002",
+        "command": "0134",
+        "source_command_id": 21544,
+        "full_response_hex": "37453830363431333438313930383030320D",
+        "full_response_ascii": "7E806413481908002\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 31976398,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 31976321,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 31997761,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCEA": {
+            "record_pk": 31997715,
+            "command": "ATCEA",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSD": {
+            "record_pk": 31997843,
+            "command": "ATFCSD12300000",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 31997727,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 31997733,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "3C": {
+        "source_session_pk": 1,
+        "source_record_pk": 1293,
+        "timestamp_utc": "2024-12-12T03:57:23.374088+00:00",
+        "response": "7E804413C159D",
+        "command": "013C",
+        "source_command_id": 1324,
+        "full_response_hex": "374538303434313343313539440D",
+        "full_response_ascii": "7E804413C159D\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1281,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 1280,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "40": {
+        "source_session_pk": 1,
+        "source_record_pk": 25,
+        "timestamp_utc": "2024-12-12T03:55:48.241412+00:00",
+        "response": "7E8064140FED08411",
+        "command": "0140",
+        "source_command_id": 24,
+        "full_response_hex": "37453830363431343046454430383431310D37453930363431343043303030303030300D",
+        "full_response_ascii": "7E8064140FED08411\r7E9064140C0000000\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "42": {
+        "source_session_pk": 34,
+        "source_record_pk": 141167,
+        "timestamp_utc": "2024-12-13T16:41:20.301587+00:00",
+        "response": "7E804414236D8",
+        "command": "0142",
+        "source_command_id": 8891,
+        "full_response_hex": "374538303434313432333644380D",
+        "full_response_ascii": "7E804414236D8\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 132292,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 132283,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 141185,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 141137,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 141071,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "43": {
+        "source_session_pk": 1,
+        "source_record_pk": 1314,
+        "timestamp_utc": "2024-12-12T03:57:18.843087+00:00",
+        "response": "7E8044143003F",
+        "command": "0143",
+        "source_command_id": 1286,
+        "full_response_hex": "374538303434313433303033460D",
+        "full_response_ascii": "7E8044143003F\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1323,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 1280,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "44": {
+        "source_session_pk": 1,
+        "source_record_pk": 1287,
+        "timestamp_utc": "2024-12-12T03:57:20.344298+00:00",
+        "response": "7E80441448000",
+        "command": "0144",
+        "source_command_id": 1299,
+        "full_response_hex": "374538303434313434383030300D",
+        "full_response_ascii": "7E80441448000\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1288,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 1280,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "45": {
+        "source_session_pk": 1,
+        "source_record_pk": 424,
+        "timestamp_utc": "2024-12-12T03:56:25.277370+00:00",
+        "response": "7E803414508",
+        "command": "0145",
+        "source_command_id": 450,
+        "full_response_hex": "37453830333431343530380D",
+        "full_response_ascii": "7E803414508\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 493,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 469,
+            "command": "ATCRA7E9",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "46": {
+        "source_session_pk": 1,
+        "source_record_pk": 190,
+        "timestamp_utc": "2024-12-12T03:56:04.112288+00:00",
+        "response": "7E803414632",
+        "command": "0146",
+        "source_command_id": 195,
+        "full_response_hex": "37453830333431343633320D",
+        "full_response_ascii": "7E803414632\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 193,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 169,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "47": {
+        "source_session_pk": 1,
+        "source_record_pk": 403,
+        "timestamp_utc": "2024-12-12T03:56:23.882247+00:00",
+        "response": "7E803414723",
+        "command": "0147",
+        "source_command_id": 418,
+        "full_response_hex": "37453830333431343732330D",
+        "full_response_ascii": "7E803414723\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 489,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 414,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "49": {
+        "source_session_pk": 1,
+        "source_record_pk": 680,
+        "timestamp_utc": "2024-12-12T03:56:37.410810+00:00",
+        "response": "7E803414924",
+        "command": "0149",
+        "source_command_id": 750,
+        "full_response_hex": "37453830333431343932340D",
+        "full_response_ascii": "7E803414924\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 691,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 682,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "4A": {
+        "source_session_pk": 1,
+        "source_record_pk": 745,
+        "timestamp_utc": "2024-12-12T03:56:37.036669+00:00",
+        "response": "7E803414A24",
+        "command": "014A",
+        "source_command_id": 746,
+        "full_response_hex": "37453830333431344132340D",
+        "full_response_ascii": "7E803414A24\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 729,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 682,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "4C": {
+        "source_session_pk": 1,
+        "source_record_pk": 1285,
+        "timestamp_utc": "2024-12-12T03:57:21.214015+00:00",
+        "response": "7E803414C0B",
+        "command": "014C",
+        "source_command_id": 1307,
+        "full_response_hex": "37453830333431344330420D",
+        "full_response_ascii": "7E803414C0B\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1303,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 1280,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "51": {
+        "source_session_pk": 1,
+        "source_record_pk": 2302,
+        "timestamp_utc": "2024-12-12T03:58:25.534769+00:00",
+        "response": "7E803415101",
+        "command": "0151",
+        "source_command_id": 2321,
+        "full_response_hex": "37453830333431353130310D",
+        "full_response_ascii": "7E803415101\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 2397,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 2387,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "56": {
+        "source_session_pk": 1,
+        "source_record_pk": 2169,
+        "timestamp_utc": "2024-12-12T03:58:16.581084+00:00",
+        "response": "7E803415680",
+        "command": "0156",
+        "source_command_id": 2137,
+        "full_response_hex": "37453830333431353638300D",
+        "full_response_ascii": "7E803415680\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 2095,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 2128,
+            "command": "ATCRA7E9",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "5C": {
+        "source_session_pk": 1,
+        "source_record_pk": 1297,
+        "timestamp_utc": "2024-12-12T03:57:22.291761+00:00",
+        "response": "7E803415C77",
+        "command": "015C",
+        "source_command_id": 1315,
+        "full_response_hex": "37453830333431354337370D",
+        "full_response_ascii": "7E803415C77\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1315,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 1280,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "60": {
+        "source_session_pk": 1,
+        "source_record_pk": 12,
+        "timestamp_utc": "2024-12-12T03:55:48.345650+00:00",
+        "response": "7E806416061000001",
+        "command": "0160",
+        "source_command_id": 25,
+        "full_response_hex": "37453830363431363036313030303030310D",
+        "full_response_ascii": "7E806416061000001\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "62": {
+        "source_session_pk": 1,
+        "source_record_pk": 1333,
+        "timestamp_utc": "2024-12-12T03:57:23.777068+00:00",
+        "response": "7E803416286",
+        "command": "0162",
+        "source_command_id": 1328,
+        "full_response_hex": "37453830333431363238360D",
+        "full_response_ascii": "7E803416286\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1327,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 1280,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "63": {
+        "source_session_pk": 1,
+        "source_record_pk": 1312,
+        "timestamp_utc": "2024-12-12T03:57:20.835610+00:00",
+        "response": "7E80441630189",
+        "command": "0163",
+        "source_command_id": 1303,
+        "full_response_hex": "374538303434313633303138390D",
+        "full_response_ascii": "7E80441630189\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1284,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 1280,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "68": {
+        "source_session_pk": 884,
+        "source_record_pk": 9865663,
+        "timestamp_utc": "2025-04-04T23:40:29.638691+00:00",
+        "response": "7E810094168033A2DFF\r7E821FFFFFF00000000",
+        "command": "0168",
+        "source_command_id": 9243,
+        "full_response_hex": "374538313030393431363830333341324446460D374538323146464646464630303030303030300D",
+        "full_response_ascii": "7E810094168033A2DFF\r7E821FFFFFF00000000\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 9856470,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 9856450,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 9865689,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCEA": {
+            "record_pk": 9865626,
+            "command": "ATCEA",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 9865623,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSD": {
+            "record_pk": 9865598,
+            "command": "ATFCSD300000",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 9865595,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "80": {
+        "source_session_pk": 1,
+        "source_record_pk": 51,
+        "timestamp_utc": "2024-12-12T03:55:48.450704+00:00",
+        "response": "7E80641802004000D",
+        "command": "0180",
+        "source_command_id": 26,
+        "full_response_hex": "37453830363431383032303034303030440D",
+        "full_response_ascii": "7E80641802004000D\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "8E": {
+        "source_session_pk": 1,
+        "source_record_pk": 1295,
+        "timestamp_utc": "2024-12-12T03:57:21.693389+00:00",
+        "response": "7E803418E86",
+        "command": "018E",
+        "source_command_id": 1311,
+        "full_response_hex": "37453830333431384538360D",
+        "full_response_ascii": "7E803418E86\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1294,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 1280,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "9D": {
+        "source_session_pk": 1,
+        "source_record_pk": 2511,
+        "timestamp_utc": "2024-12-12T03:58:38.958026+00:00",
+        "response": "7E806419D000A000A",
+        "command": "019D",
+        "source_command_id": 2563,
+        "full_response_hex": "37453830363431394430303041303030410D",
+        "full_response_ascii": "7E806419D000A000A\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 2528,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 2521,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "9E": {
+        "source_session_pk": 1,
+        "source_record_pk": 2566,
+        "timestamp_utc": "2024-12-12T03:58:41.076082+00:00",
+        "response": "7E804419E003A",
+        "command": "019E",
+        "source_command_id": 2603,
+        "full_response_hex": "374538303434313945303033410D",
+        "full_response_ascii": "7E804419E003A\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 2613,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 2580,
+            "command": "ATCRA7E9",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "A0": {
+        "source_session_pk": 1,
+        "source_record_pk": 2,
+        "timestamp_utc": "2024-12-12T03:55:48.570680+00:00",
+        "response": "7E80641A004000000",
+        "command": "01A0",
+        "source_command_id": 27,
+        "full_response_hex": "37453830363431413030343030303030300D",
+        "full_response_ascii": "7E80641A004000000\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "A6": {
+        "source_session_pk": 1,
+        "source_record_pk": 7,
+        "timestamp_utc": "2024-12-12T03:55:50.911841+00:00",
+        "response": "7E80641A6000DDC0D",
+        "command": "01A6",
+        "source_command_id": 48,
+        "full_response_hex": "37453830363431413630303044444330440D",
+        "full_response_ascii": "7E80641A6000DDC0D\r",
+        "response_excerpt_route": "7E8",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 45,
+            "command": "ATSH7DF",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 43,
+            "command": "ATCRA7E8",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      }
+    },
+    "7E9": {
+      "01": {
+        "source_session_pk": 1,
+        "source_record_pk": 1007,
+        "timestamp_utc": "2024-12-12T03:56:48.979110+00:00",
+        "response": "7E906410100040000",
+        "command": "0101",
+        "source_command_id": 965,
+        "full_response_hex": "37453930363431303130303034303030300D",
+        "full_response_ascii": "7E906410100040000\r",
+        "response_excerpt_route": "7E9",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 978,
+            "command": "ATSH7E1",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 986,
+            "command": "ATCRA7E9",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "04": {
+        "source_session_pk": 1,
+        "source_record_pk": 1490,
+        "timestamp_utc": "2024-12-12T03:57:41.944899+00:00",
+        "response": "7E903410417",
+        "command": "0104",
+        "source_command_id": 1534,
+        "full_response_hex": "37453930333431303431370D",
+        "full_response_ascii": "7E903410417\r",
+        "response_excerpt_route": "7E9",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1520,
+            "command": "ATSH7E1",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 1557,
+            "command": "ATCRA7E9",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "05": {
+        "source_session_pk": 1,
+        "source_record_pk": 1555,
+        "timestamp_utc": "2024-12-12T03:57:41.899986+00:00",
+        "response": "7E903410575",
+        "command": "0105",
+        "source_command_id": 1533,
+        "full_response_hex": "37453930333431303537350D",
+        "full_response_ascii": "7E903410575\r",
+        "response_excerpt_route": "7E9",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1520,
+            "command": "ATSH7E1",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 1557,
+            "command": "ATCRA7E9",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "0C": {
+        "source_session_pk": 1,
+        "source_record_pk": 1791,
+        "timestamp_utc": "2024-12-12T03:58:01.054720+00:00",
+        "response": "7E904410C0B10",
+        "command": "010C",
+        "source_command_id": 1824,
+        "full_response_hex": "374539303434313043304231300D",
+        "full_response_ascii": "7E904410C0B10\r",
+        "response_excerpt_route": "7E9",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1800,
+            "command": "ATSH7E1",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 1821,
+            "command": "ATCRA7E9",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "0D": {
+        "source_session_pk": 1,
+        "source_record_pk": 11,
+        "timestamp_utc": "2024-12-12T03:55:51.018259+00:00",
+        "response": "7E903410D00",
+        "command": "010D",
+        "source_command_id": 51,
+        "full_response_hex": "37453930333431304430300D",
+        "full_response_ascii": "7E903410D00\r",
+        "response_excerpt_route": "7E9",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 47,
+            "command": "ATSH7E1",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 31,
+            "command": "ATCRA7E9",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "11": {
+        "source_session_pk": 1,
+        "source_record_pk": 405,
+        "timestamp_utc": "2024-12-12T03:56:24.437603+00:00",
+        "response": "7E903411122",
+        "command": "0111",
+        "source_command_id": 428,
+        "full_response_hex": "37453930333431313132320D",
+        "full_response_ascii": "7E903411122\r",
+        "response_excerpt_route": "7E9",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 502,
+            "command": "ATSH7E1",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 495,
+            "command": "ATCRA7E9",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "20": {
+        "source_session_pk": 1,
+        "source_record_pk": 10,
+        "timestamp_utc": "2024-12-12T03:55:48.136758+00:00",
+        "response": "7E906412080000001",
+        "command": "0120",
+        "source_command_id": 23,
+        "full_response_hex": "37453830363431323041303037423031310D37453930363431323038303030303030310D",
+        "full_response_ascii": "7E8064120A007B011\r7E906412080000001\r",
+        "response_excerpt_route": "7E9",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "21": {
+        "source_session_pk": 1,
+        "source_record_pk": 964,
+        "timestamp_utc": "2024-12-12T03:56:52.413861+00:00",
+        "response": "7E90441210000",
+        "command": "0121",
+        "source_command_id": 1010,
+        "full_response_hex": "374539303434313231303030300D",
+        "full_response_ascii": "7E90441210000\r",
+        "response_excerpt_route": "7E9",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1001,
+            "command": "ATSH7E1",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 979,
+            "command": "ATCRA7E9",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "40": {
+        "source_session_pk": 1,
+        "source_record_pk": 25,
+        "timestamp_utc": "2024-12-12T03:55:48.241412+00:00",
+        "response": "7E9064140C0000000",
+        "command": "0140",
+        "source_command_id": 24,
+        "full_response_hex": "37453830363431343046454430383431310D37453930363431343043303030303030300D",
+        "full_response_ascii": "7E8064140FED08411\r7E9064140C0000000\r",
+        "response_excerpt_route": "7E9",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "41": {
+        "source_session_pk": 1,
+        "source_record_pk": 1070,
+        "timestamp_utc": "2024-12-12T03:57:02.822263+00:00",
+        "response": "7E906414100040000",
+        "command": "0141",
+        "source_command_id": 1128,
+        "full_response_hex": "37453930363431343130303034303030300D",
+        "full_response_ascii": "7E906414100040000\r",
+        "response_excerpt_route": "7E9",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 1081,
+            "command": "ATSH7E1",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 1088,
+            "command": "ATCRA7E9",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      },
+      "42": {
+        "source_session_pk": 1,
+        "source_record_pk": 105,
+        "timestamp_utc": "2024-12-12T03:56:01.757368+00:00",
+        "response": "7E90441423802",
+        "command": "0142",
+        "source_command_id": 162,
+        "full_response_hex": "374539303434313432333830320D",
+        "full_response_ascii": "7E90441423802\r",
+        "response_excerpt_route": "7E9",
+        "adapter_setup_before_record": {
+          "ATH": {
+            "record_pk": 46,
+            "command": "ATH1",
+            "response_hex": "4F4B0D"
+          },
+          "ATSP": {
+            "record_pk": 28,
+            "command": "ATSP6",
+            "response_hex": "4F4B0D"
+          },
+          "ATSH": {
+            "record_pk": 150,
+            "command": "ATSH7E1",
+            "response_hex": "4F4B0D"
+          },
+          "ATCRA": {
+            "record_pk": 112,
+            "command": "ATCRA7E9",
+            "response_hex": "4F4B0D"
+          },
+          "ATFCSM": {
+            "record_pk": 27,
+            "command": "ATFCSM0",
+            "response_hex": "4F4B0D"
+          }
+        },
+        "routing_note": "The recorded response CAN ID identifies the ECU. Adapter header/receive filter state is captured above; absent ATSH/ATCRA means the functional/default state after ATSP6, not a verified physical request route."
+      }
+    }
+  },
+  "method": {
+    "source_scope": "All 3,~000 original Sidecar sessions with VIN exactly matching the confirmed 2019 target session 5399; 10th VIN character K, VIN withheld. Includes historical sessions, not all scanlog vehicles.",
+    "query": "Read-only join of ZCOMMANDRESPONSE to ZSESSION on ZSESSION; exact VIN match; ZCOMMAND GLOB 01[0-9A-F][0-9A-F]; positive only when response includes matching 41xx on 7E8 or 7E9 CAN ID.",
+    "service01_request_rows_examined": 13492121,
+    "sample_policy": "First observed positive per route and PID in source scan order; raw response retained with command sequence, PK, timestamp and preceding adapter setup. Bitmap support and positive response are distinct evidence."
+  },
+  "configured_routes": {
+    "7E8": {
+      "request_header": "7DF",
+      "response_filter": "7E8",
+      "basis": "Positive data samples have ATSH7DF preceding the reply; bitmap discovery was functional/default."
+    },
+    "7E9": {
+      "request_header": "7E1",
+      "response_filter": "7E9",
+      "basis": "Positive data samples have ATSH7E1 and ATCRA7E9 preceding the reply; support page samples were initially functional/default."
+    }
+  },
+  "polling_intervals_seconds": {
+    "dynamic": 0.25,
+    "short": 1,
+    "thermal": 2,
+    "medium_and_status": 10,
+    "slow": 60,
+    "support_pages": 3600
+  },
+  "interpretation_limits": "Supported bitmap is ECU advertisement, not proof of a positive per-PID payload. 7E8 0141 and 0183 lack captured positive payloads and are parked as debug discovery. Configured intervals are requests, not measured achieved vehicle cadence. Local SAEJ1979 decoder meanings are reused without independent calibration of every signal."
+}

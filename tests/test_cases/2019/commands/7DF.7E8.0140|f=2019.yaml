@@ -1,0 +1,5 @@
+command_id: 7DF.7E8.0140|f=2019
+test_cases:
+- response: 7E8064140FED08411
+  expected_values:
+    4SERIES_S01_7E8_40_BITMAP: 4275078161.0

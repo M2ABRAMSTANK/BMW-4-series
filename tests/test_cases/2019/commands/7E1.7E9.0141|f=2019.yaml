@@ -1,0 +1,27 @@
+command_id: 7E1.7E9.0141|f=2019
+test_cases:
+- response: 7E906414100040000
+  expected_values:
+    CCM_CMPL_7E9: 0
+    FUEL_CMPL_7E9: 0
+    MIS_CMPL_7E9: 0
+    CCM_ENA_7E9: 1.0
+    FUEL_ENA_7E9: 0
+    MIS_ENA_7E9: 0
+    EGR_ENA_7E9: 0
+    HTR_ENA_7E9: 0
+    O2S_ENA_7E9: 0
+    ACRF_ENA_7E9: 0
+    AIR_ENA_7E9: 0
+    EVAP_ENA_7E9: 0
+    HCAT_ENA_7E9: 0
+    CAT_ENA_7E9: 0
+    EGR_CMPL_7E9: 0
+    HTR_CMPL_7E9: 0
+    O2S_CMPL_7E9: 0
+    ACRFCMPL_7E9: 0
+    AIR_CMPL_7E9: 0
+    EVAPCMPL_7E9: 0
+    HCATCMPL_7E9: 0
+    CAT_CMPL_7E9: 0
+    CIM_SUP_FLAG_7E9: SPARK

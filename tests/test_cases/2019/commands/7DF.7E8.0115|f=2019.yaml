@@ -1,0 +1,6 @@
+command_id: 7DF.7E8.0115|f=2019
+test_cases:
+- response: 7E80441159FFF
+  expected_values:
+    O2S12: 0.795
+    SHRTFT11: 71.21875

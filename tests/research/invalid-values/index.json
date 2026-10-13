@@ -135,6 +135,105 @@
       "evidence_status": "empirically_supported_unavailable_value",
       "observed_raw_code": "0000",
       "review_note": "5 zero readings in 4 independent sessions among 1135 positives; first positive in each, paired with catalyst 08B7; two sessions recover near lambda 1. Unsigned /4096 means this lower bound excludes exactly zero. Sensor position and underlying readiness cause remain unverified."
+    },
+    {
+      "command_key": "7DF|7E8|010D",
+      "signal_id": "VSS",
+      "configured_bounds": {
+        "nullmax": 255
+      },
+      "unit": "kilometersPerHour",
+      "evidence_status": "shared_sae_definition",
+      "observed_raw_code": null,
+      "review_note": "Inherited unchanged from the installed SAEJ1979 definition; no independent BMW sentinel calibration is claimed."
+    },
+    {
+      "command_key": "7DF|7E8|012F",
+      "signal_id": "FLI",
+      "configured_bounds": {
+        "nullmin": 0
+      },
+      "unit": "percent",
+      "evidence_status": "shared_sae_definition",
+      "observed_raw_code": null,
+      "review_note": "Inherited unchanged from the installed SAEJ1979 definition; no independent BMW sentinel calibration is claimed."
+    },
+    {
+      "command_key": "7DF|7E8|0168",
+      "signal_id": "IAT_11",
+      "configured_bounds": {
+        "nullmin": -40
+      },
+      "unit": "celsius",
+      "evidence_status": "shared_sae_definition",
+      "observed_raw_code": null,
+      "review_note": "Inherited unchanged from the installed SAEJ1979 definition; no independent BMW sentinel calibration is claimed."
+    },
+    {
+      "command_key": "7DF|7E8|0168",
+      "signal_id": "IAT_12",
+      "configured_bounds": {
+        "nullmin": -40
+      },
+      "unit": "celsius",
+      "evidence_status": "shared_sae_definition",
+      "observed_raw_code": null,
+      "review_note": "Inherited unchanged from the installed SAEJ1979 definition; no independent BMW sentinel calibration is claimed."
+    },
+    {
+      "command_key": "7DF|7E8|0168",
+      "signal_id": "IAT_13",
+      "configured_bounds": {
+        "nullmin": -40
+      },
+      "unit": "celsius",
+      "evidence_status": "shared_sae_definition",
+      "observed_raw_code": null,
+      "review_note": "Inherited unchanged from the installed SAEJ1979 definition; no independent BMW sentinel calibration is claimed."
+    },
+    {
+      "command_key": "7DF|7E8|0168",
+      "signal_id": "IAT_21",
+      "configured_bounds": {
+        "nullmin": -40
+      },
+      "unit": "celsius",
+      "evidence_status": "shared_sae_definition",
+      "observed_raw_code": null,
+      "review_note": "Inherited unchanged from the installed SAEJ1979 definition; no independent BMW sentinel calibration is claimed."
+    },
+    {
+      "command_key": "7DF|7E8|0168",
+      "signal_id": "IAT_22",
+      "configured_bounds": {
+        "nullmin": -40
+      },
+      "unit": "celsius",
+      "evidence_status": "shared_sae_definition",
+      "observed_raw_code": null,
+      "review_note": "Inherited unchanged from the installed SAEJ1979 definition; no independent BMW sentinel calibration is claimed."
+    },
+    {
+      "command_key": "7DF|7E8|0168",
+      "signal_id": "IAT_23",
+      "configured_bounds": {
+        "nullmin": -40
+      },
+      "unit": "celsius",
+      "evidence_status": "shared_sae_definition",
+      "observed_raw_code": null,
+      "review_note": "Inherited unchanged from the installed SAEJ1979 definition; no independent BMW sentinel calibration is claimed."
+    },
+    {
+      "command_key": "7E1|7E9|010D",
+      "signal_id": "VSS_7E9",
+      "configured_bounds": {
+        "nullmax": 255
+      },
+      "unit": "kilometersPerHour",
+      "evidence_status": "shared_sae_definition",
+      "observed_raw_code": null,
+      "review_note": "Inherited unchanged from the installed SAEJ1979 definition; no independent BMW sentinel calibration is claimed."
     }
   ],
   "evidence_files": [

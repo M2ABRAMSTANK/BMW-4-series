@@ -1,0 +1,6 @@
+command_id: 7DF.7E8.0103|f=2019
+test_cases:
+- response: 7E80441030200
+  expected_values:
+    FUELSYS1: CL
+    FUELSYS2: 'OFF'

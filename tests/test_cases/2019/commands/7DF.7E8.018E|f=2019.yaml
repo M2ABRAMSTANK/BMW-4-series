@@ -1,0 +1,5 @@
+command_id: 7DF.7E8.018E|f=2019
+test_cases:
+- response: 7E803418E86
+  expected_values:
+    TQ_FR: 9.0

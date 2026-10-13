@@ -1,0 +1,5 @@
+command_id: 7DF.7E8.0110|f=2019
+test_cases:
+- response: 7E80441100142
+  expected_values:
+    MAF: 3.22

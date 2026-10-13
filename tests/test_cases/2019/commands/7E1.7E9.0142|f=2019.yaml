@@ -1,0 +1,5 @@
+command_id: 7E1.7E9.0142|f=2019
+test_cases:
+- response: 7E90441423802
+  expected_values:
+    VPWR_7E9: 14.338
