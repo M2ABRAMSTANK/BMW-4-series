@@ -2,76 +2,109 @@
 
 This repository contains signal set configurations for the BMW 4 Series, organized by model year and version. The files are structured to allow for easy differentiation between model generations and other vehicle parameters, ensuring accurate signal mapping for each version of the BMW 4 Series.
 
-The [next-session handoff](HANDOFF.md) records the scanlog cutoff and the plan to
-measure testing headroom. The testing allowance is **400 requests/minute**.
+The [BMW PID research handoff](handoffs/bmw-pid-research/HANDOFF.md) records the
+current evidence and local worktree. The shared scanning budget is approximately
+**700 requests/minute**, including candidate, reference, and other app reads.
 
-## Polling convention
+## Manual testing groups
 
-Signal descriptions begin with `[Polling: <tier>]`. This is a local documentation
-convention, not an OBDb schema extension. The supported command-level `freq`
-field sets the requested interval in seconds; the prefix explains its purpose.
+All **67 testing groups / 417 candidate requests** are available together for
+manual selection on the 2019 car. In the signal picker, look under
+**Battery → Testing → TG0_1**, TG0_2, etc. Signal names and group names retain the
+original `[TG0.1]` notation; underscores in folder names prevent the dot from
+creating another folder level. Each native `signalGroups` entry includes its
+candidate signals and relevant reference signals, so adding the group includes
+RPM, speed, engine load, fuel rate, fuel level, coolant/oil temperature, and
+control-module voltage. References can belong to multiple groups without
+creating duplicate signal or command definitions.
 
-| Tier | Interval | Purpose | Example commands |
-| --- | ---: | --- | --- |
-| Operational | 0.25 s | Responsive driving measurements | RPM 4807, speed 4AB1, wheel speeds DBE4 |
-| Engine control | 1 s | Engine response under changing load | Boost 4205/4AB0, fuel rail pressure 56D7, lambda 5889 |
-| Short-term trends | 5 s | Electrical and intake trends | IBS voltage 5853, intake temperature 580F |
-| Thermal condition | 15 s | Warm-up and sustained temperatures | Coolant 4300/5805, oil 4408/5822, transmission DA12 |
-| Health and environment | 60 s | Periodic condition and environmental readings | TPMS DC98–DC9B, barometric pressure 4201 |
-| Cumulative history | 300 s | Accumulated totals | Odometers D10D, Drive time DA37 |
+The 64 existing TG0–TG16 groups retain their candidate membership. TG17.1/17.2
+add the nine existing experimental readings; TG18.1 adds the two bitmap-advertised
+but uncaptured service 01 reads, 0141 and 0183. All `dbg` and `dbgfilter` fields
+are removed. Existing raw-byte views stay raw: availability does not certify a
+proposed interpretation. The 583 commands previously rejected by the car remain
+excluded for 2019 and are filed under Battery → Testing → Unavailable on 2019
+for research on other years. Known ordinary signals retain their normal paths;
+reference membership makes them available when adding testing groups.
 
-All signals returned by one command share that command's interval and prefix,
-including hidden fields. Classify by the measurement's use, not only its module.
-These are ordinary-use defaults, not guarantees of achieved cadence or sensor
-update rate. Existing duplicate sources retain the tier for their measurement;
-selecting a preferred source can be a separate client/profile optimization.
+Count **unique requests**, not signals or raw bytes. One request returning 210
+byte views still consumes one request in this model. At the assumed shared
+throughput, each selected request receives `700 / N / 60` updates/second, where
+`N` includes all selected groups, reference reads, and any additional app reads.
+An overlapping request counts once. Individual groups including references
+contain 9–19 requests (approximately 1.30–0.61 Hz each). TG0.1 contains 18 requests:
+8 candidates and 10 references, approximately **0.648 Hz / 1.543 seconds each**.
+Extra dashboard or background reads increase N and lower every request's share.
+Long replies, route changes, setup, retries, and diagnostic-session keepalives
+can reduce actual throughput; these figures are estimates, not measured cadence.
 
-The 380 existing staged research commands use
-`[Polling: Unclassified; research override]`. All retain `dbg: true`, including
-the selected TG0.1 wave, with their existing 1-, 2-, or 10-second requested
-intervals, command membership, and availability filters. These are research
-scheduling choices, not measured sensor update rates. Wave rotation must retain
-debug status on the selected commands; the existing selector keeps the parked
-waves excluded by their year filters. The **400 requests/minute testing budget**
-includes the selected staged wave and other enabled experimental commands, and
-excludes regular polling. A regular command's debug coverage on other years
-retains its ordinary tier interval; this research budget is calculated for the
-observed 2019 vehicle.
+There is no planned tier schedule. The schema requires a positive `freq`, so
+all definitions use `0.01` seconds as a ready-to-poll minimum. It is not a
+100-Hz target and does not enforce the 700/minute budget. The app must poll only
+the manually selected reads and share its available throughput. Making a group
+visible does not itself select it. App picker behavior and actual throughput
+still need an on-car check.
 
-New reviewed PID candidates use the ordinary polling tier appropriate to their
-intended use. Their byte-level research views are grouped under
-`OBD.Testing.<category>`, and candidates also enter staged debug discovery waves
-to capture complete responses. The current implementation adds 26 read requests
-and 339 raw research signals:
-21 shared-function reads, three EGS adaptation reads, FEM DAD6 terminal voltage,
-and the lower-confidence DME F150 lead. Their intervals follow the measurement
-use: temperature 15 s, ambient 60 s, HVAC/body states 5 s, trip/history 300 s,
-range 60 s, steering/GPS/wheel/pedal 0.25 s, IBS/FEM 5 s, EGS adaptations 300 s,
-and F150 60 s. D12F accounts for 210 raw byte views for a long-response
-trip-history hypothesis. Their source labels and routes remain hypotheses until
-target evidence supports them.
+Use the read-only helper from the workspace root:
 
-When editing a polling tier, update both `freq` and every signal description in
-that command. The tests check that tier labels match the configured interval.
-No new signal-set fields are introduced.
+```sh
+python3 repos/BMW-4-series--research-integration/scripts/staging.py
+python3 repos/BMW-4-series--research-integration/scripts/staging.py TG0.1 TG16.1
+python3 repos/BMW-4-series--research-integration/scripts/staging.py TG0.1 --extra '7DF||010B' --background-count 3
+bash scripts/test-repo.sh BMW-4-series--research-integration
+```
+
+`--extra` names additional requests and deduplicates them against the selected
+groups. `--background-count` accounts for further distinct reads not already
+named. The helper cannot inspect the app's selection. It no longer rewrites year
+filters or rotates one active group. The [manifest](tests/research/staging-groups.json)
+records full group membership, references, and estimates. Historical candidate
+intervals and source tier labels remain there as provenance only.
+
+### New scanlog results: sessions 5421–5444
+
+The [bounded review](tests/research/sessions-5421-5444-review.json) covers all
+18 sessions in that range with the established car's VIN, containing 59,264
+service 01/22 requests. Six VIN-less empty sessions are excluded. Adapter route
+changes were reconstructed chronologically, and single-frame padding was
+trimmed to the declared PDU length before interpreting payloads.
+
+| TG0.1 DID | Proposed interpretation (unverified) | Positive replies | Distinct payloads |
+| --- | --- | ---: | ---: |
+| 4204 | Ambient temperature | 132 | 13 |
+| 4310 | Coolant target | 132 | 3 |
+| 4402 | Oil temperature after filter | 132 | 32 |
+| 4409 | Oil level | 132 | 3 |
+| 4421 | Oil-pressure control P component | 161 | 134 |
+| 4422 | Oil-pressure control I component | 161 | 157 |
+| 4423 | Oil-pressure control D component | 161 | 94 |
+| 4425 | Sump oil temperature | 132 | 60 |
+
+These eight requests all returned two-byte payloads and no negative replies on
+the configured route in this review. Eight new real-response fixtures preserve
+the raw byte extraction. This confirms response support on this car and provides
+changing values for research; it does not validate the proposed physical scales.
+No decoder promotion is made, including 4402.
+
+**None of the 26 newest external discovery requests was sent on its configured
+route in these sessions.** Their model support remains untested, not rejected.
+Likewise, there are no newly captured 7DF/7E8 0141 or 0183 reads in this range.
+TG10–TG16 and TG18.1 are now visible for collecting that missing evidence.
+
+Session-wide service 01/22 throughput varies substantially: approximately
+812/minute in 5441, 303/minute in 5442, and 477/minute in 5444, including startup.
+The 700/minute assumption is the user's planning budget, not a guaranteed rate
+established by these recordings.
 
 ### 2019 service 01 coverage
 
-The target car's `7E8` support bitmaps advertise 47 data PIDs; 45 have captured
-positive replies. The `7E9` bitmaps advertise nine data PIDs, all with positive
-replies. The vehicle signal set defines these through the observed functional
-`7DF`/`7E8` and physical `7E1`/`7E9` routes, plus nine support-page reads.
-`7E8` PIDs `0141` and `0183` are bitmap-advertised without a positive payload;
-both remain parked for debug discovery. The 63 positive-response fixtures and
-[source provenance](tests/research/service01-2019-provenance.json) keep this
-distinction visible.
-
-Each service 01 command uses the polling tier in the table above. Examples are
-RPM/speed/throttle at Operational, engine load and fuel rate at Engine control,
-intake temperature and control-module voltage at Short-term trends, coolant and
-oil temperature at Thermal condition, fuel level and support bitmaps at Health
-and environment, and odometer/MIL distance at Cumulative history. These are
-requested intervals; achieved vehicle cadence was not measured.
+The target car's 7E8 support bitmaps advertise 47 data PIDs; 45 have captured
+positive replies. The 7E9 bitmaps advertise nine data PIDs, all with positive
+replies. The signal set defines these through observed functional 7DF/7E8 and
+physical 7E1/7E9 routes, plus nine support-page reads. The 63 earlier fixtures and
+[source provenance](tests/research/service01-2019-provenance.json) retain the
+support distinction. TG18.1 exposes bitmap-advertised 7E8 0141 and 0183 for
+manual discovery; no positive payload has been claimed.
 
 ## Scanlog validation
 
@@ -100,19 +133,15 @@ Thirty-four commands are now regular for **2019**: 18 reviewed DME commands,
 ten corroborated engine/temperature/voltage candidates, four TPMS commands,
 transmission temperature DA12, and the DA37 Drive counter. This includes the
 five previously disabled duplicate measurements. Availability filters are
-preserved; other allowed years remain in debug mode. Unknown TPMS raw fields
+preserved. Debug gating has since been removed by the manual testing policy above. Unknown TPMS raw fields
 and the unconfirmed DA37 Sport/Manual fields remain hidden research signals.
 
-This follows the live upstream [BMW 4 Series](https://github.com/OBDb/BMW-4-series/blob/main/signalsets/v3/default.json)
-convention: omit unconditional `dbg`, and use `dbgfilter` for unverified years.
-The [OBDb schema](https://github.com/OBDb/.schemas/blob/main/signals.json) supports
-per-signal `hidden` fields. Upstream conventions were checked on October 7,
-2026. The graduation gate is a project review judgment, not an OBDb certification
-or independent calibration of every sensor. Source definitions, observed ranges,
-paired measurements where available, and regression fixtures support this decision.
+The earlier graduation review was a project judgment, not independent
+calibration of every sensor. Source definitions, observed ranges, paired
+measurements where available, and regression fixtures support that review.
 The audit's `graduation` section lists all commands and remaining limitations.
 
-Five existing regular commands retain their prior year-specific status.
+Five existing regular commands retain their prior availability filters.
 Nine available commands retain experimental decoding: 442C, 4683, 4A2E, 558E,
 558F, 582F, 586F, DA25, and DA2E. The original 380 responding candidates are organized into staged research waves
 pending decoding evidence. Oil-pressure 586F remains raw; DA25 has an
@@ -147,57 +176,15 @@ separate from numeric sentinels. Zero speed is valid; DA25 raw `30` and DA2E sta
 full range. Add a new null bound only with supported interpretation and captured
 regression cases, including valid neighboring or recovered readings.
 
-### Staged research polling
+### Raw research views
 
-The 380 existing unresolved positive-response commands are split into **57 waves of at
-most eight commands**, preserving the old TG0–TG8 families; TG9 holds three
-previously ungrouped candidates. Seven new discovery waves add 26 reads, for a
-total of **406 staged commands across 64 waves**, exposing 1,023 raw research
-signals including the 339 new byte views. **All 406 staged
-commands retain `dbg: true`**; TG0.1 remains selected. The new groups are TG10.1
-cluster (7), TG11.1 climate (7), TG12.1 body/FEM (3), TG13.1 steering (1),
-TG14.1 NBT (2), TG15.1 pedal/IBS/F150 (3), and TG16.1 EGS (3). The seven new
-waves and other parked waves use the existing `filter.years: [9999]` convention.
-The selector must preserve debug status when rotating the selected wave.
-Graduated commands, nine existing experimental commands, and the 583 commands
-rejected for 2019 keep their separate availability settings. Existing staged
-commands retain their membership, filters, and 1/2/10-second intervals.
-
-Requested polling intervals are 1 second for dynamic values, 2 seconds for
-temperature/voltage/level candidates, and 10 seconds for slower counters and
-adaptations. These are research scheduling choices, not evidence of a sensor's
-update rate. Each wave fits a **400-request/minute testing-only budget**, excluding regular
-polling and reserving approximately **24.02 requests/minute** for the nine
-existing experimental commands. TG0.1 requests **330 polls/minute**, for
-approximately **354.02 testing requests/minute** combined. The busiest wave
-plus existing experimental polling totals approximately 396.02 requests/minute. Achieved cadence depends on
-adapter throughput and other enabled commands and must be checked in the next
-scanlog. The client must select the intended wave and collect its debug
-commands; configured intervals alone do not guarantee achieved cadence.
-
-TG0.1 contains 4204 (ambient temperature candidate), 4310 (coolant target),
-4402 (oil temperature), 4409 (oil level), and 4425 (sump temperature) at
-2-second intervals, plus 4421/4422/4423 (oil-pressure regulator components)
-at 1-second intervals. These labels remain hypotheses. Remaining TG0 candidates continue in subsequent waves.
-The visible research fields expose each returned byte without conversion or
-clamping. Candidate formulas and labels are preserved in
-[the staging manifest](tests/research/staging-groups.json), outside the live
-signal definitions because the tooling rejects overlapping raw/decoded fields.
-Raw-byte regression tests cover every wave, including parked waves.
-
-From the workspace root, using the environment with OBDb schema tooling:
-
-```sh
-.venv/bin/python BMW-4-series/scripts/staging.py          # List waves; * marks active
-.venv/bin/python BMW-4-series/scripts/staging.py TG0.2    # Park the old wave and enable the next
-.venv/bin/python BMW-4-series/scripts/staging.py none     # Park every research wave
-bash scripts/test-repo.sh BMW-4-series
-```
-
-The selector updates availability, audit command IDs, and the active-wave
-manifest together and rejects any wave over the testing budget before writing.
-It does not change regular or rejected commands. Wave
-rotation is manual; collect useful paired recordings before selecting another.
+The 406 original staged requests expose 1,023 raw research signals, including
+339 byte views from 26 external discovery reads. D12F alone contributes 210 raw
+views for a long-response trip-history hypothesis. These are byte views, not
+independently identified sensors. Candidate formulas and labels remain in the
+[manifest](tests/research/staging-groups.json), outside live signal definitions
+because the tooling rejects overlapping raw/decoded fields. Raw-byte regression
+tests continue to cover the original 380 recorded candidates.
 
 ### Building stronger decoding evidence
 
@@ -224,18 +211,11 @@ Repeated constant values cannot distinguish competing conversions.
 Tests establish reproducible decoding; they cannot establish a physical meaning
 when expected values were derived only from the same unverified formula.
 
-The 583 rejected commands are excluded for model year 2019. Their `filter` and
-`dbgfilter` both use `{"to": 2018, "from": 2020}`, admitting earlier and later
-years for debug discovery. This follows the availability/debug-filter pattern
-in [Porsche 911](https://github.com/OBDb/Porsche-911/blob/main/signalsets/v3/default.json)
-and [Subaru Crosstrek](https://github.com/OBDb/Subaru-Crosstrek/blob/main/signalsets/v3/default.json).
-There is no unconditional `dbg` override on these commands, so year-specific
-debug metadata can evolve with collected evidence. This prepares the repository
-for discovery; the external collection/update service is not tested locally.
+The 583 rejected commands retain `filter: {"to": 2018, "from": 2020}`.
+Removing debug metadata does not enable them on 2019. The external collection
+service and live app loading are not exercised by the offline tests.
 
-Run the vehicle tests through `bash scripts/test-repo.sh BMW-4-series` from the
-workspace root, or `python -m pytest tests` in a standalone checkout with the
-OBDb schema tools installed. Tests do not require the private scanlog database.
+Tests do not require access to the private scanlog database.
 
 ## Contributing
 

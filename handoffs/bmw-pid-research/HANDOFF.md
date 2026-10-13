@@ -1,12 +1,95 @@
 # Project: BMW PID research
 
 - Project ID: `BMW-4-series/bmw-pid-research`
-- Status: Implementation integrated and validated; fork publication blocked by network access.
-- Owner/session: Codex coordinator, resumed October 13, 2026; Luna debug-policy audit and Sol service 01 implementation.
+- Status: New scanlog review and manual testing groups implemented locally; 1,896 tests pass with one known expected failure. Commit and fork publication authorized in the October 13 full-permissions resume.
+- Owner/session: Codex primary agent, resumed October 13, 2026 for sessions 5421–5444 and manual testing groups; previous implementation sessions complete.
 - Repository: `M2ABRAMSTANK/BMW-4-series`; primary `/Users/rowdyer/Coding/OBDb/repos/BMW-4-series`.
 - Branch: `project/bmw-430i-research-integration`.
 - Worktree: `/Users/rowdyer/Coding/OBDb/repos/BMW-4-series--research-integration`.
 - Updated: October 13, 2026.
+
+## Current resume: scanlogs and manual testing groups
+
+This section is the current policy and supersedes all debug, parking, tiered
+interval, and 400/minute instructions in the historical record below. User
+instructions on October 13 explicitly remove debug, use approximately 700
+requests/minute including all other reads, and make every group visible for
+manual selection under Battery. The user confirmed “Show all groups for manual
+selection.” This existing project worktree was clean at resume; no other editor
+was recorded. Its dedicated branch was reused. Primary checkout changes and
+other worktrees remain untouched.
+
+### Evidence
+
+- Read-only review of canonical `scanlogs/originals/sidecar.scanlogs`, sessions
+  5421–5444; VIN equality to established session 5420 selected 18 sessions and
+  excluded six empty VIN-less sessions. No VIN is exported in new artifacts.
+- 59,264 service 01/22 reads reviewed with chronological adapter state. Routed
+  positive/negative/no-data captures, exact raw hex, original session/record/
+  command IDs, timestamps, setup state and setup record IDs are retained in
+  [the report](../../tests/research/sessions-5421-5444-review.json).
+- All eight TG0.1 commands have positive two-byte payloads, no negative replies,
+  and multiple distinct payloads in the review. 4204/4310/4402/4409/4425 each
+  have 132 positives; 4421/4422/4423 each have 161. Eight real raw-byte fixtures
+  were added. Positive replies confirm response support, not meanings/scaling.
+- None of the 26 latest external requests was observed on its configured route;
+  their support remains untested. No new 7DF/7E8 0141 or 0183 capture was found.
+  External acquisition provenance remains unobserved and source hypotheses are
+  preserved. No 4402 promotion or other physical decoder change was made.
+- Latest session-wide service 01/22 rates: 5441 about 812/min, 5442 about 303/min,
+  5444 about 477/min. These include startup and do not establish a 700/min cap.
+
+### Configuration and selection
+
+- Removed every `dbg` and `dbgfilter` field. All 1,102 command identities/routes,
+  1,855 signal IDs/scalings/hidden states, and diagnostic session parameters are
+  unchanged. The 583 known rejected commands retain their 2019 exclusions.
+- All 406 original staged requests are available for 2019. Preserved 64 group
+  memberships; added TG17.1/17.2 for nine other experimental requests and
+  TG18.1 for two uncaptured service 01 reads: 67 groups, 417 candidates total.
+- Candidate folders are `Battery.Testing.TG0_1`, etc.; display names retain
+  `[TG0.1]`. Native `signalGroups` regex membership includes candidate signals
+  and reference reads without duplicating command definitions. Known rejected
+  signals have an “Unavailable on 2019” folder and remain unavailable for 2019.
+- Every group includes eight common reference reads (RPM, speed, load, fuel
+  rate, fuel level, coolant, oil temperature, module voltage), with additional
+  references where relevant. Unique requests count once across overlapping
+  groups. Individual groups contain 9–19 total requests; TG0.1 is 18 requests,
+  about 0.648 Hz each at the assumed 700/minute throughput.
+- No tier schedule is used. Because the schema requires a positive `freq`,
+  definitions use 0.01 seconds as a nonbinding ready-to-poll minimum, not a
+  100-Hz target or runtime rate limiter. Client selection/throughput governs
+  actual scans. Additional background reads must be counted too.
+- `scripts/staging.py` is now read-only. It lists groups or estimates combined
+  selections, deduplicating shared references. `--extra KEY` adds other named
+  reads; `--background-count N` accounts for additional distinct unnamed reads.
+  It no longer toggles availability, writes files, or parks groups.
+
+### Validation and next actions
+
+`bash scripts/test-repo.sh BMW-4-series--research-integration --maxfail=5`
+passed **1,896 tests, 1 xfailed** in 1.99 seconds (log
+`/private/tmp/bmw-manual-final.log`). The existing expected failure covers
+single-frame CAN padding in external schema tooling. Native group regex matches,
+reference inclusion, budget deduplication, additional background traffic,
+2019 exclusions, capture fixtures, formatting and schema validation pass.
+`git diff --check` passes. Source database was read only.
+
+Next: load this local signal set in the app, manually select a group plus any
+additional dashboard reads, and record target replies for TG10–TG16 and TG18.1.
+Verify app picker behavior and actual throughput; offline tests cannot do this.
+Do not treat all visible groups as simultaneously selected. Changes remain in
+`/Users/rowdyer/Coding/OBDb/repos/BMW-4-series--research-integration` on
+`project/bmw-430i-research-integration`. The October 13 full-permissions resume
+authorized committing these changes and publishing to `M2ABRAMSTANK/BMW-4-series`
+`main`. Fetch verified remote main at `f3349d8` before publication, matching the
+local parent commit. Final publication verification is recorded in the workspace
+`handoffs/github-write-approvals/HANDOFF.md`.
+
+## Historical implementation record
+
+The sections below preserve provenance through the service 01 integration.
+Their old policy instructions are historical and superseded by the section above.
 
 ## Objective and scope
 

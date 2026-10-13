@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
-"""List or select one 2019 BMW research wave; requires the OBDb schema tooling."""
+"""List manual BMW testing groups or estimate a combined selection's shared budget.
+
+Read-only: selection happens in the app. No group is hidden or activated here.
+"""
 import argparse
 import json
 from pathlib import Path
-import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / 'tests' / 'schemas' / 'python'))
-from can.signals import Command, Filter
-from json_formatter import format_json_data
 
 
 def command_key(command):
@@ -16,90 +15,59 @@ def command_key(command):
                      ''.join(k + v for k, v in command['cmd'].items())))
 
 
-def select_group(root, selected):
-    manifest_path = root / 'tests/research/staging-groups.json'
-    manifest = json.loads(manifest_path.read_text())
-    if selected != 'none' and selected not in {g['id'] for g in manifest['groups']}:
-        raise ValueError(f'Unknown testing group: {selected}')
-    for group in manifest['groups']:
-        rate = sum(60 / member['interval_seconds'] for member in group['commands'])
-        if rate + manifest['background_testing_requests_per_minute'] > manifest['testing_budget_requests_per_minute']:
-            raise ValueError(f'Testing group {group["id"]} exceeds the request budget')
-    definition_path = root / 'signalsets/v3/default.json'
-    data = json.loads(definition_path.read_text())
-    definitions = {command_key(c): c for c in data['commands']}
-    managed = {m['key'] for g in manifest['groups'] for m in g['commands']}
-    background = 0
-    for key, definition in definitions.items():
-        command = Command.from_json(definition)
-        if key in managed or (command.filter and not command.filter.matches(manifest['model_year'])):
-            continue
-        debug = definition.get('dbg') or ('dbgfilter' in definition and
-            Filter.from_json(definition['dbgfilter']).matches(manifest['model_year']))
-        if debug:
-            background += 60 / definition['freq']
-    for group in manifest['groups']:
-        rate = sum(60 / member['interval_seconds'] for member in group['commands'])
-        if rate + background > manifest['testing_budget_requests_per_minute']:
-            raise ValueError(f'Testing group {group["id"]} exceeds the request budget with current background testing')
-    manifest['background_testing_requests_per_minute'] = background
-    manifest['wave_budget_requests_per_minute'] = manifest['testing_budget_requests_per_minute'] - background
-    audit_path = root / 'tests/research/scanlog-audit.json'
-    audit = json.loads(audit_path.read_text())
-    entries = {e['key']: e for e in audit['entries']}
-    # Unobserved discovery requests have no scanlog sample. Keep their mutable
-    # command IDs and availability separate from the historical capture audit.
-    external_path = root / 'tests/research/external-research.json'
-    external = json.loads(external_path.read_text()) if external_path.exists() else None
-    discoveries = {e['key']: e for e in external['acquisitions']} if external else {}
-    if set(entries) & set(discoveries):
-        raise ValueError('Discovery requests must not duplicate recorded commands')
-    for group in manifest['groups']:
-        active = group['id'] == selected
-        for member in group['commands']:
-            command = definitions[member['key']]
-            command['filter'] = {'years': [manifest['model_year'] if active else 9999]}
-            # Debug status is independent of availability: even the selected
-            # wave remains debug-only. Requested intervals are preserved.
-            command['dbg'] = True
-            command.pop('dbgfilter', None)
-            command['freq'] = member['interval_seconds']
-            discovery = member['key'] in discoveries
-            entry = discoveries[member['key']] if discovery else entries[member['key']]
-            entry['command_id'] = Command.from_json(command).id
-            if discovery:
-                entry['disposition'] = 'active_discovery_2019' if active else 'parked_discovery_wave'
-            else:
-                entry['disposition'] = 'active_research_2019' if active else 'parked_testing_wave'
-    manifest['active_group'] = None if selected == 'none' else selected
-    # Prepare all output before touching any file. Only managed wave definitions change.
-    formatted = format_json_data(data)
-    metadata = {k: v for k, v in audit.items() if k != 'entries'}
-    audit_text = (json.dumps(metadata, indent=2)[:-2] + ',\n  "entries": [\n' +
-                  ',\n'.join('    ' + json.dumps(e, separators=(',', ':'))
-                             for e in audit['entries']) + '\n  ]\n}\n')
-    external_text = json.dumps(external, indent=2, ensure_ascii=False) + '\n' if external else None
-    definition_path.write_text(formatted.rstrip() + '\n')
-    manifest_path.write_text(json.dumps(manifest, indent=2) + '\n')
-    audit_path.write_text(audit_text)
-    if external_text is not None:
-        external_path.write_text(external_text)
+def estimate(manifest, selected, *, extra_keys=(), background_count=0):
+    """Count shared requests once; background_count is additional unique requests.
+
+    Byte views and signal count do not consume separate requests. Additional
+    app reads must be supplied explicitly; the helper cannot inspect the app.
+    """
+    if not isinstance(background_count, int) or background_count < 0:
+        raise ValueError('Background request count must be a nonnegative integer')
+    groups = {g['id']: g for g in manifest['groups']}
+    unknown = set(selected) - groups.keys()
+    if unknown:
+        raise ValueError('Unknown testing groups: ' + ', '.join(sorted(unknown)))
+    keys = set(extra_keys)
+    for identifier in selected:
+        group = groups[identifier]
+        keys.update(m['key'] for m in group['commands'])
+        keys.update(group['reference_command_keys'])
+    count = len(keys) + background_count
+    if not count:
+        raise ValueError('Select at least one request')
+    budget = manifest['testing_budget_requests_per_minute']
+    if budget <= 0:
+        raise ValueError('Request budget must be positive')
+    return {'unique_requests': count, 'known_request_keys': sorted(keys),
+            'additional_background_requests': background_count,
+            'requests_per_minute_total': budget,
+            'estimated_hz_per_request': budget / count / 60,
+            'estimated_seconds_per_request': count * 60 / budget}
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('group', nargs='?', help='Group to enable, e.g. TG0.2; "none" parks all waves')
+    parser.add_argument('groups', nargs='*', help='Groups selected together, e.g. TG0.1 TG16.1')
+    parser.add_argument('--extra', action='append', default=[], metavar='COMMAND_KEY',
+                        help='Additional selected command key; repeats/overlap count once')
+    parser.add_argument('--background-count', type=int, default=0,
+                        help='Additional distinct app requests not already named in the selection')
     args = parser.parse_args()
-    if args.group:
-        try:
-            select_group(ROOT, args.group)
-        except ValueError as error:
-            parser.error(str(error))
     manifest = json.loads((ROOT / 'tests/research/staging-groups.json').read_text())
-    for group in manifest['groups']:
-        marker = '*' if group['id'] == manifest['active_group'] else ' '
-        rate = sum(60 / m['interval_seconds'] for m in group['commands'])
-        print(f'{marker} {group["id"]}: {len(group["commands"])} commands, {rate:g} requested polls/min')
+    try:
+        if args.groups or args.extra:
+            result = estimate(manifest, args.groups, extra_keys=args.extra,
+                              background_count=args.background_count)
+            print(json.dumps(result, indent=2))
+        else:
+            for group in manifest['groups']:
+                result = estimate(manifest, [group['id']], background_count=args.background_count)
+                print(f'{group["id"]}: {len(group["commands"])} candidates; '
+                      f'{result["unique_requests"]} total unique requests including references/background; '
+                      f'{result["estimated_hz_per_request"]:.3f} Hz each '
+                      f'({result["estimated_seconds_per_request"]:.3f} s)')
+    except ValueError as error:
+        parser.error(str(error))
 
 
 if __name__ == '__main__':

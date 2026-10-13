@@ -1,0 +1,2418 @@
+{
+  "source": "scanlogs/originals/sidecar.scanlogs",
+  "baseline_session": 5420,
+  "review_range": [
+    5421,
+    5444
+  ],
+  "vehicle": "2019 BMW 430i; VIN equality to established session 5420 checked without exporting VIN",
+  "scope_note": "Complete chronological command history in every VIN-matched session in range; only routed configured 01/22 reads classified. Positive establishes response support, not signal meaning. Single frames trimmed to declared PDU length. No source database writes.",
+  "sessions": [
+    {
+      "session_pk": 5421,
+      "started_utc": "2026-10-12T16:31:28.093119+00:00",
+      "ended_utc": "2026-10-12T17:25:28.074109+00:00",
+      "same_vehicle_as_session": 5420,
+      "duration_seconds": 3239.980989933014,
+      "all_records": 45350,
+      "pid_requests": 23579,
+      "distinct_pid_routes": 72,
+      "pid_requests_per_minute": 436.65071011087923
+    },
+    {
+      "session_pk": 5422,
+      "started_utc": "2026-10-12T21:59:40.697028+00:00",
+      "ended_utc": "2026-10-12T22:06:33.740971+00:00",
+      "same_vehicle_as_session": 5420,
+      "duration_seconds": 413.0439429283142,
+      "all_records": 4663,
+      "pid_requests": 2509,
+      "distinct_pid_routes": 71,
+      "pid_requests_per_minute": 364.4648531406426
+    },
+    {
+      "session_pk": 5423,
+      "started_utc": "2026-10-12T22:59:24.580550+00:00",
+      "ended_utc": "2026-10-12T23:00:48.052460+00:00",
+      "same_vehicle_as_session": 5420,
+      "duration_seconds": 83.47190999984741,
+      "all_records": 1786,
+      "pid_requests": 894,
+      "distinct_pid_routes": 60,
+      "pid_requests_per_minute": 642.6113886707283
+    },
+    {
+      "session_pk": 5424,
+      "started_utc": "2026-10-12T23:03:03.711921+00:00",
+      "ended_utc": "2026-10-12T23:03:21.401214+00:00",
+      "same_vehicle_as_session": 5420,
+      "duration_seconds": 17.689293026924133,
+      "all_records": 61,
+      "pid_requests": 16,
+      "distinct_pid_routes": 16,
+      "pid_requests_per_minute": 54.27011687458759
+    },
+    {
+      "session_pk": 5425,
+      "started_utc": "2026-10-12T23:03:21.401398+00:00",
+      "ended_utc": "2026-10-12T23:03:49.552672+00:00",
+      "same_vehicle_as_session": 5420,
+      "duration_seconds": 28.15127408504486,
+      "all_records": 130,
+      "pid_requests": 66,
+      "distinct_pid_routes": 61,
+      "pid_requests_per_minute": 140.6685888545172
+    },
+    {
+      "session_pk": 5426,
+      "started_utc": "2026-10-12T23:03:49.552750+00:00",
+      "ended_utc": "2026-10-12T23:04:02.052807+00:00",
+      "same_vehicle_as_session": 5420,
+      "duration_seconds": 12.500056982040405,
+      "all_records": 47,
+      "pid_requests": 15,
+      "distinct_pid_routes": 15,
+      "pid_requests_per_minute": 71.99967178494346
+    },
+    {
+      "session_pk": 5427,
+      "started_utc": "2026-10-12T23:04:08.715801+00:00",
+      "ended_utc": "2026-10-12T23:04:15.108006+00:00",
+      "same_vehicle_as_session": 5420,
+      "duration_seconds": 6.392204999923706,
+      "all_records": 45,
+      "pid_requests": 14,
+      "distinct_pid_routes": 14,
+      "pid_requests_per_minute": 131.41005333997046
+    },
+    {
+      "session_pk": 5428,
+      "started_utc": "2026-10-12T23:05:21.049421+00:00",
+      "ended_utc": "2026-10-12T23:06:05.099422+00:00",
+      "same_vehicle_as_session": 5420,
+      "duration_seconds": 44.05000102519989,
+      "all_records": 90,
+      "pid_requests": 28,
+      "distinct_pid_routes": 28,
+      "pid_requests_per_minute": 38.13847811351729
+    },
+    {
+      "session_pk": 5431,
+      "started_utc": "2026-10-12T23:06:05.099597+00:00",
+      "ended_utc": "2026-10-12T23:06:24.534684+00:00",
+      "same_vehicle_as_session": 5420,
+      "duration_seconds": 19.435086965560913,
+      "all_records": 115,
+      "pid_requests": 49,
+      "distinct_pid_routes": 48,
+      "pid_requests_per_minute": 151.2727987896168
+    },
+    {
+      "session_pk": 5434,
+      "started_utc": "2026-10-12T23:06:29.738374+00:00",
+      "ended_utc": "2026-10-12T23:06:54.560303+00:00",
+      "same_vehicle_as_session": 5420,
+      "duration_seconds": 24.82192897796631,
+      "all_records": 251,
+      "pid_requests": 133,
+      "distinct_pid_routes": 60,
+      "pid_requests_per_minute": 321.48992155620175
+    },
+    {
+      "session_pk": 5435,
+      "started_utc": "2026-10-12T23:07:56.025331+00:00",
+      "ended_utc": "2026-10-12T23:15:10.560333+00:00",
+      "same_vehicle_as_session": 5420,
+      "duration_seconds": 434.5350019931793,
+      "all_records": 3449,
+      "pid_requests": 1885,
+      "distinct_pid_routes": 69,
+      "pid_requests_per_minute": 260.27822725722626
+    },
+    {
+      "session_pk": 5436,
+      "started_utc": "2026-10-12T23:15:19.938165+00:00",
+      "ended_utc": "2026-10-12T23:16:17.732353+00:00",
+      "same_vehicle_as_session": 5420,
+      "duration_seconds": 57.794188022613525,
+      "all_records": 56,
+      "pid_requests": 16,
+      "distinct_pid_routes": 16,
+      "pid_requests_per_minute": 16.610666796190202
+    },
+    {
+      "session_pk": 5437,
+      "started_utc": "2026-10-12T23:16:18.737901+00:00",
+      "ended_utc": "2026-10-12T23:16:38.886212+00:00",
+      "same_vehicle_as_session": 5420,
+      "duration_seconds": 20.148311018943787,
+      "all_records": 160,
+      "pid_requests": 72,
+      "distinct_pid_routes": 55,
+      "pid_requests_per_minute": 214.4100314879129
+    },
+    {
+      "session_pk": 5439,
+      "started_utc": "2026-10-12T23:17:29.814867+00:00",
+      "ended_utc": "2026-10-12T23:17:52.707979+00:00",
+      "same_vehicle_as_session": 5420,
+      "duration_seconds": 22.89311194419861,
+      "all_records": 25,
+      "pid_requests": 1,
+      "distinct_pid_routes": 1,
+      "pid_requests_per_minute": 2.6208756654075036
+    },
+    {
+      "session_pk": 5440,
+      "started_utc": "2026-10-12T23:19:01.983794+00:00",
+      "ended_utc": "2026-10-12T23:25:57.451118+00:00",
+      "same_vehicle_as_session": 5420,
+      "duration_seconds": 415.4673240184784,
+      "all_records": 4972,
+      "pid_requests": 2658,
+      "distinct_pid_routes": 72,
+      "pid_requests_per_minute": 383.8569022889197
+    },
+    {
+      "session_pk": 5441,
+      "started_utc": "2026-10-13T15:17:56.382565+00:00",
+      "ended_utc": "2026-10-13T15:44:30.634183+00:00",
+      "same_vehicle_as_session": 5420,
+      "duration_seconds": 1594.251618027687,
+      "all_records": 43266,
+      "pid_requests": 21563,
+      "distinct_pid_routes": 72,
+      "pid_requests_per_minute": 811.528108467964
+    },
+    {
+      "session_pk": 5442,
+      "started_utc": "2026-10-13T17:29:05.324603+00:00",
+      "ended_utc": "2026-10-13T17:35:48.995243+00:00",
+      "same_vehicle_as_session": 5420,
+      "duration_seconds": 403.67063999176025,
+      "all_records": 4575,
+      "pid_requests": 2037,
+      "distinct_pid_routes": 52,
+      "pid_requests_per_minute": 302.7715862676928
+    },
+    {
+      "session_pk": 5444,
+      "started_utc": "2026-10-13T18:36:39.843793+00:00",
+      "ended_utc": "2026-10-13T18:44:28.787801+00:00",
+      "same_vehicle_as_session": 5420,
+      "duration_seconds": 468.94400799274445,
+      "all_records": 11455,
+      "pid_requests": 3729,
+      "distinct_pid_routes": 52,
+      "pid_requests_per_minute": 477.11453006445436
+    }
+  ],
+  "external_discovery": [
+    {
+      "key": "6F1|60|22D111",
+      "counts": {}
+    },
+    {
+      "key": "6F1|60|22D112",
+      "counts": {}
+    },
+    {
+      "key": "6F1|60|22D129",
+      "counts": {}
+    },
+    {
+      "key": "6F1|60|22D12A",
+      "counts": {}
+    },
+    {
+      "key": "6F1|60|22420C",
+      "counts": {}
+    },
+    {
+      "key": "6F1|60|22D12F",
+      "counts": {}
+    },
+    {
+      "key": "6F1|60|22D114",
+      "counts": {}
+    },
+    {
+      "key": "6F1|78|22D85C",
+      "counts": {}
+    },
+    {
+      "key": "6F1|78|22D8C5",
+      "counts": {}
+    },
+    {
+      "key": "6F1|78|22D91A",
+      "counts": {}
+    },
+    {
+      "key": "6F1|78|22D92C",
+      "counts": {}
+    },
+    {
+      "key": "6F1|78|22D930",
+      "counts": {}
+    },
+    {
+      "key": "6F1|78|22D931",
+      "counts": {}
+    },
+    {
+      "key": "6F1|78|22D96B",
+      "counts": {}
+    },
+    {
+      "key": "6F1|56|22DCDD",
+      "counts": {}
+    },
+    {
+      "key": "6F1|40|22D130",
+      "counts": {}
+    },
+    {
+      "key": "6F1|40|22DAD6",
+      "counts": {}
+    },
+    {
+      "key": "6F1|30|22DB99",
+      "counts": {}
+    },
+    {
+      "key": "6F1|63|22D030",
+      "counts": {}
+    },
+    {
+      "key": "6F1|63|22D031",
+      "counts": {}
+    },
+    {
+      "key": "6F1|12|22DE9C",
+      "counts": {}
+    },
+    {
+      "key": "6F1|12|22402B",
+      "counts": {}
+    },
+    {
+      "key": "6F1|12|22F150",
+      "counts": {}
+    },
+    {
+      "key": "6F1|18|22413A",
+      "counts": {}
+    },
+    {
+      "key": "6F1|18|224140",
+      "counts": {}
+    },
+    {
+      "key": "6F1|18|224131",
+      "counts": {}
+    }
+  ],
+  "commands": [
+    {
+      "key": "6F1|12|224204",
+      "counts": {
+        "positive": 132
+      },
+      "distinct_positive_payloads": 13,
+      "payload_byte_lengths": [
+        2
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004455,
+          "command_id": 322,
+          "timestamp_utc": "2026-10-12T16:32:04.848938+00:00",
+          "sent_command": "224204",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004524,
+            "ATFCSD": 53004262,
+            "ATSH": 53004515,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004461,
+            "ATFCSM": 53004517
+          },
+          "response_hex": "36313246313035363234323034304239420d",
+          "packet_hex": "6242040B9B"
+        }
+      }
+    },
+    {
+      "key": "6F1|12|224310",
+      "counts": {
+        "positive": 132
+      },
+      "distinct_positive_payloads": 3,
+      "payload_byte_lengths": [
+        2
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004450,
+          "command_id": 319,
+          "timestamp_utc": "2026-10-12T16:32:04.298050+00:00",
+          "sent_command": "224310",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004524,
+            "ATFCSD": 53004262,
+            "ATSH": 53004515,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004461,
+            "ATFCSM": 53004517
+          },
+          "response_hex": "36313246313035363234333130324146380d",
+          "packet_hex": "6243102AF8"
+        }
+      }
+    },
+    {
+      "key": "6F1|12|224402",
+      "counts": {
+        "positive": 132
+      },
+      "distinct_positive_payloads": 32,
+      "payload_byte_lengths": [
+        2
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004493,
+          "command_id": 325,
+          "timestamp_utc": "2026-10-12T16:32:05.425628+00:00",
+          "sent_command": "224402",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004524,
+            "ATFCSD": 53004262,
+            "ATSH": 53004515,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004461,
+            "ATFCSM": 53004517
+          },
+          "response_hex": "36313246313035363234343032303042360d",
+          "packet_hex": "62440200B6"
+        }
+      }
+    },
+    {
+      "key": "6F1|12|224409",
+      "counts": {
+        "positive": 132
+      },
+      "distinct_positive_payloads": 3,
+      "payload_byte_lengths": [
+        2
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004464,
+          "command_id": 320,
+          "timestamp_utc": "2026-10-12T16:32:04.490064+00:00",
+          "sent_command": "224409",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004524,
+            "ATFCSD": 53004262,
+            "ATSH": 53004515,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004461,
+            "ATFCSM": 53004517
+          },
+          "response_hex": "36313246313035363234343039343846340d",
+          "packet_hex": "62440948F4"
+        }
+      }
+    },
+    {
+      "key": "6F1|12|224421",
+      "counts": {
+        "positive": 161
+      },
+      "distinct_positive_payloads": 134,
+      "payload_byte_lengths": [
+        2
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004489,
+          "command_id": 324,
+          "timestamp_utc": "2026-10-12T16:32:05.233984+00:00",
+          "sent_command": "224421",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004524,
+            "ATFCSD": 53004262,
+            "ATSH": 53004515,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004461,
+            "ATFCSM": 53004517
+          },
+          "response_hex": "36313246313035363234343231464545320d",
+          "packet_hex": "624421FEE2"
+        }
+      }
+    },
+    {
+      "key": "6F1|12|224422",
+      "counts": {
+        "positive": 161
+      },
+      "distinct_positive_payloads": 157,
+      "payload_byte_lengths": [
+        2
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004428,
+          "command_id": 323,
+          "timestamp_utc": "2026-10-12T16:32:05.040402+00:00",
+          "sent_command": "224422",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004524,
+            "ATFCSD": 53004262,
+            "ATSH": 53004515,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004461,
+            "ATFCSM": 53004517
+          },
+          "response_hex": "36313246313035363234343232464231340d",
+          "packet_hex": "624422FB14"
+        }
+      }
+    },
+    {
+      "key": "6F1|12|224423",
+      "counts": {
+        "positive": 161
+      },
+      "distinct_positive_payloads": 94,
+      "payload_byte_lengths": [
+        2
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004434,
+          "command_id": 321,
+          "timestamp_utc": "2026-10-12T16:32:04.655583+00:00",
+          "sent_command": "224423",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004524,
+            "ATFCSD": 53004262,
+            "ATSH": 53004515,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004461,
+            "ATFCSM": 53004517
+          },
+          "response_hex": "36313246313035363234343233464644460d",
+          "packet_hex": "624423FFDF"
+        }
+      }
+    },
+    {
+      "key": "6F1|12|224425",
+      "counts": {
+        "positive": 132
+      },
+      "distinct_positive_payloads": 60,
+      "payload_byte_lengths": [
+        2
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004447,
+          "command_id": 317,
+          "timestamp_utc": "2026-10-12T16:32:04.049940+00:00",
+          "sent_command": "224425",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004524,
+            "ATFCSD": 53004262,
+            "ATSH": 53004515,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004461,
+            "ATFCSM": 53004517
+          },
+          "response_hex": "36313246313035363234343235303241380d",
+          "packet_hex": "62442502A8"
+        }
+      }
+    },
+    {
+      "key": "6F1|12|22442C",
+      "counts": {
+        "positive": 234
+      },
+      "distinct_positive_payloads": 23,
+      "payload_byte_lengths": [
+        1
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004215,
+          "command_id": 70,
+          "timestamp_utc": "2026-10-12T16:31:38.255466+00:00",
+          "sent_command": "22442C",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004162,
+            "ATFCSD": 53004194,
+            "ATSH": 53004171,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004146,
+            "ATFCSM": 53004180
+          },
+          "response_hex": "3631324631303436323434324335410d",
+          "packet_hex": "62442C5A"
+        }
+      }
+    },
+    {
+      "key": "6F1|12|224683",
+      "counts": {
+        "positive": 233,
+        "no_data": 1
+      },
+      "distinct_positive_payloads": 1,
+      "payload_byte_lengths": [
+        2
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004222,
+          "command_id": 67,
+          "timestamp_utc": "2026-10-12T16:31:37.650848+00:00",
+          "sent_command": "224683",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004162,
+            "ATFCSD": 53004194,
+            "ATSH": 53004171,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004146,
+            "ATFCSM": 53004180
+          },
+          "response_hex": "36313246313035363234363833303030300d",
+          "packet_hex": "6246830000"
+        },
+        "no_data": {
+          "session_pk": 5425,
+          "record_pk": 53056073,
+          "command_id": 106,
+          "timestamp_utc": "2026-10-12T23:03:44.888672+00:00",
+          "sent_command": "224683",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATSH": "6F1",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATCRA": "612",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53056055,
+            "ATSP": 53056052,
+            "ATSH": 53056076,
+            "ATCEA": 53056084,
+            "ATFCSD": 53056064,
+            "ATCRA": 53056093,
+            "ATFCSM": 53056089
+          },
+          "response_hex": "4e4f20444154410d",
+          "packet_hex": null
+        }
+      }
+    },
+    {
+      "key": "6F1|12|224A2E",
+      "counts": {
+        "positive": 13
+      },
+      "distinct_positive_payloads": 1,
+      "payload_byte_lengths": [
+        2
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004140,
+          "command_id": 68,
+          "timestamp_utc": "2026-10-12T16:31:37.842054+00:00",
+          "sent_command": "224A2E",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004162,
+            "ATFCSD": 53004194,
+            "ATSH": 53004171,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004146,
+            "ATFCSM": 53004180
+          },
+          "response_hex": "36313246313035363234413245313737300d",
+          "packet_hex": "624A2E1770"
+        }
+      }
+    },
+    {
+      "key": "6F1|12|224AB1",
+      "counts": {
+        "positive": 6396,
+        "no_data": 2
+      },
+      "distinct_positive_payloads": 2455,
+      "payload_byte_lengths": [
+        2
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004213,
+          "command_id": 69,
+          "timestamp_utc": "2026-10-12T16:31:38.035893+00:00",
+          "sent_command": "224AB1",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004162,
+            "ATFCSD": 53004194,
+            "ATSH": 53004171,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004146,
+            "ATFCSM": 53004180
+          },
+          "response_hex": "36313246313035363234414231303343300d",
+          "packet_hex": "624AB103C0"
+        },
+        "no_data": {
+          "session_pk": 5421,
+          "record_pk": 53035549,
+          "command_id": 44366,
+          "timestamp_utc": "2026-10-12T17:24:13.610109+00:00",
+          "sent_command": "224AB11",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53043265,
+            "ATFCSD": 53040143,
+            "ATSH": 53035899,
+            "ATFCSH": 53004179,
+            "ATCRA": 53044682,
+            "ATFCSM": 53036171
+          },
+          "response_hex": "4e4f20444154410d",
+          "packet_hex": null
+        }
+      }
+    },
+    {
+      "key": "6F1|12|22558E",
+      "counts": {
+        "positive": 142,
+        "unparsed": 1
+      },
+      "distinct_positive_payloads": 26,
+      "payload_byte_lengths": [
+        4
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004188,
+          "command_id": 64,
+          "timestamp_utc": "2026-10-12T16:31:37.073912+00:00",
+          "sent_command": "22558E",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004162,
+            "ATFCSD": 53004194,
+            "ATSH": 53004171,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004146,
+            "ATFCSM": 53004180
+          },
+          "response_hex": "363132463131303037363235353845303030310d363132463132314544334546464646464646460d",
+          "packet_hex": "62558E0001ED3E"
+        },
+        "unparsed": {
+          "session_pk": 5425,
+          "record_pk": 53056075,
+          "command_id": 103,
+          "timestamp_utc": "2026-10-12T23:03:44.095849+00:00",
+          "sent_command": "22558E",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATSH": "6F1",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATCRA": "612",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53056055,
+            "ATSP": 53056052,
+            "ATSH": 53056076,
+            "ATCEA": 53056084,
+            "ATFCSD": 53056064,
+            "ATCRA": 53056093,
+            "ATFCSM": 53056089
+          },
+          "response_hex": "363132463131303037363235353845303030310d",
+          "packet_hex": null
+        }
+      }
+    },
+    {
+      "key": "6F1|12|22558F",
+      "counts": {
+        "positive": 162,
+        "no_data": 1
+      },
+      "distinct_positive_payloads": 5,
+      "payload_byte_lengths": [
+        4
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004207,
+          "command_id": 66,
+          "timestamp_utc": "2026-10-12T16:31:37.459011+00:00",
+          "sent_command": "22558F",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004162,
+            "ATFCSD": 53004194,
+            "ATSH": 53004171,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004146,
+            "ATFCSM": 53004180
+          },
+          "response_hex": "363132463131303037363235353846303030300d363132463132313137424146464646464646460d",
+          "packet_hex": "62558F000017BA"
+        },
+        "no_data": {
+          "session_pk": 5425,
+          "record_pk": 53056071,
+          "command_id": 104,
+          "timestamp_utc": "2026-10-12T23:03:44.337922+00:00",
+          "sent_command": "22558F",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATSH": "6F1",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATCRA": "612",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53056055,
+            "ATSP": 53056052,
+            "ATSH": 53056076,
+            "ATCEA": 53056084,
+            "ATFCSD": 53056064,
+            "ATCRA": 53056093,
+            "ATFCSM": 53056089
+          },
+          "response_hex": "4e4f20444154410d",
+          "packet_hex": null
+        }
+      }
+    },
+    {
+      "key": "6F1|12|22582F",
+      "counts": {
+        "positive": 234
+      },
+      "distinct_positive_payloads": 226,
+      "payload_byte_lengths": [
+        2
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004217,
+          "command_id": 71,
+          "timestamp_utc": "2026-10-12T16:31:38.447878+00:00",
+          "sent_command": "22582F",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004162,
+            "ATFCSD": 53004194,
+            "ATSH": 53004171,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004146,
+            "ATFCSM": 53004180
+          },
+          "response_hex": "36313246313035363235383246313235390d",
+          "packet_hex": "62582F1259"
+        }
+      }
+    },
+    {
+      "key": "6F1|12|22586F",
+      "counts": {
+        "positive": 233,
+        "no_data": 1
+      },
+      "distinct_positive_payloads": 64,
+      "payload_byte_lengths": [
+        2
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004169,
+          "command_id": 65,
+          "timestamp_utc": "2026-10-12T16:31:37.266202+00:00",
+          "sent_command": "22586F",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "612",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004162,
+            "ATFCSD": 53004194,
+            "ATSH": 53004171,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004146,
+            "ATFCSM": 53004180
+          },
+          "response_hex": "36313246313035363235383646303935330d",
+          "packet_hex": "62586F0953"
+        },
+        "no_data": {
+          "session_pk": 5425,
+          "record_pk": 53056097,
+          "command_id": 107,
+          "timestamp_utc": "2026-10-12T23:03:45.154771+00:00",
+          "sent_command": "22586F",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATSH": "6F1",
+            "ATCEA": "12",
+            "ATFCSD": "12300000",
+            "ATCRA": "612",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53056055,
+            "ATSP": 53056052,
+            "ATSH": 53056076,
+            "ATCEA": 53056084,
+            "ATFCSD": 53056064,
+            "ATCRA": 53056093,
+            "ATFCSM": 53056089
+          },
+          "response_hex": "4e4f20444154410d",
+          "packet_hex": null
+        }
+      }
+    },
+    {
+      "key": "6F1|18|22DA25",
+      "counts": {
+        "no_data": 59,
+        "positive": 3
+      },
+      "distinct_positive_payloads": 2,
+      "payload_byte_lengths": [
+        2
+      ],
+      "samples": {
+        "no_data": {
+          "session_pk": 5421,
+          "record_pk": 53004174,
+          "command_id": 77,
+          "timestamp_utc": "2026-10-12T16:31:39.106829+00:00",
+          "sent_command": "22DA25",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "18",
+            "ATFCSD": "18300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "618",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004225,
+            "ATFCSD": 53004199,
+            "ATSH": 53004171,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004190,
+            "ATFCSM": 53004180
+          },
+          "response_hex": "4e4f20444154410d",
+          "packet_hex": null
+        },
+        "positive": {
+          "session_pk": 5428,
+          "record_pk": 53056290,
+          "command_id": 76,
+          "timestamp_utc": "2026-10-12T23:05:36.416329+00:00",
+          "sent_command": "22DA25",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "18",
+            "ATFCSD": "18300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "618",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53056278,
+            "ATSP": 53056275,
+            "ATCEA": 53056293,
+            "ATFCSD": 53056299,
+            "ATSH": 53056280,
+            "ATFCSH": 53056274,
+            "ATCRA": 53056289,
+            "ATFCSM": 53056269
+          },
+          "response_hex": "36313846313035363244413235303039430d",
+          "packet_hex": "62DA25009C"
+        }
+      }
+    },
+    {
+      "key": "6F1|18|22DA2E",
+      "counts": {
+        "no_data": 59,
+        "positive": 3
+      },
+      "distinct_positive_payloads": 1,
+      "payload_byte_lengths": [
+        2
+      ],
+      "samples": {
+        "no_data": {
+          "session_pk": 5421,
+          "record_pk": 53004201,
+          "command_id": 76,
+          "timestamp_utc": "2026-10-12T16:31:38.969701+00:00",
+          "sent_command": "22DA2E",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "18",
+            "ATFCSD": "18300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "618",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004225,
+            "ATFCSD": 53004199,
+            "ATSH": 53004171,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004190,
+            "ATFCSM": 53004180
+          },
+          "response_hex": "4e4f20444154410d",
+          "packet_hex": null
+        },
+        "positive": {
+          "session_pk": 5428,
+          "record_pk": 53056288,
+          "command_id": 77,
+          "timestamp_utc": "2026-10-12T23:05:36.899593+00:00",
+          "sent_command": "22DA2E",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "18",
+            "ATFCSD": "18300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "618",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53056278,
+            "ATSP": 53056275,
+            "ATCEA": 53056293,
+            "ATFCSD": 53056299,
+            "ATSH": 53056280,
+            "ATFCSH": 53056274,
+            "ATCRA": 53056289,
+            "ATFCSM": 53056269
+          },
+          "response_hex": "36313846313035363244413245303030310d",
+          "packet_hex": "62DA2E0001"
+        }
+      }
+    },
+    {
+      "key": "6F1|29|22DC98",
+      "counts": {
+        "positive": 42
+      },
+      "distinct_positive_payloads": 32,
+      "payload_byte_lengths": [
+        29
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004184,
+          "command_id": 83,
+          "timestamp_utc": "2026-10-12T16:31:39.904464+00:00",
+          "sent_command": "22DC98",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "29",
+            "ATFCSD": "29300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "629",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004150,
+            "ATFCSD": 53004183,
+            "ATSH": 53004171,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004159,
+            "ATFCSM": 53004180
+          },
+          "response_hex": "363239463131303230363244433938313531460d363239463132313642333530303943313837460d363239463132324533303836314646374230300d363239463132333030313830303033303030300d363239463132344646464631413033464646460d363239463132354646303030304646464646460d",
+          "packet_hex": "62DC98151F6B35009C187FE30861FF7B00001800030000FFFF1A03FFFFFF0000"
+        }
+      }
+    },
+    {
+      "key": "6F1|29|22DC99",
+      "counts": {
+        "positive": 41,
+        "negative_21": 1
+      },
+      "distinct_positive_payloads": 22,
+      "payload_byte_lengths": [
+        29
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004156,
+          "command_id": 84,
+          "timestamp_utc": "2026-10-12T16:31:40.097560+00:00",
+          "sent_command": "22DC99",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "29",
+            "ATFCSD": "29300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "629",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004150,
+            "ATFCSD": 53004183,
+            "ATSH": 53004171,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004159,
+            "ATFCSM": 53004180
+          },
+          "response_hex": "363239463131303230363244433939334131450d363239463132313642333530313943313837460d363239463132324643303846464646393530300d363239463132333030313730303033303030300d363239463132344646464631413033464646460d363239463132354646303030304646464646460d",
+          "packet_hex": "62DC993A1E6B35019C187FFC08FFFF9500001700030000FFFF1A03FFFFFF0000"
+        },
+        "negative_21": {
+          "session_pk": 5440,
+          "record_pk": 53065016,
+          "command_id": 4580,
+          "timestamp_utc": "2026-10-12T23:25:21.001122+00:00",
+          "sent_command": "22DC99",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "29",
+            "ATFCSD": "29300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "629",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53060453,
+            "ATSP": 53060442,
+            "ATCEA": 53064954,
+            "ATFCSD": 53064938,
+            "ATSH": 53064980,
+            "ATFCSH": 53060454,
+            "ATCRA": 53064932,
+            "ATFCSM": 53064985
+          },
+          "response_hex": "363239463130333746323232310d",
+          "packet_hex": "7F2221"
+        }
+      }
+    },
+    {
+      "key": "6F1|29|22DC9A",
+      "counts": {
+        "positive": 42
+      },
+      "distinct_positive_payloads": 23,
+      "payload_byte_lengths": [
+        29
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004176,
+          "command_id": 82,
+          "timestamp_utc": "2026-10-12T16:31:39.684415+00:00",
+          "sent_command": "22DC9A",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "29",
+            "ATFCSD": "29300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "629",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004150,
+            "ATFCSD": 53004183,
+            "ATSH": 53004171,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004159,
+            "ATFCSM": 53004180
+          },
+          "response_hex": "363239463131303230363244433941383531450d363239463132313642333530323943313837460d363239463132323733304146464646353830300d363239463132333030313630303033303030300d363239463132344646464631413033464646460d363239463132354646303030304646464646460d",
+          "packet_hex": "62DC9A851E6B35029C187F730AFFFF5800001600030000FFFF1A03FFFFFF0000"
+        }
+      }
+    },
+    {
+      "key": "6F1|29|22DC9B",
+      "counts": {
+        "positive": 42
+      },
+      "distinct_positive_payloads": 19,
+      "payload_byte_lengths": [
+        29
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004144,
+          "command_id": 81,
+          "timestamp_utc": "2026-10-12T16:31:39.465788+00:00",
+          "sent_command": "22DC9B",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "29",
+            "ATFCSD": "29300000",
+            "ATSH": "6F1",
+            "ATFCSH": "6F1",
+            "ATCRA": "629",
+            "ATFCSM": "1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004150,
+            "ATFCSD": 53004183,
+            "ATSH": 53004171,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004159,
+            "ATFCSM": 53004180
+          },
+          "response_hex": "363239463131303230363244433942364331450d363239463132313642333530333943313837460d363239463132323733304146464646413630300d363239463132333030313730303033303030300d363239463132344646464631413033464646460d363239463132354646303030304646464646460d",
+          "packet_hex": "62DC9B6C1E6B35039C187F730AFFFFA600001700030000FFFF1A03FFFFFF0000"
+        }
+      }
+    },
+    {
+      "key": "7DF||0104",
+      "counts": {
+        "no_data": 10
+      },
+      "distinct_positive_payloads": 0,
+      "payload_byte_lengths": [],
+      "samples": {
+        "no_data": {
+          "session_pk": 5421,
+          "record_pk": 53037368,
+          "command_id": 43907,
+          "timestamp_utc": "2026-10-12T17:23:44.844819+00:00",
+          "sent_command": "0104",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "12300000",
+            "ATSH": "7DF",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E9",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53046824,
+            "ATFCSD": 53040143,
+            "ATSH": 53044453,
+            "ATFCSH": 53004179,
+            "ATCRA": 53040886,
+            "ATFCSM": 53045895
+          },
+          "response_hex": "4e4f20444154410d",
+          "packet_hex": null
+        }
+      }
+    },
+    {
+      "key": "7DF||0105",
+      "counts": {
+        "no_data": 10
+      },
+      "distinct_positive_payloads": 0,
+      "payload_byte_lengths": [],
+      "samples": {
+        "no_data": {
+          "session_pk": 5421,
+          "record_pk": 53043630,
+          "command_id": 43912,
+          "timestamp_utc": "2026-10-12T17:23:45.394328+00:00",
+          "sent_command": "0105",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "12300000",
+            "ATSH": "7DF",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E9",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53046824,
+            "ATFCSD": 53040143,
+            "ATSH": 53042441,
+            "ATFCSH": 53004179,
+            "ATCRA": 53040886,
+            "ATFCSM": 53045895
+          },
+          "response_hex": "4e4f20444154410d",
+          "packet_hex": null
+        }
+      }
+    },
+    {
+      "key": "7DF||0106",
+      "counts": {
+        "positive": 5616
+      },
+      "distinct_positive_payloads": 45,
+      "payload_byte_lengths": [
+        1
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004267,
+          "command_id": 142,
+          "timestamp_utc": "2026-10-12T16:31:46.587336+00:00",
+          "sent_command": "0106",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "12300000",
+            "ATSH": "7DF",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E8",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004293,
+            "ATFCSD": 53004262,
+            "ATSH": 53004294,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004236,
+            "ATFCSM": 53004283
+          },
+          "response_hex": "37453830333431303638310d",
+          "packet_hex": "410681"
+        }
+      }
+    },
+    {
+      "key": "7DF||010C",
+      "counts": {
+        "no_data": 10,
+        "positive": 1260
+      },
+      "distinct_positive_payloads": 733,
+      "payload_byte_lengths": [
+        2
+      ],
+      "samples": {
+        "no_data": {
+          "session_pk": 5421,
+          "record_pk": 53038978,
+          "command_id": 43917,
+          "timestamp_utc": "2026-10-12T17:23:45.917795+00:00",
+          "sent_command": "010C",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "12300000",
+            "ATSH": "7DF",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E9",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53046824,
+            "ATFCSD": 53040143,
+            "ATSH": 53044413,
+            "ATFCSH": 53004179,
+            "ATCRA": 53040886,
+            "ATFCSM": 53045895
+          },
+          "response_hex": "4e4f20444154410d",
+          "packet_hex": null
+        },
+        "positive": {
+          "session_pk": 5442,
+          "record_pk": 53108606,
+          "command_id": 99,
+          "timestamp_utc": "2026-10-13T17:29:16.694413+00:00",
+          "sent_command": "010C",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "29300000",
+            "ATSH": "7DF",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E8",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53108649,
+            "ATSP": 53108613,
+            "ATCEA": 53108677,
+            "ATFCSD": 53108681,
+            "ATSH": 53108632,
+            "ATFCSH": 53108654,
+            "ATCRA": 53108635,
+            "ATFCSM": 53108671
+          },
+          "response_hex": "374538303434313043313135430d",
+          "packet_hex": "410C115C"
+        }
+      }
+    },
+    {
+      "key": "7DF||0110",
+      "counts": {
+        "positive": 5616
+      },
+      "distinct_positive_payloads": 863,
+      "payload_byte_lengths": [
+        2
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004290,
+          "command_id": 130,
+          "timestamp_utc": "2026-10-12T16:31:45.157020+00:00",
+          "sent_command": "0110",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "12300000",
+            "ATSH": "7DF",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E8",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004293,
+            "ATFCSD": 53004262,
+            "ATSH": 53004282,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004236,
+            "ATFCSM": 53004283
+          },
+          "response_hex": "374538303434313130303934430d",
+          "packet_hex": "4110094C"
+        }
+      }
+    },
+    {
+      "key": "7DF||012F",
+      "counts": {
+        "positive": 3892
+      },
+      "distinct_positive_payloads": 9,
+      "payload_byte_lengths": [
+        1
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004226,
+          "command_id": 122,
+          "timestamp_utc": "2026-10-12T16:31:44.305251+00:00",
+          "sent_command": "012F",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "12300000",
+            "ATSH": "7DF",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E8",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004293,
+            "ATFCSD": 53004262,
+            "ATSH": 53004245,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004236,
+            "ATFCSM": 53004283
+          },
+          "response_hex": "37453830333431324636360d",
+          "packet_hex": "412F66"
+        }
+      }
+    },
+    {
+      "key": "7DF||0131",
+      "counts": {
+        "positive": 398
+      },
+      "distinct_positive_payloads": 25,
+      "payload_byte_lengths": [
+        2
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004228,
+          "command_id": 134,
+          "timestamp_utc": "2026-10-12T16:31:45.735980+00:00",
+          "sent_command": "0131",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "12300000",
+            "ATSH": "7DF",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E8",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004293,
+            "ATFCSD": 53004262,
+            "ATSH": 53004288,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004236,
+            "ATFCSM": 53004283
+          },
+          "response_hex": "374538303434313331353036450d",
+          "packet_hex": "4131506E"
+        }
+      }
+    },
+    {
+      "key": "7DF||0142",
+      "counts": {
+        "no_data": 4,
+        "positive": 149
+      },
+      "distinct_positive_payloads": 48,
+      "payload_byte_lengths": [
+        2
+      ],
+      "samples": {
+        "no_data": {
+          "session_pk": 5421,
+          "record_pk": 53047367,
+          "command_id": 45183,
+          "timestamp_utc": "2026-10-12T17:25:11.142056+00:00",
+          "sent_command": "0142",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "12300000",
+            "ATSH": "7DF",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E9",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53040347,
+            "ATFCSD": 53038936,
+            "ATSH": 53039372,
+            "ATFCSH": 53004179,
+            "ATCRA": 53035304,
+            "ATFCSM": 53037131
+          },
+          "response_hex": "4e4f20444154410d",
+          "packet_hex": null
+        },
+        "positive": {
+          "session_pk": 5442,
+          "record_pk": 53108678,
+          "command_id": 102,
+          "timestamp_utc": "2026-10-13T17:29:17.115766+00:00",
+          "sent_command": "0142",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "29300000",
+            "ATSH": "7DF",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E8",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53108649,
+            "ATSP": 53108613,
+            "ATCEA": 53108677,
+            "ATFCSD": 53108681,
+            "ATSH": 53108632,
+            "ATFCSH": 53108654,
+            "ATCRA": 53108635,
+            "ATFCSM": 53108671
+          },
+          "response_hex": "374538303434313432333741300d",
+          "packet_hex": "414237A0"
+        }
+      }
+    },
+    {
+      "key": "7DF||0143",
+      "counts": {
+        "positive": 5616
+      },
+      "distinct_positive_payloads": 265,
+      "payload_byte_lengths": [
+        2
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004287,
+          "command_id": 146,
+          "timestamp_utc": "2026-10-12T16:31:48.210036+00:00",
+          "sent_command": "0143",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "12300000",
+            "ATSH": "7DF",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E8",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004293,
+            "ATFCSD": 53004262,
+            "ATSH": 53004237,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004236,
+            "ATFCSM": 53004283
+          },
+          "response_hex": "374538303434313433303031440d",
+          "packet_hex": "4143001D"
+        }
+      }
+    },
+    {
+      "key": "7DF||0146",
+      "counts": {
+        "positive": 326
+      },
+      "distinct_positive_payloads": 29,
+      "payload_byte_lengths": [
+        1
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004274,
+          "command_id": 138,
+          "timestamp_utc": "2026-10-12T16:31:46.148640+00:00",
+          "sent_command": "0146",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "12300000",
+            "ATSH": "7DF",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E8",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004293,
+            "ATFCSD": 53004262,
+            "ATSH": 53004268,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004236,
+            "ATFCSM": 53004283
+          },
+          "response_hex": "37453830333431343634300d",
+          "packet_hex": "414640"
+        }
+      }
+    },
+    {
+      "key": "7DF||015C",
+      "counts": {
+        "positive": 3128
+      },
+      "distinct_positive_payloads": 52,
+      "payload_byte_lengths": [
+        1
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004285,
+          "command_id": 150,
+          "timestamp_utc": "2026-10-12T16:31:48.622234+00:00",
+          "sent_command": "015C",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "12300000",
+            "ATSH": "7DF",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E8",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004293,
+            "ATFCSD": 53004262,
+            "ATSH": 53004266,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004236,
+            "ATFCSM": 53004283
+          },
+          "response_hex": "37453830333431354338320d",
+          "packet_hex": "415C82"
+        }
+      }
+    },
+    {
+      "key": "7DF||019D",
+      "counts": {
+        "positive": 4735
+      },
+      "distinct_positive_payloads": 182,
+      "payload_byte_lengths": [
+        4
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004272,
+          "command_id": 154,
+          "timestamp_utc": "2026-10-12T16:31:49.034614+00:00",
+          "sent_command": "019D",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "12300000",
+            "ATSH": "7DF",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E8",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004293,
+            "ATFCSD": 53004262,
+            "ATSH": 53004227,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004236,
+            "ATFCSM": 53004283
+          },
+          "response_hex": "37453830363431394430303044303030440d",
+          "packet_hex": "419D000D000D"
+        }
+      }
+    },
+    {
+      "key": "7DF||01A6",
+      "counts": {
+        "positive": 3882
+      },
+      "distinct_positive_payloads": 228,
+      "payload_byte_lengths": [
+        4
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004281,
+          "command_id": 126,
+          "timestamp_utc": "2026-10-12T16:31:44.745087+00:00",
+          "sent_command": "01A6",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "12300000",
+            "ATSH": "7DF",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E8",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004293,
+            "ATFCSD": 53004262,
+            "ATSH": 53004298,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004236,
+            "ATFCSM": 53004283
+          },
+          "response_hex": "37453830363431413630303133383641330d",
+          "packet_hex": "41A6001386A3"
+        }
+      }
+    },
+    {
+      "key": "7E1||0100",
+      "counts": {
+        "positive": 17
+      },
+      "distinct_positive_payloads": 1,
+      "payload_byte_lengths": [
+        4
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004157,
+          "command_id": 34,
+          "timestamp_utc": "2026-10-12T16:31:33.964520+00:00",
+          "sent_command": "0100",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATSH": "7E1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004170,
+            "ATSP": 53004139,
+            "ATSH": 53004205
+          },
+          "response_hex": "37453930363431303039383138383030310d",
+          "packet_hex": "410098188001"
+        }
+      }
+    },
+    {
+      "key": "7E1||0104",
+      "counts": {
+        "positive": 4787,
+        "no_data": 24
+      },
+      "distinct_positive_payloads": 135,
+      "payload_byte_lengths": [
+        1
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004242,
+          "command_id": 108,
+          "timestamp_utc": "2026-10-12T16:31:43.094383+00:00",
+          "sent_command": "0104",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "29300000",
+            "ATSH": "7E1",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E9",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004168,
+            "ATFCSD": 53004183,
+            "ATSH": 53004256,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004279,
+            "ATFCSM": 53004289
+          },
+          "response_hex": "37453930333431303432390d",
+          "packet_hex": "410429"
+        },
+        "no_data": {
+          "session_pk": 5421,
+          "record_pk": 53034093,
+          "command_id": 29964,
+          "timestamp_utc": "2026-10-12T17:04:21.879838+00:00",
+          "sent_command": "01041",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "12300000",
+            "ATSH": "7E1",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E9",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53033972,
+            "ATFCSD": 53032683,
+            "ATSH": 53034227,
+            "ATFCSH": 53004179,
+            "ATCRA": 53034104,
+            "ATFCSM": 53033934
+          },
+          "response_hex": "4e4f20444154410d",
+          "packet_hex": null
+        }
+      }
+    },
+    {
+      "key": "7E1||0105",
+      "counts": {
+        "positive": 4787,
+        "no_data": 24
+      },
+      "distinct_positive_payloads": 73,
+      "payload_byte_lengths": [
+        1
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004258,
+          "command_id": 106,
+          "timestamp_utc": "2026-10-12T16:31:42.764159+00:00",
+          "sent_command": "0105",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "29300000",
+            "ATSH": "7E1",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E9",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004168,
+            "ATFCSD": 53004183,
+            "ATSH": 53004256,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004279,
+            "ATFCSM": 53004289
+          },
+          "response_hex": "37453930333431303537380d",
+          "packet_hex": "410578"
+        },
+        "no_data": {
+          "session_pk": 5421,
+          "record_pk": 53034153,
+          "command_id": 29966,
+          "timestamp_utc": "2026-10-12T17:04:22.154343+00:00",
+          "sent_command": "01051",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "12300000",
+            "ATSH": "7E1",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E9",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53033972,
+            "ATFCSD": 53032683,
+            "ATSH": 53034227,
+            "ATFCSH": 53004179,
+            "ATCRA": 53034104,
+            "ATFCSM": 53033934
+          },
+          "response_hex": "4e4f20444154410d",
+          "packet_hex": null
+        }
+      }
+    },
+    {
+      "key": "7E1||010C",
+      "counts": {
+        "positive": 4789,
+        "no_data": 23
+      },
+      "distinct_positive_payloads": 1138,
+      "payload_byte_lengths": [
+        2
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004299,
+          "command_id": 107,
+          "timestamp_utc": "2026-10-12T16:31:42.929280+00:00",
+          "sent_command": "010C",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "29300000",
+            "ATSH": "7E1",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E9",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004168,
+            "ATFCSD": 53004183,
+            "ATSH": 53004256,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004279,
+            "ATFCSM": 53004289
+          },
+          "response_hex": "374539303434313043304434430d",
+          "packet_hex": "410C0D4C"
+        },
+        "no_data": {
+          "session_pk": 5421,
+          "record_pk": 53034193,
+          "command_id": 29968,
+          "timestamp_utc": "2026-10-12T17:04:22.429553+00:00",
+          "sent_command": "010C1",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "12300000",
+            "ATSH": "7E1",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E9",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53033972,
+            "ATFCSD": 53032683,
+            "ATSH": 53034227,
+            "ATFCSH": 53004179,
+            "ATCRA": 53034104,
+            "ATFCSM": 53033934
+          },
+          "response_hex": "4e4f20444154410d",
+          "packet_hex": null
+        }
+      }
+    },
+    {
+      "key": "7E1||0120",
+      "counts": {
+        "positive": 17
+      },
+      "distinct_positive_payloads": 1,
+      "payload_byte_lengths": [
+        4
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004187,
+          "command_id": 35,
+          "timestamp_utc": "2026-10-12T16:31:34.130510+00:00",
+          "sent_command": "0120",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATSH": "7E1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004170,
+            "ATSP": 53004139,
+            "ATSH": 53004205
+          },
+          "response_hex": "37453930363431323038303030303030310d",
+          "packet_hex": "412080000001"
+        }
+      }
+    },
+    {
+      "key": "7E1||0140",
+      "counts": {
+        "positive": 17
+      },
+      "distinct_positive_payloads": 1,
+      "payload_byte_lengths": [
+        4
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004154,
+          "command_id": 36,
+          "timestamp_utc": "2026-10-12T16:31:34.267177+00:00",
+          "sent_command": "0140",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATSH": "7E1"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004170,
+            "ATSP": 53004139,
+            "ATSH": 53004205
+          },
+          "response_hex": "37453930363431343043303030303030300d",
+          "packet_hex": "4140C0000000"
+        }
+      }
+    },
+    {
+      "key": "7E1||0142",
+      "counts": {
+        "positive": 549,
+        "no_data": 15
+      },
+      "distinct_positive_payloads": 382,
+      "payload_byte_lengths": [
+        2
+      ],
+      "samples": {
+        "positive": {
+          "session_pk": 5421,
+          "record_pk": 53004250,
+          "command_id": 105,
+          "timestamp_utc": "2026-10-12T16:31:42.599239+00:00",
+          "sent_command": "0142",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "29300000",
+            "ATSH": "7E1",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E9",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53004168,
+            "ATFCSD": 53004183,
+            "ATSH": 53004256,
+            "ATFCSH": 53004179,
+            "ATCRA": 53004279,
+            "ATFCSM": 53004289
+          },
+          "response_hex": "374539303434313432333632420d",
+          "packet_hex": "4142362B"
+        },
+        "no_data": {
+          "session_pk": 5421,
+          "record_pk": 53037049,
+          "command_id": 44048,
+          "timestamp_utc": "2026-10-12T17:23:54.195662+00:00",
+          "sent_command": "01421",
+          "adapter_setup": {
+            "ATAT": "1",
+            "ATSP": "6",
+            "ATCEA": "",
+            "ATFCSD": "12300000",
+            "ATSH": "7E1",
+            "ATFCSH": "6F1",
+            "ATCRA": "7E9",
+            "ATFCSM": "0"
+          },
+          "adapter_setup_record_pks": {
+            "ATAT": 53004166,
+            "ATSP": 53004219,
+            "ATCEA": 53040981,
+            "ATFCSD": 53040143,
+            "ATSH": 53043050,
+            "ATFCSH": 53004179,
+            "ATCRA": 53045535,
+            "ATFCSM": 53043042
+          },
+          "response_hex": "4e4f20444154410d",
+          "packet_hex": null
+        }
+      }
+    }
+  ]
+}

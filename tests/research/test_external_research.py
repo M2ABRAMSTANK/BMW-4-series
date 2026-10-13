@@ -97,13 +97,14 @@ def test_full_signalset_schema_and_acquisition_identity():
 def test_discovery_is_raw_categorized_and_explicitly_unobserved(entry):
     definition = COMMANDS[entry['key']]
     member = next(m for g in STAGING['groups'] for m in g['commands'] if m['key'] == entry['key'])
-    assert definition['dbg'] is True
+    assert 'dbg' not in definition
     assert 'dbgfilter' not in definition
-    active = entry['staging_group'] == STAGING['active_group']
+    active = True
     assert definition['filter'] == {'years': [STAGING['model_year'] if active else 9999]}
     assert Filter.from_json(definition['filter']).matches(STAGING['model_year']) == active
     assert entry['command_id'] == Command.from_json(definition).id
-    assert definition['freq'] == member['interval_seconds'] == TIERS[entry['polling_tier']]
+    assert definition['freq'] == STAGING['schema_freq_seconds']
+    assert member['previous_interval_seconds'] == TIERS[entry['polling_tier']]
     assert entry['response_status'] == member['response_status'] == 'unobserved'
     assert entry['sample'] is None
     assert entry['observed_target_payload_bytes'] is None
@@ -112,10 +113,10 @@ def test_discovery_is_raw_categorized_and_explicitly_unobserved(entry):
     assert len(definition['signals']) == entry['raw_view_bytes'] == member['raw_view_bytes']
     for i, signal in enumerate(definition['signals']):
         assert signal['id'] == entry['raw_signal_ids'][i]
-        assert signal['path'] == f"OBD.Testing.{entry['category']}"
+        assert signal['path'] == "Battery.Testing." + entry['staging_group'].replace(".", "_")
         assert signal['name'].startswith(f"[{entry['staging_group']}]")
         assert 'candidate raw byte' in signal['name']
-        assert signal['description'].startswith(f"[Polling: {entry['polling_tier']}] ")
+        assert signal['description'].startswith("[Polling: On demand] ")
         assert 'unverified' in signal['description'] or 'unknown' in signal['description']
         assert signal['fmt'] == ({'len': 8, 'max': 255, 'unit': 'scalar'} |
                                   ({'bix': i*8} if i else {}))

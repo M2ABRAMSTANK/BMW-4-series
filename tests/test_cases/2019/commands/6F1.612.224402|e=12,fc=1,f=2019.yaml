@@ -1,0 +1,7 @@
+# Source: sessions-5421-5444-review.json; session 5421, record 53004493. Raw bytes only.
+command_id: 6F1.612.224402|e=12,fc=1,f=2019
+test_cases:
+- response: 612F10562440200B6
+  expected_values:
+    4SERIES_RESEARCH_12_4402_BYTE1: 0
+    4SERIES_RESEARCH_12_4402_BYTE2: 182

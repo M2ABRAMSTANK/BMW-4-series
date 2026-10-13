@@ -39,7 +39,7 @@ def test_physical_route_and_polling_override_are_selected():
         responses = [r for p in packets for r in registry.identify_commands(p)]
         assert len(responses) == 1
         assert responses[0].command.id == expected_id
-        assert responses[0].command.update_frequency == 1
+        assert responses[0].command.update_frequency == 0.01
         assert abs(responses[0].values[('LOAD_PCT' if route == '7E8' else 'LOAD_PCT_7E9')] - expected_value) < 0.0001
 
 
@@ -53,42 +53,20 @@ def test_pid_68_real_multiframe_temperature_payload():
     assert responses[0].values['IAT_11'] == 18
     assert responses[0].values['IAT_12_SUP'] == 1
     assert responses[0].values['IAT_12'] == 5
-    assert command.update_frequency == 5
+    assert command.update_frequency == 0.01
 
 
-def test_all_service01_descriptions_match_repository_polling_tiers():
-    tiers = {
-        'Operational': 0.25,
-        'Engine control': 1,
-        'Short-term trends': 5,
-        'Thermal condition': 15,
-        'Health and environment': 60,
-        'Cumulative history': 300,
-    }
+def test_all_service01_commands_use_manual_polling():
     assert len(SERVICE01) == 65
     for command in SERVICE01:
-        labels = {tier for tier in tiers if all(
-            signal['description'].startswith(f'[Polling: {tier}]')
-            for signal in command['signals']
-        )}
-        assert len(labels) == 1, command['cmd']
-        assert command['freq'] == tiers[labels.pop()]
-    examples = {
-        '0C': 'Operational',
-        '04': 'Engine control',
-        '68': 'Short-term trends',
-        '05': 'Thermal condition',
-        '33': 'Health and environment',
-        'A6': 'Cumulative history',
-        '00': 'Health and environment',
-    }
-    for pid, tier in examples.items():
-        command = next(c for c in SERVICE01 if c['rax'] == '7E8' and c['cmd']['01'] == pid)
-        assert command['freq'] == tiers[tier]
+        assert command['freq'] == 0.01
+        assert all(s['description'].startswith('[Polling: On demand] ')
+                   for s in command['signals'])
 
 
-def test_uncaptured_pids_are_parked_for_discovery():
+def test_uncaptured_pids_are_visible_for_manual_discovery():
     for pid in ('41', '83'):
         command = next(c for c in SERVICE01 if c['rax'] == '7E8' and c['cmd']['01'] == pid)
-        assert command['dbg'] is True
-        assert command['filter'] == {'years': [9999]}
+        assert 'dbg' not in command
+        assert command['filter'] == {'years': [2019]}
+        assert all(s['path'] == 'Battery.Testing.TG18_1' for s in command['signals'])
