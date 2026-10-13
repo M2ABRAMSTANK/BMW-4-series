@@ -47,22 +47,30 @@ def select_group(root, selected):
     audit_path = root / 'tests/research/scanlog-audit.json'
     audit = json.loads(audit_path.read_text())
     entries = {e['key']: e for e in audit['entries']}
+    # Unobserved discovery requests have no scanlog sample. Keep their mutable
+    # command IDs and availability separate from the historical capture audit.
+    external_path = root / 'tests/research/external-research.json'
+    external = json.loads(external_path.read_text()) if external_path.exists() else None
+    discoveries = {e['key']: e for e in external['acquisitions']} if external else {}
+    if set(entries) & set(discoveries):
+        raise ValueError('Discovery requests must not duplicate recorded commands')
     for group in manifest['groups']:
         active = group['id'] == selected
         for member in group['commands']:
             command = definitions[member['key']]
             command['filter'] = {'years': [manifest['model_year'] if active else 9999]}
-            # Active research uses normal polling so the client can honor freq.
-            # Parked waves remain debug-only and excluded by their year filter.
-            if active:
-                command.pop('dbg', None)
-            else:
-                command['dbg'] = True
+            # Debug status is independent of availability: even the selected
+            # wave remains debug-only. Requested intervals are preserved.
+            command['dbg'] = True
             command.pop('dbgfilter', None)
             command['freq'] = member['interval_seconds']
-            entry = entries[member['key']]
+            discovery = member['key'] in discoveries
+            entry = discoveries[member['key']] if discovery else entries[member['key']]
             entry['command_id'] = Command.from_json(command).id
-            entry['disposition'] = 'active_research_2019' if active else 'parked_testing_wave'
+            if discovery:
+                entry['disposition'] = 'active_discovery_2019' if active else 'parked_discovery_wave'
+            else:
+                entry['disposition'] = 'active_research_2019' if active else 'parked_testing_wave'
     manifest['active_group'] = None if selected == 'none' else selected
     # Prepare all output before touching any file. Only managed wave definitions change.
     formatted = format_json_data(data)
@@ -70,9 +78,12 @@ def select_group(root, selected):
     audit_text = (json.dumps(metadata, indent=2)[:-2] + ',\n  "entries": [\n' +
                   ',\n'.join('    ' + json.dumps(e, separators=(',', ':'))
                              for e in audit['entries']) + '\n  ]\n}\n')
+    external_text = json.dumps(external, indent=2, ensure_ascii=False) + '\n' if external else None
     definition_path.write_text(formatted.rstrip() + '\n')
     manifest_path.write_text(json.dumps(manifest, indent=2) + '\n')
     audit_path.write_text(audit_text)
+    if external_text is not None:
+        external_path.write_text(external_text)
 
 
 def main():

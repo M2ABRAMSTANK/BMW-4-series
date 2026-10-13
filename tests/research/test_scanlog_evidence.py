@@ -107,12 +107,16 @@ def test_graduated_commands_are_regular_only_for_verified_year(key, research_com
 
 STAGING = json.loads((TESTS / 'research' / 'staging-groups.json').read_text())
 STAGED = [m for g in STAGING['groups'] for m in g['commands']]
+EXTERNAL = json.loads((TESTS / 'research' / 'external-research.json').read_text())
+DISCOVERY_KEYS = {e['key'] for e in EXTERNAL['acquisitions']}
+RECORDED_STAGED = [m for m in STAGED if m['key'] not in DISCOVERY_KEYS]
 
 
 def test_staging_partition_and_activation(research_commands):
     keys = [m['key'] for m in STAGED]
-    assert len(keys) == len(set(keys)) == 380
-    assert set(keys) == {e['key'] for e in AUDIT['entries'] if e['decoding_status'] == 'unverified_decoding'}
+    assert len(RECORDED_STAGED) == 380
+    assert len(keys) == len(set(keys)) == len(RECORDED_STAGED) + len(DISCOVERY_KEYS)
+    assert set(keys) == DISCOVERY_KEYS | {e['key'] for e in AUDIT['entries'] if e['decoding_status'] == 'unverified_decoding'}
     for group in STAGING['groups']:
         assert 1 <= len(group['commands']) <= 8
         assert sum(60 / m['interval_seconds'] for m in group['commands']) + STAGING['background_testing_requests_per_minute'] <= 400
@@ -120,16 +124,17 @@ def test_staging_partition_and_activation(research_commands):
         for member in group['commands']:
             definition = research_commands[member['key']]
             command = Command.from_json(definition)
-            assert command.debug == (group['id'] != STAGING['active_group'])
+            assert command.debug, 'Selected and parked research waves must both remain debug'
             assert 'dbgfilter' not in definition
             assert command.filter.matches(2019) == (group['id'] == STAGING['active_group'])
             assert not command.filter.matches(2018)
             assert not command.filter.matches(2020)
             assert definition['freq'] == member['interval_seconds']
-            assert 0 < definition['freq'] <= 10
+            if member['key'] not in DISCOVERY_KEYS:
+                assert 0 < definition['freq'] <= 10
 
 
-@pytest.mark.parametrize('member', STAGED, ids=lambda m: m['key'])
+@pytest.mark.parametrize('member', RECORDED_STAGED, ids=lambda m: m['key'])
 def test_staged_raw_bytes_match_recorded_payload(member, research_commands):
     entry = next(e for e in AUDIT['entries'] if e['key'] == member['key'])
     packet = packets(entry['sample'])[0]
@@ -151,14 +156,14 @@ def test_switching_wave_preserves_other_commands_and_can_park_all(tmp_path):
     staging = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(staging)
     for relative in ['signalsets/v3/default.json', 'tests/research/staging-groups.json',
-                     'tests/research/scanlog-audit.json']:
+                     'tests/research/scanlog-audit.json', 'tests/research/external-research.json']:
         target = tmp_path / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(TESTS.parent / relative, target)
     path = tmp_path / 'signalsets/v3/default.json'
     original = json.loads(path.read_text())
     managed = {m['key'] for m in STAGED}
-    for selected in ['TG0.2', 'none', 'TG0.1']:
+    for selected in ['TG0.2', 'TG10.1', 'TG16.1', 'none', 'TG0.1']:
         staging.select_group(tmp_path, selected)
         current = json.loads(path.read_text())
         for before, after in zip(original['commands'], current['commands']):
@@ -171,8 +176,15 @@ def test_switching_wave_preserves_other_commands_and_can_park_all(tmp_path):
         for definition in current['commands']:
             key = staging.command_key(definition)
             if key in managed:
-                assert Command.from_json(definition).debug == (key not in expected)
+                assert Command.from_json(definition).debug
                 assert 'dbgfilter' not in definition
+        discoveries = json.loads((tmp_path / 'tests/research/external-research.json').read_text())
+        current_by_key = {staging.command_key(c): c for c in current['commands']}
+        for entry in discoveries['acquisitions']:
+            assert entry['command_id'] == Command.from_json(current_by_key[entry['key']]).id
+            assert entry['response_status'] == 'unobserved'
+            assert entry['sample'] is None
+            assert entry['disposition'] == ('active_discovery_2019' if entry['key'] in expected else 'parked_discovery_wave')
     before = path.read_bytes()
     with pytest.raises(ValueError):
         staging.select_group(tmp_path, 'TG-does-not-exist')

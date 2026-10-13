@@ -26,14 +26,30 @@ These are ordinary-use defaults, not guarantees of achieved cadence or sensor
 update rate. Existing duplicate sources retain the tier for their measurement;
 selecting a preferred source can be a separate client/profile optimization.
 
-Unverified commands and archived decoding hypotheses use
-`[Polling: Unclassified; research override]`. This marks an exception, not a
-seventh ordinary tier or an assertion that the candidate's identity is known.
-Their existing research intervals, availability, and testing groups remain in
-place. The **400 requests/minute testing budget** still includes the active wave
-and other enabled experimental commands, and excludes regular polling. A regular
-command's debug coverage on other years retains its ordinary tier interval;
-this research budget is calculated for the observed 2019 vehicle.
+The 380 existing staged research commands use
+`[Polling: Unclassified; research override]`. All retain `dbg: true`, including
+the selected TG0.1 wave, with their existing 1-, 2-, or 10-second requested
+intervals, command membership, and availability filters. These are research
+scheduling choices, not measured sensor update rates. Wave rotation must retain
+debug status on the selected commands; the existing selector keeps the parked
+waves excluded by their year filters. The **400 requests/minute testing budget**
+includes the selected staged wave and other enabled experimental commands, and
+excludes regular polling. A regular command's debug coverage on other years
+retains its ordinary tier interval; this research budget is calculated for the
+observed 2019 vehicle.
+
+New reviewed PID candidates use the ordinary polling tier appropriate to their
+intended use. Their byte-level research views are grouped under
+`OBD.Testing.<category>`, and candidates also enter staged debug discovery waves
+to capture complete responses. The current implementation adds 26 read requests
+and 339 raw research signals:
+21 shared-function reads, three EGS adaptation reads, FEM DAD6 terminal voltage,
+and the lower-confidence DME F150 lead. Their intervals follow the measurement
+use: temperature 15 s, ambient 60 s, HVAC/body states 5 s, trip/history 300 s,
+range 60 s, steering/GPS/wheel/pedal 0.25 s, IBS/FEM 5 s, EGS adaptations 300 s,
+and F150 60 s. D12F accounts for 210 raw byte views for a long-response
+trip-history hypothesis. Their source labels and routes remain hypotheses until
+target evidence supports them.
 
 When editing a polling tier, update both `freq` and every signal description in
 that command. The tests check that tier labels match the configured interval.
@@ -46,6 +62,12 @@ inactive TG0–TG8 testing wave, using 3,248 sessions identified as the same 201
 BMW. There are positive replies for 428 commands; the remaining 583 returned
 UDS request-out-of-range responses on this vehicle. All 392 TG0–TG8 commands
 answered, but many still have unverified meanings or scaling.
+
+That audit is the pre-integration baseline. The current configuration has 1,037
+command objects and 1,676 signal objects. It adds 26 read requests and 339 raw
+research signals; these byte views are not 339 physical sensors. D12F alone
+accounts for 210 byte views for a long-response trip-history hypothesis, whose
+target framing and layout remain unverified.
 
 [The complete audit](tests/research/scanlog-audit.json) records every command's
 status, original definition concerns, response counts, and a lossless capture
@@ -72,7 +94,7 @@ The audit's `graduation` section lists all commands and remaining limitations.
 
 Five existing regular commands retain their prior year-specific status.
 Nine available commands retain experimental decoding: 442C, 4683, 4A2E, 558E,
-558F, 582F, 586F, DA25, and DA2E. Another 380 responding candidates are organized into staged research waves
+558F, 582F, 586F, DA25, and DA2E. The original 380 responding candidates are organized into staged research waves
 pending decoding evidence. Oil-pressure 586F remains raw; DA25 has an
 unexplained low-temperature outlier; DA2E has an unidentified state code.
 Supported-year transmission filters follow existing response fixtures, whose
@@ -107,12 +129,19 @@ regression cases, including valid neighboring or recovered readings.
 
 ### Staged research polling
 
-The 380 unresolved positive-response commands are split into **57 waves of at
+The 380 existing unresolved positive-response commands are split into **57 waves of at
 most eight commands**, preserving the old TG0–TG8 families; TG9 holds three
-previously ungrouped candidates. **TG0.1 is active for 2019 in debug mode**.
-All other waves use the existing disabled convention, `filter.years: [9999]`.
+previously ungrouped candidates. Seven new discovery waves add 26 reads, for a
+total of **406 staged commands across 64 waves**, exposing 1,023 raw research
+signals including the 339 new byte views. **All 406 staged
+commands retain `dbg: true`**; TG0.1 remains selected. The new groups are TG10.1
+cluster (7), TG11.1 climate (7), TG12.1 body/FEM (3), TG13.1 steering (1),
+TG14.1 NBT (2), TG15.1 pedal/IBS/F150 (3), and TG16.1 EGS (3). The seven new
+waves and other parked waves use the existing `filter.years: [9999]` convention.
+The selector must preserve debug status when rotating the selected wave.
 Graduated commands, nine existing experimental commands, and the 583 commands
-rejected for 2019 keep their separate availability settings.
+rejected for 2019 keep their separate availability settings. Existing staged
+commands retain their membership, filters, and 1/2/10-second intervals.
 
 Requested polling intervals are 1 second for dynamic values, 2 seconds for
 temperature/voltage/level candidates, and 10 seconds for slower counters and
@@ -123,7 +152,8 @@ existing experimental commands. TG0.1 requests **330 polls/minute**, for
 approximately **354.02 testing requests/minute** combined. The busiest wave
 plus existing experimental polling totals approximately 396.02 requests/minute. Achieved cadence depends on
 adapter throughput and other enabled commands and must be checked in the next
-scanlog. Debug collection must be enabled in the client for the active wave.
+scanlog. The client must select the intended wave and collect its debug
+commands; configured intervals alone do not guarantee achieved cadence.
 
 TG0.1 contains 4204 (ambient temperature candidate), 4310 (coolant target),
 4402 (oil temperature), 4409 (oil level), and 4425 (sump temperature) at
