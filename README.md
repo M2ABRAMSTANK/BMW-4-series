@@ -13,13 +13,13 @@ manual selection on the 2019 car. In the signal picker, look under
 **Battery → TG0_1**, TG0_2, etc. Signal names retain the
 original `[TG0.1]` notation on individual research signals. Each TG entry is one
 complete native group directly under Battery, containing its research
-signals and relevant reference readings together. Each research signal also has
-an explicit `Battery.TG…` path so the app files it in its TG folder on the
-parameters page. The Testing level is omitted to work around the app bug.
+signals and relevant reference readings together. Each research signal and group-specific reference entry has
+an explicit `Battery.TG…` path so both appear inside the TG folder on the
+parameters page. Reference entries reuse the existing command and decoder,
+while their unique signal IDs allow the same reading in multiple TG folders. The Testing level is omitted to work around the app bug.
 Select the TG entry once to include RPM, speed, engine load, fuel rate, fuel
 level, coolant/oil temperature, control-module voltage, and any group-specific
-references alongside the candidates. References can belong to multiple groups
-without creating duplicate signal or command definitions.
+references alongside the candidates. Reference entries in multiple groups share one polling command.
 
 The 64 existing TG0–TG16 groups retain their candidate membership. TG17.1/17.2
 add the nine existing experimental readings; TG18.1 adds the two bitmap-advertised
@@ -28,7 +28,7 @@ are removed. Existing raw-byte views stay raw: availability does not certify a
 proposed interpretation. The 583 commands previously rejected by the car remain
 excluded for 2019 and are filed under Battery → Testing → Unavailable on 2019
 for research on other years. Known ordinary signals retain their normal paths;
-reference membership makes them available when adding testing groups.
+copies of reference readings also appear inside each testing folder.
 
 Count **unique requests**, not signals or raw bytes. One request returning 210
 byte views still consumes one request in this model. At the assumed shared

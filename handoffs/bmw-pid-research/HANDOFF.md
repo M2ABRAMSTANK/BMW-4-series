@@ -1,14 +1,49 @@
 # Project: BMW PID research
 
 - Project ID: `BMW-4-series/bmw-pid-research`
-- Status: Explicit TG signal filing and direct Battery folders complete and validated; delivery target is fork `main` after published baseline `9117dda`.
-- Owner/session: Codex primary agent, resumed October 14, 2026 for explicit TG filing and direct Battery folders. Clean dedicated project worktree reused; no other editor recorded.
+- Status: Complete TG folders including visible reference entries validated; delivery target is fork `main` after published baseline `b8540bf`.
+- Owner/session: Codex primary agent, resumed October 14, 2026 to place reference readings visibly inside every TG folder. Clean dedicated project worktree reused; no other editor recorded.
 - Repository: `M2ABRAMSTANK/BMW-4-series`; primary `/Users/rowdyer/Coding/OBDb/repos/BMW-4-series`.
 - Branch: `project/bmw-430i-research-integration`.
 - Worktree: `/Users/rowdyer/Coding/OBDb/repos/BMW-4-series--research-integration`.
 - Updated: October 14, 2026.
 
-## Current follow-up: explicit TG folders directly under Battery
+## Current follow-up: visible references inside every TG folder
+
+The app does not display native regex group references inside the TG folders.
+The user confirmed references are missing, so each group now has explicit,
+visible reference signal entries filed at the same `Battery.TG…` destination as
+its candidates. Added 719 uniquely named `BMW_TEST_REF_TG…` entries across all
+67 groups. Each is attached to the original request and copies its complete
+format and bounds; original signal entries remain available in their existing
+folders. Group regexes select these folder-local references. The manifest maps
+each alias ID to its original signal ID. No command/request was duplicated,
+and request budgets are unchanged. TG0_1 now contains 16 candidate raw-byte
+entries and 11 reference entries from 10 reference requests, 18 requests total.
+
+Validation: **1,912 tests passed, 1 existing xfailed** via the explicit worktree
+test wrapper (`--maxfail=5`); log `/private/tmp/bmw-tg-reference-tests.log`.
+All 1,102 commands and 1,855 original signals compare unchanged to `b8540bf`
+after stripping only the 719 new reference entries. Tests require folder/native
+membership equality, every reference signal present, exact source formats, and
+one response decoding to both original and folder-local reference values.
+`git diff --check` passes. Source databases and other worktrees were untouched.
+
+The external formatter's overlap check rejects all repeated bit ranges, even
+intentional identical reference views. The now-tracked `tests/test_responses.py`
+uses its documented `return_overlaps=True` interface and permits only aliases
+recorded in the manifest with identical formats attached to the same command.
+All original/unrecognized signals still undergo the strict overlap check. The
+invalid-value catalog remains keyed to original signals; alias bounds are
+validated against those originals. External ignored schema tools were not edited.
+
+Delivery follows the standing authorized fork-main workflow, with verified
+`origin` (`M2ABRAMSTANK/BMW-4-series`) and fetched baseline `b8540bf`. Keep the
+project branch/worktree. Next: reload the signal set and verify that each TG
+folder displays its candidates and references together. Repository tests check
+configuration and decoding, not live app rendering or vehicle throughput.
+
+## Historical follow-up: explicit TG folders directly under Battery
 
 The user reported TG PIDs appearing unfiled on the app parameters page and
 requested all TG folders directly under Battery to work around an app bug.

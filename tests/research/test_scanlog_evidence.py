@@ -125,7 +125,8 @@ def test_all_research_groups_are_visible_without_debug(research_commands):
             command = Command.from_json(definition)
             assert not command.debug
             assert command.filter is None or command.filter.matches(2019)
-            assert all(s['path'] == group['path'] for s in definition['signals'])
+            assert all(s['path'] == group['path'] for s in definition['signals']
+                       if not s['id'].startswith('BMW_TEST_REF_'))
 
 
 @pytest.mark.parametrize('member', RECORDED_STAGED, ids=lambda m: m['key'])
@@ -239,5 +240,6 @@ def test_invalid_value_catalog_tracks_all_configured_null_bounds(research_comman
         documented.setdefault(rule['signal_id'], {}).update(rule['configured_bounds'])
     actual = {s['id']: {k: v for k, v in s['fmt'].items() if k in ('nullmin', 'nullmax')}
               for c in research_commands.values() for s in c['signals']
-              if any(k in s.get('fmt', {}) for k in ('nullmin', 'nullmax'))}
+              if any(k in s.get('fmt', {}) for k in ('nullmin', 'nullmax'))
+              and not s['id'].startswith('BMW_TEST_REF_')}
     assert documented == actual

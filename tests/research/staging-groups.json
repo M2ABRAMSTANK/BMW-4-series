@@ -826,7 +826,20 @@
       ],
       "total_unique_requests": 18,
       "estimated_hz_per_request": 0.6481481481481481,
-      "estimated_seconds_per_request": 1.542857142857143
+      "estimated_seconds_per_request": 1.542857142857143,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG0_1_RPM": "RPM",
+        "BMW_TEST_REF_TG0_1_VSS": "VSS",
+        "BMW_TEST_REF_TG0_1_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG0_1_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG0_1_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG0_1_FLI": "FLI",
+        "BMW_TEST_REF_TG0_1_ECT": "ECT",
+        "BMW_TEST_REF_TG0_1_EOT": "EOT",
+        "BMW_TEST_REF_TG0_1_VPWR": "VPWR",
+        "BMW_TEST_REF_TG0_1_AAT": "AAT",
+        "BMW_TEST_REF_TG0_1_4SERIES_ATF_TEMP": "4SERIES_ATF_TEMP"
+      }
     },
     {
       "id": "TG0.2",
@@ -1041,7 +1054,20 @@
       ],
       "total_unique_requests": 18,
       "estimated_hz_per_request": 0.6481481481481481,
-      "estimated_seconds_per_request": 1.542857142857143
+      "estimated_seconds_per_request": 1.542857142857143,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG0_2_RPM": "RPM",
+        "BMW_TEST_REF_TG0_2_VSS": "VSS",
+        "BMW_TEST_REF_TG0_2_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG0_2_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG0_2_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG0_2_FLI": "FLI",
+        "BMW_TEST_REF_TG0_2_ECT": "ECT",
+        "BMW_TEST_REF_TG0_2_EOT": "EOT",
+        "BMW_TEST_REF_TG0_2_VPWR": "VPWR",
+        "BMW_TEST_REF_TG0_2_AAT": "AAT",
+        "BMW_TEST_REF_TG0_2_4SERIES_ATF_TEMP": "4SERIES_ATF_TEMP"
+      }
     },
     {
       "id": "TG0.3",
@@ -1260,7 +1286,20 @@
       ],
       "total_unique_requests": 18,
       "estimated_hz_per_request": 0.6481481481481481,
-      "estimated_seconds_per_request": 1.542857142857143
+      "estimated_seconds_per_request": 1.542857142857143,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG0_3_RPM": "RPM",
+        "BMW_TEST_REF_TG0_3_VSS": "VSS",
+        "BMW_TEST_REF_TG0_3_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG0_3_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG0_3_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG0_3_FLI": "FLI",
+        "BMW_TEST_REF_TG0_3_ECT": "ECT",
+        "BMW_TEST_REF_TG0_3_EOT": "EOT",
+        "BMW_TEST_REF_TG0_3_VPWR": "VPWR",
+        "BMW_TEST_REF_TG0_3_AAT": "AAT",
+        "BMW_TEST_REF_TG0_3_4SERIES_ATF_TEMP": "4SERIES_ATF_TEMP"
+      }
     },
     {
       "id": "TG0.4",
@@ -1479,7 +1518,20 @@
       ],
       "total_unique_requests": 18,
       "estimated_hz_per_request": 0.6481481481481481,
-      "estimated_seconds_per_request": 1.542857142857143
+      "estimated_seconds_per_request": 1.542857142857143,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG0_4_RPM": "RPM",
+        "BMW_TEST_REF_TG0_4_VSS": "VSS",
+        "BMW_TEST_REF_TG0_4_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG0_4_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG0_4_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG0_4_FLI": "FLI",
+        "BMW_TEST_REF_TG0_4_ECT": "ECT",
+        "BMW_TEST_REF_TG0_4_EOT": "EOT",
+        "BMW_TEST_REF_TG0_4_VPWR": "VPWR",
+        "BMW_TEST_REF_TG0_4_AAT": "AAT",
+        "BMW_TEST_REF_TG0_4_4SERIES_ATF_TEMP": "4SERIES_ATF_TEMP"
+      }
     },
     {
       "id": "TG0.5",
@@ -1699,7 +1751,20 @@
       ],
       "total_unique_requests": 18,
       "estimated_hz_per_request": 0.6481481481481481,
-      "estimated_seconds_per_request": 1.542857142857143
+      "estimated_seconds_per_request": 1.542857142857143,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG0_5_RPM": "RPM",
+        "BMW_TEST_REF_TG0_5_VSS": "VSS",
+        "BMW_TEST_REF_TG0_5_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG0_5_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG0_5_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG0_5_FLI": "FLI",
+        "BMW_TEST_REF_TG0_5_ECT": "ECT",
+        "BMW_TEST_REF_TG0_5_EOT": "EOT",
+        "BMW_TEST_REF_TG0_5_VPWR": "VPWR",
+        "BMW_TEST_REF_TG0_5_AAT": "AAT",
+        "BMW_TEST_REF_TG0_5_4SERIES_ATF_TEMP": "4SERIES_ATF_TEMP"
+      }
     },
     {
       "id": "TG0.6",
@@ -1744,7 +1809,20 @@
       ],
       "total_unique_requests": 11,
       "estimated_hz_per_request": 1.0606060606060606,
-      "estimated_seconds_per_request": 0.9428571428571428
+      "estimated_seconds_per_request": 0.9428571428571428,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG0_6_RPM": "RPM",
+        "BMW_TEST_REF_TG0_6_VSS": "VSS",
+        "BMW_TEST_REF_TG0_6_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG0_6_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG0_6_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG0_6_FLI": "FLI",
+        "BMW_TEST_REF_TG0_6_ECT": "ECT",
+        "BMW_TEST_REF_TG0_6_EOT": "EOT",
+        "BMW_TEST_REF_TG0_6_VPWR": "VPWR",
+        "BMW_TEST_REF_TG0_6_AAT": "AAT",
+        "BMW_TEST_REF_TG0_6_4SERIES_ATF_TEMP": "4SERIES_ATF_TEMP"
+      }
     },
     {
       "id": "TG1.1",
@@ -1939,7 +2017,21 @@
       ],
       "total_unique_requests": 18,
       "estimated_hz_per_request": 0.6481481481481481,
-      "estimated_seconds_per_request": 1.542857142857143
+      "estimated_seconds_per_request": 1.542857142857143,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG1_1_RPM": "RPM",
+        "BMW_TEST_REF_TG1_1_VSS": "VSS",
+        "BMW_TEST_REF_TG1_1_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG1_1_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG1_1_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG1_1_FLI": "FLI",
+        "BMW_TEST_REF_TG1_1_ECT": "ECT",
+        "BMW_TEST_REF_TG1_1_EOT": "EOT",
+        "BMW_TEST_REF_TG1_1_VPWR": "VPWR",
+        "BMW_TEST_REF_TG1_1_MAP": "MAP",
+        "BMW_TEST_REF_TG1_1_FRP": "FRP",
+        "BMW_TEST_REF_TG1_1_MAF": "MAF"
+      }
     },
     {
       "id": "TG1.2",
@@ -2130,7 +2222,21 @@
       ],
       "total_unique_requests": 18,
       "estimated_hz_per_request": 0.6481481481481481,
-      "estimated_seconds_per_request": 1.542857142857143
+      "estimated_seconds_per_request": 1.542857142857143,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG1_2_RPM": "RPM",
+        "BMW_TEST_REF_TG1_2_VSS": "VSS",
+        "BMW_TEST_REF_TG1_2_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG1_2_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG1_2_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG1_2_FLI": "FLI",
+        "BMW_TEST_REF_TG1_2_ECT": "ECT",
+        "BMW_TEST_REF_TG1_2_EOT": "EOT",
+        "BMW_TEST_REF_TG1_2_VPWR": "VPWR",
+        "BMW_TEST_REF_TG1_2_MAP": "MAP",
+        "BMW_TEST_REF_TG1_2_FRP": "FRP",
+        "BMW_TEST_REF_TG1_2_MAF": "MAF"
+      }
     },
     {
       "id": "TG1.3",
@@ -2304,7 +2410,21 @@
       ],
       "total_unique_requests": 17,
       "estimated_hz_per_request": 0.6862745098039216,
-      "estimated_seconds_per_request": 1.457142857142857
+      "estimated_seconds_per_request": 1.457142857142857,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG1_3_RPM": "RPM",
+        "BMW_TEST_REF_TG1_3_VSS": "VSS",
+        "BMW_TEST_REF_TG1_3_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG1_3_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG1_3_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG1_3_FLI": "FLI",
+        "BMW_TEST_REF_TG1_3_ECT": "ECT",
+        "BMW_TEST_REF_TG1_3_EOT": "EOT",
+        "BMW_TEST_REF_TG1_3_VPWR": "VPWR",
+        "BMW_TEST_REF_TG1_3_MAP": "MAP",
+        "BMW_TEST_REF_TG1_3_FRP": "FRP",
+        "BMW_TEST_REF_TG1_3_MAF": "MAF"
+      }
     },
     {
       "id": "TG1.4",
@@ -2498,7 +2618,21 @@
       ],
       "total_unique_requests": 18,
       "estimated_hz_per_request": 0.6481481481481481,
-      "estimated_seconds_per_request": 1.542857142857143
+      "estimated_seconds_per_request": 1.542857142857143,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG1_4_RPM": "RPM",
+        "BMW_TEST_REF_TG1_4_VSS": "VSS",
+        "BMW_TEST_REF_TG1_4_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG1_4_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG1_4_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG1_4_FLI": "FLI",
+        "BMW_TEST_REF_TG1_4_ECT": "ECT",
+        "BMW_TEST_REF_TG1_4_EOT": "EOT",
+        "BMW_TEST_REF_TG1_4_VPWR": "VPWR",
+        "BMW_TEST_REF_TG1_4_MAP": "MAP",
+        "BMW_TEST_REF_TG1_4_FRP": "FRP",
+        "BMW_TEST_REF_TG1_4_MAF": "MAF"
+      }
     },
     {
       "id": "TG1.5",
@@ -2712,7 +2846,21 @@
       ],
       "total_unique_requests": 19,
       "estimated_hz_per_request": 0.6140350877192983,
-      "estimated_seconds_per_request": 1.6285714285714286
+      "estimated_seconds_per_request": 1.6285714285714286,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG1_5_RPM": "RPM",
+        "BMW_TEST_REF_TG1_5_VSS": "VSS",
+        "BMW_TEST_REF_TG1_5_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG1_5_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG1_5_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG1_5_FLI": "FLI",
+        "BMW_TEST_REF_TG1_5_ECT": "ECT",
+        "BMW_TEST_REF_TG1_5_EOT": "EOT",
+        "BMW_TEST_REF_TG1_5_VPWR": "VPWR",
+        "BMW_TEST_REF_TG1_5_MAP": "MAP",
+        "BMW_TEST_REF_TG1_5_FRP": "FRP",
+        "BMW_TEST_REF_TG1_5_MAF": "MAF"
+      }
     },
     {
       "id": "TG1.6",
@@ -2903,7 +3051,21 @@
       ],
       "total_unique_requests": 18,
       "estimated_hz_per_request": 0.6481481481481481,
-      "estimated_seconds_per_request": 1.542857142857143
+      "estimated_seconds_per_request": 1.542857142857143,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG1_6_RPM": "RPM",
+        "BMW_TEST_REF_TG1_6_VSS": "VSS",
+        "BMW_TEST_REF_TG1_6_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG1_6_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG1_6_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG1_6_FLI": "FLI",
+        "BMW_TEST_REF_TG1_6_ECT": "ECT",
+        "BMW_TEST_REF_TG1_6_EOT": "EOT",
+        "BMW_TEST_REF_TG1_6_VPWR": "VPWR",
+        "BMW_TEST_REF_TG1_6_MAP": "MAP",
+        "BMW_TEST_REF_TG1_6_FRP": "FRP",
+        "BMW_TEST_REF_TG1_6_MAF": "MAF"
+      }
     },
     {
       "id": "TG2.1",
@@ -3069,7 +3231,21 @@
       ],
       "total_unique_requests": 17,
       "estimated_hz_per_request": 0.6862745098039216,
-      "estimated_seconds_per_request": 1.457142857142857
+      "estimated_seconds_per_request": 1.457142857142857,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG2_1_RPM": "RPM",
+        "BMW_TEST_REF_TG2_1_VSS": "VSS",
+        "BMW_TEST_REF_TG2_1_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG2_1_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG2_1_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG2_1_FLI": "FLI",
+        "BMW_TEST_REF_TG2_1_ECT": "ECT",
+        "BMW_TEST_REF_TG2_1_EOT": "EOT",
+        "BMW_TEST_REF_TG2_1_VPWR": "VPWR",
+        "BMW_TEST_REF_TG2_1_MAP": "MAP",
+        "BMW_TEST_REF_TG2_1_FRP": "FRP",
+        "BMW_TEST_REF_TG2_1_MAF": "MAF"
+      }
     },
     {
       "id": "TG2.2",
@@ -3289,7 +3465,21 @@
       ],
       "total_unique_requests": 19,
       "estimated_hz_per_request": 0.6140350877192983,
-      "estimated_seconds_per_request": 1.6285714285714286
+      "estimated_seconds_per_request": 1.6285714285714286,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG2_2_RPM": "RPM",
+        "BMW_TEST_REF_TG2_2_VSS": "VSS",
+        "BMW_TEST_REF_TG2_2_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG2_2_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG2_2_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG2_2_FLI": "FLI",
+        "BMW_TEST_REF_TG2_2_ECT": "ECT",
+        "BMW_TEST_REF_TG2_2_EOT": "EOT",
+        "BMW_TEST_REF_TG2_2_VPWR": "VPWR",
+        "BMW_TEST_REF_TG2_2_MAP": "MAP",
+        "BMW_TEST_REF_TG2_2_FRP": "FRP",
+        "BMW_TEST_REF_TG2_2_MAF": "MAF"
+      }
     },
     {
       "id": "TG2.3",
@@ -3477,7 +3667,21 @@
       ],
       "total_unique_requests": 18,
       "estimated_hz_per_request": 0.6481481481481481,
-      "estimated_seconds_per_request": 1.542857142857143
+      "estimated_seconds_per_request": 1.542857142857143,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG2_3_RPM": "RPM",
+        "BMW_TEST_REF_TG2_3_VSS": "VSS",
+        "BMW_TEST_REF_TG2_3_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG2_3_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG2_3_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG2_3_FLI": "FLI",
+        "BMW_TEST_REF_TG2_3_ECT": "ECT",
+        "BMW_TEST_REF_TG2_3_EOT": "EOT",
+        "BMW_TEST_REF_TG2_3_VPWR": "VPWR",
+        "BMW_TEST_REF_TG2_3_MAP": "MAP",
+        "BMW_TEST_REF_TG2_3_FRP": "FRP",
+        "BMW_TEST_REF_TG2_3_MAF": "MAF"
+      }
     },
     {
       "id": "TG2.4",
@@ -3643,7 +3847,21 @@
       ],
       "total_unique_requests": 17,
       "estimated_hz_per_request": 0.6862745098039216,
-      "estimated_seconds_per_request": 1.457142857142857
+      "estimated_seconds_per_request": 1.457142857142857,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG2_4_RPM": "RPM",
+        "BMW_TEST_REF_TG2_4_VSS": "VSS",
+        "BMW_TEST_REF_TG2_4_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG2_4_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG2_4_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG2_4_FLI": "FLI",
+        "BMW_TEST_REF_TG2_4_ECT": "ECT",
+        "BMW_TEST_REF_TG2_4_EOT": "EOT",
+        "BMW_TEST_REF_TG2_4_VPWR": "VPWR",
+        "BMW_TEST_REF_TG2_4_MAP": "MAP",
+        "BMW_TEST_REF_TG2_4_FRP": "FRP",
+        "BMW_TEST_REF_TG2_4_MAF": "MAF"
+      }
     },
     {
       "id": "TG2.5",
@@ -3839,7 +4057,21 @@
       ],
       "total_unique_requests": 18,
       "estimated_hz_per_request": 0.6481481481481481,
-      "estimated_seconds_per_request": 1.542857142857143
+      "estimated_seconds_per_request": 1.542857142857143,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG2_5_RPM": "RPM",
+        "BMW_TEST_REF_TG2_5_VSS": "VSS",
+        "BMW_TEST_REF_TG2_5_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG2_5_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG2_5_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG2_5_FLI": "FLI",
+        "BMW_TEST_REF_TG2_5_ECT": "ECT",
+        "BMW_TEST_REF_TG2_5_EOT": "EOT",
+        "BMW_TEST_REF_TG2_5_VPWR": "VPWR",
+        "BMW_TEST_REF_TG2_5_MAP": "MAP",
+        "BMW_TEST_REF_TG2_5_FRP": "FRP",
+        "BMW_TEST_REF_TG2_5_MAF": "MAF"
+      }
     },
     {
       "id": "TG2.6",
@@ -4030,7 +4262,21 @@
       ],
       "total_unique_requests": 18,
       "estimated_hz_per_request": 0.6481481481481481,
-      "estimated_seconds_per_request": 1.542857142857143
+      "estimated_seconds_per_request": 1.542857142857143,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG2_6_RPM": "RPM",
+        "BMW_TEST_REF_TG2_6_VSS": "VSS",
+        "BMW_TEST_REF_TG2_6_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG2_6_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG2_6_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG2_6_FLI": "FLI",
+        "BMW_TEST_REF_TG2_6_ECT": "ECT",
+        "BMW_TEST_REF_TG2_6_EOT": "EOT",
+        "BMW_TEST_REF_TG2_6_VPWR": "VPWR",
+        "BMW_TEST_REF_TG2_6_MAP": "MAP",
+        "BMW_TEST_REF_TG2_6_FRP": "FRP",
+        "BMW_TEST_REF_TG2_6_MAF": "MAF"
+      }
     },
     {
       "id": "TG2.7",
@@ -4194,7 +4440,21 @@
       ],
       "total_unique_requests": 17,
       "estimated_hz_per_request": 0.6862745098039216,
-      "estimated_seconds_per_request": 1.457142857142857
+      "estimated_seconds_per_request": 1.457142857142857,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG2_7_RPM": "RPM",
+        "BMW_TEST_REF_TG2_7_VSS": "VSS",
+        "BMW_TEST_REF_TG2_7_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG2_7_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG2_7_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG2_7_FLI": "FLI",
+        "BMW_TEST_REF_TG2_7_ECT": "ECT",
+        "BMW_TEST_REF_TG2_7_EOT": "EOT",
+        "BMW_TEST_REF_TG2_7_VPWR": "VPWR",
+        "BMW_TEST_REF_TG2_7_MAP": "MAP",
+        "BMW_TEST_REF_TG2_7_FRP": "FRP",
+        "BMW_TEST_REF_TG2_7_MAF": "MAF"
+      }
     },
     {
       "id": "TG3.1",
@@ -4406,7 +4666,21 @@
       ],
       "total_unique_requests": 19,
       "estimated_hz_per_request": 0.6140350877192983,
-      "estimated_seconds_per_request": 1.6285714285714286
+      "estimated_seconds_per_request": 1.6285714285714286,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG3_1_RPM": "RPM",
+        "BMW_TEST_REF_TG3_1_VSS": "VSS",
+        "BMW_TEST_REF_TG3_1_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG3_1_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG3_1_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG3_1_FLI": "FLI",
+        "BMW_TEST_REF_TG3_1_ECT": "ECT",
+        "BMW_TEST_REF_TG3_1_EOT": "EOT",
+        "BMW_TEST_REF_TG3_1_VPWR": "VPWR",
+        "BMW_TEST_REF_TG3_1_MAP": "MAP",
+        "BMW_TEST_REF_TG3_1_FRP": "FRP",
+        "BMW_TEST_REF_TG3_1_MAF": "MAF"
+      }
     },
     {
       "id": "TG3.2",
@@ -4625,7 +4899,21 @@
       ],
       "total_unique_requests": 19,
       "estimated_hz_per_request": 0.6140350877192983,
-      "estimated_seconds_per_request": 1.6285714285714286
+      "estimated_seconds_per_request": 1.6285714285714286,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG3_2_RPM": "RPM",
+        "BMW_TEST_REF_TG3_2_VSS": "VSS",
+        "BMW_TEST_REF_TG3_2_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG3_2_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG3_2_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG3_2_FLI": "FLI",
+        "BMW_TEST_REF_TG3_2_ECT": "ECT",
+        "BMW_TEST_REF_TG3_2_EOT": "EOT",
+        "BMW_TEST_REF_TG3_2_VPWR": "VPWR",
+        "BMW_TEST_REF_TG3_2_MAP": "MAP",
+        "BMW_TEST_REF_TG3_2_FRP": "FRP",
+        "BMW_TEST_REF_TG3_2_MAF": "MAF"
+      }
     },
     {
       "id": "TG3.3",
@@ -4824,7 +5112,21 @@
       ],
       "total_unique_requests": 18,
       "estimated_hz_per_request": 0.6481481481481481,
-      "estimated_seconds_per_request": 1.542857142857143
+      "estimated_seconds_per_request": 1.542857142857143,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG3_3_RPM": "RPM",
+        "BMW_TEST_REF_TG3_3_VSS": "VSS",
+        "BMW_TEST_REF_TG3_3_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG3_3_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG3_3_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG3_3_FLI": "FLI",
+        "BMW_TEST_REF_TG3_3_ECT": "ECT",
+        "BMW_TEST_REF_TG3_3_EOT": "EOT",
+        "BMW_TEST_REF_TG3_3_VPWR": "VPWR",
+        "BMW_TEST_REF_TG3_3_MAP": "MAP",
+        "BMW_TEST_REF_TG3_3_FRP": "FRP",
+        "BMW_TEST_REF_TG3_3_MAF": "MAF"
+      }
     },
     {
       "id": "TG3.4",
@@ -4993,7 +5295,21 @@
       ],
       "total_unique_requests": 17,
       "estimated_hz_per_request": 0.6862745098039216,
-      "estimated_seconds_per_request": 1.457142857142857
+      "estimated_seconds_per_request": 1.457142857142857,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG3_4_RPM": "RPM",
+        "BMW_TEST_REF_TG3_4_VSS": "VSS",
+        "BMW_TEST_REF_TG3_4_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG3_4_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG3_4_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG3_4_FLI": "FLI",
+        "BMW_TEST_REF_TG3_4_ECT": "ECT",
+        "BMW_TEST_REF_TG3_4_EOT": "EOT",
+        "BMW_TEST_REF_TG3_4_VPWR": "VPWR",
+        "BMW_TEST_REF_TG3_4_MAP": "MAP",
+        "BMW_TEST_REF_TG3_4_FRP": "FRP",
+        "BMW_TEST_REF_TG3_4_MAF": "MAF"
+      }
     },
     {
       "id": "TG3.5",
@@ -5186,7 +5502,21 @@
       ],
       "total_unique_requests": 18,
       "estimated_hz_per_request": 0.6481481481481481,
-      "estimated_seconds_per_request": 1.542857142857143
+      "estimated_seconds_per_request": 1.542857142857143,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG3_5_RPM": "RPM",
+        "BMW_TEST_REF_TG3_5_VSS": "VSS",
+        "BMW_TEST_REF_TG3_5_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG3_5_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG3_5_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG3_5_FLI": "FLI",
+        "BMW_TEST_REF_TG3_5_ECT": "ECT",
+        "BMW_TEST_REF_TG3_5_EOT": "EOT",
+        "BMW_TEST_REF_TG3_5_VPWR": "VPWR",
+        "BMW_TEST_REF_TG3_5_MAP": "MAP",
+        "BMW_TEST_REF_TG3_5_FRP": "FRP",
+        "BMW_TEST_REF_TG3_5_MAF": "MAF"
+      }
     },
     {
       "id": "TG3.6",
@@ -5410,7 +5740,21 @@
       ],
       "total_unique_requests": 19,
       "estimated_hz_per_request": 0.6140350877192983,
-      "estimated_seconds_per_request": 1.6285714285714286
+      "estimated_seconds_per_request": 1.6285714285714286,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG3_6_RPM": "RPM",
+        "BMW_TEST_REF_TG3_6_VSS": "VSS",
+        "BMW_TEST_REF_TG3_6_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG3_6_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG3_6_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG3_6_FLI": "FLI",
+        "BMW_TEST_REF_TG3_6_ECT": "ECT",
+        "BMW_TEST_REF_TG3_6_EOT": "EOT",
+        "BMW_TEST_REF_TG3_6_VPWR": "VPWR",
+        "BMW_TEST_REF_TG3_6_MAP": "MAP",
+        "BMW_TEST_REF_TG3_6_FRP": "FRP",
+        "BMW_TEST_REF_TG3_6_MAF": "MAF"
+      }
     },
     {
       "id": "TG3.7",
@@ -5552,7 +5896,21 @@
       ],
       "total_unique_requests": 16,
       "estimated_hz_per_request": 0.7291666666666666,
-      "estimated_seconds_per_request": 1.3714285714285714
+      "estimated_seconds_per_request": 1.3714285714285714,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG3_7_RPM": "RPM",
+        "BMW_TEST_REF_TG3_7_VSS": "VSS",
+        "BMW_TEST_REF_TG3_7_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG3_7_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG3_7_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG3_7_FLI": "FLI",
+        "BMW_TEST_REF_TG3_7_ECT": "ECT",
+        "BMW_TEST_REF_TG3_7_EOT": "EOT",
+        "BMW_TEST_REF_TG3_7_VPWR": "VPWR",
+        "BMW_TEST_REF_TG3_7_MAP": "MAP",
+        "BMW_TEST_REF_TG3_7_FRP": "FRP",
+        "BMW_TEST_REF_TG3_7_MAF": "MAF"
+      }
     },
     {
       "id": "TG4.1",
@@ -5719,7 +6077,21 @@
       ],
       "total_unique_requests": 17,
       "estimated_hz_per_request": 0.6862745098039216,
-      "estimated_seconds_per_request": 1.457142857142857
+      "estimated_seconds_per_request": 1.457142857142857,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG4_1_RPM": "RPM",
+        "BMW_TEST_REF_TG4_1_VSS": "VSS",
+        "BMW_TEST_REF_TG4_1_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG4_1_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG4_1_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG4_1_FLI": "FLI",
+        "BMW_TEST_REF_TG4_1_ECT": "ECT",
+        "BMW_TEST_REF_TG4_1_EOT": "EOT",
+        "BMW_TEST_REF_TG4_1_VPWR": "VPWR",
+        "BMW_TEST_REF_TG4_1_MAP": "MAP",
+        "BMW_TEST_REF_TG4_1_FRP": "FRP",
+        "BMW_TEST_REF_TG4_1_MAF": "MAF"
+      }
     },
     {
       "id": "TG4.2",
@@ -5944,7 +6316,21 @@
       ],
       "total_unique_requests": 19,
       "estimated_hz_per_request": 0.6140350877192983,
-      "estimated_seconds_per_request": 1.6285714285714286
+      "estimated_seconds_per_request": 1.6285714285714286,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG4_2_RPM": "RPM",
+        "BMW_TEST_REF_TG4_2_VSS": "VSS",
+        "BMW_TEST_REF_TG4_2_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG4_2_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG4_2_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG4_2_FLI": "FLI",
+        "BMW_TEST_REF_TG4_2_ECT": "ECT",
+        "BMW_TEST_REF_TG4_2_EOT": "EOT",
+        "BMW_TEST_REF_TG4_2_VPWR": "VPWR",
+        "BMW_TEST_REF_TG4_2_MAP": "MAP",
+        "BMW_TEST_REF_TG4_2_FRP": "FRP",
+        "BMW_TEST_REF_TG4_2_MAF": "MAF"
+      }
     },
     {
       "id": "TG4.3",
@@ -6134,7 +6520,21 @@
       ],
       "total_unique_requests": 18,
       "estimated_hz_per_request": 0.6481481481481481,
-      "estimated_seconds_per_request": 1.542857142857143
+      "estimated_seconds_per_request": 1.542857142857143,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG4_3_RPM": "RPM",
+        "BMW_TEST_REF_TG4_3_VSS": "VSS",
+        "BMW_TEST_REF_TG4_3_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG4_3_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG4_3_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG4_3_FLI": "FLI",
+        "BMW_TEST_REF_TG4_3_ECT": "ECT",
+        "BMW_TEST_REF_TG4_3_EOT": "EOT",
+        "BMW_TEST_REF_TG4_3_VPWR": "VPWR",
+        "BMW_TEST_REF_TG4_3_MAP": "MAP",
+        "BMW_TEST_REF_TG4_3_FRP": "FRP",
+        "BMW_TEST_REF_TG4_3_MAF": "MAF"
+      }
     },
     {
       "id": "TG4.4",
@@ -6298,7 +6698,21 @@
       ],
       "total_unique_requests": 17,
       "estimated_hz_per_request": 0.6862745098039216,
-      "estimated_seconds_per_request": 1.457142857142857
+      "estimated_seconds_per_request": 1.457142857142857,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG4_4_RPM": "RPM",
+        "BMW_TEST_REF_TG4_4_VSS": "VSS",
+        "BMW_TEST_REF_TG4_4_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG4_4_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG4_4_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG4_4_FLI": "FLI",
+        "BMW_TEST_REF_TG4_4_ECT": "ECT",
+        "BMW_TEST_REF_TG4_4_EOT": "EOT",
+        "BMW_TEST_REF_TG4_4_VPWR": "VPWR",
+        "BMW_TEST_REF_TG4_4_MAP": "MAP",
+        "BMW_TEST_REF_TG4_4_FRP": "FRP",
+        "BMW_TEST_REF_TG4_4_MAF": "MAF"
+      }
     },
     {
       "id": "TG4.5",
@@ -6463,7 +6877,21 @@
       ],
       "total_unique_requests": 17,
       "estimated_hz_per_request": 0.6862745098039216,
-      "estimated_seconds_per_request": 1.457142857142857
+      "estimated_seconds_per_request": 1.457142857142857,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG4_5_RPM": "RPM",
+        "BMW_TEST_REF_TG4_5_VSS": "VSS",
+        "BMW_TEST_REF_TG4_5_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG4_5_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG4_5_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG4_5_FLI": "FLI",
+        "BMW_TEST_REF_TG4_5_ECT": "ECT",
+        "BMW_TEST_REF_TG4_5_EOT": "EOT",
+        "BMW_TEST_REF_TG4_5_VPWR": "VPWR",
+        "BMW_TEST_REF_TG4_5_MAP": "MAP",
+        "BMW_TEST_REF_TG4_5_FRP": "FRP",
+        "BMW_TEST_REF_TG4_5_MAF": "MAF"
+      }
     },
     {
       "id": "TG4.6",
@@ -6631,7 +7059,21 @@
       ],
       "total_unique_requests": 17,
       "estimated_hz_per_request": 0.6862745098039216,
-      "estimated_seconds_per_request": 1.457142857142857
+      "estimated_seconds_per_request": 1.457142857142857,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG4_6_RPM": "RPM",
+        "BMW_TEST_REF_TG4_6_VSS": "VSS",
+        "BMW_TEST_REF_TG4_6_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG4_6_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG4_6_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG4_6_FLI": "FLI",
+        "BMW_TEST_REF_TG4_6_ECT": "ECT",
+        "BMW_TEST_REF_TG4_6_EOT": "EOT",
+        "BMW_TEST_REF_TG4_6_VPWR": "VPWR",
+        "BMW_TEST_REF_TG4_6_MAP": "MAP",
+        "BMW_TEST_REF_TG4_6_FRP": "FRP",
+        "BMW_TEST_REF_TG4_6_MAF": "MAF"
+      }
     },
     {
       "id": "TG4.7",
@@ -6775,7 +7217,21 @@
       ],
       "total_unique_requests": 16,
       "estimated_hz_per_request": 0.7291666666666666,
-      "estimated_seconds_per_request": 1.3714285714285714
+      "estimated_seconds_per_request": 1.3714285714285714,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG4_7_RPM": "RPM",
+        "BMW_TEST_REF_TG4_7_VSS": "VSS",
+        "BMW_TEST_REF_TG4_7_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG4_7_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG4_7_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG4_7_FLI": "FLI",
+        "BMW_TEST_REF_TG4_7_ECT": "ECT",
+        "BMW_TEST_REF_TG4_7_EOT": "EOT",
+        "BMW_TEST_REF_TG4_7_VPWR": "VPWR",
+        "BMW_TEST_REF_TG4_7_MAP": "MAP",
+        "BMW_TEST_REF_TG4_7_FRP": "FRP",
+        "BMW_TEST_REF_TG4_7_MAF": "MAF"
+      }
     },
     {
       "id": "TG5.1",
@@ -6964,7 +7420,18 @@
       ],
       "total_unique_requests": 15,
       "estimated_hz_per_request": 0.7777777777777778,
-      "estimated_seconds_per_request": 1.2857142857142858
+      "estimated_seconds_per_request": 1.2857142857142858,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG5_1_RPM": "RPM",
+        "BMW_TEST_REF_TG5_1_VSS": "VSS",
+        "BMW_TEST_REF_TG5_1_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG5_1_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG5_1_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG5_1_FLI": "FLI",
+        "BMW_TEST_REF_TG5_1_ECT": "ECT",
+        "BMW_TEST_REF_TG5_1_EOT": "EOT",
+        "BMW_TEST_REF_TG5_1_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG5.2",
@@ -7151,7 +7618,18 @@
       ],
       "total_unique_requests": 15,
       "estimated_hz_per_request": 0.7777777777777778,
-      "estimated_seconds_per_request": 1.2857142857142858
+      "estimated_seconds_per_request": 1.2857142857142858,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG5_2_RPM": "RPM",
+        "BMW_TEST_REF_TG5_2_VSS": "VSS",
+        "BMW_TEST_REF_TG5_2_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG5_2_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG5_2_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG5_2_FLI": "FLI",
+        "BMW_TEST_REF_TG5_2_ECT": "ECT",
+        "BMW_TEST_REF_TG5_2_EOT": "EOT",
+        "BMW_TEST_REF_TG5_2_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG5.3",
@@ -7372,7 +7850,18 @@
       ],
       "total_unique_requests": 16,
       "estimated_hz_per_request": 0.7291666666666666,
-      "estimated_seconds_per_request": 1.3714285714285714
+      "estimated_seconds_per_request": 1.3714285714285714,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG5_3_RPM": "RPM",
+        "BMW_TEST_REF_TG5_3_VSS": "VSS",
+        "BMW_TEST_REF_TG5_3_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG5_3_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG5_3_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG5_3_FLI": "FLI",
+        "BMW_TEST_REF_TG5_3_ECT": "ECT",
+        "BMW_TEST_REF_TG5_3_EOT": "EOT",
+        "BMW_TEST_REF_TG5_3_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG5.4",
@@ -7592,7 +8081,18 @@
       ],
       "total_unique_requests": 16,
       "estimated_hz_per_request": 0.7291666666666666,
-      "estimated_seconds_per_request": 1.3714285714285714
+      "estimated_seconds_per_request": 1.3714285714285714,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG5_4_RPM": "RPM",
+        "BMW_TEST_REF_TG5_4_VSS": "VSS",
+        "BMW_TEST_REF_TG5_4_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG5_4_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG5_4_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG5_4_FLI": "FLI",
+        "BMW_TEST_REF_TG5_4_ECT": "ECT",
+        "BMW_TEST_REF_TG5_4_EOT": "EOT",
+        "BMW_TEST_REF_TG5_4_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG5.5",
@@ -7815,7 +8315,18 @@
       ],
       "total_unique_requests": 16,
       "estimated_hz_per_request": 0.7291666666666666,
-      "estimated_seconds_per_request": 1.3714285714285714
+      "estimated_seconds_per_request": 1.3714285714285714,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG5_5_RPM": "RPM",
+        "BMW_TEST_REF_TG5_5_VSS": "VSS",
+        "BMW_TEST_REF_TG5_5_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG5_5_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG5_5_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG5_5_FLI": "FLI",
+        "BMW_TEST_REF_TG5_5_ECT": "ECT",
+        "BMW_TEST_REF_TG5_5_EOT": "EOT",
+        "BMW_TEST_REF_TG5_5_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG5.6",
@@ -7998,7 +8509,18 @@
       ],
       "total_unique_requests": 15,
       "estimated_hz_per_request": 0.7777777777777778,
-      "estimated_seconds_per_request": 1.2857142857142858
+      "estimated_seconds_per_request": 1.2857142857142858,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG5_6_RPM": "RPM",
+        "BMW_TEST_REF_TG5_6_VSS": "VSS",
+        "BMW_TEST_REF_TG5_6_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG5_6_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG5_6_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG5_6_FLI": "FLI",
+        "BMW_TEST_REF_TG5_6_ECT": "ECT",
+        "BMW_TEST_REF_TG5_6_EOT": "EOT",
+        "BMW_TEST_REF_TG5_6_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG6.1",
@@ -8181,7 +8703,18 @@
       ],
       "total_unique_requests": 15,
       "estimated_hz_per_request": 0.7777777777777778,
-      "estimated_seconds_per_request": 1.2857142857142858
+      "estimated_seconds_per_request": 1.2857142857142858,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG6_1_RPM": "RPM",
+        "BMW_TEST_REF_TG6_1_VSS": "VSS",
+        "BMW_TEST_REF_TG6_1_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG6_1_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG6_1_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG6_1_FLI": "FLI",
+        "BMW_TEST_REF_TG6_1_ECT": "ECT",
+        "BMW_TEST_REF_TG6_1_EOT": "EOT",
+        "BMW_TEST_REF_TG6_1_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG6.2",
@@ -8369,7 +8902,18 @@
       ],
       "total_unique_requests": 15,
       "estimated_hz_per_request": 0.7777777777777778,
-      "estimated_seconds_per_request": 1.2857142857142858
+      "estimated_seconds_per_request": 1.2857142857142858,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG6_2_RPM": "RPM",
+        "BMW_TEST_REF_TG6_2_VSS": "VSS",
+        "BMW_TEST_REF_TG6_2_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG6_2_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG6_2_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG6_2_FLI": "FLI",
+        "BMW_TEST_REF_TG6_2_ECT": "ECT",
+        "BMW_TEST_REF_TG6_2_EOT": "EOT",
+        "BMW_TEST_REF_TG6_2_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG6.3",
@@ -8582,7 +9126,18 @@
       ],
       "total_unique_requests": 16,
       "estimated_hz_per_request": 0.7291666666666666,
-      "estimated_seconds_per_request": 1.3714285714285714
+      "estimated_seconds_per_request": 1.3714285714285714,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG6_3_RPM": "RPM",
+        "BMW_TEST_REF_TG6_3_VSS": "VSS",
+        "BMW_TEST_REF_TG6_3_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG6_3_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG6_3_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG6_3_FLI": "FLI",
+        "BMW_TEST_REF_TG6_3_ECT": "ECT",
+        "BMW_TEST_REF_TG6_3_EOT": "EOT",
+        "BMW_TEST_REF_TG6_3_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG6.4",
@@ -8771,7 +9326,18 @@
       ],
       "total_unique_requests": 15,
       "estimated_hz_per_request": 0.7777777777777778,
-      "estimated_seconds_per_request": 1.2857142857142858
+      "estimated_seconds_per_request": 1.2857142857142858,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG6_4_RPM": "RPM",
+        "BMW_TEST_REF_TG6_4_VSS": "VSS",
+        "BMW_TEST_REF_TG6_4_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG6_4_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG6_4_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG6_4_FLI": "FLI",
+        "BMW_TEST_REF_TG6_4_ECT": "ECT",
+        "BMW_TEST_REF_TG6_4_EOT": "EOT",
+        "BMW_TEST_REF_TG6_4_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG6.5",
@@ -8947,7 +9513,18 @@
       ],
       "total_unique_requests": 15,
       "estimated_hz_per_request": 0.7777777777777778,
-      "estimated_seconds_per_request": 1.2857142857142858
+      "estimated_seconds_per_request": 1.2857142857142858,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG6_5_RPM": "RPM",
+        "BMW_TEST_REF_TG6_5_VSS": "VSS",
+        "BMW_TEST_REF_TG6_5_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG6_5_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG6_5_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG6_5_FLI": "FLI",
+        "BMW_TEST_REF_TG6_5_ECT": "ECT",
+        "BMW_TEST_REF_TG6_5_EOT": "EOT",
+        "BMW_TEST_REF_TG6_5_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG6.6",
@@ -9107,7 +9684,18 @@
       ],
       "total_unique_requests": 14,
       "estimated_hz_per_request": 0.8333333333333334,
-      "estimated_seconds_per_request": 1.2
+      "estimated_seconds_per_request": 1.2,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG6_6_RPM": "RPM",
+        "BMW_TEST_REF_TG6_6_VSS": "VSS",
+        "BMW_TEST_REF_TG6_6_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG6_6_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG6_6_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG6_6_FLI": "FLI",
+        "BMW_TEST_REF_TG6_6_ECT": "ECT",
+        "BMW_TEST_REF_TG6_6_EOT": "EOT",
+        "BMW_TEST_REF_TG6_6_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG6.7",
@@ -9242,7 +9830,18 @@
       ],
       "total_unique_requests": 13,
       "estimated_hz_per_request": 0.8974358974358975,
-      "estimated_seconds_per_request": 1.1142857142857143
+      "estimated_seconds_per_request": 1.1142857142857143,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG6_7_RPM": "RPM",
+        "BMW_TEST_REF_TG6_7_VSS": "VSS",
+        "BMW_TEST_REF_TG6_7_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG6_7_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG6_7_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG6_7_FLI": "FLI",
+        "BMW_TEST_REF_TG6_7_ECT": "ECT",
+        "BMW_TEST_REF_TG6_7_EOT": "EOT",
+        "BMW_TEST_REF_TG6_7_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG7.1",
@@ -9402,7 +10001,18 @@
       ],
       "total_unique_requests": 14,
       "estimated_hz_per_request": 0.8333333333333334,
-      "estimated_seconds_per_request": 1.2
+      "estimated_seconds_per_request": 1.2,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG7_1_RPM": "RPM",
+        "BMW_TEST_REF_TG7_1_VSS": "VSS",
+        "BMW_TEST_REF_TG7_1_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG7_1_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG7_1_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG7_1_FLI": "FLI",
+        "BMW_TEST_REF_TG7_1_ECT": "ECT",
+        "BMW_TEST_REF_TG7_1_EOT": "EOT",
+        "BMW_TEST_REF_TG7_1_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG7.2",
@@ -9561,7 +10171,18 @@
       ],
       "total_unique_requests": 14,
       "estimated_hz_per_request": 0.8333333333333334,
-      "estimated_seconds_per_request": 1.2
+      "estimated_seconds_per_request": 1.2,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG7_2_RPM": "RPM",
+        "BMW_TEST_REF_TG7_2_VSS": "VSS",
+        "BMW_TEST_REF_TG7_2_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG7_2_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG7_2_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG7_2_FLI": "FLI",
+        "BMW_TEST_REF_TG7_2_ECT": "ECT",
+        "BMW_TEST_REF_TG7_2_EOT": "EOT",
+        "BMW_TEST_REF_TG7_2_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG7.3",
@@ -9745,7 +10366,18 @@
       ],
       "total_unique_requests": 15,
       "estimated_hz_per_request": 0.7777777777777778,
-      "estimated_seconds_per_request": 1.2857142857142858
+      "estimated_seconds_per_request": 1.2857142857142858,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG7_3_RPM": "RPM",
+        "BMW_TEST_REF_TG7_3_VSS": "VSS",
+        "BMW_TEST_REF_TG7_3_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG7_3_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG7_3_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG7_3_FLI": "FLI",
+        "BMW_TEST_REF_TG7_3_ECT": "ECT",
+        "BMW_TEST_REF_TG7_3_EOT": "EOT",
+        "BMW_TEST_REF_TG7_3_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG7.4",
@@ -9954,7 +10586,18 @@
       ],
       "total_unique_requests": 16,
       "estimated_hz_per_request": 0.7291666666666666,
-      "estimated_seconds_per_request": 1.3714285714285714
+      "estimated_seconds_per_request": 1.3714285714285714,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG7_4_RPM": "RPM",
+        "BMW_TEST_REF_TG7_4_VSS": "VSS",
+        "BMW_TEST_REF_TG7_4_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG7_4_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG7_4_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG7_4_FLI": "FLI",
+        "BMW_TEST_REF_TG7_4_ECT": "ECT",
+        "BMW_TEST_REF_TG7_4_EOT": "EOT",
+        "BMW_TEST_REF_TG7_4_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG7.5",
@@ -10165,7 +10808,18 @@
       ],
       "total_unique_requests": 16,
       "estimated_hz_per_request": 0.7291666666666666,
-      "estimated_seconds_per_request": 1.3714285714285714
+      "estimated_seconds_per_request": 1.3714285714285714,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG7_5_RPM": "RPM",
+        "BMW_TEST_REF_TG7_5_VSS": "VSS",
+        "BMW_TEST_REF_TG7_5_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG7_5_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG7_5_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG7_5_FLI": "FLI",
+        "BMW_TEST_REF_TG7_5_ECT": "ECT",
+        "BMW_TEST_REF_TG7_5_EOT": "EOT",
+        "BMW_TEST_REF_TG7_5_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG7.6",
@@ -10331,7 +10985,18 @@
       ],
       "total_unique_requests": 14,
       "estimated_hz_per_request": 0.8333333333333334,
-      "estimated_seconds_per_request": 1.2
+      "estimated_seconds_per_request": 1.2,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG7_6_RPM": "RPM",
+        "BMW_TEST_REF_TG7_6_VSS": "VSS",
+        "BMW_TEST_REF_TG7_6_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG7_6_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG7_6_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG7_6_FLI": "FLI",
+        "BMW_TEST_REF_TG7_6_ECT": "ECT",
+        "BMW_TEST_REF_TG7_6_EOT": "EOT",
+        "BMW_TEST_REF_TG7_6_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG7.7",
@@ -10538,7 +11203,18 @@
       ],
       "total_unique_requests": 16,
       "estimated_hz_per_request": 0.7291666666666666,
-      "estimated_seconds_per_request": 1.3714285714285714
+      "estimated_seconds_per_request": 1.3714285714285714,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG7_7_RPM": "RPM",
+        "BMW_TEST_REF_TG7_7_VSS": "VSS",
+        "BMW_TEST_REF_TG7_7_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG7_7_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG7_7_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG7_7_FLI": "FLI",
+        "BMW_TEST_REF_TG7_7_ECT": "ECT",
+        "BMW_TEST_REF_TG7_7_EOT": "EOT",
+        "BMW_TEST_REF_TG7_7_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG7.8",
@@ -10581,7 +11257,18 @@
       ],
       "total_unique_requests": 9,
       "estimated_hz_per_request": 1.2962962962962963,
-      "estimated_seconds_per_request": 0.7714285714285715
+      "estimated_seconds_per_request": 0.7714285714285715,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG7_8_RPM": "RPM",
+        "BMW_TEST_REF_TG7_8_VSS": "VSS",
+        "BMW_TEST_REF_TG7_8_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG7_8_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG7_8_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG7_8_FLI": "FLI",
+        "BMW_TEST_REF_TG7_8_ECT": "ECT",
+        "BMW_TEST_REF_TG7_8_EOT": "EOT",
+        "BMW_TEST_REF_TG7_8_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG8.1",
@@ -10741,7 +11428,18 @@
       ],
       "total_unique_requests": 14,
       "estimated_hz_per_request": 0.8333333333333334,
-      "estimated_seconds_per_request": 1.2
+      "estimated_seconds_per_request": 1.2,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG8_1_RPM": "RPM",
+        "BMW_TEST_REF_TG8_1_VSS": "VSS",
+        "BMW_TEST_REF_TG8_1_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG8_1_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG8_1_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG8_1_FLI": "FLI",
+        "BMW_TEST_REF_TG8_1_ECT": "ECT",
+        "BMW_TEST_REF_TG8_1_EOT": "EOT",
+        "BMW_TEST_REF_TG8_1_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG8.2",
@@ -10900,7 +11598,18 @@
       ],
       "total_unique_requests": 14,
       "estimated_hz_per_request": 0.8333333333333334,
-      "estimated_seconds_per_request": 1.2
+      "estimated_seconds_per_request": 1.2,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG8_2_RPM": "RPM",
+        "BMW_TEST_REF_TG8_2_VSS": "VSS",
+        "BMW_TEST_REF_TG8_2_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG8_2_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG8_2_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG8_2_FLI": "FLI",
+        "BMW_TEST_REF_TG8_2_ECT": "ECT",
+        "BMW_TEST_REF_TG8_2_EOT": "EOT",
+        "BMW_TEST_REF_TG8_2_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG9.1",
@@ -10991,7 +11700,18 @@
       ],
       "total_unique_requests": 11,
       "estimated_hz_per_request": 1.0606060606060606,
-      "estimated_seconds_per_request": 0.9428571428571428
+      "estimated_seconds_per_request": 0.9428571428571428,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG9_1_RPM": "RPM",
+        "BMW_TEST_REF_TG9_1_VSS": "VSS",
+        "BMW_TEST_REF_TG9_1_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG9_1_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG9_1_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG9_1_FLI": "FLI",
+        "BMW_TEST_REF_TG9_1_ECT": "ECT",
+        "BMW_TEST_REF_TG9_1_EOT": "EOT",
+        "BMW_TEST_REF_TG9_1_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG10.1",
@@ -11354,7 +12074,18 @@
       ],
       "total_unique_requests": 15,
       "estimated_hz_per_request": 0.7777777777777778,
-      "estimated_seconds_per_request": 1.2857142857142858
+      "estimated_seconds_per_request": 1.2857142857142858,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG10_1_RPM": "RPM",
+        "BMW_TEST_REF_TG10_1_VSS": "VSS",
+        "BMW_TEST_REF_TG10_1_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG10_1_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG10_1_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG10_1_FLI": "FLI",
+        "BMW_TEST_REF_TG10_1_ECT": "ECT",
+        "BMW_TEST_REF_TG10_1_EOT": "EOT",
+        "BMW_TEST_REF_TG10_1_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG11.1",
@@ -11477,7 +12208,20 @@
       ],
       "total_unique_requests": 17,
       "estimated_hz_per_request": 0.6862745098039216,
-      "estimated_seconds_per_request": 1.457142857142857
+      "estimated_seconds_per_request": 1.457142857142857,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG11_1_RPM": "RPM",
+        "BMW_TEST_REF_TG11_1_VSS": "VSS",
+        "BMW_TEST_REF_TG11_1_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG11_1_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG11_1_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG11_1_FLI": "FLI",
+        "BMW_TEST_REF_TG11_1_ECT": "ECT",
+        "BMW_TEST_REF_TG11_1_EOT": "EOT",
+        "BMW_TEST_REF_TG11_1_VPWR": "VPWR",
+        "BMW_TEST_REF_TG11_1_AAT": "AAT",
+        "BMW_TEST_REF_TG11_1_4SERIES_ATF_TEMP": "4SERIES_ATF_TEMP"
+      }
     },
     {
       "id": "TG12.1",
@@ -11552,7 +12296,18 @@
       ],
       "total_unique_requests": 11,
       "estimated_hz_per_request": 1.0606060606060606,
-      "estimated_seconds_per_request": 0.9428571428571428
+      "estimated_seconds_per_request": 0.9428571428571428,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG12_1_RPM": "RPM",
+        "BMW_TEST_REF_TG12_1_VSS": "VSS",
+        "BMW_TEST_REF_TG12_1_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG12_1_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG12_1_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG12_1_FLI": "FLI",
+        "BMW_TEST_REF_TG12_1_ECT": "ECT",
+        "BMW_TEST_REF_TG12_1_EOT": "EOT",
+        "BMW_TEST_REF_TG12_1_VPWR": "VPWR"
+      }
     },
     {
       "id": "TG13.1",
@@ -11591,7 +12346,23 @@
       ],
       "total_unique_requests": 11,
       "estimated_hz_per_request": 1.0606060606060606,
-      "estimated_seconds_per_request": 0.9428571428571428
+      "estimated_seconds_per_request": 0.9428571428571428,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG13_1_RPM": "RPM",
+        "BMW_TEST_REF_TG13_1_VSS": "VSS",
+        "BMW_TEST_REF_TG13_1_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG13_1_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG13_1_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG13_1_FLI": "FLI",
+        "BMW_TEST_REF_TG13_1_ECT": "ECT",
+        "BMW_TEST_REF_TG13_1_EOT": "EOT",
+        "BMW_TEST_REF_TG13_1_VPWR": "VPWR",
+        "BMW_TEST_REF_TG13_1_4SERIES_FL_SPD": "4SERIES_FL_SPD",
+        "BMW_TEST_REF_TG13_1_4SERIES_FR_SPD": "4SERIES_FR_SPD",
+        "BMW_TEST_REF_TG13_1_4SERIES_RL_SPD": "4SERIES_RL_SPD",
+        "BMW_TEST_REF_TG13_1_4SERIES_RR_SPD": "4SERIES_RR_SPD",
+        "BMW_TEST_REF_TG13_1_APP_D": "APP_D"
+      }
     },
     {
       "id": "TG14.1",
@@ -11656,7 +12427,23 @@
       ],
       "total_unique_requests": 12,
       "estimated_hz_per_request": 0.9722222222222222,
-      "estimated_seconds_per_request": 1.0285714285714285
+      "estimated_seconds_per_request": 1.0285714285714285,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG14_1_RPM": "RPM",
+        "BMW_TEST_REF_TG14_1_VSS": "VSS",
+        "BMW_TEST_REF_TG14_1_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG14_1_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG14_1_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG14_1_FLI": "FLI",
+        "BMW_TEST_REF_TG14_1_ECT": "ECT",
+        "BMW_TEST_REF_TG14_1_EOT": "EOT",
+        "BMW_TEST_REF_TG14_1_VPWR": "VPWR",
+        "BMW_TEST_REF_TG14_1_4SERIES_FL_SPD": "4SERIES_FL_SPD",
+        "BMW_TEST_REF_TG14_1_4SERIES_FR_SPD": "4SERIES_FR_SPD",
+        "BMW_TEST_REF_TG14_1_4SERIES_RL_SPD": "4SERIES_RL_SPD",
+        "BMW_TEST_REF_TG14_1_4SERIES_RR_SPD": "4SERIES_RR_SPD",
+        "BMW_TEST_REF_TG14_1_APP_D": "APP_D"
+      }
     },
     {
       "id": "TG15.1",
@@ -11733,7 +12520,23 @@
       ],
       "total_unique_requests": 13,
       "estimated_hz_per_request": 0.8974358974358975,
-      "estimated_seconds_per_request": 1.1142857142857143
+      "estimated_seconds_per_request": 1.1142857142857143,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG15_1_RPM": "RPM",
+        "BMW_TEST_REF_TG15_1_VSS": "VSS",
+        "BMW_TEST_REF_TG15_1_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG15_1_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG15_1_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG15_1_FLI": "FLI",
+        "BMW_TEST_REF_TG15_1_ECT": "ECT",
+        "BMW_TEST_REF_TG15_1_EOT": "EOT",
+        "BMW_TEST_REF_TG15_1_VPWR": "VPWR",
+        "BMW_TEST_REF_TG15_1_4SERIES_FL_SPD": "4SERIES_FL_SPD",
+        "BMW_TEST_REF_TG15_1_4SERIES_FR_SPD": "4SERIES_FR_SPD",
+        "BMW_TEST_REF_TG15_1_4SERIES_RL_SPD": "4SERIES_RL_SPD",
+        "BMW_TEST_REF_TG15_1_4SERIES_RR_SPD": "4SERIES_RR_SPD",
+        "BMW_TEST_REF_TG15_1_APP_D": "APP_D"
+      }
     },
     {
       "id": "TG16.1",
@@ -11825,7 +12628,20 @@
       ],
       "total_unique_requests": 13,
       "estimated_hz_per_request": 0.8974358974358975,
-      "estimated_seconds_per_request": 1.1142857142857143
+      "estimated_seconds_per_request": 1.1142857142857143,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG16_1_RPM": "RPM",
+        "BMW_TEST_REF_TG16_1_VSS": "VSS",
+        "BMW_TEST_REF_TG16_1_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG16_1_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG16_1_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG16_1_FLI": "FLI",
+        "BMW_TEST_REF_TG16_1_ECT": "ECT",
+        "BMW_TEST_REF_TG16_1_EOT": "EOT",
+        "BMW_TEST_REF_TG16_1_VPWR": "VPWR",
+        "BMW_TEST_REF_TG16_1_4SERIES_ATF_TEMP": "4SERIES_ATF_TEMP",
+        "BMW_TEST_REF_TG16_1_4SERIES_GEAR": "4SERIES_GEAR"
+      }
     },
     {
       "id": "TG17.1",
@@ -11872,7 +12688,20 @@
       ],
       "total_unique_requests": 18,
       "estimated_hz_per_request": 0.6481481481481481,
-      "estimated_seconds_per_request": 1.542857142857143
+      "estimated_seconds_per_request": 1.542857142857143,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG17_1_RPM": "RPM",
+        "BMW_TEST_REF_TG17_1_VSS": "VSS",
+        "BMW_TEST_REF_TG17_1_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG17_1_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG17_1_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG17_1_FLI": "FLI",
+        "BMW_TEST_REF_TG17_1_ECT": "ECT",
+        "BMW_TEST_REF_TG17_1_EOT": "EOT",
+        "BMW_TEST_REF_TG17_1_VPWR": "VPWR",
+        "BMW_TEST_REF_TG17_1_AAT": "AAT",
+        "BMW_TEST_REF_TG17_1_4SERIES_ATF_TEMP": "4SERIES_ATF_TEMP"
+      }
     },
     {
       "id": "TG17.2",
@@ -11898,7 +12727,20 @@
       ],
       "total_unique_requests": 11,
       "estimated_hz_per_request": 1.0606060606060606,
-      "estimated_seconds_per_request": 0.9428571428571428
+      "estimated_seconds_per_request": 0.9428571428571428,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG17_2_RPM": "RPM",
+        "BMW_TEST_REF_TG17_2_VSS": "VSS",
+        "BMW_TEST_REF_TG17_2_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG17_2_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG17_2_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG17_2_FLI": "FLI",
+        "BMW_TEST_REF_TG17_2_ECT": "ECT",
+        "BMW_TEST_REF_TG17_2_EOT": "EOT",
+        "BMW_TEST_REF_TG17_2_VPWR": "VPWR",
+        "BMW_TEST_REF_TG17_2_AAT": "AAT",
+        "BMW_TEST_REF_TG17_2_4SERIES_ATF_TEMP": "4SERIES_ATF_TEMP"
+      }
     },
     {
       "id": "TG18.1",
@@ -11925,7 +12767,18 @@
       ],
       "total_unique_requests": 10,
       "estimated_hz_per_request": 1.1666666666666667,
-      "estimated_seconds_per_request": 0.8571428571428571
+      "estimated_seconds_per_request": 0.8571428571428571,
+      "reference_signal_aliases": {
+        "BMW_TEST_REF_TG18_1_RPM": "RPM",
+        "BMW_TEST_REF_TG18_1_VSS": "VSS",
+        "BMW_TEST_REF_TG18_1_LOAD_PCT": "LOAD_PCT",
+        "BMW_TEST_REF_TG18_1_FUEL_RATE_ALT": "FUEL_RATE_ALT",
+        "BMW_TEST_REF_TG18_1_VFUEL_RATE": "VFUEL_RATE",
+        "BMW_TEST_REF_TG18_1_FLI": "FLI",
+        "BMW_TEST_REF_TG18_1_ECT": "ECT",
+        "BMW_TEST_REF_TG18_1_EOT": "EOT",
+        "BMW_TEST_REF_TG18_1_VPWR": "VPWR"
+      }
     }
   ]
 }

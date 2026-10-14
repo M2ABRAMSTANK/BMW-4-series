@@ -9,7 +9,9 @@ import pytest
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'tests/schemas/python'))
-from can.signals import Command
+from can.signals import Command, Signal
+from can.can_frame import CANPacket
+from can.command_registry import CommandRegistry
 
 spec = importlib.util.spec_from_file_location('staging', ROOT / 'scripts/staging.py')
 staging = importlib.util.module_from_spec(spec)
@@ -33,9 +35,28 @@ def test_picker_regex_selects_exact_requests_and_references(group):
                if any(pattern.fullmatch(s['id']) for s in command['signals'])}
     for member in group['commands']:
         for signal in COMMANDS[member['key']]['signals']:
+            if signal['id'].startswith('BMW_TEST_REF_'):
+                continue
             assert signal['path'] == group['path']  # Explicit filing for the app's parameters page.
             if not signal.get('hidden', False):
                 assert pattern.fullmatch(signal['id'])
+    signals = {s['id']: s for c in COMMANDS.values() for s in c['signals']}
+    folder_ids = {s['id'] for s in signals.values()
+                  if s.get('path') == group['path'] and not s.get('hidden', False)}
+    matched_ids = {s['id'] for s in signals.values() if pattern.fullmatch(s['id'])}
+    assert folder_ids == matched_ids  # Folder and native group expose the same complete test.
+    for key in group['reference_command_keys']:
+        originals = {s['id'] for s in COMMANDS[key]['signals']
+                     if not s['id'].startswith('BMW_TEST_REF_') and not s.get('hidden', False)}
+        assert originals <= set(group['reference_signal_aliases'].values())
+    for alias_id, original_id in group['reference_signal_aliases'].items():
+        alias, original = signals[alias_id], signals[original_id]
+        assert alias['path'] == group['path']
+        assert not alias.get('hidden', False)
+        assert alias['fmt'] == original['fmt']
+        assert pattern.fullmatch(alias_id)
+        for payload in (bytes(32), bytes([255]) * 32, bytes(range(32))):
+            assert Signal.from_json(alias).format.decode_value(payload) == Signal.from_json(original).format.decode_value(payload)
     estimate = staging.estimate(MANIFEST, [group['id']])
     assert matched == set(estimate['known_request_keys'])
     assert set(MANIFEST['common_reference_command_keys']) <= matched
@@ -84,3 +105,23 @@ def test_new_evidence_covers_tg01_without_claiming_unobserved_discovery():
         assert sample['packet_hex'].startswith('62' + request[2:])
     assert len(review['external_discovery']) == 26
     assert all(not e['counts'] for e in review['external_discovery'])
+
+
+@pytest.mark.parametrize('key', sorted({k for g in MANIFEST['groups']
+                                       for k in g['reference_command_keys']}))
+def test_reference_entries_decode_from_one_shared_response(key):
+    definition = COMMANDS[key]
+    service, pid = next(iter(definition['cmd'].items()))
+    payload = bytes(range(1, 33))  # Synthetic decoder input, not vehicle evidence.
+    packet = CANPacket(can_identifier=definition['rax'],
+                       extended_receive_address='F1' if definition.get('eax') else None,
+                       data=bytes([int(service, 16) + 0x40]) + bytes.fromhex(pid) + payload)
+    responses = CommandRegistry([Command.from_json(definition)]).identify_commands(packet)
+    assert len(responses) == 1
+    values = responses[0].values
+    mapping = {alias: source for g in MANIFEST['groups']
+               for alias, source in g['reference_signal_aliases'].items()}
+    for signal in definition['signals']:
+        if signal['id'] in mapping:
+            assert signal['id'] in values and mapping[signal['id']] in values
+            assert values[signal['id']] == values[mapping[signal['id']]]
