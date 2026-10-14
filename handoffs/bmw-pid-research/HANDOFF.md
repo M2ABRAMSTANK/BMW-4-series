@@ -1,8 +1,8 @@
 # Project: BMW PID research
 
 - Project ID: `BMW-4-series/bmw-pid-research`
-- Status: Complete TG folders including visible reference entries validated; delivery target is fork `main` after published baseline `b8540bf`.
-- Owner/session: Codex primary agent, resumed October 14, 2026 to place reference readings visibly inside every TG folder. Clean dedicated project worktree reused; no other editor recorded.
+- Status: TG folder/reference fix published as `1635f7f` to fork `main`; user confirmed it works in the app on October 14, 2026.
+- Owner/session: Codex primary agent, resumed October 14, 2026 to place reference readings visibly inside every TG folder. Clean dedicated project worktree reused; no other editor recorded. Handoff updated after user confirmed the fix.
 - Repository: `M2ABRAMSTANK/BMW-4-series`; primary `/Users/rowdyer/Coding/OBDb/repos/BMW-4-series`.
 - Branch: `project/bmw-430i-research-integration`.
 - Worktree: `/Users/rowdyer/Coding/OBDb/repos/BMW-4-series--research-integration`.
@@ -37,11 +37,22 @@ All original/unrecognized signals still undergo the strict overlap check. The
 invalid-value catalog remains keyed to original signals; alias bounds are
 validated against those originals. External ignored schema tools were not edited.
 
-Delivery follows the standing authorized fork-main workflow, with verified
-`origin` (`M2ABRAMSTANK/BMW-4-series`) and fetched baseline `b8540bf`. Keep the
-project branch/worktree. Next: reload the signal set and verify that each TG
-folder displays its candidates and references together. Repository tests check
-configuration and decoding, not live app rendering or vehicle throughput.
+Published as `1635f7f7a287ba63516e0dc022dd00faec0c7833` to
+`M2ABRAMSTANK/BMW-4-series` `main`, with the successful push and local
+`origin/main` matching the project HEAD. On October 14, 2026 the user reported
+“perf, that worked” after loading the update, confirming that reference readings
+now appear inside the TG folders in the app. The folder-placement follow-up is
+complete; no app-display blocker remains for this change.
+
+Keep the dedicated project branch/worktree for continued BMW PID research.
+Next: collect and interpret target replies for TG10–TG16 and TG18.1 using the
+complete TG folders, including their references. Continue counting unique
+requests against the shared approximately 700/minute budget. The user's display
+confirmation does not establish achieved vehicle throughput, validate candidate
+meanings/scaling, or provide new response captures. Preserve existing source
+evidence and route hypotheses. No further implementation tests were needed for
+this documentation-only confirmation; the validated implementation result above
+remains the baseline.
 
 ## Historical follow-up: explicit TG folders directly under Battery
 
