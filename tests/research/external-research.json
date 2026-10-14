@@ -16191,5 +16191,5 @@
       "counted_in_profile_partition": false
     }
   ],
-  "current_selection_policy": "All discovery groups visible for manual selection under Battery.Testing; no debug flags. Shared 700 requests/minute model includes reference and background traffic; source polling tiers retained as historical intended-use metadata."
+  "current_selection_policy": "All discovery groups visible for manual selection directly under Battery; explicit TG signal paths; no debug flags. Shared 700 requests/minute model includes reference and background traffic; source polling tiers retained as historical intended-use metadata."
 }

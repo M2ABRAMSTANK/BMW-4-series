@@ -69,4 +69,4 @@ def test_uncaptured_pids_are_visible_for_manual_discovery():
         command = next(c for c in SERVICE01 if c['rax'] == '7E8' and c['cmd']['01'] == pid)
         assert 'dbg' not in command
         assert command['filter'] == {'years': [2019]}
-        assert all('path' not in s for s in command['signals'])  # Native TG18_1 membership.
+        assert all(s['path'] == 'Battery.TG18_1' for s in command['signals'])

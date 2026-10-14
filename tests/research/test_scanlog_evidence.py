@@ -125,7 +125,7 @@ def test_all_research_groups_are_visible_without_debug(research_commands):
             command = Command.from_json(definition)
             assert not command.debug
             assert command.filter is None or command.filter.matches(2019)
-            assert all('path' not in s for s in definition['signals'])
+            assert all(s['path'] == group['path'] for s in definition['signals'])
 
 
 @pytest.mark.parametrize('member', RECORDED_STAGED, ids=lambda m: m['key'])

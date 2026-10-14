@@ -10,11 +10,12 @@ current evidence and local worktree. The shared scanning budget is approximately
 
 All **67 testing groups / 417 candidate requests** are available together for
 manual selection on the 2019 car. In the signal picker, look under
-**Battery → Testing → TG0_1**, TG0_2, etc. Signal names retain the
+**Battery → TG0_1**, TG0_2, etc. Signal names retain the
 original `[TG0.1]` notation on individual research signals. Each TG entry is one
-complete native group directly under Battery → Testing, containing its research
-signals and relevant reference readings together. There is no additional
-“testing (requests incl. references)” subgroup or separate candidate-only folder.
+complete native group directly under Battery, containing its research
+signals and relevant reference readings together. Each research signal also has
+an explicit `Battery.TG…` path so the app files it in its TG folder on the
+parameters page. The Testing level is omitted to work around the app bug.
 Select the TG entry once to include RPM, speed, engine load, fuel rate, fuel
 level, coolant/oil temperature, control-module voltage, and any group-specific
 references alongside the candidates. References can belong to multiple groups

@@ -22,18 +22,18 @@ COMMANDS = {staging.command_key(c): c for c in DATA['commands']}
 @pytest.mark.parametrize('group', MANIFEST['groups'], ids=lambda g: g['id'])
 def test_picker_regex_selects_exact_requests_and_references(group):
     picker = next(g for g in DATA['signalGroups'] if g['id'] == 'BMW_TEST_' + group['id'].replace('.', '_'))
-    assert picker['path'] == 'Battery.Testing'
+    assert picker['path'] == 'Battery'
     assert picker['name'] == group['id'].replace('.', '_')
     assert picker['path'] + '.' + picker['name'] == group['path']
-    assert group['path'].startswith('Battery.Testing.')
+    assert group['path'].startswith('Battery.TG')
     # A dot is a path separator, so TG0.1 is one folder named TG0_1.
-    assert len(group['path'].split('.')) == 3
+    assert len(group['path'].split('.')) == 2
     pattern = re.compile(picker['matchingRegex'])
     matched = {key for key, command in COMMANDS.items()
                if any(pattern.fullmatch(s['id']) for s in command['signals'])}
     for member in group['commands']:
         for signal in COMMANDS[member['key']]['signals']:
-            assert 'path' not in signal  # No separate candidate-only folder.
+            assert signal['path'] == group['path']  # Explicit filing for the app's parameters page.
             if not signal.get('hidden', False):
                 assert pattern.fullmatch(signal['id'])
     estimate = staging.estimate(MANIFEST, [group['id']])

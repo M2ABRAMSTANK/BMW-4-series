@@ -811,7 +811,7 @@
           "previous_interval_seconds": 2
         }
       ],
-      "path": "Battery.Testing.TG0_1",
+      "path": "Battery.TG0_1",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -1026,7 +1026,7 @@
           "previous_interval_seconds": 10
         }
       ],
-      "path": "Battery.Testing.TG0_2",
+      "path": "Battery.TG0_2",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -1245,7 +1245,7 @@
           "previous_interval_seconds": 2
         }
       ],
-      "path": "Battery.Testing.TG0_3",
+      "path": "Battery.TG0_3",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -1464,7 +1464,7 @@
           "previous_interval_seconds": 2
         }
       ],
-      "path": "Battery.Testing.TG0_4",
+      "path": "Battery.TG0_4",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -1684,7 +1684,7 @@
           "previous_interval_seconds": 2
         }
       ],
-      "path": "Battery.Testing.TG0_5",
+      "path": "Battery.TG0_5",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -1729,7 +1729,7 @@
           "previous_interval_seconds": 2
         }
       ],
-      "path": "Battery.Testing.TG0_6",
+      "path": "Battery.TG0_6",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -1923,7 +1923,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG1_1",
+      "path": "Battery.TG1_1",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -2114,7 +2114,7 @@
           "previous_interval_seconds": 2
         }
       ],
-      "path": "Battery.Testing.TG1_2",
+      "path": "Battery.TG1_2",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -2288,7 +2288,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG1_3",
+      "path": "Battery.TG1_3",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -2482,7 +2482,7 @@
           "previous_interval_seconds": 2
         }
       ],
-      "path": "Battery.Testing.TG1_4",
+      "path": "Battery.TG1_4",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -2696,7 +2696,7 @@
           "previous_interval_seconds": 2
         }
       ],
-      "path": "Battery.Testing.TG1_5",
+      "path": "Battery.TG1_5",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -2887,7 +2887,7 @@
           "previous_interval_seconds": 2
         }
       ],
-      "path": "Battery.Testing.TG1_6",
+      "path": "Battery.TG1_6",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -3053,7 +3053,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG2_1",
+      "path": "Battery.TG2_1",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -3273,7 +3273,7 @@
           "previous_interval_seconds": 2
         }
       ],
-      "path": "Battery.Testing.TG2_2",
+      "path": "Battery.TG2_2",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -3461,7 +3461,7 @@
           "previous_interval_seconds": 10
         }
       ],
-      "path": "Battery.Testing.TG2_3",
+      "path": "Battery.TG2_3",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -3627,7 +3627,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG2_4",
+      "path": "Battery.TG2_4",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -3823,7 +3823,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG2_5",
+      "path": "Battery.TG2_5",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -4014,7 +4014,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG2_6",
+      "path": "Battery.TG2_6",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -4178,7 +4178,7 @@
           "previous_interval_seconds": 2
         }
       ],
-      "path": "Battery.Testing.TG2_7",
+      "path": "Battery.TG2_7",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -4390,7 +4390,7 @@
           "previous_interval_seconds": 10
         }
       ],
-      "path": "Battery.Testing.TG3_1",
+      "path": "Battery.TG3_1",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -4609,7 +4609,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG3_2",
+      "path": "Battery.TG3_2",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -4808,7 +4808,7 @@
           "previous_interval_seconds": 10
         }
       ],
-      "path": "Battery.Testing.TG3_3",
+      "path": "Battery.TG3_3",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -4977,7 +4977,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG3_4",
+      "path": "Battery.TG3_4",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -5170,7 +5170,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG3_5",
+      "path": "Battery.TG3_5",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -5394,7 +5394,7 @@
           "previous_interval_seconds": 10
         }
       ],
-      "path": "Battery.Testing.TG3_6",
+      "path": "Battery.TG3_6",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -5536,7 +5536,7 @@
           "previous_interval_seconds": 2
         }
       ],
-      "path": "Battery.Testing.TG3_7",
+      "path": "Battery.TG3_7",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -5703,7 +5703,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG4_1",
+      "path": "Battery.TG4_1",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -5928,7 +5928,7 @@
           "previous_interval_seconds": 10
         }
       ],
-      "path": "Battery.Testing.TG4_2",
+      "path": "Battery.TG4_2",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -6118,7 +6118,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG4_3",
+      "path": "Battery.TG4_3",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -6282,7 +6282,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG4_4",
+      "path": "Battery.TG4_4",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -6447,7 +6447,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG4_5",
+      "path": "Battery.TG4_5",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -6615,7 +6615,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG4_6",
+      "path": "Battery.TG4_6",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -6759,7 +6759,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG4_7",
+      "path": "Battery.TG4_7",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -6951,7 +6951,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG5_1",
+      "path": "Battery.TG5_1",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -7138,7 +7138,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG5_2",
+      "path": "Battery.TG5_2",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -7359,7 +7359,7 @@
           "previous_interval_seconds": 2
         }
       ],
-      "path": "Battery.Testing.TG5_3",
+      "path": "Battery.TG5_3",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -7579,7 +7579,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG5_4",
+      "path": "Battery.TG5_4",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -7802,7 +7802,7 @@
           "previous_interval_seconds": 10
         }
       ],
-      "path": "Battery.Testing.TG5_5",
+      "path": "Battery.TG5_5",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -7985,7 +7985,7 @@
           "previous_interval_seconds": 2
         }
       ],
-      "path": "Battery.Testing.TG5_6",
+      "path": "Battery.TG5_6",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -8168,7 +8168,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG6_1",
+      "path": "Battery.TG6_1",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -8356,7 +8356,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG6_2",
+      "path": "Battery.TG6_2",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -8569,7 +8569,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG6_3",
+      "path": "Battery.TG6_3",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -8758,7 +8758,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG6_4",
+      "path": "Battery.TG6_4",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -8934,7 +8934,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG6_5",
+      "path": "Battery.TG6_5",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -9094,7 +9094,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG6_6",
+      "path": "Battery.TG6_6",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -9229,7 +9229,7 @@
           "previous_interval_seconds": 2
         }
       ],
-      "path": "Battery.Testing.TG6_7",
+      "path": "Battery.TG6_7",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -9389,7 +9389,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG7_1",
+      "path": "Battery.TG7_1",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -9548,7 +9548,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG7_2",
+      "path": "Battery.TG7_2",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -9732,7 +9732,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG7_3",
+      "path": "Battery.TG7_3",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -9941,7 +9941,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG7_4",
+      "path": "Battery.TG7_4",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -10152,7 +10152,7 @@
           "previous_interval_seconds": 10
         }
       ],
-      "path": "Battery.Testing.TG7_5",
+      "path": "Battery.TG7_5",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -10318,7 +10318,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG7_6",
+      "path": "Battery.TG7_6",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -10525,7 +10525,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG7_7",
+      "path": "Battery.TG7_7",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -10568,7 +10568,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG7_8",
+      "path": "Battery.TG7_8",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -10728,7 +10728,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG8_1",
+      "path": "Battery.TG8_1",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -10887,7 +10887,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG8_2",
+      "path": "Battery.TG8_2",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -10978,7 +10978,7 @@
           "previous_interval_seconds": 1
         }
       ],
-      "path": "Battery.Testing.TG9_1",
+      "path": "Battery.TG9_1",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -11341,7 +11341,7 @@
           "previous_interval_seconds": 300
         }
       ],
-      "path": "Battery.Testing.TG10_1",
+      "path": "Battery.TG10_1",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -11462,7 +11462,7 @@
           "previous_interval_seconds": 60
         }
       ],
-      "path": "Battery.Testing.TG11_1",
+      "path": "Battery.TG11_1",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -11539,7 +11539,7 @@
           "previous_interval_seconds": 5
         }
       ],
-      "path": "Battery.Testing.TG12_1",
+      "path": "Battery.TG12_1",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -11576,7 +11576,7 @@
           "previous_interval_seconds": 0.25
         }
       ],
-      "path": "Battery.Testing.TG13_1",
+      "path": "Battery.TG13_1",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -11641,7 +11641,7 @@
           "previous_interval_seconds": 5
         }
       ],
-      "path": "Battery.Testing.TG14_1",
+      "path": "Battery.TG14_1",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -11718,7 +11718,7 @@
           "previous_interval_seconds": 60
         }
       ],
-      "path": "Battery.Testing.TG15_1",
+      "path": "Battery.TG15_1",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -11810,7 +11810,7 @@
           "previous_interval_seconds": 300
         }
       ],
-      "path": "Battery.Testing.TG16_1",
+      "path": "Battery.TG16_1",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -11857,7 +11857,7 @@
           "key": "6F1|18|22DA25"
         }
       ],
-      "path": "Battery.Testing.TG17_1",
+      "path": "Battery.TG17_1",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -11883,7 +11883,7 @@
           "key": "6F1|18|22DA2E"
         }
       ],
-      "path": "Battery.Testing.TG17_2",
+      "path": "Battery.TG17_2",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",
@@ -11912,7 +11912,7 @@
           "key": "7DF||0183"
         }
       ],
-      "path": "Battery.Testing.TG18_1",
+      "path": "Battery.TG18_1",
       "reference_command_keys": [
         "7DF||010C",
         "7DF||010D",

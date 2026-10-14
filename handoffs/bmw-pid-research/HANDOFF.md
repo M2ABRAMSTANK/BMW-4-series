@@ -1,14 +1,41 @@
 # Project: BMW PID research
 
 - Project ID: `BMW-4-series/bmw-pid-research`
-- Status: Flat testing-picker follow-up complete and validated; delivery target is fork `main` after published baseline `25ee899`.
-- Owner/session: Codex primary agent, resumed October 13, 2026 for the user-requested flat testing picker; prior implementation session complete. Clean dedicated project worktree reused.
+- Status: Explicit TG signal filing and direct Battery folders complete and validated; delivery target is fork `main` after published baseline `9117dda`.
+- Owner/session: Codex primary agent, resumed October 14, 2026 for explicit TG filing and direct Battery folders. Clean dedicated project worktree reused; no other editor recorded.
 - Repository: `M2ABRAMSTANK/BMW-4-series`; primary `/Users/rowdyer/Coding/OBDb/repos/BMW-4-series`.
 - Branch: `project/bmw-430i-research-integration`.
 - Worktree: `/Users/rowdyer/Coding/OBDb/repos/BMW-4-series--research-integration`.
-- Updated: October 13, 2026.
+- Updated: October 14, 2026.
 
-## Current follow-up: flat testing picker
+## Current follow-up: explicit TG folders directly under Battery
+
+The user reported TG PIDs appearing unfiled on the app parameters page and
+requested all TG folders directly under Battery to work around an app bug.
+This supersedes the previous flat-picker placement below. All 1,056 signals
+belonging to the 417 candidate requests now have explicit paths such as
+`Battery.TG0_1`. All 67 native groups have parent `Battery`, retain names such
+as `TG0_1`, and retain exact regex membership including references. The manifest
+records matching full destinations. Existing ordinary reference signal paths
+and the excluded “Unavailable on 2019” folder are unchanged.
+
+Validation: `bash scripts/test-repo.sh BMW-4-series--research-integration
+--maxfail=5` passed **1,896 tests, 1 xfailed** (existing CAN-padding limitation);
+log `/private/tmp/bmw-battery-tg-tests.log`. Updated existing picker/research
+checks require explicit signal paths matching the TG destinations. Semantic
+comparison to `9117dda` confirms only 1,056 signal paths and 67 native group
+parent paths changed in the signal set: commands, IDs, regexes, decoders,
+hidden flags, filters, and polling settings are unchanged. `git diff --check`
+passes. No scanlog access was needed.
+
+Publication continues the previously authorized fork-main workflow. Verified
+`origin` as `https://github.com/M2ABRAMSTANK/BMW-4-series.git` and fetched
+remote `main` at `9117dda`, matching the local parent. Commit and push this
+validated update to that fork's `main`; keep this branch/worktree for review.
+Next: reload the fork signal set in the app and confirm TG parameters are filed
+under Battery → TG0_1, etc. Offline validation cannot confirm app rendering.
+
+## Historical follow-up: flat testing picker
 
 The user requested removing the nested complete-group folder and placing all
 research and reference readings together at the TG level. All 67 native groups
