@@ -1,6 +1,7 @@
 """Discovery configuration and synthetic transport checks, NOT vehicle fixtures.
 
-The external candidates have no confirmed target captures. Synthetic responses
+This corpus records the original unobserved target state; current support is in
+discovery-catalog.json. Synthetic responses
 exercise byte extraction, ISO-TP reassembly and routing only, never physical
 calibration or vehicle support.
 """
@@ -95,7 +96,7 @@ def test_full_signalset_schema_and_acquisition_identity():
 
 
 @pytest.mark.parametrize('entry', ACQUISITIONS, ids=lambda e: e['key'])
-def test_discovery_is_raw_categorized_and_explicitly_unobserved(entry):
+def test_imported_source_state_and_current_raw_discovery_filing(entry):
     definition = COMMANDS[entry['key']]
     member = next(m for g in STAGING['groups'] for m in g['commands'] if m['key'] == entry['key'])
     assert 'dbg' not in definition

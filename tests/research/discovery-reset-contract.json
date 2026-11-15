@@ -1,0 +1,6 @@
+{
+  "reset_commit": "47befec76239e3fb19b3e80414a3fb4875690544",
+  "command_count": 1102,
+  "normalized_commands_sha256": "efcf0bed8c7647a7b254e552f4ad017ecca7137400338d99e66ff71d03d04a8b",
+  "comparison": "Remove only generated BMW_TEST_REF aliases; undo TG display path/name. All remaining command/signal fields must match the published reset."
+}
