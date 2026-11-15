@@ -18,10 +18,11 @@ staging = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(staging)
 DATA = json.loads((ROOT / 'signalsets/v3/default.json').read_text())
 MANIFEST = json.loads((ROOT / 'tests/research/staging-groups.json').read_text())
+HISTORICAL = json.loads((ROOT / 'tests/research/staging-groups-before-reset.json').read_text())
 COMMANDS = {staging.command_key(c): c for c in DATA['commands']}
 
 
-@pytest.mark.parametrize('group', MANIFEST['groups'], ids=lambda g: g['id'])
+@pytest.mark.parametrize('group', MANIFEST['groups'], ids=[g['id'] for g in MANIFEST['groups']])
 def test_picker_regex_selects_exact_requests_and_references(group):
     picker = next(g for g in DATA['signalGroups'] if g['id'] == 'BMW_TEST_' + group['id'].replace('.', '_'))
     assert picker['path'] == 'Battery'
@@ -68,11 +69,11 @@ def test_picker_regex_selects_exact_requests_and_references(group):
 
 
 def test_overlap_extra_commands_and_background_share_one_budget():
-    one = staging.estimate(MANIFEST, ['TG0.1'])
+    one = staging.estimate(HISTORICAL, ['TG0.1'])
     assert one['unique_requests'] == 18
     assert one['estimated_hz_per_request'] == pytest.approx(700 / 18 / 60)
-    assert staging.estimate(MANIFEST, ['TG0.1', 'TG0.1'], extra_keys=['7DF||010C']) == one
-    combined = staging.estimate(MANIFEST, ['TG0.1', 'TG0.2'],
+    assert staging.estimate(HISTORICAL, ['TG0.1', 'TG0.1'], extra_keys=['7DF||010C']) == one
+    combined = staging.estimate(HISTORICAL, ['TG0.1', 'TG0.2'],
                                extra_keys=['7DF||010C', 'external|route|PID'], background_count=3)
     assert combined['unique_requests'] == 30  # 16 candidates, 10 shared references, 1 extra, 3 background
     assert combined['estimated_hz_per_request'] * 60 * 30 == pytest.approx(700)
@@ -91,7 +92,7 @@ def test_new_evidence_covers_tg01_without_claiming_unobserved_discovery():
     entries = {e['key']: e for e in review['commands']}
     assert len(review['sessions']) == 18
     assert sum(s['pid_requests'] for s in review['sessions']) == 59264
-    for member in MANIFEST['groups'][0]['commands']:
+    for member in HISTORICAL['groups'][0]['commands']:
         evidence = entries[member['key']]
         assert set(evidence['counts']) == {'positive'}
         assert evidence['counts']['positive'] >= 132
@@ -125,3 +126,15 @@ def test_reference_entries_decode_from_one_shared_response(key):
         if signal['id'] in mapping:
             assert signal['id'] in values and mapping[signal['id']] in values
             assert values[signal['id']] == values[mapping[signal['id']]]
+
+
+def test_cleared_state_has_no_active_testing_ui_or_aliases():
+    if MANIFEST['selection_mode'] != 'cleared':
+        return
+    assert not MANIFEST['groups']
+    assert not any(g['id'].startswith('BMW_TEST_') for g in DATA.get('signalGroups', []))
+    for command in DATA['commands']:
+        for signal in command['signals']:
+            assert not signal['id'].startswith('BMW_TEST_REF_')
+            assert not signal.get('path', '').startswith('Battery.TG')
+            assert not signal['name'].startswith('[TG')

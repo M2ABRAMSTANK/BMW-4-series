@@ -22,7 +22,8 @@ from can.signals import Command, Filter
 EXTERNAL = json.loads((ROOT / 'tests/research/external-research.json').read_text())
 ACQUISITIONS = EXTERNAL['acquisitions']
 DEFINITION = json.loads((ROOT / 'signalsets/v3/default.json').read_text())
-STAGING = json.loads((ROOT / 'tests/research/staging-groups.json').read_text())
+STAGING = json.loads((ROOT / 'tests/research/staging-groups-before-reset.json').read_text())
+ACTIVE = json.loads((ROOT / 'tests/research/staging-groups.json').read_text())
 TIERS = {'Operational': 0.25, 'Engine control': 1, 'Short-term trends': 5,
          'Thermal condition': 15, 'Health and environment': 60,
          'Cumulative history': 300}
@@ -113,8 +114,12 @@ def test_discovery_is_raw_categorized_and_explicitly_unobserved(entry):
     assert len(definition['signals']) == entry['raw_view_bytes'] == member['raw_view_bytes']
     for i, signal in enumerate(definition['signals']):
         assert signal['id'] == entry['raw_signal_ids'][i]
-        assert signal['path'] == 'Battery.' + entry['staging_group'].replace('.', '_')
-        assert signal['name'].startswith(f"[{entry['staging_group']}]")
+        active_group = next((g for g in ACTIVE['groups'] if any(m['key'] == entry['key'] for m in g['commands'])), None)
+        assert signal['path'] == (active_group['path'] if active_group else 'Battery.Research')
+        if active_group:
+            assert signal['name'].startswith('[' + active_group['id'] + ']')
+        else:
+            assert not signal['name'].startswith('[TG')
         assert 'candidate raw byte' in signal['name']
         assert signal['description'].startswith("[Polling: On demand] ")
         assert 'unverified' in signal['description'] or 'unknown' in signal['description']

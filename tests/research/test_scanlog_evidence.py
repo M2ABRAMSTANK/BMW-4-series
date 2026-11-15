@@ -103,17 +103,18 @@ def test_graduated_commands_remain_available_for_verified_year(key, research_com
 
 
 STAGING = json.loads((TESTS / 'research' / 'staging-groups.json').read_text())
-STAGED = [m for g in STAGING['groups'] for m in g['commands']]
+CATALOG = json.loads((TESTS / 'research' / 'staging-groups-before-reset.json').read_text())
+STAGED = [m for g in CATALOG['groups'] for m in g['commands']]
 EXTERNAL = json.loads((TESTS / 'research' / 'external-research.json').read_text())
 DISCOVERY_KEYS = {e['key'] for e in EXTERNAL['acquisitions']}
 RECORDED_STAGED = [m for m in STAGED if 'payload_bytes' in m and m['key'] not in DISCOVERY_KEYS]
 
 
-def test_all_research_groups_are_visible_without_debug(research_commands):
+def test_research_catalog_preserved_and_active_groups_match_paths(research_commands):
     keys = [m['key'] for m in STAGED]
     assert len(RECORDED_STAGED) == 380
     assert len(keys) == len(set(keys)) == 417
-    assert STAGING['selection_mode'] == 'manual_all_visible'
+    assert STAGING['selection_mode'] in ('cleared', 'manual_all_visible', 'discovery_only')
     assert STAGING['testing_budget_requests_per_minute'] == 700
     for definition in research_commands.values():
         assert 'dbg' not in definition and 'dbgfilter' not in definition

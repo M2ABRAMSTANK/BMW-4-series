@@ -1,4 +1,4 @@
-tests/schemas/
+tests/schemas
 __pycache__
 .claude/skills
 .claude/settings.local.json

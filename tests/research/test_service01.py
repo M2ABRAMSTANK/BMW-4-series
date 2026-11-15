@@ -69,4 +69,7 @@ def test_uncaptured_pids_are_visible_for_manual_discovery():
         command = next(c for c in SERVICE01 if c['rax'] == '7E8' and c['cmd']['01'] == pid)
         assert 'dbg' not in command
         assert command['filter'] == {'years': [2019]}
-        assert all(s['path'] == 'Battery.TG18_1' for s in command['signals'])
+        manifest = json.loads((ROOT / 'tests/research/staging-groups.json').read_text())
+        key = '7DF||01' + pid
+        group = next((g for g in manifest['groups'] if any(m['key'] == key for m in g['commands'])), None)
+        assert all(s['path'] == (group['path'] if group else 'Battery.Research') for s in command['signals'])
