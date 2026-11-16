@@ -35,14 +35,12 @@ def test_formatting(test_file):
     signalset_path = os.path.join(REPO_ROOT, 'signalsets', 'v3', test_file)
 
     # TG references intentionally decode the same bytes in multiple folders.
-    # Permit only the exact same-command aliases recorded in the manifest;
+    # Permit only the exact same-command aliases in the public test mapping;
     # continue checking all original signals for unintended overlaps.
     formatted, _ = format_file(signalset_path, return_overlaps=True)
     data = json.loads(formatted)
-    manifest_path = REPO_ROOT / 'tests/research/staging-groups.json'
-    manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {'groups': []}
-    expected = {alias: (source, group['path']) for group in manifest['groups']
-                for alias, source in group.get('reference_signal_aliases', {}).items()}
+    mapping = json.loads((REPO_ROOT / 'tests/tg_reference_aliases.json').read_text())
+    expected = {alias: (entry['source'], entry['path']) for alias, entry in mapping.items()}
     seen = set()
     original = copy.deepcopy(data)
     for command in original['commands']:

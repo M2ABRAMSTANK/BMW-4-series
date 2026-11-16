@@ -1,0 +1,754 @@
+{
+  "BMW_TEST_REF_TG0_LOAD_PCT": {
+    "path": "Battery.TG0",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG0_RPM": {
+    "path": "Battery.TG0",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG0_VPWR": {
+    "path": "Battery.TG0",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG0_VSS": {
+    "path": "Battery.TG0",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG10_LOAD_PCT": {
+    "path": "Battery.TG10",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG10_RPM": {
+    "path": "Battery.TG10",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG10_VPWR": {
+    "path": "Battery.TG10",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG10_VSS": {
+    "path": "Battery.TG10",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG11_LOAD_PCT": {
+    "path": "Battery.TG11",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG11_RPM": {
+    "path": "Battery.TG11",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG11_VPWR": {
+    "path": "Battery.TG11",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG11_VSS": {
+    "path": "Battery.TG11",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG12_LOAD_PCT": {
+    "path": "Battery.TG12",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG12_RPM": {
+    "path": "Battery.TG12",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG12_VPWR": {
+    "path": "Battery.TG12",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG12_VSS": {
+    "path": "Battery.TG12",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG13_LOAD_PCT": {
+    "path": "Battery.TG13",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG13_RPM": {
+    "path": "Battery.TG13",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG13_VPWR": {
+    "path": "Battery.TG13",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG13_VSS": {
+    "path": "Battery.TG13",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG14_LOAD_PCT": {
+    "path": "Battery.TG14",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG14_RPM": {
+    "path": "Battery.TG14",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG14_VPWR": {
+    "path": "Battery.TG14",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG14_VSS": {
+    "path": "Battery.TG14",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG15_LOAD_PCT": {
+    "path": "Battery.TG15",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG15_RPM": {
+    "path": "Battery.TG15",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG15_VPWR": {
+    "path": "Battery.TG15",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG15_VSS": {
+    "path": "Battery.TG15",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG16_LOAD_PCT": {
+    "path": "Battery.TG16",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG16_RPM": {
+    "path": "Battery.TG16",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG16_VPWR": {
+    "path": "Battery.TG16",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG16_VSS": {
+    "path": "Battery.TG16",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG17_LOAD_PCT": {
+    "path": "Battery.TG17",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG17_RPM": {
+    "path": "Battery.TG17",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG17_VPWR": {
+    "path": "Battery.TG17",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG17_VSS": {
+    "path": "Battery.TG17",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG18_LOAD_PCT": {
+    "path": "Battery.TG18",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG18_RPM": {
+    "path": "Battery.TG18",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG18_VPWR": {
+    "path": "Battery.TG18",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG18_VSS": {
+    "path": "Battery.TG18",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG19_LOAD_PCT": {
+    "path": "Battery.TG19",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG19_RPM": {
+    "path": "Battery.TG19",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG19_VPWR": {
+    "path": "Battery.TG19",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG19_VSS": {
+    "path": "Battery.TG19",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG1_LOAD_PCT": {
+    "path": "Battery.TG1",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG1_RPM": {
+    "path": "Battery.TG1",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG1_VPWR": {
+    "path": "Battery.TG1",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG1_VSS": {
+    "path": "Battery.TG1",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG20_LOAD_PCT": {
+    "path": "Battery.TG20",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG20_RPM": {
+    "path": "Battery.TG20",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG20_VPWR": {
+    "path": "Battery.TG20",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG20_VSS": {
+    "path": "Battery.TG20",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG21_LOAD_PCT": {
+    "path": "Battery.TG21",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG21_RPM": {
+    "path": "Battery.TG21",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG21_VPWR": {
+    "path": "Battery.TG21",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG21_VSS": {
+    "path": "Battery.TG21",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG22_LOAD_PCT": {
+    "path": "Battery.TG22",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG22_RPM": {
+    "path": "Battery.TG22",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG22_VPWR": {
+    "path": "Battery.TG22",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG22_VSS": {
+    "path": "Battery.TG22",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG23_LOAD_PCT": {
+    "path": "Battery.TG23",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG23_RPM": {
+    "path": "Battery.TG23",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG23_VPWR": {
+    "path": "Battery.TG23",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG23_VSS": {
+    "path": "Battery.TG23",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG24_ECT": {
+    "path": "Battery.TG24",
+    "source": "ECT"
+  },
+  "BMW_TEST_REF_TG24_RPM": {
+    "path": "Battery.TG24",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG24_VPWR": {
+    "path": "Battery.TG24",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG24_VSS": {
+    "path": "Battery.TG24",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG25_ECT": {
+    "path": "Battery.TG25",
+    "source": "ECT"
+  },
+  "BMW_TEST_REF_TG25_RPM": {
+    "path": "Battery.TG25",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG25_VPWR": {
+    "path": "Battery.TG25",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG25_VSS": {
+    "path": "Battery.TG25",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG26_ECT": {
+    "path": "Battery.TG26",
+    "source": "ECT"
+  },
+  "BMW_TEST_REF_TG26_RPM": {
+    "path": "Battery.TG26",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG26_VPWR": {
+    "path": "Battery.TG26",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG26_VSS": {
+    "path": "Battery.TG26",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG27_ECT": {
+    "path": "Battery.TG27",
+    "source": "ECT"
+  },
+  "BMW_TEST_REF_TG27_RPM": {
+    "path": "Battery.TG27",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG27_VPWR": {
+    "path": "Battery.TG27",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG27_VSS": {
+    "path": "Battery.TG27",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG28_ECT": {
+    "path": "Battery.TG28",
+    "source": "ECT"
+  },
+  "BMW_TEST_REF_TG28_RPM": {
+    "path": "Battery.TG28",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG28_VPWR": {
+    "path": "Battery.TG28",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG28_VSS": {
+    "path": "Battery.TG28",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG29_LOAD_PCT": {
+    "path": "Battery.TG29",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG29_RPM": {
+    "path": "Battery.TG29",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG29_VPWR": {
+    "path": "Battery.TG29",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG29_VSS": {
+    "path": "Battery.TG29",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG2_LOAD_PCT": {
+    "path": "Battery.TG2",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG2_RPM": {
+    "path": "Battery.TG2",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG2_VPWR": {
+    "path": "Battery.TG2",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG2_VSS": {
+    "path": "Battery.TG2",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG30_LOAD_PCT": {
+    "path": "Battery.TG30",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG30_RPM": {
+    "path": "Battery.TG30",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG30_VPWR": {
+    "path": "Battery.TG30",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG30_VSS": {
+    "path": "Battery.TG30",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG31_LOAD_PCT": {
+    "path": "Battery.TG31",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG31_RPM": {
+    "path": "Battery.TG31",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG31_VPWR": {
+    "path": "Battery.TG31",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG31_VSS": {
+    "path": "Battery.TG31",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG32_RPM": {
+    "path": "Battery.TG32",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG32_VPWR": {
+    "path": "Battery.TG32",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG32_VSS": {
+    "path": "Battery.TG32",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG33_RPM": {
+    "path": "Battery.TG33",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG33_VPWR": {
+    "path": "Battery.TG33",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG33_VSS": {
+    "path": "Battery.TG33",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG34_RPM": {
+    "path": "Battery.TG34",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG34_VPWR": {
+    "path": "Battery.TG34",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG34_VSS": {
+    "path": "Battery.TG34",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG35_RPM": {
+    "path": "Battery.TG35",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG35_VPWR": {
+    "path": "Battery.TG35",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG35_VSS": {
+    "path": "Battery.TG35",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG36_RPM": {
+    "path": "Battery.TG36",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG36_VPWR": {
+    "path": "Battery.TG36",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG36_VSS": {
+    "path": "Battery.TG36",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG37_RPM": {
+    "path": "Battery.TG37",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG37_VPWR": {
+    "path": "Battery.TG37",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG37_VSS": {
+    "path": "Battery.TG37",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG38_RPM": {
+    "path": "Battery.TG38",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG38_VPWR": {
+    "path": "Battery.TG38",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG38_VSS": {
+    "path": "Battery.TG38",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG39_RPM": {
+    "path": "Battery.TG39",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG39_VPWR": {
+    "path": "Battery.TG39",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG39_VSS": {
+    "path": "Battery.TG39",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG3_LOAD_PCT": {
+    "path": "Battery.TG3",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG3_RPM": {
+    "path": "Battery.TG3",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG3_VPWR": {
+    "path": "Battery.TG3",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG3_VSS": {
+    "path": "Battery.TG3",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG40_RPM": {
+    "path": "Battery.TG40",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG40_VPWR": {
+    "path": "Battery.TG40",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG40_VSS": {
+    "path": "Battery.TG40",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG41_RPM": {
+    "path": "Battery.TG41",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG41_VPWR": {
+    "path": "Battery.TG41",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG41_VSS": {
+    "path": "Battery.TG41",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG42_RPM": {
+    "path": "Battery.TG42",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG42_VPWR": {
+    "path": "Battery.TG42",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG42_VSS": {
+    "path": "Battery.TG42",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG43_RPM": {
+    "path": "Battery.TG43",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG43_VPWR": {
+    "path": "Battery.TG43",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG43_VSS": {
+    "path": "Battery.TG43",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG44_RPM": {
+    "path": "Battery.TG44",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG44_VPWR": {
+    "path": "Battery.TG44",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG44_VSS": {
+    "path": "Battery.TG44",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG45_RPM": {
+    "path": "Battery.TG45",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG45_VPWR": {
+    "path": "Battery.TG45",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG45_VSS": {
+    "path": "Battery.TG45",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG46_RPM": {
+    "path": "Battery.TG46",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG46_VPWR": {
+    "path": "Battery.TG46",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG46_VSS": {
+    "path": "Battery.TG46",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG47_RPM": {
+    "path": "Battery.TG47",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG47_VPWR": {
+    "path": "Battery.TG47",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG47_VSS": {
+    "path": "Battery.TG47",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG48_RPM": {
+    "path": "Battery.TG48",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG48_VPWR": {
+    "path": "Battery.TG48",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG48_VSS": {
+    "path": "Battery.TG48",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG49_RPM": {
+    "path": "Battery.TG49",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG49_VPWR": {
+    "path": "Battery.TG49",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG49_VSS": {
+    "path": "Battery.TG49",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG4_LOAD_PCT": {
+    "path": "Battery.TG4",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG4_RPM": {
+    "path": "Battery.TG4",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG4_VPWR": {
+    "path": "Battery.TG4",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG4_VSS": {
+    "path": "Battery.TG4",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG50_RPM": {
+    "path": "Battery.TG50",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG50_VPWR": {
+    "path": "Battery.TG50",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG50_VSS": {
+    "path": "Battery.TG50",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG51_RPM": {
+    "path": "Battery.TG51",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG51_VPWR": {
+    "path": "Battery.TG51",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG51_VSS": {
+    "path": "Battery.TG51",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG5_LOAD_PCT": {
+    "path": "Battery.TG5",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG5_RPM": {
+    "path": "Battery.TG5",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG5_VPWR": {
+    "path": "Battery.TG5",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG5_VSS": {
+    "path": "Battery.TG5",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG6_LOAD_PCT": {
+    "path": "Battery.TG6",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG6_RPM": {
+    "path": "Battery.TG6",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG6_VPWR": {
+    "path": "Battery.TG6",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG6_VSS": {
+    "path": "Battery.TG6",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG7_LOAD_PCT": {
+    "path": "Battery.TG7",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG7_RPM": {
+    "path": "Battery.TG7",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG7_VPWR": {
+    "path": "Battery.TG7",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG7_VSS": {
+    "path": "Battery.TG7",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG8_LOAD_PCT": {
+    "path": "Battery.TG8",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG8_RPM": {
+    "path": "Battery.TG8",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG8_VPWR": {
+    "path": "Battery.TG8",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG8_VSS": {
+    "path": "Battery.TG8",
+    "source": "VSS"
+  },
+  "BMW_TEST_REF_TG9_LOAD_PCT": {
+    "path": "Battery.TG9",
+    "source": "LOAD_PCT"
+  },
+  "BMW_TEST_REF_TG9_RPM": {
+    "path": "Battery.TG9",
+    "source": "RPM"
+  },
+  "BMW_TEST_REF_TG9_VPWR": {
+    "path": "Battery.TG9",
+    "source": "VPWR"
+  },
+  "BMW_TEST_REF_TG9_VSS": {
+    "path": "Battery.TG9",
+    "source": "VSS"
+  }
+}
